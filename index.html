@@ -1,0 +1,2288 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="da" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="generator" content="Asciidoctor 2.0.18"/>
+<meta name="description" content="Detaljeret gennemgang af relevante standarder og best practices, som det anbefales myndigheder at anvende ved indsamling, behandling og distribution af geodata, der skal indgå i digitale løsninger til brug for offentlig forvaltning."/>
+<meta name="keywords" content="geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE"/>
+<meta name="author" content="Styrelsen for Dataforsyning og Infrastruktur"/>
+<title>Anbefalede standarder for geodata</title>
+<link rel="shortcut icon" href="./assets/logos/logo-simple-micro.svg"/>
+<!-- Dublin Core metadata,
+see https://www.dublincore.org/specifications/dublin-core/dcq-html/
+and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/. -->
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+<meta name="DC.creator" lang="da" content="Styrelsen for Dataforsyning og Infrastruktur"/>
+<meta name="DC.date" content="2022-12-22"/>
+<meta name="DC.description" lang="da" content="Detaljeret gennemgang af relevante standarder og best practices, som det anbefales myndigheder at anvende ved indsamling, behandling og distribution af geodata, der skal indgå i digitale løsninger til brug for offentlig forvaltning."/>
+<meta name="DC.language" content="da"/>
+<meta name="DC.subject" lang="da" content="geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE"/>
+<meta name="DC.title" lang="da" content="Anbefalede standarder for geodata"/>
+<style>
+@import "./assets/css/logo-big.css";
+@import "./assets/designsystem.css";
+/* copied and adjusted from asciidoctor-default.css */
+#toctitle{font-size:1.5em}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;text-transform:uppercase;letter-spacing:.04em;margin-bottom:var(--typography-spacing-vertical-bottom)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table th,td{border:0}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{color:rgba(0,0,0,.6);font-weight:bold;text-transform:uppercase;letter-spacing:.04em}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+/* Change color for both types of admonitions: blocks and single paragraphs. */
+.admonitionblock>table td.content{color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content *{color:rgba(0,0,0,.6)}
+/* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
+#toc ul.sectlevel2{padding-left:1.75em}
+#toc ul.sectlevel3{padding-left:2.0em}
+/* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
+.bibliographicaldetails{border:.25rem solid var(--medium-steel);margin-bottom:1.25em;padding:0.5em;background-color: var(--hvid);border-radius:1rem}
+.bibliographicaldetails p{margin-bottom:0em}
+.bibliographicaldetails>:first-child{margin-top:0}
+.bibliographicaldetails>:last-child{margin-bottom:0}
+/* Extra */
+#eksempel_opbygning{border:1px solid var(--mork-tyrkis)}
+#eksempel_opbygning{padding: var(--padding)}
+#eksempel_opbygning>div.content>div.title>p{color:var(--h4-color);text-transform: uppercase;letter-spacing:.04em}
+#eksempel_opbygning>div.content>div>p,ol,ul,table{font-size:90%}
+#eksempel_opbygning>div.content>div.admonitionblock>table td.content{color:rgba(0,0,0,.6);font-size:90%}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "author": [{
+	"@type": "Organization",
+	"name": "Styrelsen for Dataforsyning og Infrastruktur",
+	"logo": {
+		"@type": "ImageObject",
+		"url": "https://sdfi.dk/Media/637983120376287699/SDFI_DK_RGB-logo.png"
+		},
+	  "url": "https://sdfi.dk/"
+	}],
+	"dateModified": "2022-12-22",
+	"headline": "Anbefalede standarder for geodata",
+	"name": "Anbefalede standarder for geodata",
+	"keywords": "geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE",
+	"version": "1.0.0"
+}
+</script>
+</head>
+<body class="article"><header id="header" data-theme="dark" class="ds-padding"><div class="ds-container"><a class="ds-logo ds-logo-pull-left" href="https://sdfi.dk/">Styrelsen for Dataforsyning og Infrastruktur</a></div><h1 class="ds-container">Anbefalede standarder for geodata</h1><div class="details ds-container"><span id="revnumber">version 1.0.0,</span> <span id="revdate">2022-12-22</span></div></header><div class="ds-container ds-grid-1-2"><div id="toc" class="toc"><div class="ds-padding" id="toctitle">Indholdsfortegnelse</div><nav class="ds-nav-vertical"><ul class="sectlevel1">
+<li><a href="#rammer">1. Rammer for løsninger som omfatter geodata</a>
+<ul class="sectlevel2">
+<li><a href="#inspire">1.1. INSPIRE-direktivet fastlægger regler for geografisk infrastruktur</a></li>
+<li><a href="#sdos">1.2. ISO og OGC standarder</a></li>
+</ul>
+</li>
+<li><a href="#fortegnelse">2. Standarder og best practices på udvalgte områder med relation til geodata</a>
+<ul class="sectlevel2">
+<li><a href="#begrebs-datamodeller">2.1. Begrebs- og datamodeller</a>
+<ul class="sectlevel3">
+<li><a href="#fda-hvidbog">2.1.1. Hvidbog om fællesoffentlig digital arkitektur</a></li>
+<li><a href="#fda-modelregler">2.1.2. Fællesoffentlige regler for begrebs- og datamodellering</a></li>
+<li><a href="#fda-modelregler-vejledning">2.1.3. Vejledning i begrebs- og datamodellering</a></li>
+<li><a href="#19103">2.1.4. DS/ISO 19103 Konceptuelt modelleringssprog</a></li>
+</ul>
+</li>
+<li><a href="#identifikatorer">2.2. Identifikatorer</a>
+<ul class="sectlevel3">
+<li><a href="#linked-identifiers-schemes">2.2.1. Linked identifier schemes</a></li>
+<li><a href="#uuid">2.2.2. UUID</a></li>
+</ul>
+</li>
+<li><a href="#geometrimodel_opbevaring">2.3. Geometrimodel og opbevaring af geodata</a>
+<ul class="sectlevel3">
+<li><a href="#19107">2.3.1. DS/EN ISO 19107 Geometrimodel</a></li>
+<li><a href="#sfa-ca">2.3.2. Simple feature access - Part 1: Common architecture</a></li>
+<li><a href="#sfa-sql">2.3.3. Simple feature access - Part 2: SQL option</a></li>
+<li><a href="#sql-mm">2.3.4. ISO/IEC 13249-3 Database languages — SQL multimedia and application packages — Part 3: Spatial</a></li>
+</ul>
+</li>
+<li><a href="#geografisk-reference">2.4. Geografisk reference</a>
+<ul class="sectlevel3">
+<li><a href="#19111">2.4.1. DS/ISO 19111 Spatial orientering via koordinater</a></li>
+<li><a href="#19112">2.4.2. DS/EN ISO 19112 Orientering via geografiske identifikatorer</a></li>
+<li><a href="#19161-1">2.4.3. DS/EN ISO 19161-1 Geodætiske referencer - Del 1: ITRS</a></li>
+<li><a href="#wkt-crs">2.4.4. Well-known text representation of coordinate reference systems</a></li>
+<li><a href="#sdfe-crs">2.4.5. Vejledning i brug af koordinatreferencesystemer</a></li>
+</ul>
+</li>
+<li><a href="#tid-historik">2.5. Tid og historik</a>
+<ul class="sectlevel3">
+<li><a href="#temporal-databases">2.5.1. Temporal Databases: Research and Practice</a></li>
+<li><a href="#9075-2">2.5.2. ISO/IEC 9075-2, Database languages — SQL — Part 2: Foundation (SQL/Foundation)</a></li>
+<li><a href="#19075-2">2.5.3. ISO/IEC TR 19075-2, Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information</a></li>
+<li><a href="#bitemporalitet-poc">2.5.4. Bitemporalitet, proof of concept</a></li>
+<li><a href="#sdfe-regler-historik">2.5.5. Regelsæt for historik i data</a></li>
+<li><a href="#snodgrass">2.5.6. Developing time-oriented database applications in SQL</a></li>
+<li><a href="#fowler-temporal-patterns">2.5.7. Further Patterns of Enterprise Application Architecture</a></li>
+</ul>
+</li>
+<li><a href="#metadata">2.6. Metadata</a>
+<ul class="sectlevel3">
+<li><a href="#19115">2.6.1. DS/EN ISO 19115 Metadata</a></li>
+<li><a href="#19115-1">2.6.2. DS/EN ISO 19115-1 Metadata - Part 1: Fundamentals</a></li>
+<li><a href="#19115-2">2.6.3. DS/EN ISO 19115-2 Metadata - Del 2: Udvidelse til indsamling og behandling</a></li>
+<li><a href="#19119">2.6.4. DS/EN ISO 19119 Tjenesteydelser</a></li>
+<li><a href="#19139">2.6.5. DS/ISO/TS 19139 Metadata - Implementering af XML-skema</a></li>
+<li><a href="#19157">2.6.6. DS/EN ISO 19157 Datakvalitet</a></li>
+<li><a href="#tg-metadata">2.6.7. Technical Guidance for the implementation of INSPIRE dataset and service metadata</a></li>
+<li><a href="#dcat">2.6.8. Data Catalog Vocabulary (DCAT)</a></li>
+<li><a href="#geodcat-ap">2.6.9. GeoDCAT-AP</a></li>
+</ul>
+</li>
+<li><a href="#indkodninger">2.7. Udveksling af geodata - indkodninger</a>
+<ul class="sectlevel3">
+<li><a href="#gml-32">2.7.1. Geography Markup Language (GML) Encoding Standard</a></li>
+<li><a href="#gml-33">2.7.2. Geography Markup Language (GML) — Extended schemas and encoding rules</a></li>
+<li><a href="#gml-sf">2.7.3. Geography Markup Language (GML) simple features profile</a></li>
+<li><a href="#gpkg">2.7.4. GeoPackage Encoding Standard</a></li>
+<li><a href="#pdf-georegistration">2.7.5. PDF Georegistration Encoding Best Practice</a></li>
+</ul>
+</li>
+<li><a href="#tjenester">2.8. Udveksling af geodata - tjenester</a>
+<ul class="sectlevel3">
+<li><a href="#wfs">2.8.1. Web Feature Service (WFS)</a></li>
+<li><a href="#tg-download">2.8.2. INSPIRE Download Services</a></li>
+<li><a href="#wms">2.8.3. Web Map Server (WMS)</a></li>
+<li><a href="#sld">2.8.4. Styled Layer Descriptor (SLD)</a></li>
+<li><a href="#se">2.8.5. Symbology Encoding Implementation Specification</a></li>
+<li><a href="#wmts">2.8.6. Web Map Tile Service (WMTS)</a></li>
+<li><a href="#tg-view">2.8.7. INSPIRE View Services</a></li>
+<li><a href="#csw">2.8.8. Catalogue Services (CSW)</a></li>
+<li><a href="#csw-iso-ap">2.8.9. CSW - ISO Metadata Application Profile</a></li>
+<li><a href="#ogcfeat">2.8.10. OGC API - Features - Part 1: Core</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#referencer">Referencer</a></li>
+</ul></nav></div><main id="content" class="ds-padding">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dette dokument indeholder en detaljeret gennemgang af relevante
+standarder og best practices til brug for indsamling, behandling og
+distribution af geodata, herunder i forbindelse med opbygning af
+digitale forvaltningsløsninger. Dette understøtter interoperabilitet
+mellem data og systemer, så data kan anvendes og genbruges på tværs.</p>
+</div>
+<div id="maalgruppe" class="openblock">
+<div class="title">Målgruppe</div>
+<div class="content">
+<div class="paragraph">
+<p>Dette dokument er primært målrettet udviklere og arkitekter med ansvar
+for data og systemer i en forretning, som bygger på stedbestemmelse.
+Denne målgruppe har brug for praktisk viden om, hvilke standarder og
+best practices der er nødvendige og anvendelige i forskellige tilfælde,
+og hvor og hvordan disse standarder og best practices kan tilgås.</p>
+</div>
+<div class="paragraph">
+<p>Dette dokument er også målrettet dem der har det overordnede ansvar
+for en forretning, som bygger på stedbestemmelse. Denne målgruppe har
+brug for at have et overblik over standarder til brug i f.eks.
+kravspecikationer mv.</p>
+</div>
+</div>
+</div>
+<div id="baggrund" class="openblock">
+<div class="title">Baggrund</div>
+<div class="content">
+<div class="paragraph">
+<p>Version 1.0.0 af dette dokument og bilag 3 til <em>Vejledning om geografi i
+lovgivningen</em> <a href="#vej-2020-9428">[VEJ nr 9428]</a> er indholdsmæssigt identisk, på nær den
+indledende tekst. Standarderne kan nemlig være relevante at anvende i
+forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold
+ til registermetoden (beskrevet i <em>Vejledning om geografi i
+lovgivningen</em>).</p>
+</div>
+</div>
+</div>
+<div id="laesevejledning" class="openblock">
+<div class="title">Læsevejledning</div>
+<div class="content">
+<div class="paragraph">
+<p>Dette dokument er opbygget på følgende måde:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Det første afsnit beskriver de lovgivningsmæssige rammer for indholdet og de to centrale standardiseringsorganisationer i geodatadomænet, som de behandlede dokumenter primært kommer fra.</p>
+</li>
+<li>
+<p>Det andet afsnit er en gennemgang af de relevante dokumenter, delt op i emnekategorier, og følger følgende struktur:</p>
+<div id="eksempel_opbygning" class="exampleblock">
+<div class="content">
+<div class="paragraph title">
+<p>Emnekategori</p>
+</div>
+<div class="paragraph">
+<p>Introducerende tekst til kategorien.</p>
+</div>
+<div class="paragraph title">
+<p>Titel på standard eller best practice</p>
+</div>
+<div class="paragraph bibliographicaldetails">
+<p>Dokumentets bibliografiske detajler.</p>
+</div>
+<div class="paragraph">
+<p>Beskrivelse af standard/best practice.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Supplerende bemærkninger, f.eks. hvor man kan finde XML-skemaer til standarden, eller hvordan dokumentet relaterer sig til andre dokumenter.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="rammer">1. Rammer for løsninger som omfatter geodata</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="inspire">1.1. INSPIRE-direktivet fastlægger regler for geografisk infrastruktur</h3>
+<div class="paragraph">
+<p><a href="http://data.europa.eu/eli/dir/2007/2/2019-06-26">INSPIRE-direktivet</a> er
+ fundamentet for standardisering og deling af geodata på tværs af
+særligt miljøforvaltninger i EU.</p>
+</div>
+<div class="paragraph">
+<p>Adgang til geografisk information er en forudsætning for at kunne
+forvalte samfundet og håndtere kriser, og ved at basere sin forvaltning
+på et fælles geografisk grundlag skabes der større sammenhæng i
+opgavevaretagelsen.</p>
+</div>
+<div class="paragraph">
+<p>INSPIRE-direktivet
+skal tilvejebringe de nødvendige tekniske, data- og aftalemæssige
+strukturer, der sikrer sammenhæng og adgang til de mange værdifulde
+offentlige geografiske informationer, der findes i EU’s medlemslande.</p>
+</div>
+<div class="paragraph">
+<p>Det kræver ensartethed og standardisering, og derfor fastlægger
+INSPIRE-direktivet en fælles ramme for alle EU-medlemslande ved at
+fastlægge regler og retningslinjer for komponenterne i infrastrukturen
+for geografisk information.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://inspire.ec.europa.eu/inspire-legislation/26">Reglerne</a>,
+også kaldet for gennemførelsesbestemmelser, gælder for følgende
+komponenter:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://eur-lex.europa.eu/eli/reg/2008/1205/2008-12-24">Metadata</a> – oplysninger om datasæt og nettjenester</p>
+</li>
+<li>
+<p><a href="http://data.europa.eu/eli/reg/2010/1089/2014-12-31">Datasæt</a> – harmonisering så data kan sammenstilles</p>
+</li>
+<li>
+<p><a href="http://data.europa.eu/eli/reg/2009/976/2014-12-31">Nettjenester</a> – søgning, visning, transformation og download</p>
+</li>
+<li>
+<p><a href="http://data.europa.eu/eli/dec_impl/2019/1372/oj">Overvågning og rapportering af direktivets implementering</a></p>
+</li>
+<li>
+<p><a href="https://eur-lex.europa.eu/eli/reg/2010/268/oj">Aftaler</a> – fælles bestemmelser for EU’s adgang til landenes data og tjenester</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>INSPIRE-direktivet gennemføres via national lovgivning i de enkelte
+medlemslande. I Danmark sker det via
+<a href="https://www.retsinformation.dk/eli/lta/2017/746"><em>Lov om infrastruktur
+for geografisk information i Den Europæiske Union</em></a>, også kaldet
+INSPIRE-loven, lovbekendtgørelse nr. 746 af 15. juni 2017. Læs mere på
+<a href="https://inspire-danmark.dk">den danske hjemmeside om INSPIRE</a>, hvor man
+også finder vejledninger, videoer og best practice eksempler, samt
+artiklen <a href="#kron14">[Kron14]</a>,
+som ovenstående tekst er baseret på.</p>
+</div>
+<div class="paragraph">
+<p>Gennemførelsesbestemmelserne er suppleret af en række
+<a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41">tekniske
+retningslinjer</a>, der giver detaljeret vejledning om implementeringen
+fx ved at anvise gældende standarder på området.</p>
+</div>
+<div class="paragraph">
+<p>Disse vejledninger er ikke juridisk bindende, men har som formål at
+sikre reel interoperabilitet. Selve direktivet og
+gennemførelsesbestemmelser er forsøgt skrevet teknologineutralt. Det vil
+sige, at man i INSPIRE-regi kan forholde sig til og benytte sig af nye
+teknologier, så længe man beskriver, hvordan de er i overensstemmelse
+med de juridiske regler. Dette arbejde sker i
+<a href="https://inspire.ec.europa.eu/inspire-maintenance-and-implementation/46">INSPIRE
+Maintenance and Implementation Group (MIG)</a>, en ekspertgruppe nedsat af
+EU Kommissionen. Den fungerer som implementeringsorgan, der behandler
+problemstillinger knyttet til den praktiske implementering af
+INSPIRE-direktivet.</p>
+</div>
+<div class="paragraph">
+<p>Der henvises til en del af de tekniske vejledninger nedenfor under det
+relevante emne.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sdos">1.2. ISO og OGC standarder</h3>
+<div class="paragraph">
+<p>ISO og OGC sikrer, at der etableres globale standarder for anvendelse af
+geodatakomponenter.</p>
+</div>
+<div class="paragraph">
+<p>International Organization for Standardization (ISO)
+<a href="https://committee.iso.org/home/tc211">tekniske komite 211</a> og Open
+Geospatial Consortium (<a href="https://www.ogc.org">OGC</a>) er de to centrale
+standardiseringsorganisationer i geodatadomænet, og derfor henviser
+dette bilag primært til ISO- og OGC-standarder. Disse standarder har i
+vid udstrækning dannet grundlag for implementeringen af
+INSPIRE-direktivet, der er ligeledes tale om standarder, som bliver
+understøttet af en række it-produkter. Hvor der findes implementerede
+løsninger baseret på de nævnte standarder, vil der være link til disse i
+forbindelse med beskrivelsen af standarderne.</p>
+</div>
+<div class="paragraph">
+<p>Fælles for såvel ISO- og OGC-standarder gælder, at de løbende bliver
+ajourført og opdateret, hvorfor nedenstående på nogle områder kan
+betragtes som et øjebliksbillede. Hvis der ikke står et årstal efter en
+standard fra ISO, vil der til enhver tid være tale om den nyeste version
+af den pågældende standard.</p>
+</div>
+<div class="paragraph">
+<p>En oversigt over alle ISO-standarder fra den tekniske komite 211 kan
+findes på
+<a href="https://www.iso.org/committee/54904/x/catalogue/p/1/u/0/w/0/d/0">komiteens hjemmeside</a>.
+Man skal i den forbindelse være opmærksom på, at der til nogle af de
+nævnte standarder er udgivet mindre tilføjelser og fejlrettelser som
+særskilte dokumenter. I Danmark er det udvalget
+<a href="https://www.ds.dk/da/udvalg/kategorier/it/geografisk-information">S-276
+Geografisk Information</a> i <a href="https://www.ds.dk/da">Dansk Standard (DS)</a>, der
+deltager i ISO/TC 211.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><a href="https://webshop.ds.dk/standard?Facets%2FOrganization=%5B%22ISO%22%2C%22DS%2FISO%22%2C%22DS%2FEN+ISO%22%5D&amp;Facets%2FTechnicalCommittee=%5B%22DS%2FS-276%22%5D" title="Gældende standarder, tillæg og bilag udviklet gennem S-276 og med ophav i ISO">ISO-standarder</a>
+skal
+<a href="https://www.ds.dk/da/om-standarder/hvad-er-en-standard/derfor-koster-standarder-penge" title="Derfor koster standarder penge - Dansk Standard">købes</a>
+hos DS.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>En oversigt over alle OGC-standarder findes på
+<a href="https://www.ogc.org/standards/">OGC’s hjemmeside</a>. En del standarder
+er udgivet i flere versioner i takt med, at behovene for standardisering
+har udviklet sig. På hjemmesiden kan man finde både den gældende version
+samt tidligere (og dermed tilbagetrukne) versioner. OGC har et
+compliance-program, hvis formål er, at øge systeminteroperabilitet
+samtidigt med, at risikoen ved at vælge en ny teknologi mindskes. Man
+kan på OGC’s hjemmeside se, om et produkt, ifølge producenten,
+implementerer en standard, eller om det ifølge OGC er helt konformt med
+standarden. Det
+er dog ikke alle produkter, som implementerer en bestemt standard, der
+står på listerne. Det afhænger af, om producenterne har
+<a href="https://www.ogc.org/resource/products/stats" title="Implementation Statistics">registreret</a>
+deres produkt.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<a href="https://www.ogc.org/docs/is">OGC-standarder</a> er uden royalties, og er offentligt tilgængelige.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="fortegnelse">2. Standarder og best practices på udvalgte områder med relation til geodata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Standarder og best practices på følgende områder er opført og beskrevet
+i de næste afsnit.</p>
+</div>
+<div class="sect2">
+<h3 id="begrebs-datamodeller">2.1. Begrebs- og datamodeller</h3>
+<div class="paragraph">
+<p>Det er et arkitekturprincip i Digitaliseringsstyrelsens <a href="#fda-hvidbog">Hvidbog om fællesoffentlig digital arkitektur</a>,
+at gode data deles og genbruges. Det
+vil sige, at begreber og data skal beskrives ensartet, så de kan
+genbruges, og der sikres tilstrækkelig kvalitet i data til de væsentlige
+anvendelser af data. Princippet, om at gode data deles og genbruges, er
+gjort mere konkret i form af fire arkitekturregler:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Del og genbrug data.</p>
+</li>
+<li>
+<p>Anvend fælles regler for dokumentation af data.</p>
+</li>
+<li>
+<p>Giv data den kvalitet som efterspørges (se punkt om metadata).</p>
+</li>
+<li>
+<p>Udstil oplysninger om datakilder, begreber og datamodeller.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Hvis et datasæt er omfattet af INSPIRE-direktivet, skal datasættet gøres
+tilgængeligt for omverden i overensstemmelse med INSPIRE-reglerne, og
+det indebærer, at datasættet (også) skal udstilles på en måde, så det
+følger INSPIREs dataspecifikationer - som bl.a. indeholder datamodeller
+for det relevante tema. Uanset om et datasæt er omfattet af
+INSPIRE-direktivet eller ej, så bør man bruge INSPIREs datamodel for det
+relevante tema som inspiration ved udarbejdelse af nye datamodeller.</p>
+</div>
+<div class="sect3">
+<h4 id="fda-hvidbog">2.1.1. Hvidbog om fællesoffentlig digital arkitektur</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DIGITALISERINGSSTYRELSEN. <em>Den digitalt sammenhængende offentlige
+sektor. Hvidbog om fællesoffentlig digital arkitektur</em>. Version 1.0.
+juni 2017. Tilgængelig på:
+<a href="https://arkitektur.digst.dk/node/1175" title="Den digitalt sammenhængende offentlige sektor. Hvidbog om fællesoffentlig digital arkitektur">https://arkitektur.digst.dk/node/1175</a></p>
+</div>
+<div class="paragraph">
+<p>Dokumentet beskriver arkitekturprincipper og –regler, som understøtter
+en sammenhængende digitalisering af den offentlige sektor.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fda-modelregler">2.1.2. Fællesoffentlige regler for begrebs- og datamodellering</h4>
+<div class="openblock bibliographicaldetails">
+<div class="content">
+<div class="paragraph">
+<p>DIGITALISERINGSSTYRELSEN. <em>Fællesoffentlige regler for begrebs- og
+datamodellering</em>. Version 2.0.0. 2019. Tilgængelig på: <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering" title="Fællesoffentlige regler for begrebs- og datamodellering">https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering</a></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Dokumentet sætter regler for begrebsmodeller og datamodeller, så data
+forstås korrekt og passer sammen, når de anvendes på tværs af
+myndighedernes forskellige processer og it-systemer. Modelreglerne skal
+bl.a. sikre, at der anvendes samme modelleringssprog, at begreber og
+data er navngivet entydigt og meningsfuldt, og at begreber og data er
+defineret fyldestgørende.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I høj fokus skal være egenskaber som går igen i mange datasæt. Eksempler
+er forskellige typer datoer (forslagsdato, vedtagelsesdato, osv.) og
+status ifm. et objekts livscyklus.</p>
+</div>
+<div class="paragraph">
+<p>Man skal være opmærksom på, hvordan data administreres, især hvad angår:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>historik: egenskaber som beskriver et objekts levetid i forhold til
+virkningstid og registreringstid stiller store krav til det it-system,
+der skal holde styr på data. Se også punkt 5 om historik.</p>
+</li>
+<li>
+<p>sammenhæng: relationer til andre modeller forudsætter, at man i
+praksis kan og vil anvende de data, som de andre modeller beskriver, se
+også punkt 2 om identifikatorer.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fda-modelregler-vejledning">2.1.3. Vejledning i begrebs- og datamodellering</h4>
+<div class="paragraph bibliographicaldetails">
+<p>FÆLLESOFFENTLIG DIGITAL ARKITEKTUR, <em>Vejledning i begrebs- og
+datamodellering</em> [igangværende arbejde]</p>
+</div>
+<div class="paragraph">
+<p>Vejledningen uddyber reglerne beskrevet i <a href="#fda-modelregler">Fællesoffentlige regler for begrebs- og datamodellering</a> og beskriver processerne omkring
+modellering.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19103">2.1.4. DS/ISO 19103 Konceptuelt modelleringssprog</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/ISO 19103:2015, <em>Geografisk information - Konceptuelt
+modelleringssprog</em></p>
+</div>
+<div class="paragraph">
+<p>Denne internationale standard angiver regler og retningslinjer for
+brugen af et konceptuelt modelleringssprog inden for rammerne af
+geografisk information. Det valgte konceptuelle modelleringssprog er UML
+(Unified Modelling Language).</p>
+</div>
+<div class="paragraph">
+<p>Målet med denne standard er UML-skemaer, der beskriver geografisk
+information.</p>
+</div>
+<div class="paragraph">
+<p>Derudover beskriver denne standard begreber såsom CharacterString,
+DateTime, osv.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Standarden anvendes i INSPIRE og som basis alle modeller der indgår i
+standarder fra ISO 19100-serien.</p>
+</div>
+<div class="paragraph">
+<p>ISO/TC 211 vedligeholder og opbevarer alle UML-modeller som indgår i de
+forskellige ISO/TC 211 standarder i det <a href="https://github.com/ISO-TC211/HMMG">“Harmonized Model Repository”</a>.
+Det gør, at man kan bruge disse typer i sine egne geografiske
+datamodeller.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="identifikatorer">2.2. Identifikatorer</h3>
+<div class="paragraph">
+<p>Et objekt skal have en entydig identifikator - som minimum unikt inden for datasættet objektet
+indgår i, og gerne globalt unikt - og som ikke ændres over tid. Tildeling og publicering af
+identifikatorer er grundlæggende for at støtte oprettelsen af links fra andre data til ens egne data
+og dermed for at sammensætte data på tværs af datasæt. Data udstillet gennem det
+<a href="https://datafordeler.dk/">fællesoffentlige grunddataprogram</a>
+indeholder identifikatorer. Når et nyt register eller et nyt datasæt skal
+etableres, kan man finde gode råd i nedenstående dokumenter.</p>
+</div>
+<div class="paragraph">
+<p>Ofte vil et objekt, ud over den unikke identifikator, have en eller flere forretningsnøgler, fx har en
+matrikel et matrikelnummer og et naturbeskyttelsesområde omfattet af Habitatbekendtgørelsen en
+Natura 2000-kode. Det er som regel forretningsnøglerne, som vil være omtalt i lovgivningen,
+hvorimod den unikke identifikator bruges til system-til-system-kommunikation.</p>
+</div>
+<div class="sect3">
+<h4 id="linked-identifiers-schemes">2.2.1. Linked identifier schemes</h4>
+<div class="paragraph bibliographicaldetails">
+<p>GEOSPATIAL COMMISSION, <em>Linked identifier schemes: Best practice guide. Version 0.3. oktober 2019.</em>
+Tilgængelig på: <a href="https://www.gov.uk/government/publications/linked-identifier-schemes-best-practice-guide" title="Linked identifier schemes: Best practice guide">https://www.gov.uk/government/publications/linked-identifier-schemes-best-practice-guide</a></p>
+</div>
+<div class="paragraph">
+<p>Denne best practice indeholder praktiske anbefalinger i, hvordan identifikatorer skal udformes,
+oprettes og administreres for at gøre det let for brugerne at forstå og kombinere data fra forskellige
+kilder.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Der eksisterer p.t. ikke et tilsvarende dansk dokument.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="uuid">2.2.2. UUID</h4>
+<div class="paragraph bibliographicaldetails">
+<p>Recommendation ITU-T X.667 | ISO/IEC 9834-8, <em>Information technology – Procedures for the operation of object identifier registration authorities: Generation of universally unique identifiers and their use in object identifiers</em>. International Telecommunication Union, 14 oktober 2012. ITU-T X-Series Recommendations: Data networks, open system communications and security. Tilgængelig på: <a href="http://handle.itu.int/11.1002/1000/11746" title="Information technology – Procedures for the operation of object identifier registration authorities: Generation of universally unique identifiers and their use in object identifiers">http://handle.itu.int/11.1002/1000/11746</a></p>
+</div>
+<div class="paragraph">
+<p>Denne ISO standard standardiserer oprettelse af “universally unique identifiers” (UUID’er).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Dokumentet er mest relevant for software der skal oprette UUID’er. Det er dog også relevant i
+konteksten af dette dokument, da det er vigtigt, at have en konsistent præsentation af
+identifikatorer, se <a href="#linked-identifiers-schemes">Linked identifier schemes</a>. Rec. ITU-T X.667 har anbefalinger ang. menneskevenlige
+præsentationer.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="geometrimodel_opbevaring">2.3. Geometrimodel og opbevaring af geodata</h3>
+<div class="paragraph">
+<p>Geografiske data er kendetegnet ved, at der altid indgår geometriske objekter, og at disse har
+relationer til hinanden (topologiske relationer), fx at en bygning ligger op til en vej, eller at to veje
+mødes i et vejkryds beliggende i en kommune. Til at beskrive disse relationer er der brug for
+modeller der beskriver såvel geometriske som topologiske relationer. Disse modeller er
+implementeret i spatiale databaser, dvs. databaser hvori man opbevarer geodata.</p>
+</div>
+<div class="sect3">
+<h4 id="19107">2.3.1. DS/EN ISO 19107 Geometrimodel</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19107:2019, <em>Geografisk information – Geometrimodel</em></p>
+</div>
+<div class="paragraph">
+<p>Denne standard specificerer en model for beskrivelsen af de geografiske dele af geodata.
+Standarden omhandler vektordata og beskriver både geometrityper (punkter, linjer, flader, osv.) og
+topologityper (knuder, forbindelser, osv.). Den definerer også operationer til at teste topologiske
+relationer mellem objekter (“disjoint”, “intersects”, “contains”, osv.) og til at foretage geografiske
+analyser (“distance”, “buffer”, osv.). I teori kan man beskrive vektordata i n dimensioner, i praksis
+sker det i to eller tre rumlige dimensioner.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Standardens typer er modelleret i “Harmonized Model Repository” og kan derfor anvendes direkte
+i UML-modeller. Standarder dækker stort set alle mulige geometriske objekter. Man bør på forhånd at tage stilling
+til, om man kan nøjes med simple features (se <a href="#sfa-ca">Simple feature access - Part 1: Common architecture</a>).
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sfa-ca">2.3.2. Simple feature access - Part 1: Common architecture</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 06-103r4, <em>OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture</em> Version 1.2.1. 28 maj 2011. Tilgængelig på: <a href="http://portal.opengeospatial.org/files/?artifact_id=25355" title="OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture">http://portal.opengeospatial.org/files/?artifact_id=25355</a></p>
+</div>
+<div class="paragraph">
+<p>OGC-standarden <em>OpenGIS Implementation Standard for Geographic
+Information Simple feature access - Part 1: Common architecture</em>
+(SFA-CA) omfatter en geometrimodel, inklusiv attributter, metoder og
+præmisser, for 0-, 1-, og 2-dimensionale geometriske objekter (punkter,
+linjer og flader) der eksisterer i 2-, 3- eller 4-dimensionale
+koordinatrum og der anvender lineær interpolation (for linjer;
+“linear interpolation” på engelsk) eller 2-dimensionel interpolation
+(for flader; “planar interpolation” på engelsk).</p>
+</div>
+<div class="paragraph">
+<p>Det vil sige, at</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>punkter, rette linjer, polygoner med højder (z) og/eller mål (m)
+er omfattet</p>
+</li>
+<li>
+<p>samlinger af ovenstående geometrier, såsom multipunkter, multilinjer
+og multipolygoner, er omfattet</p>
+</li>
+<li>
+<p>kurver med ikke-lineær interpolation såsom cirkelbuer ikke er omfattet</p>
+</li>
+<li>
+<p>3-dimensionale geometriske figurer (figurer med rumfang) såsom kuber
+ikke er omfattet</p>
+</li>
+<li>
+<p>topologityper ikke er omfattet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Standarden er, forenklet sagt, en delmængde af 19107.</p>
+</div>
+<div class="paragraph">
+<p>Standarden definerer repræsentationer i Well-Known Text (WKT) for de
+forskellige geometrityper.</p>
+</div>
+<div class="paragraph">
+<p>Standarden er platformneutral. Implementeringen i relationelle databaser
+vha. SQL er specificeret i <em>OpenGIS Implementation Standard for
+Geographic Information Simple feature access - Part 2: SQL option</em>.</p>
+</div>
+<div class="paragraph">
+<p>Den tidligere version 1.1 af denne standard, <a href="#ogc-05-126">[OGC 05-126]</a>, er en delmængde
+af version 1.2.1. Version 1.1 definerer 0-, 1-, og 2-dimensionale
+geometriske objekter der eksisterer i 2-dimensionale koordinatrum, dvs.
+punkter, rette linjer og polygoner uden koter og uden målinger.</p>
+</div>
+<div class="paragraph">
+<p>Version 1.1 af standarden er også kendt som DS/EN ISO 19125-1:2006,
+<em>Geografisk information – Simpel elementadgang – Del 1: Fælles
+arkitektur</em>.</p>
+</div>
+<div class="paragraph">
+<p>Version 1.1, og dermed også version 1.2.1, indeholder et afsnit
+“Well-known Text Representation of Spatial Reference Systems”, som
+definerer tekstrepræsentationer for koordinatreferencesystemer.
+Specifikationen af WKT for koordinatreferencesystemer er senere blevet
+specificeret yderlige i <a href="#ogc-01-009">[OGC 01-009]</a>, også kendt som WKT 1, og senest i
+<a href="#wkt-crs">DS/ISO 19162</a>, også kendt som WKT 2.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>WKT er bredt understøttet i GIS-applikationer.</p>
+</div>
+<div class="paragraph">
+<p>Et eksempel på en WKT-repræsentation af en 2D-geometri i et
+3D-koordinatrum, hvori den tredje dimension er den vertikale dimension
+(z), er:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
+24.61,722137.52 6178901.05 24.7,722135.5 6178901.91 25.01,722126.66
+6178905.66 24.61,722120.48 6178891.19 24.61,722126.3 6178888.7
+24.28,722178.52 6178866.39 24.61))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Extended Well-Known Text (EWKT) er en tekstrepræsentation der inkluderer
+en identifikator på et koordinatreferencesystem og er specificeret af
+PostGIS, ikke af OGC.</p>
+</div>
+<div class="paragraph">
+<p>Et eksempel på en geometri som er ikke er gyldig er en linje med
+sammenfald af to på hinanden efterfølgende punkter.</p>
+</div>
+<div class="paragraph">
+<p>Nogle algoritmer i geografiske analyser forudsætter, at de anvendte
+geometrier er simple. Derudover vil det ofte være et udtryk for fejl i
+data i forhold til realiteten, hvis en geometri ikke er simpel (fx en
+vej som skærer sig selv). Derfor er det ofte hensigtsmæssigt, at sætte
+krav om, at et datasæts geometrier skal være simple, selvom SFA-CA ikke
+kræver det.</p>
+</div>
+<div class="paragraph">
+<p>Derudover kan en dataansvarlig stille krav om, at bestemte
+topologiregler (regler hvad angår geografiske relationer) skal
+overholdes, fx at objekter af en bestemt type ikke må overlappe
+hinanden.</p>
+</div>
+<div class="paragraph">
+<p>Bemærk, at adjektivet “simple” i standarden anvendes i to begreber:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>simple feature = feature with all geometric attributes described
+piecewise by straight line or planar interpolation between sets of
+points</p>
+</li>
+<li>
+<p>simple geometry = geometry without anomalous geometric points, such as
+self intersection or self tangency</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dvs. simple feature ≠ feature with simple geometry.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sfa-sql">2.3.3. Simple feature access - Part 2: SQL option</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 06-104r4, <em>OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option</em>. Version 1.2.1. 4 august 2010. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=25354" title="OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option">http://portal.opengeospatial.org/files/?artifact_id=25354</a></p>
+</div>
+<div class="paragraph">
+<p>OGC-standarden <em>OpenGIS Implementation Standard for Geographic
+Information Simple feature access - Part 2: SQL option</em> (SFA-SQL) er en
+implementering af SFA-CA for relationelle databaser der understøtter
+Structured Query Language (SQL).</p>
+</div>
+<div class="paragraph">
+<p>Standarden dannede basis for <a href="#sql-mm">ISO/IEC 13249-3 (SQL/MM)</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Den tidligere version 1.1 af denne standard (<a href="#ogc-05-134">[OGC 05-134]</a> og <a href="#ogc-99-049">[OGC 99-049]</a>)
+er en delmængde af version 1.2.1.</p>
+</div>
+<div class="paragraph">
+<p>Der bliver henvist til denne standard med forskellige forkortelser,
+såsom SFA-SQL, SQL/SFS og SF-SQL.</p>
+</div>
+<div class="paragraph">
+<p>Simple features-tilgangen har fået bred accept i databasesystemer, da
+den er væsentligt mindre omfattende end DS/EN ISO 19107. Man skal dog
+være opmærksom på versionerne ved valg af et system.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sql-mm">2.3.4. ISO/IEC 13249-3 Database languages — SQL multimedia and application packages — Part 3: Spatial</h4>
+<div class="paragraph bibliographicaldetails">
+<p>ISO/IEC 13249-3:2016, <em>Information technology — Database languages — SQL multimedia and application packages — Part 3: Spatial</em></p>
+</div>
+<div class="paragraph">
+<p>Denne ISO/IEC standard definerer, hvordan man opbevarer og håndterer
+geodata i SQL-databaser. Standarden anvender en geometrimodel baseret på
+den specificeret i <em>OpenGIS Implementation Standard for Geographic
+Information Simple feature access</em> (<a href="#sfa-ca">del 1</a>, <a href="#sfa-sql">del 2</a>)
+og anvender begreber fra
+<a href="#19107">DS/EN ISO 19107</a> og <a href="#19111">DS/ISO 19111</a>.</p>
+</div>
+<div class="paragraph">
+<p>Standarden definerer tre eksterne dataformater, der kan bruges til at
+repræsentere geometrier på en måde som ikke er afhængig af
+implementering: Geography Markup Language (GML), Well-Known Text (WKT)
+og Well-Known Binary (WKB).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>ISO/IEC 13249 er også kendt som SQL/MM-standarden. Den er implementeret
+i forskellige relationelle databaser.</p>
+</div>
+<div class="paragraph">
+<p>Som regel er WKT og WKB godt understøttet, hvorimod man skal være
+opmærksom på hvilken GML-version der understøttes.</p>
+</div>
+<div class="paragraph">
+<p>For mere information om historikken af og indholdet i SQL/MM-standarden,
+se f.eks. <a href="#stol03">[Stol03]</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="geografisk-reference">2.4. Geografisk reference</h3>
+<div class="paragraph">
+<p>For at beskrive den geografiske placering eller position af et objekt
+kan der enten anvendes koordinater (med tilhørende referencesystem),
+eller der kan der anvendes geografiske identifikatorer. Sidstnævnte kan
+anvendes, hvis der fx findes et stednavn, postnummer, vejnavn eller en
+adresse der præcist angiver, hvad man ønsker at placere geografisk. Er
+der ikke nogle oplagte geografiske identifikatorer, kan man anvende
+koordinater.</p>
+</div>
+<div class="sect3">
+<h4 id="19111">2.4.1. DS/ISO 19111 Spatial orientering via koordinater</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/ISO 19111:2019, <em>Geografisk information - Spatial orientering via koordinater</em></p>
+</div>
+<div class="paragraph">
+<p>Dette dokument definerer den konceptuelle model til beskrivelse af
+henvisning med koordinater. Den beskriver de minimumsdata, der kræves
+for at definere koordinatreferencesystemer.</p>
+</div>
+<div class="paragraph">
+<p>Dette dokument beskriver også det konceptuelle skema til definition af
+den information, der kræves for at beskrive transformationer, der ændrer
+koordinatværdier.</p>
+</div>
+<div class="paragraph">
+<p>Ud over de minimale data, der kræves til definitionen af
+koordinatreferencesystemet eller koordinattransformationen, tillader det
+konceptuelle skema yderligere beskrivende information -
+koordinatreferencesystemmetadata - at blive leveret.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><a href="#19111">DS/ISO 19111</a> (koordinater), <a href="#wkt-crs">DS/ISO 19162</a> (transformationer)
+og <a href="#19161-1">DS/ISO 19161</a> (referencesystemer) udgør
+tilsammen den formelle beskrivelse af det geodætiske grundlag for al
+geodataregistrering.</p>
+</div>
+<div class="paragraph">
+<p>De nævnte standarder implementeres i det frie og åbne værktøj
+<a href="https://proj.org/">PROJ</a>,
+“geodæsiens schweizerkniv”, udviklet i et åbent internationalt
+samarbejde.</p>
+</div>
+<div class="paragraph">
+<p>PROJ er</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>et generisk værktøj til koordinattransformation</p>
+</li>
+<li>
+<p>en fælles database med parametre og definitioner af “geodætiske
+objekter”</p>
+</li>
+<li>
+<p>et kodebibliotek der kan bruges i tredjepartsapplikationer (og der i
+dag anvendes i de fleste GIS-aplikationer)</p>
+</li>
+<li>
+<p>et “sprog”, der beskriver geodætiske transformationer</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>SDFE er aktiv deltager i udviklingen af PROJ, og besætter to poster,
+herunder formandsposten, i PROJ-styregruppen og kan derfor effektivt
+formidle og levere sparring omkring ønsker om yderligere funktionalitet.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19112">2.4.2. DS/EN ISO 19112 Orientering via geografiske identifikatorer</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19112:2019, <em>Geografisk information - Orientering via geografiske identifikatorer</em></p>
+</div>
+<div class="paragraph">
+<p>Dette dokument definerer den konceptuelle model for stedbestemte
+referencer baseret på geografiske identifikatorer. Det opretter en
+generel model til rumlig henvisning ved hjælp af geografiske
+identifikatorer og definerer komponenterne i et rumligt referencesystem.
+Det specificerer også en konceptuel model for et stednavneregister.</p>
+</div>
+<div class="paragraph">
+<p>Geografisk orientering via koordinater behandles i <a href="#19111">DS/ISO 19111</a>.
+Imidlertid er en mekanisme til registrering af komplementære
+koordinatreferencer inkluderet i dette dokument.</p>
+</div>
+<div class="paragraph">
+<p>Dette dokument gør det muligt for producenter af data at definere
+stedbestemte referencesystemer ved hjælp af geografiske identifikatorer
+og hjælper brugerne med at forstå de stedbestemte referencer, der bruges
+i datasæt. Det giver mulighed for at konstruere et stednavneregister på en
+konsistent måde og understøtter udviklingen af andre standarder inden
+for geografisk information.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19161-1">2.4.3. DS/EN ISO 19161-1 Geodætiske referencer - Del 1: ITRS</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19161-1:2020, <em>Geografisk information - Geodætiske referencer - Del 1: ITRS (international terrestrial reference system)</em></p>
+</div>
+<div class="paragraph">
+<p>Denne standard definerer International Terrestrial Reference System
+(ITRS), og beskriver hvordan ITRS gøres praktisk anvendeligt og
+tilgængeligt (“realisering”).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Realisering af ITRS sker bl.a. i form af de nationale realiseringer af
+ETRS89, det europæiske terrestriske referencesystem, som er grundlag for
+al moderne geodataregistrering på det europæiske kontinent.</p>
+</div>
+<div class="paragraph">
+<p>ETRS89-registrering sikrer bl.a. interoperabilitet af datasæt på tværs
+af landegrænser, og er et krav for at være i overensstemmelse med
+INSPIRE-principperne.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="wkt-crs">2.4.4. Well-known text representation of coordinate reference systems</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 18-010r7, <em>Geographic information - Well-known text representation
+of coordinate reference systems</em>. Version 2.0.6. 13 august 2019.
+Tilgængelig på:
+<a href="http://docs.opengeospatial.org/is/18-010r7/18-010r7.html" title="Geographic information - Well-known text representation of coordinate reference systems">http://docs.opengeospatial.org/is/18-010r7/18-010r7.html</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard definerer strukturen og indholdet af
+tekstrepræsentationer (Well-Known Text (WKT)) for
+koordinatreferencesystemer og koordinattransformationer mellem
+koordinatreferencesystemer.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Standarden er også kendt som DS/ISO 19162:2019, <em>Geografisk information
+- Læsbar tekststreng til angivelse af koordinatreferencesystemer</em>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sdfe-crs">2.4.5. Vejledning i brug af koordinatreferencesystemer</h4>
+<div class="paragraph bibliographicaldetails">
+<p>SDFE, <em>Vejledning i brug af koordinatreferencesystemer</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Igangværende arbejde
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tid-historik">2.5. Tid og historik</h3>
+<div class="paragraph">
+<p>Historik er den tidsmæssige repræsentation af noget. To vigtige
+tidsdimensioner er virkningstid (tid hvor et faktum er sandt i den
+modellerede virkelighed) og registreringstid (tid hvor et faktum er
+gældende i en database og kan findes).</p>
+</div>
+<div class="paragraph">
+<p>Ved at inkludere virkningstid i en model, kan man svare på de følgende
+spørgsmål:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hvad er gældende (lige nu)?</p>
+</li>
+<li>
+<p>Hvad var gældende på et givet tidspunkt i fortiden?</p>
+</li>
+<li>
+<p>Hvad vil være gældende på et givet tidspunkt i fremtiden?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ved at inkludere registreringstid i en model, kan man svare på de
+følgende spørgsmål:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hvad ved man rent faktisk (lige nu)?</p>
+</li>
+<li>
+<p>Hvad vidste/troede man på et givet tidspunkt i fortiden?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ved at inkludere både virkningstid og registreringstid i en model, kan
+man svare på spørgsmål som:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hvad ved man som værende gældende (lige nu)?</p>
+</li>
+<li>
+<p>Hvad var gældende og troede man på et givet tidspunkt i fortiden?</p>
+</li>
+<li>
+<p>Hvad vil være gældende på et givet tidspunkt i fremtiden (i forhold
+til nu)?</p>
+</li>
+<li>
+<p>På et givet tidspunkt i fortiden, hvad troede man ville være gældende
+lige nu?</p>
+</li>
+<li>
+<p>På et givet tidspunkt i fortiden, hvad troede man var gældende på et
+andet tidspunkt i fortiden?</p>
+</li>
+<li>
+<p>På et givet tidspunkt i fortiden, hvad troede man ville være gældende
+på et tidspunkt i fremtiden?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Når man har både virkningstid og registeringstid med, taler man i
+datalogi om bitemporalitet, også kendt som dobbelthistorik.</p>
+</div>
+<div class="sect3">
+<h4 id="temporal-databases">2.5.1. Temporal Databases: Research and Practice</h4>
+<div class="paragraph bibliographicaldetails">
+<p>JENSEN, Christian S. og DYRESON, Curtis E. The Consensus Glossary of
+Temporal Database Concepts—February 1998 Version. I: <em>Temporal
+Databases: Research and Practice</em>. Springer Berlin Heidelberg, 1998. p. 
+367–405. Lecture Notes in Computer Science.
+doi:<a href="https://doi.org/10.1007/BFb0053710" title="The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)">10.1007/BFb0053710</a>.
+Tilgængelig på: <a href="https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf" title="The Consensus Glossary of Temporal Database Concepts—February 1998 Version">https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf</a></p>
+</div>
+<div class="paragraph">
+<p>Denne artikel indeholder termer og definitioner for begreber som
+anvendes i temporale databaser, såsom “temporal”, “lifespan”, “valid
+time”, osv. En forklaring for hvorfor en bestemt term, og ikke en anden
+term, er valgt, er også til stede. Som titlen indikerer, er der tale om
+resultatet af en proces for at opnå en højere grad af enhed ang.
+navngivning og definitioner af begreber inden for dette domæne.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Grunddataprogrammets begreber “virkningstid” og “registreringstid”
+svarer til artiklens begreber “Valid time”, henholdsvis “transaction
+time”.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="9075-2">2.5.2. ISO/IEC 9075-2, Database languages — SQL — Part 2: Foundation (SQL/Foundation)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>ISO/IEC 9075-2, <em>Information technology — Database languages — SQL —
+Part 2: Foundation (SQL/Foundation)</em></p>
+</div>
+<div class="paragraph">
+<p>ISO-standarden for Structured Query Language (SQL) er delt op i flere
+dele. Del 2 definerer datastrukturer og grundlæggende operationer på
+SQL-data.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+I SQL-standarden anvendes termen “application time” som synonym for
+“valid time”, og “system time” som synonym for “transaction time”.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19075-2">2.5.3. ISO/IEC TR 19075-2, Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information</h4>
+<div class="paragraph bibliographicaldetails">
+<p>ISO/IEC JTC 1/SC 32. ISO/IEC TR 19075-2:2015, <em>Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information</em>. Technical Report. International Organization for Standardization, 1 juli 2015. Tilgængelig på:
+<a href="https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip" title="Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information">https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip</a></p>
+</div>
+<div class="paragraph">
+<p>Ved siden af selve SQL-standarden har komitéen udgivet nogle tekniske
+rapporter, som er gratis tilgængelige. Denne rapport beskriver
+understøttelse for tidsrelaterede informationer.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Rapporten er i skrivende stund under revidering.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="bitemporalitet-poc">2.5.4. Bitemporalitet, proof of concept</h4>
+<div class="paragraph bibliographicaldetails">
+<p>GEODATASTYRELSEN og KL. <em>Bitemporalitet. Proof of concept</em>. 19 september 2014. [Set 11 februar 2020]. Tilgængelig på:
+<a href="http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf" title="Bitemporalitet. Proof of concept">http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf</a></p>
+</div>
+<div class="paragraph">
+<p>Rapporten beskriver en række problemstillinger omkring historik og
+bitemporalitet, som er relevante i forhold til at distribuere data med
+høj aktualitet og med en datahistorik der giver sporbarhed i de
+foretagne registreringer. Dokumentet anvender en konstrueret matrikulær
+udstykning som showcase til at forklare egenskaber og konsekvenser ved
+modellering af bitemporale egenskaber.</p>
+</div>
+<div class="paragraph">
+<p>Dokumentet blev skrevet for at skabe mere tydelighed om
+reglen om dobbelthistorikunderstøttelse fra Grunddata-modelreglerne
+<a href="#gd-modelregler">[Grunddata-modelregler]</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sdfe-regler-historik">2.5.5. Regelsæt for historik i data</h4>
+<div class="paragraph bibliographicaldetails">
+<p>SDFE, <em>Regelsæt for historik i data</em> [igangværende arbejde]</p>
+</div>
+<div class="paragraph">
+<p>Dokumentet beskrives tre sæt af historikmodeller, som understøtter
+forskellig funktionalitet vedrørende forvaltede objekters livscyklus og
+de udtræk, der gør historikken brugbar.</p>
+</div>
+<div class="paragraph">
+<p>Dokumentet indeholder beskrivelse af et begrebsapparat, der kommunikerer
+en relativt kompleks, men også en konsistent og implementérbar model, der
+kan danne baggrund for håndtering af historik i data, der udstiller
+offentligt forvaltede objekter.</p>
+</div>
+<div class="paragraph">
+<p>Til sidst er der en beskrivelse af, hvordan historikken anvendes i
+forbindelse med andre attributter, såsom status, med det formål at
+styrke den forretningsmæssige brug af data.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+SDFE har p.t. et eksisterende regelsæt, som skal revideres.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="snodgrass">2.5.6. Developing time-oriented database applications in SQL</h4>
+<div class="paragraph bibliographicaldetails">
+<p>SNODGRASS, Richard T. <em>Developing time-oriented database applications in
+SQL</em>. San Francisco, California : Morgan Kaufmann Publishers, juli 1999.
+ISBN 1-55860-436-7. Tilgængelig på:
+<a href="https://www2.cs.arizona.edu/~rts/tdbbook.pdf" title="Developing time-oriented database applications in SQL">https://www2.cs.arizona.edu/~rts/tdbbook.pdf</a></p>
+</div>
+<div class="paragraph">
+<p>Bogen er den mest omfattende behandling af håndtering af tid i
+relationelle databaser der findes og var den vigtigste kilde for
+ovenstående rapport.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fowler-temporal-patterns">2.5.7. Further Patterns of Enterprise Application Architecture</h4>
+<div class="paragraph bibliographicaldetails">
+<p>FOWLER, Martin. Temporal Patterns. <em>Further Patterns of Enterprise
+Application Architecture</em>. 16 februar 2005. [Set 11 februar 2020].
+Tilgængelig på:
+<a href="https://martinfowler.com/eaaDev/timeNarrative.html" title="Temporal Patterns">https://martinfowler.com/eaaDev/timeNarrative.html</a></p>
+</div>
+<div class="paragraph">
+<p>Indlægget beskriver problematikken ang. tidsdimensioner og præsenterer
+forskellige designmønstre (“design patterns”) for at håndtere
+forskellige grader af tidsunderstøttelse i software. Derudover henviser
+indlægget til forskelligt anden relevant litteratur.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="metadata">2.6. Metadata</h3>
+<div class="paragraph">
+<p>For at kunne understøtte anvendelsen af stedbestemt information i
+forhold til lovgivning er det nødvendigt med oplysninger om, hvordan man
+har indsamlet data, hvad et datasæt kan i udgangspunkt kan anvendes til,
+hvem der har ansvaret for datasættet, og hvad kvaliteten af det er. Det
+hedder under ét metadata og er en slags varedeklaration. Metadata kan
+bruges til at kunne fremfinde såvel gældende som historisk stedbestemt
+information.</p>
+</div>
+<div class="paragraph">
+<p>Metadata består her af såvel en varedeklaration af data som en
+beskrivelse af kvaliteten af data.</p>
+</div>
+<div class="paragraph">
+<p>INSPIRE-loven fastsætter krav om, at der oprettes en national
+metadataportal med de data som er omfattet af loven. Forskellige
+datadomæner (fx domæner omhandlende geodata, statistiske data, åbne
+data, arkivdata, …) har forskellige direktiver, forordninger, standarder
+og best practices. Det har resulteret i forskellige, sameksisterende
+dataportaler, både i Danmark og i Europa. Som dataleverandør bør det
+være sådan, at man kun behøver at publicere sine metadata én enkelt
+gang, derfra kan metadata høstes til evt. andre portaler. På kort sigt
+kan problemstillingen løses ved at oversætte en standard til en anden,
+med uundgåelig tab af nogle metadataelementer. På lang sigt er
+løsningen, at de internationale standardiseringsorganer harmoniserer
+metadatastandarderne.</p>
+</div>
+<div class="sect3">
+<h4 id="19115">2.6.1. DS/EN ISO 19115 Metadata</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19115:2005, <em>Geografisk information – Metadata</em></p>
+</div>
+<div class="paragraph">
+<p>Denne standard beskriver geografiske metadata på en struktureret måde.
+Standarden definerer de elementer som en beskrivelse består af, den
+indeholder en model, der beskriver elementernes indbyrdes relationer, og
+endelig indeholder standarden en beskrivelse af, hvordan man kan udvide
+med flere elementer, hvis der ikke allerede findes de rigtige i
+standarden.</p>
+</div>
+<div class="paragraph">
+<p>Denne standard ligger til grund for de metadata der skal leveres i
+henhold til INSPIRE-loven.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://geodata-info.dk">Geodata-info.dk</a>
+udstiller metadata i henhold til denne standard og understøtter dermed
+også INSPIRE-loven. Det samme gør sig gældende for INSPIREs egen
+<a href="https://inspire-geoportal.ec.europa.eu/">metadataportal</a>.</p>
+</div>
+<div class="paragraph">
+<p>Der findes XML-schemaer til denne standard, se <a href="#19139">DS/ISO/TS 19139</a>.</p>
+</div>
+<div class="paragraph">
+<p>Standarden er formelt trukket tilbage af Dansk Standard og de to
+standardiseringsorganer CEN og ISO. Standarden er erstattet af
+<a href="#19115-1">DS/EN ISO 19115-1:2014</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19115-1">2.6.2. DS/EN ISO 19115-1 Metadata - Part 1: Fundamentals</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19115-1:2014, <em>Geografisk information - Metadata - Part 1: Fundamentals</em></p>
+</div>
+<div class="paragraph">
+<p>Denne standard beskriver geografiske metadatadata på en struktureret
+måde. Standarden definerer de elementer som en beskrivelse består af,
+den indeholder en model, der beskriver elementernes indbyrdes
+relationer, og endelig indeholder standarden en beskrivelse af, hvordan
+man kan udvide med flere elementer, hvis der ikke allerede findes de
+rigtige i standarden.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I forhold til <a href="#19115">DS/EN ISO 19115:2005</a> er de største ændringer sket i
+forhold til datakvalitet, som er trukket helt ud. Nu peger alt hvad der
+har med datakvalitet at gøre på <a href="#19157">DS/EN ISO 19157:2014</a>
+og DS/ISO/TS 19158:2013, <em>Geografisk information - Kvalitetssikring af datatilførsel</em>.
+Endelig indeholder denne version af standarden resultatet af
+ca. 10 år erfaring indsamlet fra en lang række af implementeringer.</p>
+</div>
+<div class="paragraph">
+<p>Der findes <a href="https://schemas.isotc211.org/schemas/19115/">XML-skemaer til denne standard</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19115-2">2.6.3. DS/EN ISO 19115-2 Metadata - Del 2: Udvidelse til indsamling og behandling</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19115-2:2019, <em>Geografisk information - Metadata - Del 2:
+Udvidelse til indsamling og behandling</em></p>
+</div>
+<div class="paragraph">
+<p>Denne standard udvider <a href="#19115-1">DS/EN ISO 19115-1</a> med de XML-skemaer, der kræves til
+forbedret beskrivelse af indsamling og behandling af geografisk
+information, herunder billeder. Inkluderet er målesystemernes egenskaber
+og deres numeriske metoder og beregningsmetoder, der bruges til at
+udlede geografisk information fra data. Dette dokument inkluderer
+ligeledes en XML-indkodning til indsamling og behandling af metadata.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Der findes <a href="https://schemas.isotc211.org/schemas/19115/">XML-skemaer til denne standard</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19119">2.6.4. DS/EN ISO 19119 Tjenesteydelser</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19119:2006, <em>Geografisk information – Tjenesteydelser</em></p>
+</div>
+<div class="paragraph">
+<p>Denne internationale standard definerer krav til, hvordan
+en platformneutral og platformspecifik specifikation af webtjenester skal
+oprettes, for at muliggøre, at en tjeneste kan specificeres uafhængigt
+af en eller flere underliggende distribuerede computerplatforme.</p>
+</div>
+<div class="paragraph">
+<p>Denne internationale standard definerer ligeledes, hvordan geografiske
+tjenester skal kategoriseres i henhold til en servicetaxonomi baseret på
+IT-arkitekturen og tillader også, at tjenester kan kategoriseres i
+henhold til et brugslivscyklusperspektiv, samt i henhold til
+domænespecifikke og brugerdefinerede servicetaxonomier, for at lette
+supporten ved offentliggørelse og opdagelse af tjenester.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Der findes <a href="https://schemas.isotc211.org/schemas/19119/">XML-skemaer til denne standard</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19139">2.6.5. DS/ISO/TS 19139 Metadata - Implementering af XML-skema</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/ISO/TS 19139:2007, <em>Geografisk information - Metadata - Implementering af XML-skema</em></p>
+</div>
+<div class="paragraph">
+<p>Dette dokument definerer Geographic MetaData XML (gmd) indkodning, en XML
+Schema implementering af <a href="#19115">DS/EN ISO 19115:2005</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Der findes <a href="https://schemas.isotc211.org/schemas/19139/">XML-skemaer til denne standard</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="19157">2.6.6. DS/EN ISO 19157 Datakvalitet</h4>
+<div class="paragraph bibliographicaldetails">
+<p>DS/EN ISO 19157:2014, <em>Geografisk information - Datakvalitet</em></p>
+</div>
+<div class="paragraph">
+<p>ISO 19157 fastlægger principperne for beskrivelse af kvaliteten af
+geografiske data. Den</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>definerer elementer til beskrivelse af datakvaliteten</p>
+</li>
+<li>
+<p>specificerer komponenter og strukturen af et register for kvalitetsmål</p>
+</li>
+<li>
+<p>beskriver generelle procedurer for vurdering af kvaliteten af
+geografiske data</p>
+</li>
+<li>
+<p>beskriver principper for afrapportering af datakvalitet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Standarden definerer også et sæt data kvalitetsmål til brug ved
+evaluering og rapportering af datakvalitet. Den gælder for
+dataproducenter, der leverer kvalitetsoplysninger til at beskrive og
+vurdere, hvor godt et datasæt er i overensstemmelse med
+produktspecifikationen og til databrugere, der forsøger at bestemme, om
+specifikke geografiske data er af tilstrækkelig kvalitet til deres
+specifikke anvendelse.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Denne standard fastlægger ikke nogle minimumskrav til datakvalitet for
+geografiske data.</p>
+</div>
+<div class="paragraph">
+<p>Der findes <a href="https://schemas.isotc211.org/schemas/19157/">XML-skemaer til denne standard</a>.</p>
+</div>
+<div class="paragraph">
+<p>Denne standard er i proces med at blive opdateret. Det forventes at der
+foreligger en opdateret version af standarden i anden halvdel af 2022.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tg-metadata">2.6.7. Technical Guidance for the implementation of INSPIRE dataset and service metadata</h4>
+<div class="paragraph bibliographicaldetails">
+<p><em>Technical Guidance for the implementation of INSPIRE dataset and
+service metadata based on ISO/TS 19139:2007</em>. Version 2.0.1. 2 marts
+2017. Tilgængelig på: <a href="http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1" title="Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007">http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1</a></p>
+</div>
+<div class="paragraph">
+<p>Retningslinjer baseret på <a href="#19115">DS/EN ISO 19115</a> og <a href="#19119">DS/EN ISO 19119</a>
+for at leve op til
+<a href="https://eur-lex.europa.eu/eli/reg/2008/1205/2008-12-24">INSPIRE-gennemførelsesbestemmelsen om metadata</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="dcat">2.6.8. Data Catalog Vocabulary (DCAT)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>ALBERTONI, Riccardo, BROWNING, David, COX, Simon, GONZALEZ BELTRAN,
+Alejandra, PEREGO, Andrea og WINSTANLEY, Peter, red. <em>Data Catalog
+Vocabulary (DCAT) - Version 2</em>. W3C Recommendation. World Wide Web
+Consortium, 4 februar 2020. [Set 28 februar 2020]. Tilgængelig på:
+<a href="https://www.w3.org/TR/vocab-dcat-2/" title="Data Catalog Vocabulary (DCAT) - Version 2">https://www.w3.org/TR/vocab-dcat-2/</a></p>
+</div>
+<div class="paragraph">
+<p>DCAT gør det muligt for en udgiver at beskrive datasæt og datatjenester
+i et katalog ved hjælp af en standardmodel og vokabularium, der letter
+forbrug og sammenlægning af metadata fra flere kataloger. Dette kan øge
+synligheden af datasæt og datatjenester. Det gør det også muligt at have
+en decentral tilgang til offentliggørelse af data kataloger og gør
+samlende søgning efter datasæt på tværs af kataloger i flere brancher
+bruger den samme forespørgsel mekanisme og struktur. Aggregerede DCAT
+metadata kan tjene som en manifestfil som en del af en digital bevaringsproces.</p>
+</div>
+<div class="paragraph">
+<p>DCAT er et RDF-vokabularium (<strong>R</strong>esource <strong>D</strong>escription <strong>F</strong>ramework)
+designet til at lette interoperabilitet mellem datakataloger
+offentliggjort på Internettet. Dette dokument definerer et skema og giver
+eksempler til anvendelser.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>DCAT-AP-DK, en delmængde af DCAT-AP, som igen er en delmængde af DCAT,
+benyttes til det <a href="https://datasets.catalogue.data.gov.dk/">fælles offentlige datasætkatalog</a>
+, der giver overblik
+over hvilke offentlige datasæt, der findes, hvor de findes, og om de er
+tilgængelige.</p>
+</div>
+<div class="paragraph">
+<p>Datasætkataloget indeholder alene metadata, dvs. en beskrivelse af
+datasættet, og indeholder ikke rådata.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="geodcat-ap">2.6.9. GeoDCAT-AP</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 18-001r1, <em>GeoDCAT-AP</em>. OGC Discussion Paper. 9 januar 2019.
+Tilgængelig på:
+<a href="https://portal.opengeospatial.org/files/?artifact_id=82475" title="GeoDCAT-AP">https://portal.opengeospatial.org/files/?artifact_id=82475</a></p>
+</div>
+<div class="paragraph">
+<p>GeoDCAT er et initiativ med potentiale til integrere DCAT-metadata, som
+de bruges i det åbne data- og e-government med
+<a href="#19115">DS/EN ISO 19115</a>, <a href="#19157">DS/EN ISO 19157</a> og <a href="#19119">DS/EN ISO 19119</a>
+standarderne og INSPIRE metadata, som de bruges indenfor det geografiske
+domæne. GeoDCAT har - fordi det er baseret på RDF (<strong>R</strong>esource
+<strong>D</strong>escription <strong>F</strong>ramework) - muligheden for at offentliggøre
+metadata direkte på nettet uden åbne og geografiske dataportaler.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+INSPIRE har udviklet en
+<a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/geodcat-application-profile-data-portals-europe">udvidelse til DCAT til håndtering af geografiske metadata</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="indkodninger">2.7. Udveksling af geodata - indkodninger</h3>
+<div class="paragraph">
+<p>Når data skal udveksles mellem digitale systemer, skal de ændres til en
+form (format), der kan forstås af to eller flere systemer. Et sæt regler
+for hvordan man konverterer data, så det følger et bestemt format,
+kalder man en indkodning. Der eksisterer forskellige indkodninger for
+geodata. Ofte følger der med en datastruktur også et skema med, dvs. en
+formel beskrivelse af planen for datastrukturen.</p>
+</div>
+<div class="paragraph">
+<p>Nedenunder beskrives de vigtigste åbne specifikationer for indkodning af
+vektordata.</p>
+</div>
+<div class="sect3">
+<h4 id="gml-32">2.7.1. Geography Markup Language (GML) Encoding Standard</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 07-036r1, <em>OpenGIS® Geography Markup Language (GML) Encoding
+Standard</em>. Version 3.2.2. 5 december 2016. Tilgængelig på:
+<a href="https://portal.opengeospatial.org/files/?artifact_id=74183&amp;version=2" title="OpenGIS® Geography Markup Language (GML) Encoding Standard">https://portal.opengeospatial.org/files/?artifact_id=74183&amp;version=2</a></p>
+</div>
+<div class="paragraph">
+<p>Denne standard specificerer en indkodning i Extensible Markup Language
+(XML) for bl.a. hovedparten af begreberne defineret i
+<a href="#19103">DS/ISO 19103</a>, <a href="#19107">DS/EN ISO 19107</a> og <a href="#19111">DS/ISO 19111</a>.</p>
+</div>
+<div class="paragraph">
+<p>GML-data beskrives af et GML-applikationsskema, et XML-skema som
+anvender elementer fra skemaerne defineret af GML-standarden.</p>
+</div>
+<div class="paragraph">
+<p>Standarden indeholder et sæt regler, der definerer, hvordan man på
+systematisk vis kan omsætte en logisk datamodel der er i
+overensstemmelse med <a href="#19103">DS/ISO 19103</a> til et GML-applikationsskema.</p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard er også kendt som ISO 19136-1:2020, <em>Geographic
+information — Geography Markup Language (GML) — Part 1: Fundamentals</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Skemaerne for GML 3.2 ligger på
+<a href="http://schemas.opengis.net/gml/3.2.1/" title="skemaerne for GML 3.2">http://schemas.opengis.net/gml/3.2.1/</a>
+(det er en fejl fra OGC’s side, at den sidste undermappe hedder 3.2.1,
+det burde have været 3.2).</p>
+</div>
+<div class="paragraph">
+<p>Da der er tale om XML-data, kan man anvende alle sprog der hører til
+XML-familien, såsom Extensible Stylesheet Language Transformations
+(XSLT) og Schematron, og alle værktøjer, der kan håndtere disse sprog.</p>
+</div>
+<div class="paragraph">
+<p>Det vil også sige, at GML bør bruges, når data skal valideres, da både
+XML Schema og Schematron er konstrueret til det formål.</p>
+</div>
+<div class="paragraph">
+<p>Standarden er moden, der forventes ikke nye versioner udover eventuelle
+fejlrettelser.</p>
+</div>
+<div class="paragraph">
+<p>Der findes software, der har implementeret reglerne der kan omsætte en
+logisk datamodel der er i overensstemmelse med <a href="#19103">DS/ISO 19103</a>
+til et GML-applikationsskema.</p>
+</div>
+<div class="paragraph">
+<p>GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
+udveksling af et udvalg af features fra et datasæt via en webtjeneste.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="gml-33">2.7.2. Geography Markup Language (GML) — Extended schemas and encoding rules</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 10-129r1, <em>OGC® Geography Markup Language (GML) — Extended schemas
+and encoding rules</em>. Version 3.3.0. 7 februar 2012. Tilgængelig på:
+<a href="https://portal.opengeospatial.org/files/?artifact_id=46568" title="OGC® Geography Markup Language (GML) — Extended schemas and encoding rules">https://portal.opengeospatial.org/files/?artifact_id=46568</a></p>
+</div>
+<div class="paragraph">
+<p>GML 3.3-standarden er en udvidelse af <a href="#gml-32">GML 3.2-standarden</a>, ikke en
+erstatning for GML 3.2-standarden.</p>
+</div>
+<div class="paragraph">
+<p>Standarden indeholder bl.a. en indkodning for elementerne defineret i
+DS/EN ISO 19148, <em>Geografisk information — Lineær reference-system</em> og
+kompakte indkodninger af almen anvendte GML-geometrier såsom flader.</p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard er også kendt som ISO 19136-2:2015, <em>Geographic
+information — Geography Markup Language (GML) — Part 2: Extended schemas
+and encoding rules</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Skemaerne for GML 3.3 ligger på
+<a href="http://schemas.opengis.net/gml/3.3/" title="skemaerne for GML 3.3">http://schemas.opengis.net/gml/3.3/</a>.</p>
+</div>
+<div class="paragraph">
+<p>Standarden er moden, der forventes ikke nye versioner udover eventuelle
+fejlrettelser.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="gml-sf">2.7.3. Geography Markup Language (GML) simple features profile</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 10-100r3, <em>Geography Markup Language (GML) simple features profile
+(with Corrigendum)</em>. Version 2.0. 5 april 2012. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=42729" title="Geography Markup Language (GML) simple features profile (with Corrigendum)">http://portal.opengeospatial.org/files/?artifact_id=42729</a></p>
+</div>
+<div class="paragraph">
+<p>GML-standarden er en meget omfattende standard, og derfor har OGC
+defineret et begrænset men nyttigt delmængde af den, for at få mere
+software til at understøtte GML. Geography Markup Language simple
+features profile (GML-SF) begrænser udvalget af geometrier i GML til 0-,
+1-, og 2-dimensionelle geometrier beskrevet i 1-, 2-, eller
+3-dimensionale koordinatreferencesystemer og begrænser antallet af måder
+man kan indkode disse geometrier på.</p>
+</div>
+<div class="paragraph">
+<p>GML-SF definerer tre compliance-niveauer, SF-0, SF-1 og SF-2. Niveau
+SF-2 tillader en database der implementerer <a href="#sfa-sql">Simple feature access - Part 2: SQL option</a> at
+repræsentere de data, den måtte indeholde.</p>
+</div>
+<div class="paragraph">
+<p>I modsætning til <a href="#sfa-ca">Simple feature access - Part 1: Common architecture</a> tillader GML-SF også bestemte indkodninger for
+cirkelbuer og cirkler (<code>gml:Arc</code>, <code>gml:Circle</code> og <code>gml:CircleByCenterPoint</code>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="gpkg">2.7.4. GeoPackage Encoding Standard</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 12-128r15, <em>OGC® GeoPackage Encoding Standard - with Corrigendum</em>.
+Version 1.2.1. 6 september 2018. Tilgængelig på:
+<a href="http://www.geopackage.org/spec121/" title="OGC® GeoPackage Encoding Standard - with Corrigendum">http://www.geopackage.org/spec121/</a></p>
+</div>
+<div class="paragraph">
+<p>GeoPackage er baseret på SQLite, et relationelt
+databasehåndteringssystem. Én GeoPackage-fil kan håndtere vektordata,
+rasterdata, og metadata. Da en GeoPackage er en databasecontainer,
+understøtter den direkte brug, fx til analyseformål.</p>
+</div>
+<div class="paragraph">
+<p>GeoPackage er i overensstemmelse med <a href="#sfa-ca">Simple feature access - Part 1: Common architecture</a> og <a href="#sfa-sql">Simple feature access - Part 2: SQL option</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Arbejdsgruppen om GeoPackage er aktiv og der er mange ønsker til
+videreudvikling af den. Derfor kan der forventes at komme flere
+versioner.</p>
+</div>
+<div class="paragraph">
+<p>Læs mere om GeoPackage på OGC’s blog:
+<a href="https://www.ogc.org/blog/3148">#GeoPackageDay 2020 - what is GeoPackage?</a></p>
+</div>
+<div class="paragraph">
+<p>I Nederlandene er GeoPackage-standarden optaget på
+<a href="https://www.forumstandaardisatie.nl/open-standaarden/verplicht">følg-eller-forklar
+listen</a> af “Dutch Standardisation Forum”. Anvendelsesområdet for
+GeoPackage er ifølge motiveringen for optagelse af listen følgende:
+“GeoPackage skal anvendes når det offentlige tilbyder geodata til
+download til tredjepart”.</p>
+</div>
+<div class="paragraph">
+<p>Dutch Standardisation Forum understreger også, at “GeoPackage ikke ses
+som en erstatning, men som et supplement til brugen af GML”.</p>
+</div>
+<div class="paragraph">
+<p>GeoPackage ses at være en erstatning for shapefiler.</p>
+</div>
+<div class="paragraph">
+<p>Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
+man på systematisk vis kan omsætte en logisk datamodel der er i
+overensstemmelse med <a href="#19103">DS/ISO 19103</a> til en GeoPackage template.</p>
+</div>
+<div class="paragraph">
+<p>GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload).</p>
+</div>
+<div class="paragraph">
+<p>GeoPackage bør bruges når man vil distribuere data i andre formater, ved
+siden af GML.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pdf-georegistration">2.7.5. PDF Georegistration Encoding Best Practice</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 18-139r3, <em>PDF Georegistration Encoding Best Practice</em>. OGC Best
+Practice. Version 2.2. 17 januar 2011. Tilgængelig på:
+<a href="https://portal.opengeospatial.org/files/?artifact_id=40537" title="PDF Georegistration Encoding Best Practice">https://portal.opengeospatial.org/files/?artifact_id=40537</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC best practice beskriver hvordan man kan lave PDF-dokumenter
+der er georefererede.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Se følgende dokumenter for mere information angående georefererede
+PDF-dokumenter:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A PDF Tile Model for Geographic Map Data <a href="#zamx19">[ZAMX19]</a></p>
+</li>
+<li>
+<p>Creating Maps for the Non-Mapper <a href="#capu10">[Capu10]</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>JSON og GeoJSON, anvendes typisk til udveksling af et udvalg af features
+fra et datasæt via en webtjeneste, er ikke med i ovenstående oversigt.
+Det skyldes, at måden, hvorpå geodata kan indkodes i JSON ikke er
+standardiseret endnu.</p>
+</div>
+<div class="paragraph">
+<p>JSON <a href="#rfc-8259">[RFC 8259]</a>, GeoJSON <a href="#rfc-7946">[RFC 7946]</a> og <a href="https://json-schema.org/">JSON Schema</a>
+<a href="#json-schema">[JSON Schema]</a> er udviklet
+i regi af Internet Engineering Task Force (IETF):</p>
+</div>
+<div class="paragraph">
+<p>Bemærk, at <a href="#rfc-7946">[RFC 7946]</a> og <a href="#rfc-8259">[RFC 8259]</a> ikke er officielle IETF-standarder
+endnu.</p>
+</div>
+<div class="paragraph">
+<p>OGC er i gang med at udarbejde en
+<a href="https://github.com/opengeospatial/architecture-dwg/tree/master/json-best-practice">JSON
+Best Practice</a>, en OGC Best Practice for hvordan man kan anvende JSON
+som indkodning for OGC-standarden. Indholdet er især baseret på
+<em>Testbed-12 JSON and GeoJSON User Guide</em> <a href="#ogc-16-122r1">[OGC 16-122r1]</a> og
+<em>Testbed-12 Javascript-JSON-JSON-LD Engineering Report</em> <a href="#ogc-16-051">[OGC 16-051]</a>,
+og er inspireret af en del andre OGC-dokumenter om JSON.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tjenester">2.8. Udveksling af geodata - tjenester</h3>
+<div class="paragraph">
+<p>De tre vigtigste typer tjenester for geodata er søgetjenester (så man
+kan søge og finde data, vha. metadata), downloadtjenester (så man kan
+hente data) og visningstjenester (så man kan se data visualiseret).</p>
+</div>
+<div class="paragraph">
+<p>OGC har defineret en suite af standarder som definerer snitfladerne
+mellem klienter og disse tjenester, hvoraf de vigtigste og mest kendte
+er <a href="#wms">Web Map Service (WMS)</a>, <a href="#wmts">Web Map Tile Service (WMTS)</a>
+og <a href="#wfs">Web Feature Service (WFS)</a>. Derudover findes der fx
+<a href="https://www.ogc.org/standards/wcs">Web Coverage Service (WCS)</a> og
+<a href="https://www.ogc.org/standards/sos">Sensor Observation Service
+(SOS)</a>, som ikke er beskrevet yderligere her.</p>
+</div>
+<div class="paragraph">
+<p>OGC er ved at definere en ny, moderniseret, suite af standarder, som
+understøtter de samme brugsscenarier, og som anvender de nuværende best
+practices for at dele data på webbet, se også
+<a href="https://ogcapi.ogc.org/" class="bare">https://ogcapi.ogc.org/</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="wfs">2.8.1. Web Feature Service (WFS)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 09-025r2, <em>OGC® Web Feature Service 2.0 Interface Standard – With
+Corrigendum</em>. Version 2.0.2. 10 juli 2014. Tilgængelig på:
+<a href="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html" title="OGC® Web Feature Service 2.0 Interface Standard – With Corrigendum">http://docs.opengeospatial.org/is/09-025r2/09-025r2.html</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard beskriver snitfladen mellem en klient og en
+downloadtjeneste, Web Feature Service (WFS), som udstiller vektordata på
+objekt- og attributniveau.</p>
+</div>
+<div class="paragraph">
+<p>En WFS-tjeneste skal understøtte kommunikation vha. HTTP og svarer i
+XML.</p>
+</div>
+<div class="paragraph">
+<p>Standarden definerer forskellige typer af WFS-tjenester. For alle typer
+gælder, at de skal kunne returnere vektordata i GML.</p>
+</div>
+<div class="paragraph">
+<p>Version 2.0.0 af denne OGC-standard er også kendt som DS/EN ISO
+19142:2011, <em>Geografisk information — Web Feature Service</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Modsætningen af distribution af vektordata på objekt- og attributniveau
+er distribution af vektordata på datasætniveau, såsom fildownload via
+File Transfer Protocol (FTP)).</p>
+</div>
+<div class="paragraph">
+<p>Det kan lade sig gøre, at bruge WFS til at understøtte download af et
+helt datasæt på en gang (i én forespørgsel), men det frarådes for store
+datasæt.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tg-download">2.8.2. INSPIRE Download Services</h4>
+<div class="paragraph bibliographicaldetails">
+<p><em>Technical Guidance for the implementation of INSPIRE Download
+Services</em>. Version 3.1. 9 august 2013. Tilgængelig på:
+<a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" title="Technical Guidance for the implementation of INSPIRE Download Services">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services</a></p>
+</div>
+<div class="paragraph">
+<p>Denne INSPIRE-vejledning beskriver hvordan man kan leve op til INSPIREs
+krav om downloadtjenester ved hjælp af bl.a. <a href="#wfs">WFS 2.0</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Se også ovenstående forbehold hvad angår store datasæt.</p>
+</div>
+<div class="paragraph">
+<p>Man kan teste om en tjeneste er i overensstemmelse med vejledningen vha.
+<a href="http://inspire.ec.europa.eu/validator/">INSPIRE’s validator</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="wms">2.8.3. Web Map Server (WMS)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 06-042, <em>OpenGIS® Web Map Server Implementation Specification</em>.
+Version 1.3.0. 15 marts 2006. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=14416" title="OpenGIS® Web Map Server Implementation Specification">http://portal.opengeospatial.org/files/?artifact_id=14416</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard beskriver snitfladen mellem en klient og en
+visningstjeneste, Web Map Service (WMS), som udstiller dynamisk
+genererede georefererede billeder (fx i PNG-formatet).</p>
+</div>
+<div class="paragraph">
+<p>Denne standard er også kendt som DS/EN ISO 19128:2008, <em>Geografisk
+information — Web Map Server-grænseflade</em>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sld">2.8.4. Styled Layer Descriptor (SLD)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 05-078r4, <em>Styled Layer Descriptor profile of the Web Map Service
+Implementation Specification</em>. Version 1.1.0. 29 juni 2007. Tilgængelig
+på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=22364" title="Styled Layer Descriptor profile of the Web Map Service Implementation Specification">http://portal.opengeospatial.org/files/?artifact_id=22364</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard, Styled Layer Descriptor (SLD), beskriver hvordan en
+WMS kan udvides så den tillader brugerdefineret styling vha. <a href="#se">Symbology Encoding Implementation Specification</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Sammen med <a href="#se">Symbology Encoding Implementation Specification</a> er denne
+standard efterfølgeren af SLD 1.0.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="se">2.8.5. Symbology Encoding Implementation Specification</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 05-077r4, <em>Symbology Encoding Implementation Specification</em>. Version
+1.1.0. 21 juli 2006. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=16700" title="Symbology Encoding Implementation Specification">http://portal.opengeospatial.org/files/?artifact_id=16700</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard definerer et sprog for præsentation af geodata (styling).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="wmts">2.8.6. Web Map Tile Service (WMTS)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 07-057r7, <em>OpenGIS® Web Map Tile Service Implementation Standard</em>.
+Version 1.0.0. 6 april 2010. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=35326" title="OpenGIS® Web Map Tile Service Implementation Standard">http://portal.opengeospatial.org/files/?artifact_id=35326</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard beskriver snitfladen mellem en klient og en
+visningstjeneste, Web Map Tile Service (WMTS), som udstiller
+forhåndsgenererede georefererede billeder (fx i PNG-formatet).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Fordi billederne er genereret på forhånd, er performance af WMTS-tjenester bedre end af <a href="#wms">WMS-tjenester</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tg-view">2.8.7. INSPIRE View Services</h4>
+<div class="paragraph bibliographicaldetails">
+<p><em>Technical Guidance for the implementation of INSPIRE View Services</em>. Version 3.11. 4 april 2013. Tilgængelig på: <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" title="Technical Guidance for the implementation of INSPIRE View Services">https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1</a></p>
+</div>
+<div class="paragraph">
+<p>Denne INSPIRE-vejledning beskriver, hvordan man kan leve op til INSPIREs
+krav om visningstjenester ved hjælp af <a href="#wms">WMS 1.3.0</a> (den anbefalede måde
+fra INSPIREs side), <a href="#wmts">WMTS 1.0.0</a> og WMS 1.1.1 <a href="#ogc-01-068r3">[OGC 01-068r3]</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Man kan teste om en tjeneste er i overensstemmelse med vejledningen vha.
+<a href="http://inspire.ec.europa.eu/validator/">INSPIRE’s validator</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="csw">2.8.8. Catalogue Services (CSW)</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 07-006r1, <em>OpenGIS® Catalogue Services Specification</em>. Version
+2.0.2. 23 februar 2007. Tilgængelig på:
+<a href="http://portal.opengeospatial.org/files/?artifact_id=20555" title="OpenGIS® Catalogue Services Specification">http://portal.opengeospatial.org/files/?artifact_id=20555</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard definerer snitfladen mellem en klient og en
+søgetjeneste, Catalogue Service for the Web (CSW), som udstiller
+metadata og har operationer så man kan søge på de forskellige felter.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<a href="https://geodata-info.dk/srv/eng/csw?request=GetCapabilities&amp;service=CSW&amp;version=2.0.2">Geodata-info</a>
+er i overensstemmelse med denne standard.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="csw-iso-ap">2.8.9. CSW - ISO Metadata Application Profile</h4>
+<div class="paragraph bibliographicaldetails">
+<p>OGC 07-045r1, <em>OpenGIS® Catalogue Services Specification 2.0.2 - ISO
+Metadata Application Profile: Corrigendum</em>. 9 marts 2018. Tilgængelig
+på:
+<a href="https://portal.opengeospatial.org/files/?artifact_id=77855" title="OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum">https://portal.opengeospatial.org/files/?artifact_id=77855</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard definerer hvordan man anvender <a href="#csw">Catalogue Services (CSW)</a> sammen
+med metadata som specificeret i <a href="#19115">DS/EN ISO 19115</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<a href="https://geodata-info.dk/srv/eng/csw?request=GetCapabilities&amp;service=CSW&amp;version=2.0.2">Geodata-info</a>
+er i overensstemmelse med denne standard.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ogcfeat">2.8.10. OGC API - Features - Part 1: Core</h4>
+<div class="paragraph bibliographicaldetails">
+<p><em>OGC API - Features - Part 1: Core</em>. Version 1.0. 7 oktober 2019.
+Tilgængelig på:
+<a href="http://docs.opengeospatial.org/is/17-069r3/17-069r3.html" title="OGC API - Features - Part 1: Core">http://docs.opengeospatial.org/is/17-069r3/17-069r3.html</a></p>
+</div>
+<div class="paragraph">
+<p>Denne OGC-standard er den første af OGCs nye suite af API-standarder.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+I INSPIRE-regi er man i skrivende stund i gang med at kigge på, hvordan
+man kan leve op til INSPIREs krav om downloadtjenester ved hjælp af
+denne standard.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="referencer">Referencer</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="capu10"></a>[Capu10] CAPUTO, Raymond G. The GeoPDF Project: Creating Maps for the Non-Mapper. <em>Engineer</em>. 1 januar 2010. Tilgængelig på: <a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf" title="The GeoPDF Project: Creating Maps for the Non-Mapper">https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf</a></p>
+</li>
+<li>
+<p><a id="json-schema"></a>[JSON Schema] WRIGHT, A., ANDREWS, H. og HUTTON, B., red. <em>JSON Schema: A Media Type for Describing JSON Documents</em>. IETF Internet-Draft. 17 september 2019. Tilgængelig på: <a href="https://datatracker.ietf.org/doc/draft-handrews-json-schema/" title="JSON Schema: A Media Type for Describing JSON Documents">https://datatracker.ietf.org/doc/draft-handrews-json-schema/</a></p>
+</li>
+<li>
+<p><a id="gd-modelregler"></a>[Grunddata-modelregler] DIGITALISERINGSSTYRELSEN. <em>Modelregler for grunddata</em>. Version 1.1. februar 2015. Tilgængelig på: <a href="https://datafordeler.dk/media/1128/grunddata-modelregler.pdf" title="Modelregler for grunddata">https://datafordeler.dk/media/1128/grunddata-modelregler.pdf</a></p>
+</li>
+<li>
+<p><a id="kron14"></a>[Kron14] KRONBORG MAZZOLI, Ulla. INSPIRE – hvorfor er det en god ide? <em>Geoforum Perspektiv</em>. juni 2014. No. 24–2014, p. 6–19. ISSN 1601-8796. Tilgængelig på: <a href="https://inspire-danmark.dk/media/2916243/inspire_engodide_perspektiv2014.pdf" title="Geoforum Perspektiv">https://inspire-danmark.dk/media/2916243/inspire_engodide_perspektiv2014.pdf</a></p>
+</li>
+<li>
+<p><a id="ogc-01-009"></a>[OGC 01-009] <em>OpenGIS® Implementation Specification: Coordinate Transformation Services</em>. Version 1.0. 12 januar 2001. Tilgængelig på: <a href="http://portal.opengeospatial.org/files/?artifact_id=999" title="OpenGIS® Implementation Specification: Coordinate Transformation Services">http://portal.opengeospatial.org/files/?artifact_id=999</a></p>
+</li>
+<li>
+<p><a id="ogc-01-068r3"></a>[OGC 01-068r3] <em>Web Map Service Implementation Specification</em>. Version 1.1.1. 16 januar 2002. Tilgængelig på <a href="https://portal.ogc.org/files/?artifact_id=1081&amp;version=1&amp;format=pdf" title="Web Map Service Implementation Specification">https://portal.ogc.org/files/?artifact_id=1081&amp;version=1&amp;format=pdf</a></p>
+</li>
+<li>
+<p><a id="ogc-05-126"></a>[OGC 05-126] <em>OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture</em>. Version 1.1. 22 november 2005. Tilgængelig på: <a href="https://portal.ogc.org/files/?artifact_id=13227" title="OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture">https://portal.ogc.org/files/?artifact_id=13227</a>. Også kendt som DS/EN ISO 19125-1:2006, <em>Geografisk information – Simpel elementadgang – Del 1: Fælles arkitektur</em>.</p>
+</li>
+<li>
+<p><a id="ogc-05-134"></a>[OGC 05-134] <em>OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option</em>. Version 1.1. 22 november 2005. Tilgængelig på: <a href="https://portal.ogc.org/files/?artifact_id=13228" title="OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option">https://portal.ogc.org/files/?artifact_id=13228</a></p>
+</li>
+<li>
+<p><a id="ogc-16-051"></a>[OGC 16-051] <em>Testbed-12 Javascript-JSON-JSON-LD Engineering Report</em>. Public Engineering Report. 12 maj 2017. Tilgængelig på <a href="http://docs.opengeospatial.org/per/16-051.html" title="Testbed-12 Javascript-JSON-JSON-LD Engineering Report">http://docs.opengeospatial.org/per/16-051.html</a></p>
+</li>
+<li>
+<p><a id="ogc-16-122r1"></a>[OGC 16-122r1] <em>Testbed-12 JSON and GeoJSON User Guide</em>. OGC User Guide. 21 juni 2017. Tilgængelig på <a href="http://docs.opengeospatial.org/guides/16-122r1.html" title="Testbed-12 JSON and GeoJSON User Guide">http://docs.opengeospatial.org/guides/16-122r1.html</a></p>
+</li>
+<li>
+<p><a id="ogc-99-049"></a>[OGC 99-049] <em>OpenGIS® Simple Features Implementation Specification for SQL</em>. Version 1.1. 5 maj 1999. Tilgængelig på: <a href="https://portal.ogc.org/files/?artifact_id=829" title="OpenGIS® Simple Features Implementation Specification for SQL">https://portal.ogc.org/files/?artifact_id=829</a></p>
+</li>
+<li>
+<p><a id="rfc-7946"></a>[RFC 7946] BUTLER, H., DALY, M., DOYLE, A., GILLIES, S., HAGEN, S. og SCHAUB, T. RFC 7946, <em>The GeoJSON Format</em>. IETF Proposed Standard. august 2016. Tilgængelig på: <a href="https://www.rfc-editor.org/info/rfc7946" title="The GeoJSON Format">https://www.rfc-editor.org/info/rfc7946</a></p>
+</li>
+<li>
+<p><a id="rfc-8259"></a>[RFC 8259] BRAY, T., red. RFC 8259, <em>The JavaScript Object Notation (JSON) Data Interchange Format</em>. IETF Internet Standard. december 2017. Tilgængelig på: <a href="https://www.rfc-editor.org/info/rfc8259" title="The JavaScript Object Notation (JSON) Data Interchange Format">https://www.rfc-editor.org/info/rfc8259</a></p>
+</li>
+<li>
+<p><a id="stol03"></a>[Stol03] STOLZE, Knut. SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System. I: WEIKUM, Gerhard, SCHÖNING, Harald og RAHM, Erhard, red., <em>BTW 2003, Datenbanksysteme für Business, Technologie und Web, Tagungsband der 10. BTW-Konferenz, 26.-28. Februar 2003, Leipzig</em>. GI, 2003. p. 247–264. LNI. Tilgængelig på: <a href="https://dl.gi.de/20.500.12116/30056" title="SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System">https://dl.gi.de/20.500.12116/30056</a></p>
+</li>
+<li>
+<p><a id="vej-2020-9428"></a>[VEJ nr 9428] DIGITALISERINGSSTYRELSEN og STYRELSEN FOR DATAFORSYING OG EFFEKTIVISERING. <em>Vejledning om geografi i lovgivningen</em>. juli 2020. Tilgængelig på: <a href="https://sdfe.dk/media/2920154/20200708_vejledning1.pdf" title="Vejledning om geografi i lovgivningen (PDF">https://sdfe.dk/media/2920154/20200708_vejledning1.pdf</a> og <a href="https://www.retsinformation.dk/eli/retsinfo/2020/9428" title="Vejledning om geografi i lovgivningen (HTML">https://www.retsinformation.dk/eli/retsinfo/2020/9428</a></p>
+</li>
+<li>
+<p><a id="zamx19"></a>[ZAMX19] ZHOU, Xiaodong, AI, Tinghua, MENG, Nina og XIE, Peng. A PDF Tile Model for Geographic Map Data. <em>ISPRS International Journal of Geo-Information</em>. 27 august 2019. Vol. 8, no. 9, p. 373. doi:<a href="https://doi.org/10.3390/ijgi8090373" title="A PDF Tile Model for Geographic Map Data (DOI)">10.3390/ijgi8090373</a>. Tilgængelig på: <a href="https://www.mdpi.com/2220-9964/8/9/373" title="A PDF Tile Model for Geographic Map Data">https://www.mdpi.com/2220-9964/8/9/373</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main></div></body>
+</html>
