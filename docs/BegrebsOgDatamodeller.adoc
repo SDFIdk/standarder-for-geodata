@@ -1,0 +1,105 @@
+[#begrebs-datamodeller]
+=== Begrebs- og datamodeller
+
+Det er et arkitekturprincip i Digitaliseringsstyrelsens <<fda-hvidbog>>, 
+at gode data deles og genbruges. Det
+vil sige, at begreber og data skal beskrives ensartet, så de kan
+genbruges, og der sikres tilstrækkelig kvalitet i data til de væsentlige
+anvendelser af data. Princippet, om at gode data deles og genbruges, er
+gjort mere konkret i form af fire arkitekturregler:
+
+* Del og genbrug data.
+* Anvend fælles regler for dokumentation af data.
+* Giv data den kvalitet som efterspørges (se punkt om metadata).
+* Udstil oplysninger om datakilder, begreber og datamodeller.
+
+Hvis et datasæt er omfattet af INSPIRE-direktivet, skal datasættet gøres
+tilgængeligt for omverden i overensstemmelse med INSPIRE-reglerne, og
+det indebærer, at datasættet (også) skal udstilles på en måde, så det
+følger INSPIREs dataspecifikationer - som bl.a. indeholder datamodeller
+for det relevante tema. Uanset om et datasæt er omfattet af
+INSPIRE-direktivet eller ej, så bør man bruge INSPIREs datamodel for det
+relevante tema som inspiration ved udarbejdelse af nye datamodeller.
+
+[#fda-hvidbog]
+==== Hvidbog om fællesoffentlig digital arkitektur
+
+[.bibliographicaldetails]
+DIGITALISERINGSSTYRELSEN. _Den digitalt sammenhængende offentlige
+sektor. Hvidbog om fællesoffentlig digital arkitektur_. Version 1.0.
+juni 2017. Tilgængelig på:
+https://arkitektur.digst.dk/node/1175[https://arkitektur.digst.dk/node/1175,title=Den digitalt sammenhængende offentlige sektor. Hvidbog om fællesoffentlig digital arkitektur]
+
+Dokumentet beskriver arkitekturprincipper og –regler, som understøtter
+en sammenhængende digitalisering af den offentlige sektor.
+
+[#fda-modelregler]
+==== Fællesoffentlige regler for begrebs- og datamodellering
+
+[.bibliographicaldetails]
+--
+DIGITALISERINGSSTYRELSEN. _Fællesoffentlige regler for begrebs- og
+datamodellering_. Version 2.0.0. 2019. Tilgængelig på: https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering[https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering,title=Fællesoffentlige regler for begrebs- og datamodellering]
+--
+
+Dokumentet sætter regler for begrebsmodeller og datamodeller, så data
+forstås korrekt og passer sammen, når de anvendes på tværs af
+myndighedernes forskellige processer og it-systemer. Modelreglerne skal
+bl.a. sikre, at der anvendes samme modelleringssprog, at begreber og
+data er navngivet entydigt og meningsfuldt, og at begreber og data er
+defineret fyldestgørende.
+
+[NOTE]
+====
+I høj fokus skal være egenskaber som går igen i mange datasæt. Eksempler
+er forskellige typer datoer (forslagsdato, vedtagelsesdato, osv.) og
+status ifm. et objekts livscyklus.
+
+Man skal være opmærksom på, hvordan data administreres, især hvad angår:
+
+* historik: egenskaber som beskriver et objekts levetid i forhold til
+virkningstid og registreringstid stiller store krav til det it-system,
+der skal holde styr på data. Se også punkt 5 om historik.
+* sammenhæng: relationer til andre modeller forudsætter, at man i
+praksis kan og vil anvende de data, som de andre modeller beskriver, se
+også punkt 2 om identifikatorer.
+====
+
+[#fda-modelregler-vejledning]
+==== Vejledning i begrebs- og datamodellering
+
+[.bibliographicaldetails]
+FÆLLESOFFENTLIG DIGITAL ARKITEKTUR, _Vejledning i begrebs- og
+datamodellering_ [igangværende arbejde]
+
+Vejledningen uddyber reglerne beskrevet i <<fda-modelregler>> og beskriver processerne omkring
+modellering.
+
+[#19103]
+==== DS/ISO 19103 Konceptuelt modelleringssprog
+
+[.bibliographicaldetails]
+DS/ISO 19103:2015, _Geografisk information - Konceptuelt
+modelleringssprog_
+
+Denne internationale standard angiver regler og retningslinjer for
+brugen af et konceptuelt modelleringssprog inden for rammerne af
+geografisk information. Det valgte konceptuelle modelleringssprog er UML
+(Unified Modelling Language).
+
+Målet med denne standard er UML-skemaer, der beskriver geografisk
+information.
+
+Derudover beskriver denne standard begreber såsom CharacterString,
+DateTime, osv.
+
+[NOTE]
+====
+Standarden anvendes i INSPIRE og som basis alle modeller der indgår i
+standarder fra ISO 19100-serien.
+
+ISO/TC 211 vedligeholder og opbevarer alle UML-modeller som indgår i de
+forskellige ISO/TC 211 standarder i det https://github.com/ISO-TC211/HMMG[“Harmonized Model Repository”].
+Det gør, at man kan bruge disse typer i sine egne geografiske
+datamodeller.
+====

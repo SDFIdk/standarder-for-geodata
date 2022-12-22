@@ -1,0 +1,236 @@
+[#metadata]
+=== Metadata
+
+For at kunne understøtte anvendelsen af stedbestemt information i
+forhold til lovgivning er det nødvendigt med oplysninger om, hvordan man
+har indsamlet data, hvad et datasæt kan i udgangspunkt kan anvendes til,
+hvem der har ansvaret for datasættet, og hvad kvaliteten af det er. Det
+hedder under ét metadata og er en slags varedeklaration. Metadata kan
+bruges til at kunne fremfinde såvel gældende som historisk stedbestemt
+information.
+
+Metadata består her af såvel en varedeklaration af data som en
+beskrivelse af kvaliteten af data.
+
+INSPIRE-loven fastsætter krav om, at der oprettes en national
+metadataportal med de data som er omfattet af loven. Forskellige
+datadomæner (fx domæner omhandlende geodata, statistiske data, åbne
+data, arkivdata, …) har forskellige direktiver, forordninger, standarder
+og best practices. Det har resulteret i forskellige, sameksisterende
+dataportaler, både i Danmark og i Europa. Som dataleverandør bør det
+være sådan, at man kun behøver at publicere sine metadata én enkelt
+gang, derfra kan metadata høstes til evt. andre portaler. På kort sigt
+kan problemstillingen løses ved at oversætte en standard til en anden,
+med uundgåelig tab af nogle metadataelementer. På lang sigt er
+løsningen, at de internationale standardiseringsorganer harmoniserer
+metadatastandarderne.
+
+[#19115]
+==== DS/EN ISO 19115 Metadata
+
+[.bibliographicaldetails]
+DS/EN ISO 19115:2005, _Geografisk information – Metadata_ 
+
+Denne standard beskriver geografiske metadata på en struktureret måde.
+Standarden definerer de elementer som en beskrivelse består af, den
+indeholder en model, der beskriver elementernes indbyrdes relationer, og
+endelig indeholder standarden en beskrivelse af, hvordan man kan udvide
+med flere elementer, hvis der ikke allerede findes de rigtige i
+standarden.
+
+Denne standard ligger til grund for de metadata der skal leveres i
+henhold til INSPIRE-loven.
+
+https://geodata-info.dk[Geodata-info.dk]
+udstiller metadata i henhold til denne standard og understøtter dermed
+også INSPIRE-loven. Det samme gør sig gældende for INSPIREs egen
+https://inspire-geoportal.ec.europa.eu/[metadataportal].
+
+Der findes XML-schemaer til denne standard, se <<19139,DS/ISO/TS 19139>>.
+
+Standarden er formelt trukket tilbage af Dansk Standard og de to
+standardiseringsorganer CEN og ISO. Standarden er erstattet af 
+<<19115-1,DS/EN ISO 19115-1:2014>>.
+
+[#19115-1]
+==== DS/EN ISO 19115-1 Metadata - Part 1: Fundamentals
+
+[.bibliographicaldetails] 
+DS/EN ISO 19115-1:2014, _Geografisk information - Metadata - Part 1: Fundamentals_
+
+Denne standard beskriver geografiske metadatadata på en struktureret
+måde. Standarden definerer de elementer som en beskrivelse består af,
+den indeholder en model, der beskriver elementernes indbyrdes
+relationer, og endelig indeholder standarden en beskrivelse af, hvordan
+man kan udvide med flere elementer, hvis der ikke allerede findes de
+rigtige i standarden.
+
+[NOTE]
+====
+I forhold til <<19115,DS/EN ISO 19115:2005>> er de største ændringer sket i
+forhold til datakvalitet, som er trukket helt ud. Nu peger alt hvad der
+har med datakvalitet at gøre på <<19157,DS/EN ISO 19157:2014>> 
+og DS/ISO/TS 19158:2013, _Geografisk information - Kvalitetssikring af datatilførsel_. 
+Endelig indeholder denne version af standarden resultatet af
+ca. 10 år erfaring indsamlet fra en lang række af implementeringer.
+
+Der findes https://schemas.isotc211.org/schemas/19115/[XML-skemaer til denne standard]. 
+====
+
+[#19115-2]
+==== DS/EN ISO 19115-2 Metadata - Del 2: Udvidelse til indsamling og behandling 
+
+[.bibliographicaldetails]
+DS/EN ISO 19115-2:2019, _Geografisk information - Metadata - Del 2:
+Udvidelse til indsamling og behandling_ 
+
+Denne standard udvider <<19115-1,DS/EN ISO 19115-1>> med de XML-skemaer, der kræves til
+forbedret beskrivelse af indsamling og behandling af geografisk
+information, herunder billeder. Inkluderet er målesystemernes egenskaber
+og deres numeriske metoder og beregningsmetoder, der bruges til at
+udlede geografisk information fra data. Dette dokument inkluderer
+ligeledes en XML-indkodning til indsamling og behandling af metadata.
+
+[NOTE] 
+====
+Der findes https://schemas.isotc211.org/schemas/19115/[XML-skemaer til denne standard]. 
+====
+
+[#19119]
+==== DS/EN ISO 19119 Tjenesteydelser
+
+[.bibliographicaldetails]
+DS/EN ISO 19119:2006, _Geografisk information – Tjenesteydelser_ 
+
+Denne internationale standard definerer krav til, hvordan
+en platformneutral og platformspecifik specifikation af webtjenester skal
+oprettes, for at muliggøre, at en tjeneste kan specificeres uafhængigt
+af en eller flere underliggende distribuerede computerplatforme.
+
+Denne internationale standard definerer ligeledes, hvordan geografiske
+tjenester skal kategoriseres i henhold til en servicetaxonomi baseret på
+IT-arkitekturen og tillader også, at tjenester kan kategoriseres i
+henhold til et brugslivscyklusperspektiv, samt i henhold til
+domænespecifikke og brugerdefinerede servicetaxonomier, for at lette
+supporten ved offentliggørelse og opdagelse af tjenester. 
+
+[NOTE] 
+==== 
+Der findes https://schemas.isotc211.org/schemas/19119/[XML-skemaer til denne standard].
+====
+
+[#19139]
+==== DS/ISO/TS 19139 Metadata - Implementering af XML-skema
+
+[.bibliographicaldetails]
+DS/ISO/TS 19139:2007, _Geografisk information - Metadata - Implementering af XML-skema_ 
+
+Dette dokument definerer Geographic MetaData XML (gmd) indkodning, en XML
+Schema implementering af <<19115,DS/EN ISO 19115:2005>>.
+
+[NOTE] 
+==== 
+Der findes https://schemas.isotc211.org/schemas/19139/[XML-skemaer til denne standard].
+====
+
+[#19157]
+==== DS/EN ISO 19157 Datakvalitet
+
+[.bibliographicaldetails]
+DS/EN ISO 19157:2014, _Geografisk information - Datakvalitet_
+
+ISO 19157 fastlægger principperne for beskrivelse af kvaliteten af
+geografiske data. Den
+
+* definerer elementer til beskrivelse af datakvaliteten
+* specificerer komponenter og strukturen af et register for kvalitetsmål
+* beskriver generelle procedurer for vurdering af kvaliteten af
+geografiske data
+* beskriver principper for afrapportering af datakvalitet.
+
+Standarden definerer også et sæt data kvalitetsmål til brug ved
+evaluering og rapportering af datakvalitet. Den gælder for
+dataproducenter, der leverer kvalitetsoplysninger til at beskrive og
+vurdere, hvor godt et datasæt er i overensstemmelse med
+produktspecifikationen og til databrugere, der forsøger at bestemme, om
+specifikke geografiske data er af tilstrækkelig kvalitet til deres
+specifikke anvendelse. 
+
+[NOTE] 
+====
+Denne standard fastlægger ikke nogle minimumskrav til datakvalitet for
+geografiske data.
+
+Der findes https://schemas.isotc211.org/schemas/19157/[XML-skemaer til denne standard].
+
+Denne standard er i proces med at blive opdateret. Det forventes at der
+foreligger en opdateret version af standarden i anden halvdel af 2022.
+==== 
+
+[#tg-metadata]
+==== Technical Guidance for the implementation of INSPIRE dataset and service metadata
+
+[.bibliographicaldetails]
+_Technical Guidance for the implementation of INSPIRE dataset and
+service metadata based on ISO/TS 19139:2007_. Version 2.0.1. 2 marts
+2017. Tilgængelig på: http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1[http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1,title=Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007] 
+
+Retningslinjer baseret på <<19115,DS/EN ISO 19115>> og <<19119,DS/EN ISO 19119>> 
+for at leve op til
+https://eur-lex.europa.eu/eli/reg/2008/1205/2008-12-24[INSPIRE-gennemførelsesbestemmelsen om metadata]. 
+
+[#dcat]
+==== Data Catalog Vocabulary (DCAT)
+
+[.bibliographicaldetails]
+ALBERTONI, Riccardo, BROWNING, David, COX, Simon, GONZALEZ BELTRAN,
+Alejandra, PEREGO, Andrea og WINSTANLEY, Peter, red. _Data Catalog
+Vocabulary (DCAT) - Version 2_. W3C Recommendation. World Wide Web
+Consortium, 4 februar 2020. [Set 28 februar 2020]. Tilgængelig på:
+https://www.w3.org/TR/vocab-dcat-2/[https://www.w3.org/TR/vocab-dcat-2/,title=Data Catalog Vocabulary (DCAT) - Version 2] 
+
+DCAT gør det muligt for en udgiver at beskrive datasæt og datatjenester
+i et katalog ved hjælp af en standardmodel og vokabularium, der letter
+forbrug og sammenlægning af metadata fra flere kataloger. Dette kan øge
+synligheden af datasæt og datatjenester. Det gør det også muligt at have
+en decentral tilgang til offentliggørelse af data kataloger og gør
+samlende søgning efter datasæt på tværs af kataloger i flere brancher
+bruger den samme forespørgsel mekanisme og struktur. Aggregerede DCAT
+metadata kan tjene som en manifestfil som en del af en digital bevaringsproces.
+
+DCAT er et RDF-vokabularium (**R**esource **D**escription **F**ramework)
+designet til at lette interoperabilitet mellem datakataloger
+offentliggjort på Internettet. Dette dokument definerer et skema og giver
+eksempler til anvendelser. 
+
+[NOTE] 
+==== 
+DCAT-AP-DK, en delmængde af DCAT-AP, som igen er en delmængde af DCAT,
+benyttes til det https://datasets.catalogue.data.gov.dk/[fælles offentlige datasætkatalog]
+, der giver overblik
+over hvilke offentlige datasæt, der findes, hvor de findes, og om de er
+tilgængelige.
+
+Datasætkataloget indeholder alene metadata, dvs. en beskrivelse af
+datasættet, og indeholder ikke rådata.
+==== 
+
+[#geodcat-ap]
+==== GeoDCAT-AP
+
+[.bibliographicaldetails]
+OGC 18-001r1, _GeoDCAT-AP_. OGC Discussion Paper. 9 januar 2019.
+Tilgængelig på:
+https://portal.opengeospatial.org/files/?artifact_id=82475[https://portal.opengeospatial.org/files/?artifact_id=82475,title=GeoDCAT-AP] 
+
+GeoDCAT er et initiativ med potentiale til integrere DCAT-metadata, som
+de bruges i det åbne data- og e-government med 
+<<19115,DS/EN ISO 19115>>, <<19157,DS/EN ISO 19157>> og <<19119,DS/EN ISO 19119>>
+standarderne og INSPIRE metadata, som de bruges indenfor det geografiske
+domæne. GeoDCAT har - fordi det er baseret på RDF (**R**esource
+**D**escription **F**ramework) - muligheden for at offentliggøre
+metadata direkte på nettet uden åbne og geografiske dataportaler. 
+
+[NOTE] 
+INSPIRE har udviklet en 
+https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/geodcat-application-profile-data-portals-europe[udvidelse til DCAT til håndtering af geografiske metadata].

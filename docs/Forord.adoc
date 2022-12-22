@@ -1,0 +1,59 @@
+Dette dokument indeholder en detaljeret gennemgang af relevante 
+standarder og best practices til brug for indsamling, behandling og 
+distribution af geodata, herunder i forbindelse med opbygning af 
+digitale forvaltningsløsninger. Dette understøtter interoperabilitet 
+mellem data og systemer, så data kan anvendes og genbruges på tværs.
+
+.Målgruppe
+[#maalgruppe]
+--
+Dette dokument er primært målrettet udviklere og arkitekter med ansvar 
+for data og systemer i en forretning, som bygger på stedbestemmelse. 
+Denne målgruppe har brug for praktisk viden om, hvilke standarder og 
+best practices der er nødvendige og anvendelige i forskellige tilfælde, 
+og hvor og hvordan disse standarder og best practices kan tilgås.
+
+Dette dokument er også målrettet dem der har det overordnede ansvar 
+for en forretning, som bygger på stedbestemmelse. Denne målgruppe har 
+brug for at have et overblik over standarder til brug i f.eks. 
+kravspecikationer mv.
+--
+
+.Baggrund
+[#baggrund]
+--
+Version 1.0.0 af dette dokument og bilag 3 til _Vejledning om geografi i 
+lovgivningen_ <<vej-2020-9428>> er indholdsmæssigt identisk, på nær den 
+indledende tekst. Standarderne kan nemlig være relevante at anvende i 
+forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold
+ til registermetoden (beskrevet i _Vejledning om geografi i 
+lovgivningen_).
+--
+
+.Læsevejledning
+[#laesevejledning]
+--
+Dette dokument er opbygget på følgende måde:
+
+. Det første afsnit beskriver de lovgivningsmæssige rammer for indholdet og de to centrale standardiseringsorganisationer i geodatadomænet, som de behandlede dokumenter primært kommer fra.
+. Det andet afsnit er en gennemgang af de relevante dokumenter, delt op i emnekategorier, og følger følgende struktur:
++
+[#eksempel_opbygning]
+====
+[.title]
+Emnekategori
+
+Introducerende tekst til kategorien.
+
+[.title]
+Titel på standard eller best practice
+
+[.bibliographicaldetails]
+Dokumentets bibliografiske detajler.
+
+Beskrivelse af standard/best practice.
+
+NOTE: Supplerende bemærkninger, f.eks. hvor man kan finde XML-skemaer til standarden, eller hvordan dokumentet relaterer sig til andre dokumenter.
+====
+
+--

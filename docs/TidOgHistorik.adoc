@@ -1,0 +1,157 @@
+[#tid-historik]
+=== Tid og historik
+
+Historik er den tidsmæssige repræsentation af noget. To vigtige
+tidsdimensioner er virkningstid (tid hvor et faktum er sandt i den
+modellerede virkelighed) og registreringstid (tid hvor et faktum er
+gældende i en database og kan findes).
+
+Ved at inkludere virkningstid i en model, kan man svare på de følgende
+spørgsmål:
+
+* Hvad er gældende (lige nu)?
+* Hvad var gældende på et givet tidspunkt i fortiden?
+* Hvad vil være gældende på et givet tidspunkt i fremtiden?
+
+Ved at inkludere registreringstid i en model, kan man svare på de
+følgende spørgsmål:
+
+* Hvad ved man rent faktisk (lige nu)?
+* Hvad vidste/troede man på et givet tidspunkt i fortiden?
+
+Ved at inkludere både virkningstid og registreringstid i en model, kan
+man svare på spørgsmål som:
+
+* Hvad ved man som værende gældende (lige nu)?
+* Hvad var gældende og troede man på et givet tidspunkt i fortiden?
+* Hvad vil være gældende på et givet tidspunkt i fremtiden (i forhold
+til nu)?
+* På et givet tidspunkt i fortiden, hvad troede man ville være gældende
+lige nu?
+* På et givet tidspunkt i fortiden, hvad troede man var gældende på et
+andet tidspunkt i fortiden?
+* På et givet tidspunkt i fortiden, hvad troede man ville være gældende
+på et tidspunkt i fremtiden?
+
+Når man har både virkningstid og registeringstid med, taler man i
+datalogi om bitemporalitet, også kendt som dobbelthistorik.
+
+[#temporal-databases]
+==== Temporal Databases: Research and Practice
+
+[.bibliographicaldetails]
+
+JENSEN, Christian S. og DYRESON, Curtis E. The Consensus Glossary of 
+Temporal Database Concepts—February 1998 Version. I: _Temporal 
+Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
+367–405. Lecture Notes in Computer Science. 
+doi:link:https://doi.org/10.1007/BFb0053710[10.1007/BFb0053710,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)]. 
+Tilgængelig på: https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version]
+
+Denne artikel indeholder termer og definitioner for begreber som
+anvendes i temporale databaser, såsom “temporal”, “lifespan”, “valid
+time”, osv. En forklaring for hvorfor en bestemt term, og ikke en anden
+term, er valgt, er også til stede. Som titlen indikerer, er der tale om
+resultatet af en proces for at opnå en højere grad af enhed ang.
+navngivning og definitioner af begreber inden for dette domæne.
+
+[NOTE]
+Grunddataprogrammets begreber “virkningstid” og “registreringstid” 
+svarer til artiklens begreber “Valid time”, henholdsvis “transaction 
+time”.
+
+[#9075-2]
+==== ISO/IEC 9075-2, Database languages — SQL — Part 2: Foundation (SQL/Foundation) 
+
+[.bibliographicaldetails]
+ISO/IEC 9075-2, _Information technology — Database languages — SQL —
+Part 2: Foundation (SQL/Foundation)_
+
+ISO-standarden for Structured Query Language (SQL) er delt op i flere
+dele. Del 2 definerer datastrukturer og grundlæggende operationer på
+SQL-data.
+
+[NOTE]
+I SQL-standarden anvendes termen “application time” som synonym for
+“valid time”, og “system time” som synonym for “transaction time”.
+
+[#19075-2]
+==== ISO/IEC TR 19075-2, Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information
+
+[.bibliographicaldetails] 
+ISO/IEC JTC 1/SC 32. ISO/IEC TR 19075-2:2015, _Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information_. Technical Report. International Organization for Standardization, 1 juli 2015. Tilgængelig på:
+https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip[https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip,title=Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information]
+
+Ved siden af selve SQL-standarden har komitéen udgivet nogle tekniske
+rapporter, som er gratis tilgængelige. Denne rapport beskriver
+understøttelse for tidsrelaterede informationer.
+
+[NOTE]
+Rapporten er i skrivende stund under revidering.
+
+[#bitemporalitet-poc]
+==== Bitemporalitet, proof of concept
+
+[.bibliographicaldetails]
+GEODATASTYRELSEN og KL. _Bitemporalitet. Proof of concept_. 19 september 2014. [Set 11 februar 2020]. Tilgængelig på:
+http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf[http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf,title=Bitemporalitet. Proof of concept]
+
+Rapporten beskriver en række problemstillinger omkring historik og
+bitemporalitet, som er relevante i forhold til at distribuere data med
+høj aktualitet og med en datahistorik der giver sporbarhed i de
+foretagne registreringer. Dokumentet anvender en konstrueret matrikulær
+udstykning som showcase til at forklare egenskaber og konsekvenser ved
+modellering af bitemporale egenskaber.
+
+Dokumentet blev skrevet for at skabe mere tydelighed om
+reglen om dobbelthistorikunderstøttelse fra Grunddata-modelreglerne 
+<<gd-modelregler>>.
+
+[#sdfe-regler-historik]
+==== Regelsæt for historik i data 
+
+[.bibliographicaldetails] 
+SDFE, _Regelsæt for historik i data_ [igangværende arbejde]
+
+Dokumentet beskrives tre sæt af historikmodeller, som understøtter
+forskellig funktionalitet vedrørende forvaltede objekters livscyklus og
+de udtræk, der gør historikken brugbar.
+
+Dokumentet indeholder beskrivelse af et begrebsapparat, der kommunikerer
+en relativt kompleks, men også en konsistent og implementérbar model, der
+kan danne baggrund for håndtering af historik i data, der udstiller
+offentligt forvaltede objekter.
+
+Til sidst er der en beskrivelse af, hvordan historikken anvendes i
+forbindelse med andre attributter, såsom status, med det formål at
+styrke den forretningsmæssige brug af data.
+
+[NOTE] 
+SDFE har p.t. et eksisterende regelsæt, som skal revideres.
+
+[#snodgrass]
+==== Developing time-oriented database applications in SQL
+
+[.bibliographicaldetails] 
+SNODGRASS, Richard T. _Developing time-oriented database applications in
+SQL_. San Francisco, California : Morgan Kaufmann Publishers, juli 1999.
+ISBN 1-55860-436-7. Tilgængelig på:
+link:++https://www2.cs.arizona.edu/~rts/tdbbook.pdf++[++https://www2.cs.arizona.edu/~rts/tdbbook.pdf++,title=Developing time-oriented database applications in SQL] 
+
+Bogen er den mest omfattende behandling af håndtering af tid i
+relationelle databaser der findes og var den vigtigste kilde for
+ovenstående rapport.
+
+[#fowler-temporal-patterns]
+==== Further Patterns of Enterprise Application Architecture
+
+[.bibliographicaldetails]
+FOWLER, Martin. Temporal Patterns. _Further Patterns of Enterprise
+Application Architecture_. 16 februar 2005. [Set 11 februar 2020].
+Tilgængelig på:
+https://martinfowler.com/eaaDev/timeNarrative.html[https://martinfowler.com/eaaDev/timeNarrative.html,title=Temporal Patterns]
+
+Indlægget beskriver problematikken ang. tidsdimensioner og præsenterer
+forskellige designmønstre (“design patterns”) for at håndtere
+forskellige grader af tidsunderstøttelse i software. Derudover henviser
+indlægget til forskelligt anden relevant litteratur. 

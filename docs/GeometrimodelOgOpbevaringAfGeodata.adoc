@@ -1,0 +1,182 @@
+[#geometrimodel_opbevaring]
+=== Geometrimodel og opbevaring af geodata
+
+Geografiske data er kendetegnet ved, at der altid indgår geometriske objekter, og at disse har
+relationer til hinanden (topologiske relationer), fx at en bygning ligger op til en vej, eller at to veje
+mødes i et vejkryds beliggende i en kommune. Til at beskrive disse relationer er der brug for
+modeller der beskriver såvel geometriske som topologiske relationer. Disse modeller er
+implementeret i spatiale databaser, dvs. databaser hvori man opbevarer geodata.
+
+[#19107]
+==== DS/EN ISO 19107 Geometrimodel
+
+[.bibliographicaldetails]
+DS/EN ISO 19107:2019, _Geografisk information – Geometrimodel_
+
+Denne standard specificerer en model for beskrivelsen af de geografiske dele af geodata.
+Standarden omhandler vektordata og beskriver både geometrityper (punkter, linjer, flader, osv.) og
+topologityper (knuder, forbindelser, osv.). Den definerer også operationer til at teste topologiske
+relationer mellem objekter (“disjoint”, “intersects”, “contains”, osv.) og til at foretage geografiske
+analyser (“distance”, “buffer”, osv.). I teori kan man beskrive vektordata i n dimensioner, i praksis
+sker det i to eller tre rumlige dimensioner.
+
+[NOTE]
+Standardens typer er modelleret i “Harmonized Model Repository” og kan derfor anvendes direkte
+i UML-modeller. Standarder dækker stort set alle mulige geometriske objekter. Man bør på forhånd at tage stilling
+til, om man kan nøjes med simple features (se <<sfa-ca>>).
+
+[#sfa-ca]
+==== Simple feature access - Part 1: Common architecture
+
+[.bibliographicaldetails]
+OGC 06-103r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture_ Version 1.2.1. 28 maj 2011. Tilgængelig på: http://portal.opengeospatial.org/files/?artifact_id=25355[http://portal.opengeospatial.org/files/?artifact_id=25355,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture]
+
+OGC-standarden _OpenGIS Implementation Standard for Geographic
+Information Simple feature access - Part 1: Common architecture_
+(SFA-CA) omfatter en geometrimodel, inklusiv attributter, metoder og
+præmisser, for 0-, 1-, og 2-dimensionale geometriske objekter (punkter,
+linjer og flader) der eksisterer i 2-, 3- eller 4-dimensionale
+koordinatrum og der anvender lineær interpolation (for linjer;
+“linear interpolation” på engelsk) eller 2-dimensionel interpolation 
+(for flader; “planar interpolation” på engelsk).
+
+Det vil sige, at
+
+* punkter, rette linjer, polygoner med højder (z) og/eller mål (m)
+er omfattet
+* samlinger af ovenstående geometrier, såsom multipunkter, multilinjer
+og multipolygoner, er omfattet
+* kurver med ikke-lineær interpolation såsom cirkelbuer ikke er omfattet
+* 3-dimensionale geometriske figurer (figurer med rumfang) såsom kuber
+ikke er omfattet
+* topologityper ikke er omfattet.
+
+Standarden er, forenklet sagt, en delmængde af 19107.
+
+Standarden definerer repræsentationer i Well-Known Text (WKT) for de
+forskellige geometrityper.
+
+Standarden er platformneutral. Implementeringen i relationelle databaser
+vha. SQL er specificeret i _OpenGIS Implementation Standard for
+Geographic Information Simple feature access - Part 2: SQL option_.
+
+Den tidligere version 1.1 af denne standard, <<ogc-05-126>>, er en delmængde
+af version 1.2.1. Version 1.1 definerer 0-, 1-, og 2-dimensionale
+geometriske objekter der eksisterer i 2-dimensionale koordinatrum, dvs.
+punkter, rette linjer og polygoner uden koter og uden målinger.
+
+Version 1.1 af standarden er også kendt som DS/EN ISO 19125-1:2006,
+_Geografisk information – Simpel elementadgang – Del 1: Fælles
+arkitektur_.
+
+Version 1.1, og dermed også version 1.2.1, indeholder et afsnit
+“Well-known Text Representation of Spatial Reference Systems”, som
+definerer tekstrepræsentationer for koordinatreferencesystemer.
+Specifikationen af WKT for koordinatreferencesystemer er senere blevet
+specificeret yderlige i <<ogc-01-009>>, også kendt som WKT 1, og senest i
+<<wkt-crs,DS/ISO 19162>>, også kendt som WKT 2.
+
+[NOTE]
+====
+WKT er bredt understøttet i GIS-applikationer. 
+
+Et eksempel på en WKT-repræsentation af en 2D-geometri i et
+3D-koordinatrum, hvori den tredje dimension er den vertikale dimension
+(z), er:
+
+----
+Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
+24.61,722137.52 6178901.05 24.7,722135.5 6178901.91 25.01,722126.66
+6178905.66 24.61,722120.48 6178891.19 24.61,722126.3 6178888.7
+24.28,722178.52 6178866.39 24.61))
+----
+
+Extended Well-Known Text (EWKT) er en tekstrepræsentation der inkluderer
+en identifikator på et koordinatreferencesystem og er specificeret af
+PostGIS, ikke af OGC.
+
+Et eksempel på en geometri som er ikke er gyldig er en linje med
+sammenfald af to på hinanden efterfølgende punkter.
+
+Nogle algoritmer i geografiske analyser forudsætter, at de anvendte
+geometrier er simple. Derudover vil det ofte være et udtryk for fejl i
+data i forhold til realiteten, hvis en geometri ikke er simpel (fx en
+vej som skærer sig selv). Derfor er det ofte hensigtsmæssigt, at sætte
+krav om, at et datasæts geometrier skal være simple, selvom SFA-CA ikke
+kræver det.
+
+Derudover kan en dataansvarlig stille krav om, at bestemte
+topologiregler (regler hvad angår geografiske relationer) skal
+overholdes, fx at objekter af en bestemt type ikke må overlappe
+hinanden.
+
+Bemærk, at adjektivet “simple” i standarden anvendes i to begreber:
+
+* simple feature = feature with all geometric attributes described
+piecewise by straight line or planar interpolation between sets of
+points
+* simple geometry = geometry without anomalous geometric points, such as
+self intersection or self tangency
+
+Dvs. simple feature ≠ feature with simple geometry.
+====
+
+[#sfa-sql]
+==== Simple feature access - Part 2: SQL option
+
+[.bibliographicaldetails]
+OGC 06-104r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option_. Version 1.2.1. 4 august 2010. Tilgængelig på:
+http://portal.opengeospatial.org/files/?artifact_id=25354[http://portal.opengeospatial.org/files/?artifact_id=25354,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option]
+
+OGC-standarden _OpenGIS Implementation Standard for Geographic
+Information Simple feature access - Part 2: SQL option_ (SFA-SQL) er en
+implementering af SFA-CA for relationelle databaser der understøtter
+Structured Query Language (SQL).
+
+Standarden dannede basis for <<sql-mm,ISO/IEC 13249-3 (SQL/MM)>>.
+
+[NOTE]
+====
+Den tidligere version 1.1 af denne standard (<<ogc-05-134>> og <<ogc-99-049>>)
+er en delmængde af version 1.2.1.
+
+Der bliver henvist til denne standard med forskellige forkortelser,
+såsom SFA-SQL, SQL/SFS og SF-SQL.
+
+Simple features-tilgangen har fået bred accept i databasesystemer, da
+den er væsentligt mindre omfattende end DS/EN ISO 19107. Man skal dog
+være opmærksom på versionerne ved valg af et system.
+====
+
+
+[#sql-mm]
+==== ISO/IEC 13249-3 Database languages — SQL multimedia and application packages — Part 3: Spatial
+
+[.bibliographicaldetails]
+ISO/IEC 13249-3:2016, _Information technology — Database languages — SQL multimedia and application packages — Part 3: Spatial_ 
+
+Denne ISO/IEC standard definerer, hvordan man opbevarer og håndterer
+geodata i SQL-databaser. Standarden anvender en geometrimodel baseret på
+den specificeret i _OpenGIS Implementation Standard for Geographic
+Information Simple feature access_ (<<sfa-ca,del 1>>, <<sfa-sql,del 2>>) 
+og anvender begreber fra 
+<<19107,DS/EN ISO 19107>> og <<19111,DS/ISO 19111>>.
+
+Standarden definerer tre eksterne dataformater, der kan bruges til at
+repræsentere geometrier på en måde som ikke er afhængig af
+implementering: Geography Markup Language (GML), Well-Known Text (WKT)
+og Well-Known Binary (WKB).
+
+[NOTE]
+====
+ISO/IEC 13249 er også kendt som SQL/MM-standarden. Den er implementeret
+i forskellige relationelle databaser.
+
+Som regel er WKT og WKB godt understøttet, hvorimod man skal være
+opmærksom på hvilken GML-version der understøttes.
+
+For mere information om historikken af og indholdet i SQL/MM-standarden,
+se f.eks. <<stol03>>.
+====
+
+

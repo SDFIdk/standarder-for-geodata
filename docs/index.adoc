@@ -1,0 +1,49 @@
+= Anbefalede standarder for geodata
+:author: Styrelsen for Dataforsyning og Infrastruktur
+:data-uri:
+:description: Detaljeret gennemgang af relevante standarder og best practices, som det anbefales myndigheder at anvende ved indsamling, behandling og distribution af geodata, der skal indgå i digitale løsninger til brug for offentlig forvaltning. 
+:docinfo: shared
+:doctype: article
+// from the documentation: The email attribute represents an email address or URL associated with the first author
+:email: https://sdfi.dk/
+:encoding: utf-8
+:idprefix:
+:idseparator: -
+:imagesdir: billeder
+:keywords: geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE
+:lang: da
+include::locale/attributes-da.adoc[]
+:nofooter:
+:numbered:
+//:revdate: set with command line: asciidoctorj -a revdate=YYYY-MM-DD index.adoc
+:revnumber: 1.0.0
+:reproducible:
+:source-highlighter: rouge
+:toc:
+:toclevels: 3
+// user-defined attributes
+:author-url: https://sdfi.dk/
+
+include::Forord.adoc[]
+
+include::Rammer.adoc[]
+
+include::Fortegnelse.adoc[]
+
+include::BegrebsOgDatamodeller.adoc[]
+
+include::Identifikatorer.adoc[]
+
+include::GeometrimodelOgOpbevaringAfGeodata.adoc[]
+
+include::GeografiskReference.adoc[]
+
+include::TidOgHistorik.adoc[]
+
+include::Metadata.adoc[]
+
+include::UdvekslingAfGeodataEncoding.adoc[]
+
+include::UdvekslingAfGeodataService.adoc[]
+
+include::Referencer.adoc[]

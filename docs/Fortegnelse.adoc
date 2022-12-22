@@ -1,0 +1,5 @@
+[#fortegnelse]
+== Standarder og best practices på udvalgte områder med relation til geodata
+
+Standarder og best practices på følgende områder er opført og beskrevet
+i de næste afsnit.

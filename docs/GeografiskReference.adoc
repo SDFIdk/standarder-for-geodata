@@ -1,0 +1,126 @@
+[#geografisk-reference]
+=== Geografisk reference
+
+For at beskrive den geografiske placering eller position af et objekt
+kan der enten anvendes koordinater (med tilhørende referencesystem),
+eller der kan der anvendes geografiske identifikatorer. Sidstnævnte kan
+anvendes, hvis der fx findes et stednavn, postnummer, vejnavn eller en
+adresse der præcist angiver, hvad man ønsker at placere geografisk. Er
+der ikke nogle oplagte geografiske identifikatorer, kan man anvende
+koordinater.
+
+[#19111]
+==== DS/ISO 19111 Spatial orientering via koordinater
+
+[.bibliographicaldetails]
+DS/ISO 19111:2019, _Geografisk information - Spatial orientering via koordinater_ 
+
+Dette dokument definerer den konceptuelle model til beskrivelse af
+henvisning med koordinater. Den beskriver de minimumsdata, der kræves
+for at definere koordinatreferencesystemer.
+
+Dette dokument beskriver også det konceptuelle skema til definition af
+den information, der kræves for at beskrive transformationer, der ændrer
+koordinatværdier.
+
+Ud over de minimale data, der kræves til definitionen af
+koordinatreferencesystemet eller koordinattransformationen, tillader det
+konceptuelle skema yderligere beskrivende information -
+koordinatreferencesystemmetadata - at blive leveret.
+
+[NOTE]
+====
+<<19111,DS/ISO 19111>> (koordinater), <<wkt-crs,DS/ISO 19162>> (transformationer) 
+og <<19161-1,DS/ISO 19161>> (referencesystemer) udgør
+tilsammen den formelle beskrivelse af det geodætiske grundlag for al
+geodataregistrering.
+
+De nævnte standarder implementeres i det frie og åbne værktøj 
+https://proj.org/[PROJ],
+“geodæsiens schweizerkniv”, udviklet i et åbent internationalt
+samarbejde.
+
+PROJ er
+
+- et generisk værktøj til koordinattransformation
+- en fælles database med parametre og definitioner af “geodætiske
+objekter”
+- et kodebibliotek der kan bruges i tredjepartsapplikationer (og der i
+dag anvendes i de fleste GIS-aplikationer)
+- et “sprog”, der beskriver geodætiske transformationer
+
+SDFE er aktiv deltager i udviklingen af PROJ, og besætter to poster,
+herunder formandsposten, i PROJ-styregruppen og kan derfor effektivt
+formidle og levere sparring omkring ønsker om yderligere funktionalitet.
+====
+
+[#19112]
+==== DS/EN ISO 19112 Orientering via geografiske identifikatorer
+
+[.bibliographicaldetails]
+DS/EN ISO 19112:2019, _Geografisk information - Orientering via geografiske identifikatorer_ 
+
+Dette dokument definerer den konceptuelle model for stedbestemte
+referencer baseret på geografiske identifikatorer. Det opretter en
+generel model til rumlig henvisning ved hjælp af geografiske
+identifikatorer og definerer komponenterne i et rumligt referencesystem.
+Det specificerer også en konceptuel model for et stednavneregister.
+
+Geografisk orientering via koordinater behandles i <<19111,DS/ISO 19111>>. 
+Imidlertid er en mekanisme til registrering af komplementære
+koordinatreferencer inkluderet i dette dokument.
+
+Dette dokument gør det muligt for producenter af data at definere
+stedbestemte referencesystemer ved hjælp af geografiske identifikatorer
+og hjælper brugerne med at forstå de stedbestemte referencer, der bruges
+i datasæt. Det giver mulighed for at konstruere et stednavneregister på en
+konsistent måde og understøtter udviklingen af andre standarder inden
+for geografisk information.
+
+[#19161-1]
+==== DS/EN ISO 19161-1 Geodætiske referencer - Del 1: ITRS
+
+[.bibliographicaldetails]
+DS/EN ISO 19161-1:2020, _Geografisk information - Geodætiske referencer - Del 1: ITRS (international terrestrial reference system)_ 
+
+Denne standard definerer International Terrestrial Reference System
+(ITRS), og beskriver hvordan ITRS gøres praktisk anvendeligt og
+tilgængeligt (“realisering”).
+
+[NOTE]
+====
+Realisering af ITRS sker bl.a. i form af de nationale realiseringer af
+ETRS89, det europæiske terrestriske referencesystem, som er grundlag for
+al moderne geodataregistrering på det europæiske kontinent.
+
+ETRS89-registrering sikrer bl.a. interoperabilitet af datasæt på tværs
+af landegrænser, og er et krav for at være i overensstemmelse med
+INSPIRE-principperne.
+====
+
+[#wkt-crs]
+==== Well-known text representation of coordinate reference systems
+
+[.bibliographicaldetails]
+OGC 18-010r7, _Geographic information - Well-known text representation
+of coordinate reference systems_. Version 2.0.6. 13 august 2019.
+Tilgængelig på:
+http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[http://docs.opengeospatial.org/is/18-010r7/18-010r7.html,title=Geographic information - Well-known text representation of coordinate reference systems] 
+
+Denne OGC-standard definerer strukturen og indholdet af
+tekstrepræsentationer (Well-Known Text (WKT)) for
+koordinatreferencesystemer og koordinattransformationer mellem
+koordinatreferencesystemer.
+
+[NOTE]
+Standarden er også kendt som DS/ISO 19162:2019, _Geografisk information
+- Læsbar tekststreng til angivelse af koordinatreferencesystemer_. 
+
+[#sdfe-crs]
+==== Vejledning i brug af koordinatreferencesystemer
+
+[.bibliographicaldetails]
+SDFE, _Vejledning i brug af koordinatreferencesystemer_
+
+[NOTE]
+Igangværende arbejde
