@@ -2,10 +2,10 @@
 === Geografisk reference
 
 For at beskrive den geografiske placering eller position af et objekt
-kan der enten anvendes koordinater (med tilhørende referencesystem),
-eller der kan der anvendes geografiske identifikatorer. Sidstnævnte kan
-anvendes, hvis der fx findes et stednavn, postnummer, vejnavn eller en
-adresse der præcist angiver, hvad man ønsker at placere geografisk. Er
+kan der enten anvendes koordinater (med tilhørende koordinatreferencesystem),
+eller der kan anvendes geografiske identifikatorer. Sidstnævnte kan
+anvendes, hvis der findes fx et stednavn, postnummer, vejnavn eller en
+adresse, der tilstrækkeligt nøjagtigt angiver objektets placering. Er
 der ikke nogle oplagte geografiske identifikatorer, kan man anvende
 koordinater.
 
