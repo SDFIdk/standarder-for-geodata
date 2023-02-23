@@ -29,6 +29,19 @@ and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/. -->
 /* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
 #toc ul.sectlevel2{padding-left:1.75em}
 #toc ul.sectlevel3{padding-left:2.0em}
+/* Sticky table of contents */
+@media (min-width: 992px) {
+  #toc {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+  }
+  .sectlevel1 {
+    width: 100%;
+  }
+}
 /* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
 .bibliographicaldetails{border:.25rem solid var(--medium-steel);margin-bottom:1.25em;padding:0.5em;background-color: var(--hvid);border-radius:1rem}
 .bibliographicaldetails p{margin-bottom:0em}
