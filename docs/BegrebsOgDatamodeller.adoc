@@ -70,7 +70,7 @@ også punkt 2 om identifikatorer.
 
 [.bibliographicaldetails]
 FÆLLESOFFENTLIG DIGITAL ARKITEKTUR, _Vejledning i begrebs- og
-datamodellering_ [igangværende arbejde]
+datamodellering_. Tilgængelig på: https://arkitektur.digst.dk/node/770[https://arkitektur.digst.dk/node/770,title=Vejledning til modellering]
 
 Vejledningen uddyber reglerne beskrevet i <<fda-modelregler>> og beskriver processerne omkring
 modellering.
