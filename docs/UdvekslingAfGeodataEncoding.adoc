@@ -20,7 +20,7 @@ https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://por
 
 Denne standard specificerer en indkodning i Extensible Markup Language
 (XML) for bl.a. hovedparten af begreberne defineret i
-<<19103,DS/ISO 19103>>, <<19107,DS/EN ISO 19107>> og <<19111,DS/ISO 19111>>.
+<<19103,DS/ISO 19103>>, <<19107,DS/EN ISO 19107>> og <<19111,DS/EN ISO 19111>>.
 
 GML-data beskrives af et GML-applikationsskema, et XML-skema som
 anvender elementer fra skemaerne defineret af GML-standarden.

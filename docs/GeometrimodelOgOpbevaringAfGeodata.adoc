@@ -160,7 +160,7 @@ geodata i SQL-databaser. Standarden anvender en geometrimodel baseret på
 den specificeret i _OpenGIS Implementation Standard for Geographic
 Information Simple feature access_ (<<sfa-ca,del 1>>, <<sfa-sql,del 2>>) 
 og anvender begreber fra 
-<<19107,DS/EN ISO 19107>> og <<19111,DS/ISO 19111>>.
+<<19107,DS/EN ISO 19107>> og <<19111,DS/EN ISO 19111>>.
 
 Standarden definerer tre eksterne dataformater, der kan bruges til at
 repræsentere geometrier på en måde som ikke er afhængig af
