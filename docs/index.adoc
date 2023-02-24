@@ -15,8 +15,8 @@
 include::locale/attributes-da.adoc[]
 :nofooter:
 :numbered:
-//:revdate: set with command line: asciidoctorj -a revdate=YYYY-MM-DD index.adoc
-:revnumber: 1.0.0
+//:revdate: sæt document attribute revdate via kommandolinjen
+//:revnumber: sæt document attribute revnumber via kommandolinjen
 :reproducible:
 :source-highlighter: rouge
 :toc:

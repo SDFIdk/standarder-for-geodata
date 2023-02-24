@@ -1,14 +1,20 @@
 <link rel="shortcut icon" href="./assets/logos/logo-simple-micro.svg" />
 <!-- Dublin Core metadata,
-see https://www.dublincore.org/specifications/dublin-core/dcq-html/
-and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/. -->
+see https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+and https://www.dublincore.org/specifications/dublin-core/dc-html/. -->
+<!-- See also https://www.rfc-editor.org/rfc/rfc6906.html#section-5.2;
+use profile link relation, not the deprecated profile attribute on head -->
+<link rel="profile" href="http://dublincore.org/documents/2008/08/04/dc-html/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 <meta name="DC.creator" lang="{lang}" content="{author}" />
 <meta name="DC.date" content="{revdate}" />
 <meta name="DC.description" lang="{lang}" content="{description}" />
 <meta name="DC.language" content="{lang}" />
 <meta name="DC.subject" lang="{lang}" content="{keywords}" />
+<meta name="DC.rights" lang="da" content="CC-BY-4.0"/>
 <meta name="DC.title" lang="{lang}" content="{doctitle}" />
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel="DCTERMS.license" href="https://creativecommons.org/licenses/by/4.0/"/>
 <style>
 @import "./assets/css/logo-big.css";
 @import "./assets/designsystem.css";
@@ -24,11 +30,24 @@ and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/. -->
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 /* Change color for both types of admonitions: blocks and single paragraphs. */
-.admonitionblock>table td.content{color:rgba(0,0,0,.6)}
-.admonitionblock>table td.content *{color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content{color:rgba(0,0,0,.65)}
+.admonitionblock>table td.content :not(a){color:rgba(0,0,0,.65)}
 /* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
 #toc ul.sectlevel2{padding-left:1.75em}
 #toc ul.sectlevel3{padding-left:2.0em}
+/* Sticky table of contents */
+@media (min-width: 992px) {
+  #toc {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+  }
+  .sectlevel1 {
+    width: 100%;
+  }
+}
 /* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
 .bibliographicaldetails{border:.25rem solid var(--medium-steel);margin-bottom:1.25em;padding:0.5em;background-color: var(--hvid);border-radius:1rem}
 .bibliographicaldetails p{margin-bottom:0em}
@@ -46,18 +65,20 @@ and https://www.dublincore.org/specifications/dublin-core/dcmi-terms/. -->
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "author": [{
-	"@type": "Organization",
-	"name": "{author}",
-	"logo": {
-		"@type": "ImageObject",
-		"url": "https://sdfi.dk/Media/637983120376287699/SDFI_DK_RGB-logo.png"
-		},
-	  "url": "{author-url}"
-	}],
-	"dateModified": "{revdate}",
-	"headline": "{doctitle}",
-	"name": "{doctitle}",
-	"keywords": "{keywords}",
-	"version": "{revnumber}"
+    "@type": "Organization",
+    "name": "{author}",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://sdfi.dk/Media/637983120376287699/SDFI_DK_RGB-logo.png"
+        },
+      "url": "{author-url}"
+    }],
+  "dateModified": "{revdate}",
+  "headline": "{doctitle}",
+  "name": "{doctitle}",
+  "keywords": "{keywords}",
+  "version": "{revnumber}",
+  "abstract": "{description}",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
 }
 </script>

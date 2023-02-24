@@ -20,7 +20,7 @@ https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://por
 
 Denne standard specificerer en indkodning i Extensible Markup Language
 (XML) for bl.a. hovedparten af begreberne defineret i
-<<19103,DS/ISO 19103>>, <<19107,DS/EN ISO 19107>> og <<19111,DS/ISO 19111>>.
+<<19103,DS/ISO 19103>>, <<19107,DS/EN ISO 19107>> og <<19111,DS/EN ISO 19111>>.
 
 GML-data beskrives af et GML-applikationsskema, et XML-skema som
 anvender elementer fra skemaerne defineret af GML-standarden.
@@ -29,8 +29,8 @@ Standarden indeholder et sæt regler, der definerer, hvordan man på
 systematisk vis kan omsætte en logisk datamodel der er i
 overensstemmelse med <<19103,DS/ISO 19103>> til et GML-applikationsskema.
 
-Denne OGC-standard er også kendt som ISO 19136-1:2020, _Geographic
-information — Geography Markup Language (GML) — Part 1: Fundamentals_. 
+Denne OGC-standard er også kendt som DS/EN ISO 19136-1:2020, _Geografisk 
+information — GML (Geography Markup Language) — Del 1: Grundprincipper_. 
 
 [NOTE]
 ====
@@ -72,9 +72,9 @@ Standarden indeholder bl.a. en indkodning for elementerne defineret i
 DS/EN ISO 19148, _Geografisk information — Lineær reference-system_ og
 kompakte indkodninger af almen anvendte GML-geometrier såsom flader.
 
-Denne OGC-standard er også kendt som ISO 19136-2:2015, _Geographic
-information — Geography Markup Language (GML) — Part 2: Extended schemas
-and encoding rules_.
+Denne OGC-standard er også kendt som DS/EN ISO 19136-2:2018, _Geografisk 
+information — GML (Geography Markup Language) — Del 2: Udvidede skemaer 
+og kodningsregler_.
 
 [NOTE] 
 ====
@@ -158,7 +158,7 @@ siden af GML.
 ==== PDF Georegistration Encoding Best Practice 
 
 [.bibliographicaldetails] 
-OGC 18-139r3, _PDF Georegistration Encoding Best Practice_. OGC Best
+OGC 08-139r3, _PDF Georegistration Encoding Best Practice_. OGC Best
 Practice. Version 2.2. 17 januar 2011. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=40537[https://portal.opengeospatial.org/files/?artifact_id=40537,title=PDF Georegistration Encoding Best Practice] 
 

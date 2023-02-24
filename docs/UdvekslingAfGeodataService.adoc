@@ -98,7 +98,7 @@ WMS kan udvides så den tillader brugerdefineret styling vha. <<se>>.
 
 [NOTE]
 Sammen med <<se>> er denne
-standard efterfølgeren af SLD 1.0.
+standard efterfølgeren til SLD 1.0.
 
 [#se] 
 ==== Symbology Encoding Implementation Specification

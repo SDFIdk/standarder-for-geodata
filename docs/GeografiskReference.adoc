@@ -10,10 +10,10 @@ der ikke nogle oplagte geografiske identifikatorer, kan man anvende
 koordinater.
 
 [#19111]
-==== DS/ISO 19111 Spatial orientering via koordinater
+==== DS/EN ISO 19111 Koordinatreferencer
 
 [.bibliographicaldetails]
-DS/ISO 19111:2019, _Geografisk information - Spatial orientering via koordinater_ 
+DS/EN ISO 19111:2020, _Geografisk information - koordinatreferencer_ 
 
 Dette dokument definerer den konceptuelle model til beskrivelse af
 henvisning med koordinater. Den beskriver de minimumsdata, der kræves
@@ -30,7 +30,7 @@ koordinatreferencesystemmetadata - at blive leveret.
 
 [NOTE]
 ====
-<<19111,DS/ISO 19111>> (koordinater), <<wkt-crs,DS/ISO 19162>> (transformationer) 
+<<19111,DS/EN ISO 19111>> (koordinater), <<wkt-crs,DS/ISO 19162>> (transformationer) 
 og <<19161-1,DS/ISO 19161>> (referencesystemer) udgør
 tilsammen den formelle beskrivelse af det geodætiske grundlag for al
 geodataregistrering.
@@ -66,7 +66,7 @@ generel model til rumlig henvisning ved hjælp af geografiske
 identifikatorer og definerer komponenterne i et rumligt referencesystem.
 Det specificerer også en konceptuel model for et stednavneregister.
 
-Geografisk orientering via koordinater behandles i <<19111,DS/ISO 19111>>. 
+Geografisk orientering via koordinater behandles i <<19111,DS/EN ISO 19111>>. 
 Imidlertid er en mekanisme til registrering af komplementære
 koordinatreferencer inkluderet i dette dokument.
 
