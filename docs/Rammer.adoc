@@ -66,14 +66,14 @@ relevante emne.
 
 International Organization for Standardization (ISO)
 https://committee.iso.org/home/tc211[teknisk komite 211 (TC 211)] og Open
-Geospatial Consortium (https://www.ogc.org[OGC]) etablerer globale standarder i geodatadomænet.
-
-De er de to centrale
+Geospatial Consortium (https://www.ogc.org[OGC]) etablerer globale standarder i geodatadomænet. De er de to centrale
 standardiseringsorganisationer i geodatadomænet, og derfor henviser
-dette bilag primært til ISO- og OGC-standarder. Standarderne har i
+dette bilag primært til ISO- og OGC-standarder.
+
+ISO- og OGC-standarder har i
 vid udstrækning dannet grundlag for implementeringen af
-INSPIRE-direktivet. Der er ligeledes tale om standarder som bliver
-understøttet af en række it-produkter. Hvor der findes implementerede
+INSPIRE-direktivet. Mere generelt er standarderne implementeret
+i en række it-produkter. Hvor der findes implementerede
 løsninger baseret på de nævnte standarder, vil der være et link til
 disse i gennemgangen.
 
@@ -104,7 +104,9 @@ En oversigt over alle OGC-standarder findes på
 https://www.ogc.org/standards/[OGC's hjemmeside]. En del standarder
 er udgivet i flere versioner i takt med, at behovene for standardisering
 har udviklet sig. På hjemmesiden kan man finde både den gældende version
-samt tidligere (og dermed tilbagetrukne) versioner. OGC har et
+samt tidligere (og dermed tilbagetrukne) versioner.
+
+OGC har et
 compliance-program, hvis formål er, at øge systeminteroperabilitet
 samtidigt med, at risikoen ved at vælge en ny teknologi mindskes. Man
 kan på OGC’s hjemmeside se, om et produkt
