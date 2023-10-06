@@ -75,20 +75,6 @@ SQL-data.
 I SQL-standarden anvendes termen “application time” som synonym for
 “valid time”, og “system time” som synonym for “transaction time”.
 
-[#19075-2]
-==== ISO/IEC TR 19075-2, Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information
-
-[.bibliographicaldetails] 
-ISO/IEC JTC 1/SC 32. ISO/IEC TR 19075-2:2015, _Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information_. Technical Report. International Organization for Standardization, 1 juli 2015. Tilgængelig på:
-https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip[https://standards.iso.org/ittf/PubliclyAvailableStandards/c060394_ISO_IEC_TR_19075-2_2015.zip,title=Information technology — Database languages — SQL Technical Reports — Part 2: SQL Support for Time-Related Information]
-
-Ved siden af selve SQL-standarden har komitéen udgivet nogle tekniske
-rapporter, som er gratis tilgængelige. Denne rapport beskriver
-understøttelse for tidsrelaterede informationer.
-
-[NOTE]
-Rapporten er i skrivende stund under revidering.
-
 [#bitemporalitet-poc]
 ==== Bitemporalitet, proof of concept
 
