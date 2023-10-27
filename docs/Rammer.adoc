@@ -62,30 +62,27 @@ En del af de tekniske retningslinjer findes i gennemgangen nedenfor, under det
 relevante emne.
 
 [#sdos]
-=== ISO og OGC standarder
+=== Standarder for geodata etableres i regi af ISO og OGC
 
-International Organization for Standardization (ISO)
-https://committee.iso.org/home/tc211[teknisk komite 211 (TC 211)] og Open
-Geospatial Consortium (https://www.ogc.org[OGC]) etablerer globale standarder i geodatadomænet. De er de to centrale
-standardiseringsorganisationer i geodatadomænet, og derfor henviser
-dette bilag primært til ISO- og OGC-standarder.
+De fleste globale standarder i geodatadomænet etableres i regi af https://www.iso.org/[International Organization for Standardization (ISO)] – mere specifikt https://committee.iso.org/home/tc211[teknisk komite 211 (ISO/TC 211)] – og https://www.ogc.org[Open Geospatial Consortium (OGC)]. Derfor henviser denne gennemgang primært til ISO- og OGC-standarder.
 
 ISO- og OGC-standarder har i
 vid udstrækning dannet grundlag for implementeringen af
-INSPIRE-direktivet. Mere generelt er standarderne implementeret
+<<inspire,INSPIRE-direktivet>>. Mere generelt er standarderne implementeret
 i en række it-produkter. Hvor der findes implementerede
 løsninger baseret på de nævnte standarder, vil der være et link til
 disse i gennemgangen.
 
 Både ISO- og OGC-standarder ajourføres og opdateres løbende,
 hvorfor gennemgangen på nogle områder kan
-betragtes som et øjebliksbillede. Hvis der ikke står et årstal efter en
-standard fra ISO, vil der til enhver tid være tale om den nyeste version
-af den pågældende standard.
+betragtes som et øjebliksbillede. 
+
+==== Om ISO-standarder
 
 Man kan finde en oversigt over alle ISO/TC 211-standarder på 
 https://www.iso.org/committee/54904/x/catalogue/p/1/u/0/w/0/d/0[komiteens hjemmeside].
-Nogle standarder er blevet ændret eller fejlrettet efter publikation. Mindre tillæg og rettelser er udgivet som særskilte dokumenter.
+Nogle standarder er blevet ændret eller fejlrettet efter publikation. Mindre tillæg og rettelser er udgivet som særskilte dokumenter. Hvis der ikke står et årstal efter en standard fra ISO, vil der til enhver tid være tale om den nyeste version
+af den pågældende standard.
 
 I Danmark er det udvalget
 https://www.ds.dk/da/udvalg/kategorier/it/geografisk-information[S-276
@@ -99,6 +96,8 @@ skal
 https://www.ds.dk/da/om-standarder/hvad-er-en-standard/derfor-koster-standarder-penge[købes,title=Derfor koster standarder penge - Dansk Standard] 
 hos DS.
 ====
+
+==== Om OGC-standarder
 
 En oversigt over alle OGC-standarder findes på
 https://www.ogc.org/standards/[OGC's hjemmeside]. En del standarder
