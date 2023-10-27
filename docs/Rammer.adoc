@@ -35,8 +35,8 @@ komponenter:
 
 INSPIRE-direktivet gennemføres via national lovgivning i de enkelte
 medlemslande. I Danmark sker det via
-https://www.retsinformation.dk/eli/lta/2017/746[_Lov om infrastruktur
-for geografisk information i Den Europæiske Union_], også kaldet
+https://www.retsinformation.dk/eli/lta/2017/746[Lov om infrastruktur
+for geografisk information i Den Europæiske Union], også kaldet
 INSPIRE-loven, lovbekendtgørelse nr. 746 af 15. juni 2017. Læs mere på
 https://inspire-danmark.dk[den danske hjemmeside om INSPIRE], hvor man
 også finder vejledninger, videoer og best practice eksempler, samt
@@ -62,6 +62,26 @@ INSPIRE-direktivet.
 
 Der henvises til en del af de tekniske vejledninger nedenfor under det
 relevante emne.
+
+[#aabne-data-direktiv]
+=== Åbne data-direktivet skaber adgang til offentlige data
+
+http://data.europa.eu/eli/dir/2019/1024/oj[Direktivet om åbne data og videreanvendelse af den offentlige sektors informationer], også kaldet åbne data-direktivet, har til formål at skabe adgang til og forbedre kvaliteten af de offentlige data på tværs af EU. Direktivet bidrager dermed til at styrke EU’s dataøkonomi <<digi1>>. Følgende seks tematiske kategorier af datasæt fastsættes af åbne data-direktivet:
+
+* geospatiale data
+* jordobservation og miljø
+* meteorologiske data
+* statistik
+* virksomheder og virksomhedsejerskab
+* mobilitet
+
+Åbne data-direktivet gennemføres via national lovgivning i de enkelte medlemslande. I Danmark sker det via https://www.retsinformation.dk/eli/lta/2021/1764[Bekendtgørelse af lov om videreanvendelse af den offentlige sektors informationer], også kaldet PSI-loven.
+
+==== Anvendelse af datasæt af høj værdi giver samfundsøkonomiske fordele
+
+I tillæg til åbne data-direktivet er der vedtaget en gennemførelsesbestemmelse, http://data.europa.eu/eli/reg_impl/2023/138/oj[Kommissionens gennemførelsesforordning 2023/1238,title=Kommissionens gennemførelsesforordning (EU) 2023/1238 af 21. december 2022 om en liste over særlige typer datasæt af høj værdi og ordningerne for deres offentliggørelse og videreanvendelse]. Den udpeger inden for ovennævnte kategorier såkaldte datasæt af høj værdi (HVD). Datasæt af høj værdi skal være gratis, maskinlæsbare og tilgængelige via API-grænseflader. De skal også være tilgængelige i form af massedownloads, hvis det er relevant.
+
+Datasæt af høj værdi skal gøres tilgængelige efter licensen Creative Commons Public Domain Dedication (CC0) eller alternativt Creative Commons BY 4.0-licensen. En tilsvarende eller mindre restriktiv åben licens må også anvendes. Digitaliseringsstyrelsen anbefaler dog brugen af standardlicenser fra Creative Commons (CC) suiten af licenser. Læs Digitaliseringsstyrelsens anbefalinger om vilkår for brug af åbne offentlige data i <<digi2>>.
 
 [#sdos]
 === ISO og OGC standarder
