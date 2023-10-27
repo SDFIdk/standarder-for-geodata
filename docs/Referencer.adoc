@@ -1,6 +1,8 @@
 [bibliography]
 == Referencer
 * [[[capu10,Capu10]]] CAPUTO, Raymond G. The GeoPDF Project: Creating Maps for the Non-Mapper. _Engineer_. 1 januar 2010. Tilgængelig på: https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf[https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf,title=The GeoPDF Project: Creating Maps for the Non-Mapper]
+* [[[digi1,Digi1]]] DIGITALISERINGSSTYRELSEN. Videreanvendelse af offentlige data. [Set 27 oktober 2023]. Tilgængelig på: https://digst.dk/data/videreanvendelse-af-offentlige-data/
+* [[[digi2,Digi2]]] DIGITALISERINGSSTYRELSEN. Vilkår for brug af åbne offentlige data. [Set 27 oktober 2023]. Tilgængelig på: https://digst.dk/data/vilkaar-for-brug-af-aabne-offentlige-data/
 * [[[json-schema,JSON Schema]]] WRIGHT, A., ANDREWS, H. og HUTTON, B., red. _JSON Schema: A Media Type for Describing JSON Documents_. IETF Internet-Draft. 17 september 2019. Tilgængelig på: https://datatracker.ietf.org/doc/draft-handrews-json-schema/[https://datatracker.ietf.org/doc/draft-handrews-json-schema/,title=JSON Schema: A Media Type for Describing JSON Documents]
 * [[[gd-modelregler, Grunddata-modelregler]]] DIGITALISERINGSSTYRELSEN. _Modelregler for grunddata_. Version 1.1. februar 2015. Tilgængelig på: https://datafordeler.dk/media/1128/grunddata-modelregler.pdf[https://datafordeler.dk/media/1128/grunddata-modelregler.pdf,title=Modelregler for grunddata]
 * [[[kron14,Kron14]]] KRONBORG MAZZOLI, Ulla. INSPIRE – hvorfor er det en god ide? _Geoforum Perspektiv_. juni 2014. No. 24–2014, p. 6–19. ISSN 1601-8796. Tilgængelig på: https://inspire-danmark.dk/media/2916243/inspire_engodide_perspektiv2014.pdf[https://inspire-danmark.dk/media/2916243/inspire_engodide_perspektiv2014.pdf,title=Geoforum Perspektiv]
