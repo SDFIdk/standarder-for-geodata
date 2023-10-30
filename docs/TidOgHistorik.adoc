@@ -40,6 +40,8 @@ Hvis der i et informationssystem registreres hvornår et forretningsobjekt har �
 . Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på et tidligere tidspunkt?
 . Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet ville være på et senere tidspunkt?
 
+Håndtering af tid i relationelle databaser beskrives udførligt i <<snodgrass>>. Designmønstre for håndtering af tid i software beskrives i <<fowl05>>. <<fowl05>> henviser også til forskelligt anden relevant litteratur.
+
 [#temporal-databases]
 ==== The Consensus Glossary of Temporal Database Concepts
 
@@ -78,30 +80,3 @@ SQL-data.
 [NOTE]
 I SQL-standarden anvendes termen “application time” som synonym for
 “valid time”, og “system time” som synonym for “transaction time”.
-
-[#snodgrass]
-==== Developing time-oriented database applications in SQL
-
-[.bibliographicaldetails] 
-SNODGRASS, Richard T. _Developing time-oriented database applications in
-SQL_. San Francisco, California : Morgan Kaufmann Publishers, juli 1999.
-ISBN 1-55860-436-7. Tilgængelig på:
-link:++https://www2.cs.arizona.edu/~rts/tdbbook.pdf++[++https://www2.cs.arizona.edu/~rts/tdbbook.pdf++,title=Developing time-oriented database applications in SQL] 
-
-Bogen er den mest omfattende behandling af håndtering af tid i
-relationelle databaser der findes og var den vigtigste kilde for
-ovenstående rapport.
-
-[#fowler-temporal-patterns]
-==== Further Patterns of Enterprise Application Architecture
-
-[.bibliographicaldetails]
-FOWLER, Martin. Temporal Patterns. _Further Patterns of Enterprise
-Application Architecture_. 16 februar 2005. [Set 11 februar 2020].
-Tilgængelig på:
-https://martinfowler.com/eaaDev/timeNarrative.html[https://martinfowler.com/eaaDev/timeNarrative.html,title=Temporal Patterns]
-
-Indlægget beskriver problematikken ang. tidsdimensioner og præsenterer
-forskellige designmønstre (“design patterns”) for at håndtere
-forskellige grader af tidsunderstøttelse i software. Derudover henviser
-indlægget til forskelligt anden relevant litteratur. 
