@@ -41,10 +41,9 @@ Hvis der i et informationssystem registreres hvornår et forretningsobjekt har �
 . Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet ville være på et senere tidspunkt?
 
 [#temporal-databases]
-==== Temporal Databases: Research and Practice
+==== The Consensus Glossary of Temporal Database Concepts
 
 [.bibliographicaldetails]
-
 JENSEN, Christian S. og DYRESON, Curtis E. The Consensus Glossary of 
 Temporal Database Concepts—February 1998 Version. I: _Temporal 
 Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
@@ -52,7 +51,8 @@ Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
 doi:link:https://doi.org/10.1007/BFb0053710[10.1007/BFb0053710,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)]. 
 Tilgængelig på: https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version]
 
-Denne artikel indeholder termer og definitioner for begreber som
+Artiklen _The Consensus Glossary of 
+Temporal Database Concepts_ indeholder termer og definitioner for begreber som
 anvendes i temporale databaser, såsom “temporal”, “lifespan”, “valid
 time”, osv. En forklaring for hvorfor en bestemt term, og ikke en anden
 term, er valgt, er også til stede. Som titlen indikerer, er der tale om
@@ -60,7 +60,7 @@ resultatet af en proces for at opnå en højere grad af enhed ang.
 navngivning og definitioner af begreber inden for dette domæne.
 
 [NOTE]
-Grunddataprogrammets begreber “virkningstid” og “registreringstid” 
+“Virkningstid” og “registreringstid” 
 svarer til artiklens begreber “Valid time”, henholdsvis “transaction 
 time”.
 
