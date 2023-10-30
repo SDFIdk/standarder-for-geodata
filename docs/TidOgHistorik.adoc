@@ -79,46 +79,6 @@ SQL-data.
 I SQL-standarden anvendes termen “application time” som synonym for
 “valid time”, og “system time” som synonym for “transaction time”.
 
-[#bitemporalitet-poc]
-==== Bitemporalitet, proof of concept
-
-[.bibliographicaldetails]
-GEODATASTYRELSEN og KL. _Bitemporalitet. Proof of concept_. 19 september 2014. [Set 11 februar 2020]. Tilgængelig på:
-http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf[http://arkitekturguiden.digitaliser.dk/sites/default/files/ctools/bitemporalitet-v1.2.pdf,title=Bitemporalitet. Proof of concept]
-
-Rapporten beskriver en række problemstillinger omkring historik og
-bitemporalitet, som er relevante i forhold til at distribuere data med
-høj aktualitet og med en datahistorik der giver sporbarhed i de
-foretagne registreringer. Dokumentet anvender en konstrueret matrikulær
-udstykning som showcase til at forklare egenskaber og konsekvenser ved
-modellering af bitemporale egenskaber.
-
-Dokumentet blev skrevet for at skabe mere tydelighed om
-reglen om dobbelthistorikunderstøttelse fra Grunddata-modelreglerne 
-<<gd-modelregler>>.
-
-[#sdfe-regler-historik]
-==== Regelsæt for historik i data 
-
-[.bibliographicaldetails] 
-SDFE, _Regelsæt for historik i data_ [igangværende arbejde]
-
-Dokumentet beskrives tre sæt af historikmodeller, som understøtter
-forskellig funktionalitet vedrørende forvaltede objekters livscyklus og
-de udtræk, der gør historikken brugbar.
-
-Dokumentet indeholder beskrivelse af et begrebsapparat, der kommunikerer
-en relativt kompleks, men også en konsistent og implementérbar model, der
-kan danne baggrund for håndtering af historik i data, der udstiller
-offentligt forvaltede objekter.
-
-Til sidst er der en beskrivelse af, hvordan historikken anvendes i
-forbindelse med andre attributter, såsom status, med det formål at
-styrke den forretningsmæssige brug af data.
-
-[NOTE] 
-SDFE har p.t. et eksisterende regelsæt, som skal revideres.
-
 [#snodgrass]
 ==== Developing time-oriented database applications in SQL
 
