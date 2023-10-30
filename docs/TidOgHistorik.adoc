@@ -1,40 +1,44 @@
 [#tid-historik]
 === Tid og historik
 
-Historik er den tidsmæssige repræsentation af noget. To vigtige
-tidsdimensioner er virkningstid (tid hvor et faktum er sandt i den
-modellerede virkelighed) og registreringstid (tid hvor et faktum er
-gældende i en database og kan findes).
+Virksomheder og myndigheder håndterer forskellige ting som er vigtige i deres dagligdag. Det kan være fysiske objekter (f.eks. bygninger) eller mere abstrakte begreber (f.eks. aftaler eller kunder). Disse ting betegnes _forretningsobjekter_.
 
-Ved at inkludere virkningstid i en model, kan man svare på de følgende
-spørgsmål:
+NOTE: Der skelnes mellem typer af forretningsobjekter og instanser af forretningsobjekter. F.eks. dit hus, mit hus og vores kontor er alle tre instanser af typen “bygning”. Man kan også sige at dit hus, mit hus og vores kontor er eksemplarer, forekomster eller individer af klassen, slagsen eller almenbegrebet “bygning”. “Forretningsobjekt” anvendes her som synonym for "forretningsobjektinstans".
 
-* Hvad er gældende (lige nu)?
-* Hvad var gældende på et givet tidspunkt i fortiden?
-* Hvad vil være gældende på et givet tidspunkt i fremtiden?
+For at en virksomhed eller myndighed kan holde styr på data om sine forretningsobjektinstanser, registreres deres repræsentationer, kaldt _dataobjekter_, i et _informationssystem_. Forretningsobjekter befinder sig i virkeligheden, hvorimod dataobjekter befinder sig i informationssystemer, og er information om virkeligheden.
 
-Ved at inkludere registreringstid i en model, kan man svare på de
-følgende spørgsmål:
+Virkeligheden er i stadig forandring; et forretningsobjekt kan ændre sig og dermed befinde sig i en ny tilstand. Man kan derfor stille følgende tre spørgsmål om et forretningsobjekt:
 
-* Hvad ved man rent faktisk (lige nu)?
-* Hvad vidste/troede man på et givet tidspunkt i fortiden?
+. Hvordan er forretningsobjektet lige nu?
+. Hvordan var forretningsobjektet på et givet tidspunkt i fortiden?
+. Hvordan vil forretningsobjektet være på et givet tidspunkt i fremtiden?
 
-Ved at inkludere både virkningstid og registreringstid i en model, kan
-man svare på spørgsmål som:
+[NOTE]
+====
+Når man f.eks. er interesseret i et hus’ udseende (farve, form, osv.), kan spørgsmålene formuleres som følgende:
 
-* Hvad ved man som værende gældende (lige nu)?
-* Hvad var gældende og troede man på et givet tidspunkt i fortiden?
-* Hvad vil være gældende på et givet tidspunkt i fremtiden (i forhold
-til nu)?
-* På et givet tidspunkt i fortiden, hvad troede man ville være gældende
-lige nu?
-* På et givet tidspunkt i fortiden, hvad troede man var gældende på et
-andet tidspunkt i fortiden?
-* På et givet tidspunkt i fortiden, hvad troede man ville være gældende
-på et tidspunkt i fremtiden?
+. Hvordan ser huset ud lige nu?
+. Hvordan så huset ud på et givet tidspunkt i fortiden?
+. Hvordan vil huset se ud på et givet tidspunkt i fremtiden?
+====
 
-Når man har både virkningstid og registeringstid med, taler man i
-datalogi om bitemporalitet, også kendt som dobbelthistorik.
+Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig eller vil ændre sig, så understøtter informationssystemet _virkningstid_ og kan det svare på ovenstående tre spørgsmål.
+
+Vores viden om virkeligheden er også i stadig forandring. Man kan derfor stille følgende to spørgsmål:
+
+. Hvad ved man nu om forretningsobjektet? Eller rettere sagt, hvad tror man nu om forretningsobjektet?
+. Hvad troede man på et givet tidspunkt i fortiden om forretningsobjektet?
+
+Hvis der i et informationssystem registreres hvornår man har fået ny viden om et forretningsobjekt, så understøtter informationssystemet _registreringstid_ og kan det svare på ovenstående to spørgsmål.
+
+Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig eller vil ændre sig samt hvornår man har fået ny viden, så understøtter informationssystemet _bitemporalitet_ eller _dobbelthistorik_ og kan det svare på følgende seks spørgsmål:
+
+. Hvad tror man nu om hvordan forretningsobjektet er lige nu?
+. Hvad tror man nu om hvordan forretningsobjektet var på et givet tidspunkt i fortiden?
+. Hvad tror man nu om hvordan forretningsobjektet vil være på et givet tidspunkt i fremtiden?
+. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på det tidspunkt?
+. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på et tidligere tidspunkt?
+. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet ville være på et senere tidspunkt?
 
 [#temporal-databases]
 ==== Temporal Databases: Research and Practice
