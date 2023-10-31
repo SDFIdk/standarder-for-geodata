@@ -66,6 +66,19 @@ praksis kan og vil anvende de data, som de andre modeller beskriver, se
 også xref:Identifikatorer.adoc#identifikatorer[Identifikatorer].
 ====
 
+[#704]
+==== DS/ISO 704 Begrebsarbejde – Principper og metoder
+
+[.bibliographicaldetails]
+DS/ISO 704:2022, _Begrebsarbejde – Principper og metoder_
+
+Standarden beskriver hvordan objekter, begreber, definitioner og betegnelser relaterer sig til hinanden. Den opstiller også principper for hvordan termer dannes og hvordan definitioner udarbejdes.
+
+[NOTE]
+====
+Guide to terminology <<suon01>> er en praktisk introduktion til principper og metoder for praktisk terminologiarbejde. Bogen giver praktiske eksempler på, hvordan man udarbejder definitioner.
+====
+
 [#19103]
 ==== DS/ISO 19103 Konceptuelt modelleringssprog
 
