@@ -116,11 +116,10 @@ koordinatreferencesystemer.
 Standarden er også kendt som DS/ISO 19162:2019, _Geografisk information
 - Læsbar tekststreng til angivelse af koordinatreferencesystemer_. 
 
-[#sdfe-crs]
-==== Vejledning i brug af koordinatreferencesystemer
+[#geonotes]
+==== GeoNotes
 
 [.bibliographicaldetails]
-SDFE, _Vejledning i brug af koordinatreferencesystemer_
+_GeoNotes_, {author}. Tilgængelig på: https://sdfi.dk/vores-opgaver/geodaesi/geofaglige-publikationer[https://sdfi.dk/vores-opgaver/geodaesi/geofaglige-publikationer,title=Geofaglige publikationer]
 
-[NOTE]
-Igangværende arbejde
+GeoNotes-serien omfatter publikationer om koordinatsystemer relevant for Danmark og Grønland, f.eks. https://sdfi.dk/Media/637889927600611409/001-ETRS89-UTM.pdf[ETRS89/UTM32] og https://sdfi.dk/Media/638325244589317645/010-DVR90.pdf[DVR90].

@@ -38,8 +38,7 @@ en sammenhængende digitalisering af den offentlige sektor.
 
 [.bibliographicaldetails]
 --
-DIGITALISERINGSSTYRELSEN. _Fællesoffentlige regler for begrebs- og
-datamodellering_. Version 2.0.0. 2019. Tilgængelig på: https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering[https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering,title=Fællesoffentlige regler for begrebs- og datamodellering]
+DIGITALISERINGSSTYRELSEN. _Fællesoffentlige regler for begrebs- og datamodellering_. Version 2.1.1. 2 august 2021. [Set 5 oktober 2023]. Tilgængelig på: https://arkitektur.digst.dk/node/1091[https://arkitektur.digst.dk/node/1091,title=Fællesoffentlige regler for begrebs- og datamodellering]
 --
 
 Dokumentet sætter regler for begrebsmodeller og datamodeller, så data
@@ -51,6 +50,8 @@ defineret fyldestgørende.
 
 [NOTE]
 ====
+Modellering efter modelreglerne understøttes af en https://arkitektur.digst.dk/node/770[vejledning] og et sæt https://arkitektur.digst.dk/node/694[værktøjer].
+
 I høj fokus skal være egenskaber som går igen i mange datasæt. Eksempler
 er forskellige typer datoer (forslagsdato, vedtagelsesdato, osv.) og
 status ifm. et objekts livscyklus.
@@ -59,21 +60,11 @@ Man skal være opmærksom på, hvordan data administreres, især hvad angår:
 
 * historik: egenskaber som beskriver et objekts levetid i forhold til
 virkningstid og registreringstid stiller store krav til det it-system,
-der skal holde styr på data. Se også punkt 5 om historik.
+der skal holde styr på data. Se også xref:TidOgHistorik.adoc#tid-historik[Tid og historik].
 * sammenhæng: relationer til andre modeller forudsætter, at man i
 praksis kan og vil anvende de data, som de andre modeller beskriver, se
-også punkt 2 om identifikatorer.
+også xref:Identifikatorer.adoc#identifikatorer[Identifikatorer].
 ====
-
-[#fda-modelregler-vejledning]
-==== Vejledning i begrebs- og datamodellering
-
-[.bibliographicaldetails]
-FÆLLESOFFENTLIG DIGITAL ARKITEKTUR, _Vejledning i begrebs- og
-datamodellering_. Tilgængelig på: https://arkitektur.digst.dk/node/770[https://arkitektur.digst.dk/node/770,title=Vejledning til modellering]
-
-Vejledningen uddyber reglerne beskrevet i <<fda-modelregler>> og beskriver processerne omkring
-modellering.
 
 [#704]
 ==== DS/ISO 704 Begrebsarbejde – Principper og metoder

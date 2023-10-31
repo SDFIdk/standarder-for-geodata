@@ -8,10 +8,8 @@ http://data.europa.eu/eli/dir/2007/2/2019-06-26[INSPIRE-direktivet] er
  fundamentet for standardisering og deling af geodata på tværs af 
 særligt miljøforvaltninger i EU.
 
-Adgang til geografisk information er en forudsætning for at kunne
-forvalte samfundet og håndtere kriser, og ved at basere sin forvaltning
-på et fælles geografisk grundlag skabes der større sammenhæng i
-opgavevaretagelsen.
+Forvaltning af samfundet og håndtering af kriser forudsætter adgang til geografisk information. Større sammenhæng i opgavevaretagelsen skabes ved at basere sin forvaltning
+på et fælles geografisk grundlag.
 
 INSPIRE-direktivet
 skal tilvejebringe de nødvendige tekniske, data- og aftalemæssige
@@ -35,8 +33,8 @@ komponenter:
 
 INSPIRE-direktivet gennemføres via national lovgivning i de enkelte
 medlemslande. I Danmark sker det via
-https://www.retsinformation.dk/eli/lta/2017/746[_Lov om infrastruktur
-for geografisk information i Den Europæiske Union_], også kaldet
+https://www.retsinformation.dk/eli/lta/2017/746[Lov om infrastruktur
+for geografisk information i Den Europæiske Union], også kaldet
 INSPIRE-loven, lovbekendtgørelse nr. 746 af 15. juni 2017. Læs mere på
 https://inspire-danmark.dk[den danske hjemmeside om INSPIRE], hvor man
 også finder vejledninger, videoer og best practice eksempler, samt
@@ -45,10 +43,10 @@ som ovenstående tekst er baseret på.
 
 Gennemførelsesbestemmelserne er suppleret af en række
 https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41[tekniske
-retningslinjer], der giver detaljeret vejledning om implementeringen
+retningslinjer], der vejleder detaljeret om implementeringen,
 fx ved at anvise gældende standarder på området.
 
-Disse vejledninger er ikke juridisk bindende, men har som formål at
+Retningslinjerne er ikke juridisk bindende, men har som formål at
 sikre reel interoperabilitet. Selve direktivet og
 gennemførelsesbestemmelser er forsøgt skrevet teknologineutralt. Det vil
 sige, at man i INSPIRE-regi kan forholde sig til og benytte sig af nye
@@ -60,38 +58,53 @@ EU Kommissionen. Den fungerer som implementeringsorgan, der behandler
 problemstillinger knyttet til den praktiske implementering af
 INSPIRE-direktivet.
 
-Der henvises til en del af de tekniske vejledninger nedenfor under det
+En del af de tekniske retningslinjer findes i gennemgangen nedenfor, under det
 relevante emne.
 
+[#aabne-data-direktiv]
+=== Åbne data-direktivet skaber adgang til offentlige data
+
+http://data.europa.eu/eli/dir/2019/1024/oj[Direktivet om åbne data og videreanvendelse af den offentlige sektors informationer], også kaldet åbne data-direktivet, har til formål at skabe adgang til og forbedre kvaliteten af de offentlige data på tværs af EU. Direktivet bidrager dermed til at styrke EU’s dataøkonomi <<digi1>>. Følgende seks tematiske kategorier af datasæt fastsættes af åbne data-direktivet:
+
+* geospatiale data
+* jordobservation og miljø
+* meteorologiske data
+* statistik
+* virksomheder og virksomhedsejerskab
+* mobilitet
+
+Åbne data-direktivet gennemføres via national lovgivning i de enkelte medlemslande. I Danmark sker det via https://www.retsinformation.dk/eli/lta/2021/1764[Bekendtgørelse af lov om videreanvendelse af den offentlige sektors informationer], også kaldet PSI-loven.
+
+==== Anvendelse af datasæt af høj værdi giver samfundsøkonomiske fordele
+
+I tillæg til åbne data-direktivet er der vedtaget en gennemførelsesbestemmelse, http://data.europa.eu/eli/reg_impl/2023/138/oj[Kommissionens gennemførelsesforordning 2023/1238,title=Kommissionens gennemførelsesforordning (EU) 2023/1238 af 21. december 2022 om en liste over særlige typer datasæt af høj værdi og ordningerne for deres offentliggørelse og videreanvendelse]. Den udpeger inden for ovennævnte kategorier såkaldte datasæt af høj værdi (HVD). Datasæt af høj værdi skal være gratis, maskinlæsbare og tilgængelige via API-grænseflader. De skal også være tilgængelige i form af massedownloads, hvis det er relevant.
+
+Datasæt af høj værdi skal gøres tilgængelige efter licensen Creative Commons Public Domain Dedication (CC0) eller alternativt Creative Commons BY 4.0-licensen. En tilsvarende eller mindre restriktiv åben licens må også anvendes. Digitaliseringsstyrelsen anbefaler dog brugen af standardlicenser fra Creative Commons (CC) suiten af licenser. Læs Digitaliseringsstyrelsens anbefalinger om vilkår for brug af åbne offentlige data i <<digi2>>.
+
 [#sdos]
-=== ISO og OGC standarder
+=== Standarder for geodata etableres i regi af ISO og OGC
 
-ISO og OGC sikrer, at der etableres globale standarder for anvendelse af
-geodatakomponenter.
+De fleste globale standarder i geodatadomænet etableres i regi af https://www.iso.org/[International Organization for Standardization (ISO)] – mere specifikt https://committee.iso.org/home/tc211[teknisk komite 211 (ISO/TC 211)] – og https://www.ogc.org[Open Geospatial Consortium (OGC)]. Derfor henviser denne gennemgang primært til ISO- og OGC-standarder.
 
-International Organization for Standardization (ISO)
-https://committee.iso.org/home/tc211[tekniske komite 211] og Open
-Geospatial Consortium (https://www.ogc.org[OGC]) er de to centrale
-standardiseringsorganisationer i geodatadomænet, og derfor henviser
-dette bilag primært til ISO- og OGC-standarder. Disse standarder har i
+ISO- og OGC-standarder har i
 vid udstrækning dannet grundlag for implementeringen af
-INSPIRE-direktivet, der er ligeledes tale om standarder, som bliver
-understøttet af en række it-produkter. Hvor der findes implementerede
-løsninger baseret på de nævnte standarder, vil der være link til disse i
-forbindelse med beskrivelsen af standarderne.
+<<inspire,INSPIRE-direktivet>>. Mere generelt er standarderne implementeret
+i en række it-produkter. Hvor der findes implementerede
+løsninger baseret på de nævnte standarder, vil der være et link til
+disse i gennemgangen.
 
-Fælles for såvel ISO- og OGC-standarder gælder, at de løbende bliver
-ajourført og opdateret, hvorfor nedenstående på nogle områder kan
-betragtes som et øjebliksbillede. Hvis der ikke står et årstal efter en
-standard fra ISO, vil der til enhver tid være tale om den nyeste version
+Både ISO- og OGC-standarder ajourføres og opdateres løbende,
+hvorfor gennemgangen på nogle områder kan
+betragtes som et øjebliksbillede. 
+
+==== Om ISO-standarder
+
+Man kan finde en oversigt over alle ISO/TC 211-standarder på 
+https://www.iso.org/committee/54904/x/catalogue/p/1/u/0/w/0/d/0[komiteens hjemmeside].
+Nogle standarder er blevet ændret eller fejlrettet efter publikation. Mindre tillæg og rettelser er udgivet som særskilte dokumenter. Hvis der ikke står et årstal efter en standard fra ISO, vil der til enhver tid være tale om den nyeste version
 af den pågældende standard.
 
-En oversigt over alle ISO-standarder fra den tekniske komite 211 kan
-findes på 
-https://www.iso.org/committee/54904/x/catalogue/p/1/u/0/w/0/d/0[komiteens hjemmeside].
-Man skal i den forbindelse være opmærksom på, at der til nogle af de
-nævnte standarder er udgivet mindre tilføjelser og fejlrettelser som
-særskilte dokumenter. I Danmark er det udvalget
+I Danmark er det udvalget
 https://www.ds.dk/da/udvalg/kategorier/it/geografisk-information[S-276
 Geografisk Information] i https://www.ds.dk/da[Dansk Standard (DS)], der
 deltager i ISO/TC 211.
@@ -104,19 +117,23 @@ https://www.ds.dk/da/om-standarder/hvad-er-en-standard/derfor-koster-standarder-
 hos DS.
 ====
 
+==== Om OGC-standarder
+
 En oversigt over alle OGC-standarder findes på
 https://www.ogc.org/standards/[OGC's hjemmeside]. En del standarder
 er udgivet i flere versioner i takt med, at behovene for standardisering
 har udviklet sig. På hjemmesiden kan man finde både den gældende version
-samt tidligere (og dermed tilbagetrukne) versioner. OGC har et
+samt tidligere (og dermed tilbagetrukne) versioner.
+
+OGC har et
 compliance-program, hvis formål er, at øge systeminteroperabilitet
 samtidigt med, at risikoen ved at vælge en ny teknologi mindskes. Man
-kan på OGC’s hjemmeside se, om et produkt, ifølge producenten,
-implementerer en standard, eller om det ifølge OGC er helt konformt med
-standarden. Det
+kan på OGC’s hjemmeside se, om et produkt
+implementerer en standard ifølge producenten, eller om det er helt konformt med
+standarden ifølge OGC. Det
 er dog ikke alle produkter, som implementerer en bestemt standard, der
 står på listerne. Det afhænger af, om producenterne har
 https://www.ogc.org/resource/products/stats[registreret,title=Implementation Statistics]
 deres produkt.
 
-NOTE: https://www.ogc.org/docs/is[OGC-standarder] er uden royalties, og er offentligt tilgængelige.
+NOTE: https://www.ogc.org/docs/is[OGC-standarder] er uden royalties og er offentligt tilgængelige.
