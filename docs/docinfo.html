@@ -31,10 +31,13 @@ use profile link relation, not the deprecated profile attribute on head -->
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 /* Change color for both types of admonitions: blocks and single paragraphs. */
 .admonitionblock>table td.content{color:rgba(0,0,0,.65)}
-.admonitionblock>table td.content :not(a){color:rgba(0,0,0,.65)}
+.admonitionblock>table td.content :not(a,a>span){color:rgba(0,0,0,.65)}
+/* Change paddings */
+.paragraph{padding: var(--space-sm) 0}
+.sect1,.sect2,.sect3{padding:var(--space-sm) 0 var(--space-sm)}
 /* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
-#toc ul.sectlevel2{padding-left:1.75em}
-#toc ul.sectlevel3{padding-left:2.0em}
+#toc ul.sectlevel2{padding-left:var(--space-sm)}
+#toc ul.sectlevel3{padding-left:var(--space-md)}
 /* Sticky table of contents */
 @media (min-width: 992px) {
   #toc {
@@ -49,16 +52,32 @@ use profile link relation, not the deprecated profile attribute on head -->
   }
 }
 /* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
-.bibliographicaldetails{border:.25rem solid var(--medium-steel);margin-bottom:1.25em;padding:0.5em;background-color: var(--hvid);border-radius:1rem}
+.bibliographicaldetails{border:.25rem solid var(--medium-steel);padding: var(--space-sm);margin-bottom:var(--space-sm);background-color: var(--hvid);border-radius:1rem}
 .bibliographicaldetails p{margin-bottom:0em}
 .bibliographicaldetails>:first-child{margin-top:0}
 .bibliographicaldetails>:last-child{margin-bottom:0}
 /* Extra */
-#eksempel_opbygning{border:1px solid var(--mork-tyrkis)}
-#eksempel_opbygning{padding: var(--padding)}
+#eksempel_opbygning{border:1px solid var(--mork-tyrkis);margin-bottom:var(--space-md);padding:var(--padding)}
 #eksempel_opbygning>div.content>div.title>p{color:var(--h4-color);text-transform: uppercase;letter-spacing:.04em}
 #eksempel_opbygning>div.content>div>p,ol,ul,table{font-size:90%}
 #eksempel_opbygning>div.content>div.admonitionblock>table td.content{color:rgba(0,0,0,.6);font-size:90%}
+/* Icon described on https://pictogrammers.com/library/mdi/icon/open-in-new/, CSS below generated with https://api.iconify.design/mdi.css?icons=open-in-new */
+.icon--mdi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+}
+
+.icon--mdi--open-in-new {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z'/%3E%3C/svg%3E");
+}
+/* Extra, custom styling for icon */
+.icon--mdi--open-in-new-custom{margin-left:var(--space-xxs);vertical-align:text-bottom}
 </style>
 <script type="application/ld+json">
 {

@@ -82,10 +82,13 @@
     <!-- Links der ikke peger på et sted i samme side skal åbnes i et nyt faneblad -->
     <xsl:template match="x:a" name="addTargetBlank">
         <xsl:element name="x:a">
-            <xsl:if test="not(starts-with(@href, '#'))">
+            <xsl:if test="exists(@href) and not(starts-with(@href, '#'))">
                 <xsl:attribute name="target" select="'_blank'" />
             </xsl:if>
             <xsl:apply-templates select="@*|node()" />
+            <xsl:if test="exists(@href) and not(starts-with(@href, '#'))">
+                <span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span>
+            </xsl:if>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
