@@ -22,12 +22,9 @@ kravspecikationer mv.
 .Baggrund
 [#baggrund]
 --
-Version 1.0.0 af dette dokument og bilag 3 til _Vejledning om geografi i 
-lovgivningen_ <<vej-2020-9428>> er indholdsmæssigt identisk, på nær den 
-indledende tekst. Standarderne kan nemlig være relevante at anvende i 
-forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold
- til registermetoden (beskrevet i _Vejledning om geografi i 
-lovgivningen_).
+{author} og Digitaliseringsstyrelsen udgav i 2020 _Vejledning om geografi i lovgivningen_ <<vej-2020-9428>>. Vejledningen indeholdt https://www.retsinformation.dk/eli/retsinfo/2020/9428#id4633c61a-4caf-4890-b270-3e0b5e80f6b9[bilaget _Anbefalede standarder ved etablering af geodata_]. Standarderne kan nemlig være relevante at anvende i forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold til den metode til stedbestemmelse i lovgivningen hvor der henvises til et register.
+
+Siden hen har {author} udgivet _Anbefalede standarder for geodata_ som en selvstændig publikation. Det gør indeholdet lettere tilgængeligt, læsevenligt og mindre kompliceret at opdatere. Og det kan bedre anvendes i anden kontekst end retsgeografi. _Vejledning om geografi i lovgivningen_ udkom i en ny version i 2023 <<vej-2023-9780>> og henviser nu til _Anbefalede standarder for geodata_.
 --
 
 .Læsevejledning
