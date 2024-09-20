@@ -53,8 +53,7 @@ Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
 doi:link:https://doi.org/10.1007/BFb0053710[10.1007/BFb0053710,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)]. 
 Tilgængelig på: https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version]
 
-Artiklen _The Consensus Glossary of 
-Temporal Database Concepts_ indeholder termer og definitioner for begreber som
+Artiklen [.cite]#https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[The Consensus Glossary of Temporal Database Concepts]# indeholder termer og definitioner for begreber som
 anvendes i temporale databaser, såsom “temporal”, “lifespan”, “valid
 time”, osv. En forklaring for hvorfor en bestemt term, og ikke en anden
 term, er valgt, er også til stede. Som titlen indikerer, er der tale om
@@ -73,10 +72,10 @@ time”.
 ISO/IEC 9075-2, _Information technology — Database languages — SQL —
 Part 2: Foundation (SQL/Foundation)_
 
-ISO-standarden for Structured Query Language (SQL) er delt op i flere
+[.cite]#ISO/IEC 9075#, standarden for Structured Query Language (SQL), er delt op i flere
 dele. Del 2 definerer datastrukturer og grundlæggende operationer på
 SQL-data.
 
 [NOTE]
-I SQL-standarden anvendes termen “application time” som synonym for
+I [.cite]#ISO/IEC 9075-2# anvendes termen “application time” som synonym for
 “valid time”, og “system time” som synonym for “transaction time”.

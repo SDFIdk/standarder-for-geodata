@@ -18,19 +18,19 @@ OGC 07-036r1, _OpenGIS® Geography Markup Language (GML) Encoding
 Standard_. Version 3.2.2. 5 december 2016. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://portal.opengeospatial.org/files/?artifact_id=74183&version=2,title=OpenGIS® Geography Markup Language (GML) Encoding Standard] 
 
-Denne standard specificerer en indkodning i Extensible Markup Language
+[.cite]#https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[OpenGIS® Geography Markup Language (GML) Encoding Standard]# 
+specificerer en indkodning i Extensible Markup Language
 (XML) for bl.a. hovedparten af begreberne defineret i
-<<19103,DS/ISO 19103>>, <<19107,DS/EN ISO 19107>> og <<19111,DS/EN ISO 19111>>.
+[.cite]#<<19103,DS/ISO 19103>>#, [.cite]#<<19107,DS/EN ISO 19107>># og [.cite]#<<19111,DS/EN ISO 19111>>#.
 
 GML-data beskrives af et GML-applikationsskema, et XML-skema som
 anvender elementer fra skemaerne defineret af GML-standarden.
 
 Standarden indeholder et sæt regler, der definerer, hvordan man på
 systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med <<19103,DS/ISO 19103>> til et GML-applikationsskema.
+overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til et GML-applikationsskema.
 
-Denne OGC-standard er også kendt som DS/EN ISO 19136-1:2020, _Geografisk 
-information — GML (Geography Markup Language) — Del 1: Grundprincipper_. 
+Standarden er også kendt som [.cite]#DS/EN ISO 19136-1:2020, Geografisk information — GML (Geography Markup Language) — Del 1: Grundprincipper#. 
 
 [NOTE]
 ====
@@ -50,7 +50,7 @@ Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
 
 Der findes software, der har implementeret reglerne der kan omsætte en
-logisk datamodel der er i overensstemmelse med <<19103,DS/ISO 19103>> 
+logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># 
 til et GML-applikationsskema.
 
 GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
@@ -65,16 +65,15 @@ OGC 10-129r1, _OGC® Geography Markup Language (GML) — Extended schemas
 and encoding rules_. Version 3.3.0. 7 februar 2012. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=46568[https://portal.opengeospatial.org/files/?artifact_id=46568,title=OGC® Geography Markup Language (GML) — Extended schemas and encoding rules] 
 
-GML 3.3-standarden er en udvidelse af <<gml-32,GML 3.2-standarden>>, ikke en
+[.cite]#https://portal.opengeospatial.org/files/?artifact_id=46568[OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]#, GML 3.3-standarden, er en udvidelse af <<gml-32,GML 3.2-standarden>>, ikke en
 erstatning for GML 3.2-standarden.
 
 Standarden indeholder bl.a. en indkodning for elementerne defineret i
 DS/EN ISO 19148, _Geografisk information — Lineær reference-system_ og
 kompakte indkodninger af almen anvendte GML-geometrier såsom flader.
 
-Denne OGC-standard er også kendt som DS/EN ISO 19136-2:2018, _Geografisk 
-information — GML (Geography Markup Language) — Del 2: Udvidede skemaer 
-og kodningsregler_.
+Standarden er også kendt som [.cite]#DS/EN ISO 19136-2:2018, Geografisk information — GML (Geography Markup Language) — Del 2: Udvidede skemaer 
+og kodningsregler#.
 
 [NOTE] 
 ====
@@ -95,17 +94,17 @@ http://portal.opengeospatial.org/files/?artifact_id=42729[http://portal.opengeos
 
 GML-standarden er en meget omfattende standard, og derfor har OGC
 defineret et begrænset men nyttigt delmængde af den, for at få mere
-software til at understøtte GML. Geography Markup Language simple
-features profile (GML-SF) begrænser udvalget af geometrier i GML til 0-,
+software til at understøtte GML.
+[.cite]#http://portal.opengeospatial.org/files/?artifact_id=42729[Geography Markup Language simple features profile (GML-SF)]# begrænser udvalget af geometrier i GML til 0-,
 1-, og 2-dimensionelle geometrier beskrevet i 1-, 2-, eller
 3-dimensionale koordinatreferencesystemer og begrænser antallet af måder
 man kan indkode disse geometrier på.
 
-GML-SF definerer tre compliance-niveauer, SF-0, SF-1 og SF-2. Niveau
-SF-2 tillader en database der implementerer <<sfa-sql>> at
+[.cite]#GML-SF# definerer tre compliance-niveauer, SF-0, SF-1 og SF-2. Niveau
+SF-2 tillader en database der implementerer [.cite]#<<sfa-sql>># at
 repræsentere de data, den måtte indeholde.
 
-I modsætning til <<sfa-ca>> tillader GML-SF også bestemte indkodninger for
+I modsætning til [.cite]#<<sfa-ca>># tillader [.cite]#GML-SF# også bestemte indkodninger for
 cirkelbuer og cirkler (`+gml:Arc+`, `+gml:Circle+` og `+gml:CircleByCenterPoint+`).
 
 [#gpkg]
@@ -116,12 +115,12 @@ OGC 12-128r15, _OGC® GeoPackage Encoding Standard - with Corrigendum_.
 Version 1.2.1. 6 september 2018. Tilgængelig på:
 http://www.geopackage.org/spec121/[http://www.geopackage.org/spec121/,title=OGC® GeoPackage Encoding Standard - with Corrigendum] 
 
-GeoPackage er baseret på SQLite, et relationelt
+[.cite]#http://www.geopackage.org/spec121/[OGC® GeoPackage Encoding Standard]# er baseret på SQLite, et relationelt
 databasehåndteringssystem. Én GeoPackage-fil kan håndtere vektordata,
 rasterdata, og metadata. Da en GeoPackage er en databasecontainer,
 understøtter den direkte brug, fx til analyseformål.
 
-GeoPackage er i overensstemmelse med <<sfa-ca>> og <<sfa-sql>>.
+[.cite]#OGC® GeoPackage Encoding Standard# er i overensstemmelse med [.cite]#<<sfa-ca>># og [.cite]#<<sfa-sql>>#.
 
 [NOTE] 
 ====
@@ -130,7 +129,7 @@ videreudvikling af den. Derfor kan der forventes at komme flere
 versioner.
 
 Læs mere om GeoPackage på OGC’s blog:
-https://www.ogc.org/blog/3148[#GeoPackageDay 2020 - what is GeoPackage?]
+[.cite]#https://www.ogc.org/blog/3148[GeoPackageDay 2020 - what is GeoPackage?]#
 
 I Nederlandene er GeoPackage-standarden optaget på
 https://www.forumstandaardisatie.nl/open-standaarden/verplicht[følg-eller-forklar
@@ -146,7 +145,7 @@ GeoPackage ses at være en erstatning for shapefiler.
 
 Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
 man på systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med <<19103,DS/ISO 19103>> til en GeoPackage template.
+overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til en GeoPackage template.
 
 GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload).
 
@@ -162,7 +161,7 @@ OGC 08-139r3, _PDF Georegistration Encoding Best Practice_. OGC Best
 Practice. Version 2.2. 17 januar 2011. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=40537[https://portal.opengeospatial.org/files/?artifact_id=40537,title=PDF Georegistration Encoding Best Practice] 
 
-Denne OGC best practice beskriver hvordan man kan lave PDF-dokumenter
+[.cite]#https://portal.opengeospatial.org/files/?artifact_id=40537[PDF Georegistration Encoding Best Practice]# beskriver hvordan man kan lave PDF-dokumenter
 der er georefererede.
 
 [NOTE] 
@@ -170,8 +169,8 @@ der er georefererede.
 Se følgende dokumenter for mere information angående georefererede
 PDF-dokumenter:
 
-* A PDF Tile Model for Geographic Map Data <<zamx19>>
-* Creating Maps for the Non-Mapper <<capu10>>
+* [.cite]#A PDF Tile Model for Geographic Map Data# <<zamx19>>
+* [.cite]#Creating Maps for the Non-Mapper# <<capu10>>
 ====
 
 JSON og GeoJSON, anvendes typisk til udveksling af et udvalg af features
@@ -187,9 +186,8 @@ Bemærk, at <<rfc-7946>> og <<rfc-8259>> ikke er officielle IETF-standarder
 endnu.
 
 OGC er i gang med at udarbejde en
-https://github.com/opengeospatial/architecture-dwg/tree/master/json-best-practice[JSON
-Best Practice], en OGC Best Practice for hvordan man kan anvende JSON
+[.cite]#https://github.com/opengeospatial/architecture-dwg/tree/master/json-best-practice[JSON Best Practice]#, en OGC Best Practice for hvordan man kan anvende JSON
 som indkodning for OGC-standarden. Indholdet er især baseret på 
-_Testbed-12 JSON and GeoJSON User Guide_ <<ogc-16-122r1>> og
-_Testbed-12 Javascript-JSON-JSON-LD Engineering Report_ <<ogc-16-051>>, 
+[.cite]#Testbed-12 JSON and GeoJSON User Guide# <<ogc-16-122r1>> og
+[.cite]#Testbed-12 Javascript-JSON-JSON-LD Engineering Report# <<ogc-16-051>>, 
 og er inspireret af en del andre OGC-dokumenter om JSON.

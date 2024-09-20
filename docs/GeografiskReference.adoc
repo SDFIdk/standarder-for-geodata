@@ -15,11 +15,11 @@ koordinater.
 [.bibliographicaldetails]
 DS/EN ISO 19111:2020, _Geografisk information - koordinatreferencer_ 
 
-Dette dokument definerer den konceptuelle model til beskrivelse af
+[.cite]#DS/EN ISO 19111# definerer den konceptuelle model til beskrivelse af
 henvisning med koordinater. Den beskriver de minimumsdata, der kræves
 for at definere koordinatreferencesystemer.
 
-Dette dokument beskriver også det konceptuelle skema til definition af
+[.cite]#DS/EN ISO 19111# beskriver også det konceptuelle skema til definition af
 den information, der kræves for at beskrive transformationer, der ændrer
 koordinatværdier.
 
@@ -30,8 +30,8 @@ koordinatreferencesystemmetadata - at blive leveret.
 
 [NOTE]
 ====
-<<19111,DS/EN ISO 19111>> (koordinater), <<wkt-crs,DS/ISO 19162>> (transformationer) 
-og <<19161-1,DS/ISO 19161>> (referencesystemer) udgør
+[.cite]#<<19111,DS/EN ISO 19111>># (koordinater), [.cite]#<<wkt-crs,DS/ISO 19162>># (transformationer) 
+og [.cite]#<<19161-1,DS/ISO 19161>># (referencesystemer) udgør
 tilsammen den formelle beskrivelse af det geodætiske grundlag for al
 geodataregistrering.
 
@@ -49,7 +49,7 @@ objekter”
 dag anvendes i de fleste GIS-aplikationer)
 - et “sprog”, der beskriver geodætiske transformationer
 
-SDFE er aktiv deltager i udviklingen af PROJ, og besætter to poster,
+{author} er aktiv deltager i udviklingen af PROJ, og besætter to poster,
 herunder formandsposten, i PROJ-styregruppen og kan derfor effektivt
 formidle og levere sparring omkring ønsker om yderligere funktionalitet.
 ====
@@ -60,17 +60,17 @@ formidle og levere sparring omkring ønsker om yderligere funktionalitet.
 [.bibliographicaldetails]
 DS/EN ISO 19112:2019, _Geografisk information - Orientering via geografiske identifikatorer_ 
 
-Dette dokument definerer den konceptuelle model for stedbestemte
+[.cite]#DS/EN ISO 19112# definerer den konceptuelle model for stedbestemte
 referencer baseret på geografiske identifikatorer. Det opretter en
 generel model til rumlig henvisning ved hjælp af geografiske
 identifikatorer og definerer komponenterne i et rumligt referencesystem.
 Det specificerer også en konceptuel model for et stednavneregister.
 
-Geografisk orientering via koordinater behandles i <<19111,DS/EN ISO 19111>>. 
+Geografisk orientering via koordinater behandles i [.cite]#<<19111,DS/EN ISO 19111>>#. 
 Imidlertid er en mekanisme til registrering af komplementære
 koordinatreferencer inkluderet i dette dokument.
 
-Dette dokument gør det muligt for producenter af data at definere
+[.cite]#DS/EN ISO 19112# gør det muligt for producenter af data at definere
 stedbestemte referencesystemer ved hjælp af geografiske identifikatorer
 og hjælper brugerne med at forstå de stedbestemte referencer, der bruges
 i datasæt. Det giver mulighed for at konstruere et stednavneregister på en
@@ -83,7 +83,7 @@ for geografisk information.
 [.bibliographicaldetails]
 DS/EN ISO 19161-1:2020, _Geografisk information - Geodætiske referencer - Del 1: ITRS (international terrestrial reference system)_ 
 
-Denne standard definerer International Terrestrial Reference System
+[.cite]#DS/EN ISO 19161-1# definerer International Terrestrial Reference System
 (ITRS), og beskriver hvordan ITRS gøres praktisk anvendeligt og
 tilgængeligt (“realisering”).
 
@@ -107,19 +107,18 @@ of coordinate reference systems_. Version 2.0.6. 13 august 2019.
 Tilgængelig på:
 http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[http://docs.opengeospatial.org/is/18-010r7/18-010r7.html,title=Geographic information - Well-known text representation of coordinate reference systems] 
 
-Denne OGC-standard definerer strukturen og indholdet af
+[.cite]#http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[Geographic information - Well-known text representation of coordinate reference systems]# definerer strukturen og indholdet af
 tekstrepræsentationer (Well-Known Text (WKT)) for
 koordinatreferencesystemer og koordinattransformationer mellem
 koordinatreferencesystemer.
 
 [NOTE]
-Standarden er også kendt som DS/ISO 19162:2019, _Geografisk information
-- Læsbar tekststreng til angivelse af koordinatreferencesystemer_. 
+Standarden er også kendt som [.cite]#DS/ISO 19162:2019, Geografisk information - Læsbar tekststreng til angivelse af koordinatreferencesystemer#. 
 
 [#geonotes]
 ==== GeoNotes
 
 [.bibliographicaldetails]
-_GeoNotes_, {author}. Tilgængelig på: https://sdfi.dk/vores-opgaver/geodaesi/geofaglige-publikationer[https://sdfi.dk/vores-opgaver/geodaesi/geofaglige-publikationer,title=Geofaglige publikationer]
+_GeoNotes_, {author}. Tilgængelig på: https://www.klimadatastyrelsen.dk/vores-opgaver/geodaesi/geofaglige-publikationer[https://www.klimadatastyrelsen.dk/vores-opgaver/geodaesi/geofaglige-publikationer,title=Geofaglige publikationer]
 
-GeoNotes-serien omfatter publikationer om koordinatsystemer relevant for Danmark og Grønland, f.eks. https://sdfi.dk/Media/637889927600611409/001-ETRS89-UTM.pdf[ETRS89/UTM32] og https://sdfi.dk/Media/638325244589317645/010-DVR90.pdf[DVR90].
+[.cite]#https://www.klimadatastyrelsen.dk/vores-opgaver/geodaesi/geofaglige-publikationer[GeoNotes-serien]# omfatter publikationer om koordinatsystemer relevant for Danmark og Grønland, f.eks. https://www.klimadatastyrelsen.dk/Media/637889927600611409/001-ETRS89-UTM.pdf[ETRS89/UTM32] og https://www.klimadatastyrelsen.dk/Media/638477285996407950/010-DVR90.pdf[DVR90].

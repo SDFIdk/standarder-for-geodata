@@ -1,12 +1,18 @@
-Dette dokument indeholder en detaljeret gennemgang af relevante 
+:sectnums!:
+
+[#forord]
+== Forord
+
+[.cite]#{doctitle}# indeholder en detaljeret gennemgang af relevante 
 standarder og best practices til brug for indsamling, behandling og 
 distribution af geodata, herunder i forbindelse med opbygning af 
 digitale forvaltningsløsninger. Dette understøtter interoperabilitet 
 mellem data og systemer, så data kan anvendes og genbruges på tværs.
 
-.Målgruppe
+
 [#maalgruppe]
---
+=== Målgruppe
+
 Dette dokument er primært målrettet udviklere og arkitekter med ansvar 
 for data og systemer i en forretning, som bygger på stedbestemmelse. 
 Denne målgruppe har brug for praktisk viden om, hvilke standarder og 
@@ -17,19 +23,18 @@ Dette dokument er også målrettet dem der har det overordnede ansvar
 for en forretning, som bygger på stedbestemmelse. Denne målgruppe har 
 brug for at have et overblik over standarder til brug i f.eks. 
 kravspecikationer mv.
---
 
-.Baggrund
+
 [#baggrund]
---
-{author} og Digitaliseringsstyrelsen udgav i 2020 _Vejledning om geografi i lovgivningen_ <<vej-2020-9428>>. Vejledningen indeholdt https://www.retsinformation.dk/eli/retsinfo/2020/9428#id4633c61a-4caf-4890-b270-3e0b5e80f6b9[bilaget _Anbefalede standarder ved etablering af geodata_]. Standarderne kan nemlig være relevante at anvende i forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold til den metode til stedbestemmelse i lovgivningen hvor der henvises til et register.
+=== Baggrund
 
-Siden hen har {author} udgivet _Anbefalede standarder for geodata_ som en selvstændig publikation. Det gør indeholdet lettere tilgængeligt, læsevenligt og mindre kompliceret at opdatere. Og det kan bedre anvendes i anden kontekst end retsgeografi. _Vejledning om geografi i lovgivningen_ udkom i en ny version i 2023 <<vej-2023-9780>> og henviser nu til _Anbefalede standarder for geodata_.
---
+{author} (dengang Styrelsen for Dataforsyning og Effektivisering) og Digitaliseringsstyrelsen udgav i 2020 [.cite]#Vejledning om geografi i lovgivningen# <<vej-2020-9428>>. Vejledningen indeholdt https://www.retsinformation.dk/eli/retsinfo/2020/9428#id4633c61a-4caf-4890-b270-3e0b5e80f6b9[bilaget _Anbefalede standarder ved etablering af geodata_]. Standarderne kan nemlig være relevante at anvende i forbindelse med anvendelse af geografi i lovgivningen, særligt i forhold til den metode til stedbestemmelse i lovgivningen hvor der henvises til et register.
 
-.Læsevejledning
+Siden hen har {author} udgivet _Anbefalede standarder for geodata_ som en selvstændig publikation. Det gør indeholdet lettere tilgængeligt, læsevenligt og mindre kompliceret at opdatere. Og det kan bedre anvendes i anden kontekst end retsgeografi. [.cite]#Vejledning om geografi i lovgivningen# udkom i en ny version i 2023 <<vej-2023-9780>> og henviser nu til [.cite]#Anbefalede standarder for geodata#.
+
 [#laesevejledning]
---
+=== Læsevejledning
+
 Dette dokument er opbygget på følgende måde:
 
 . Det første afsnit beskriver de lovgivningsmæssige rammer for indholdet og de to centrale standardiseringsorganisationer i geodatadomænet, som de behandlede dokumenter primært kommer fra.
@@ -53,4 +58,4 @@ Beskrivelse af standard/best practice.
 NOTE: Supplerende bemærkninger, f.eks. hvor man kan finde XML-skemaer til standarden, eller hvordan dokumentet relaterer sig til andre dokumenter.
 ====
 
---
+:sectnums:

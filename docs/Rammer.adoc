@@ -4,20 +4,20 @@
 [#inspire]
 === INSPIRE-direktivet fastlægger regler for geografisk infrastruktur
 
-http://data.europa.eu/eli/dir/2007/2/2019-06-26[INSPIRE-direktivet] er
+[.cite]#http://data.europa.eu/eli/dir/2007/2/2019-06-26[INSPIRE-direktivet]# er
  fundamentet for standardisering og deling af geodata på tværs af 
 særligt miljøforvaltninger i EU.
 
 Forvaltning af samfundet og håndtering af kriser forudsætter adgang til geografisk information. Større sammenhæng i opgavevaretagelsen skabes ved at basere sin forvaltning
 på et fælles geografisk grundlag.
 
-INSPIRE-direktivet
+[.cite]#INSPIRE-direktivet#
 skal tilvejebringe de nødvendige tekniske, data- og aftalemæssige
 strukturer, der sikrer sammenhæng og adgang til de mange værdifulde
 offentlige geografiske informationer, der findes i EU’s medlemslande.
 
 Det kræver ensartethed og standardisering, og derfor fastlægger
-INSPIRE-direktivet en fælles ramme for alle EU-medlemslande ved at
+[.cite]#INSPIRE-direktivet# en fælles ramme for alle EU-medlemslande ved at
 fastlægge regler og retningslinjer for komponenterne i infrastrukturen
 for geografisk information.
 
@@ -31,14 +31,13 @@ komponenter:
 * http://data.europa.eu/eli/dec_impl/2019/1372/oj[Overvågning og rapportering af direktivets implementering]
 * https://eur-lex.europa.eu/eli/reg/2010/268/oj[Aftaler] – fælles bestemmelser for EU's adgang til landenes data og tjenester
 
-INSPIRE-direktivet gennemføres via national lovgivning i de enkelte
+[.cite]#INSPIRE-direktivet# gennemføres via national lovgivning i de enkelte
 medlemslande. I Danmark sker det via
-https://www.retsinformation.dk/eli/lta/2017/746[Lov om infrastruktur
-for geografisk information i Den Europæiske Union], også kaldet
-INSPIRE-loven, lovbekendtgørelse nr. 746 af 15. juni 2017. Læs mere på
+[.cite]#https://www.retsinformation.dk/eli/lta/2017/746[Lov om infrastruktur for geografisk information i Den Europæiske Union]#, også kaldet
+[.cite]#INSPIRE-loven# (lovbekendtgørelse nr. 746 af 15. juni 2017). Læs mere på
 https://inspire-danmark.dk[den danske hjemmeside om INSPIRE], hvor man
 også finder vejledninger, videoer og best practice eksempler, samt
-artiklen <<kron14>>,
+artiklen [.cite]#<<kron14,INSPIRE – hvorfor er det en god ide?>>#,
 som ovenstående tekst er baseret på.
 
 Gennemførelsesbestemmelserne er suppleret af en række
@@ -56,7 +55,7 @@ https://inspire.ec.europa.eu/inspire-maintenance-and-implementation/46[INSPIRE
 Maintenance and Implementation Group (MIG)], en ekspertgruppe nedsat af
 EU Kommissionen. Den fungerer som implementeringsorgan, der behandler
 problemstillinger knyttet til den praktiske implementering af
-INSPIRE-direktivet.
+[.cite]#INSPIRE-direktivet#.
 
 En del af de tekniske retningslinjer findes i gennemgangen nedenfor, under det
 relevante emne.
@@ -64,7 +63,7 @@ relevante emne.
 [#aabne-data-direktiv]
 === Åbne data-direktivet skaber adgang til offentlige data
 
-http://data.europa.eu/eli/dir/2019/1024/oj[Direktivet om åbne data og videreanvendelse af den offentlige sektors informationer], også kaldet åbne data-direktivet, har til formål at skabe adgang til og forbedre kvaliteten af de offentlige data på tværs af EU. Direktivet bidrager dermed til at styrke EU’s dataøkonomi <<digi1>>. Følgende seks tematiske kategorier af datasæt fastsættes af åbne data-direktivet:
+[.cite]#http://data.europa.eu/eli/dir/2019/1024/oj[Direktivet om åbne data og videreanvendelse af den offentlige sektors informationer]#, også kaldet [.cite]#åbne data-direktivet#, har til formål at skabe adgang til og forbedre kvaliteten af de offentlige data på tværs af EU. Direktivet bidrager dermed til at styrke EU’s dataøkonomi <<digi1>>. Følgende seks tematiske kategorier af datasæt fastsættes af [.cite]#åbne data-direktivet#:
 
 * geospatiale data
 * jordobservation og miljø
@@ -73,11 +72,11 @@ http://data.europa.eu/eli/dir/2019/1024/oj[Direktivet om åbne data og videreanv
 * virksomheder og virksomhedsejerskab
 * mobilitet
 
-Åbne data-direktivet gennemføres via national lovgivning i de enkelte medlemslande. I Danmark sker det via https://www.retsinformation.dk/eli/lta/2021/1764[Bekendtgørelse af lov om videreanvendelse af den offentlige sektors informationer], også kaldet PSI-loven.
+[.cite]#Åbne data-direktivet# gennemføres via national lovgivning i de enkelte medlemslande. I Danmark sker det via [.cite]#https://www.retsinformation.dk/eli/lta/2021/1764[Bekendtgørelse af lov om videreanvendelse af den offentlige sektors informationer]#, også kaldet [.cite]#PSI-loven#.
 
 ==== Anvendelse af datasæt af høj værdi giver samfundsøkonomiske fordele
 
-I tillæg til åbne data-direktivet er der vedtaget en gennemførelsesbestemmelse, http://data.europa.eu/eli/reg_impl/2023/138/oj[Kommissionens gennemførelsesforordning 2023/1238,title=Kommissionens gennemførelsesforordning (EU) 2023/1238 af 21. december 2022 om en liste over særlige typer datasæt af høj værdi og ordningerne for deres offentliggørelse og videreanvendelse]. Den udpeger inden for ovennævnte kategorier såkaldte datasæt af høj værdi (HVD). Datasæt af høj værdi skal være gratis, maskinlæsbare og tilgængelige via API-grænseflader. De skal også være tilgængelige i form af massedownloads, hvis det er relevant.
+I tillæg til [.cite]#åbne data-direktivet# er der vedtaget en gennemførelsesbestemmelse, [.cite]#http://data.europa.eu/eli/reg_impl/2023/138/oj[Kommissionens gennemførelsesforordning 2023/1238,title=Kommissionens gennemførelsesforordning (EU) 2023/1238 af 21. december 2022 om en liste over særlige typer datasæt af høj værdi og ordningerne for deres offentliggørelse og videreanvendelse]#. Den udpeger inden for ovennævnte kategorier såkaldte datasæt af høj værdi (HVD). Datasæt af høj værdi skal være gratis, maskinlæsbare og tilgængelige via API-grænseflader. De skal også være tilgængelige i form af massedownloads, hvis det er relevant.
 
 Datasæt af høj værdi skal gøres tilgængelige efter licensen Creative Commons Public Domain Dedication (CC0) eller alternativt Creative Commons BY 4.0-licensen. En tilsvarende eller mindre restriktiv åben licens må også anvendes. Digitaliseringsstyrelsen anbefaler dog brugen af standardlicenser fra Creative Commons (CC) suiten af licenser. Læs Digitaliseringsstyrelsens anbefalinger om vilkår for brug af åbne offentlige data i <<digi2>>.
 
@@ -88,7 +87,7 @@ De fleste globale standarder i geodatadomænet etableres i regi af https://www.i
 
 ISO- og OGC-standarder har i
 vid udstrækning dannet grundlag for implementeringen af
-<<inspire,INSPIRE-direktivet>>. Mere generelt er standarderne implementeret
+[.cite]#<<inspire,INSPIRE-direktivet>>#. Mere generelt er standarderne implementeret
 i en række it-produkter. Hvor der findes implementerede
 løsninger baseret på de nævnte standarder, vil der være et link til
 disse i gennemgangen.

@@ -31,53 +31,69 @@
         <body>
             <xsl:apply-templates select="@*" />
             <xsl:apply-templates select="x:div[@id='header']" />
-            <div class="ds-container ds-grid-1-2">
+            <div class="ds-container">
                 <xsl:apply-templates select="x:div[@id='header']/x:div[@id='toc']"/>
                 <xsl:apply-templates select="x:div[@id='content']"/>
+            </div>
+            <div class="ds-padding">
+                <nav>
+                    <a id="link_to_toc" href="#toc" role="button">Til indholdsfortegnelsen</a>
+                </nav>
             </div>
         </body>
     </xsl:template>
     <!-- Tilføj header element med logo, navn og hjemmeside (som står i "email") -->
     <xsl:template match="x:div[@id='header']">
-        <header id="header" data-theme="dark" class="ds-padding">
+        <header id="header" class="ds-header">
             <div class="ds-container">
-                <a class="ds-logo ds-logo-pull-left">
-                    <xsl:attribute name="href" select="x:div/x:span[@id='email']/x:a/text()" />
-                    <xsl:value-of select="x:div[@class='details']/x:span[@id='author']/text()" />
-                </a>
+                <ds-logo-title title="Anbefalede standarder for geodata">
+                    <xsl:attribute name="title" select="x:h1/text()" />
+                    <xsl:attribute name="byline" select="x:div[@class='details']/x:span[@id='author']/text()" />
+                </ds-logo-title>
+                <xsl:copy select="x:h1">
+                    <xsl:apply-templates select="@*|node()"/>
+                </xsl:copy>
+                <p class="manchet">
+                    <xsl:value-of select="../../x:head/x:meta[@name='description']/@content" />
+                </p>
+                <xsl:apply-templates select="x:div[@class='details']"/>
             </div>
-            <xsl:copy select="x:h1">
-                <xsl:attribute name="class" select="'ds-container'" />
-                <xsl:apply-templates select="@*|node()"/>
-            </xsl:copy>
-            <xsl:apply-templates select="x:div[@class='details']"/>
         </header>
     </xsl:template>
     <!-- Kopiér ikke author og email, er allerede kopieret ind i headeren -->
     <xsl:template match="x:div[@class='details']">
-        <div class="details ds-container">
-            <xsl:copy-of select="x:span[@id='revnumber']"/>
-            <xsl:text> </xsl:text>
-            <xsl:copy-of select="x:span[@id='revdate']"/>
-        </div>
+        <xsl:copy-of select="x:span[@id='revnumber']"/>
+        <xsl:text> </xsl:text>
+        <xsl:copy-of select="x:span[@id='revdate']"/>
     </xsl:template>
     <!-- Tilføj nav element -->
     <xsl:template match="x:div[@id='toc']">
-        <div id="toc" class="toc">
-            <xsl:copy select="x:div[@id='toctitle']">
-                <xsl:attribute name="class" select="'ds-padding'" />
-                <xsl:apply-templates select="@*|node()"/>
-            </xsl:copy>
+        <div id="toc" class="toc ds-padding">
             <nav class="ds-nav-vertical">
+                <h2>
+                    <xsl:value-of select="x:div[@id='toctitle']/text()" />
+                </h2>
                 <xsl:apply-templates select="x:ul"/>
             </nav>
         </div>
     </xsl:template>
-    <!-- Anvend main i stedet for div -->
+    <!-- Anvend main -->
     <xsl:template match="x:div[@id='content']">
-        <main class="ds-padding">
+        <main>
             <xsl:apply-templates select="@*|node()"/>
         </main>
+    </xsl:template>
+    <!-- Anvend aside -->
+    <xsl:template match="x:div[@class='paragraph bibliographicaldetails']">
+        <aside class="bibliographicaldetails">
+            <xsl:apply-templates select="@*[local-name()!='class']|node()"/>
+        </aside>
+    </xsl:template>
+    <!-- Anvend cite -->
+    <xsl:template match="x:span[@class='cite']">
+        <cite>
+            <xsl:apply-templates select="@*|node()"/>
+        </cite>
     </xsl:template>
     <!-- Links der ikke peger på et sted i samme side skal åbnes i et nyt faneblad -->
     <xsl:template match="x:a" name="addTargetBlank">
@@ -90,5 +106,13 @@
                 <span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span>
             </xsl:if>
         </xsl:element>
+    </xsl:template>
+    <!-- Se https://alfa.siteimprove.com/rules/sia-r79 -->
+    <xsl:template match="x:pre">
+        <pre>
+            <code>
+                <xsl:apply-templates select="@*|node()"/>
+            </code>
+        </pre>
     </xsl:template>
 </xsl:stylesheet>
