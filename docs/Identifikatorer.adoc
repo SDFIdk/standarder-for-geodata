@@ -10,7 +10,7 @@ indeholder identifikatorer. Når et nyt register eller et nyt datasæt skal
 etableres, kan man finde gode råd i nedenstående dokumenter.
 
 Ofte vil et objekt, ud over den unikke identifikator, have en eller flere forretningsnøgler, fx har en
-matrikel et matrikelnummer og et naturbeskyttelsesområde omfattet af Habitatbekendtgørelsen en
+matrikel et matrikelnummer og et naturbeskyttelsesområde omfattet af [.cite]#https://www.retsinformation.dk/eli/lta/2023/1098[Habitatbekendtgørelsen]# en
 Natura 2000-kode. Det er som regel forretningsnøglerne, som vil være omtalt i lovgivningen,
 hvorimod den unikke identifikator bruges til system-til-system-kommunikation.
 
@@ -21,7 +21,7 @@ hvorimod den unikke identifikator bruges til system-til-system-kommunikation.
 GEOSPATIAL COMMISSION, _Linked identifier schemes: Best practice guide. Version 0.3. oktober 2019._
 Tilgængelig på: https://www.gov.uk/government/publications/linked-identifier-schemes-best-practice-guide[https://www.gov.uk/government/publications/linked-identifier-schemes-best-practice-guide,title=Linked identifier schemes: Best practice guide]
 
-Denne best practice indeholder praktiske anbefalinger i, hvordan identifikatorer skal udformes,
+[.cite]#https://www.gov.uk/government/publications/linked-identifier-schemes-best-practice-guide[Linked identifier schemes: Best practice guide]# indeholder praktiske anbefalinger i, hvordan identifikatorer skal udformes,
 oprettes og administreres for at gøre det let for brugerne at forstå og kombinere data fra forskellige
 kilder.
 
@@ -34,10 +34,10 @@ Der eksisterer p.t. ikke et tilsvarende dansk dokument.
 [.bibliographicaldetails]
 Recommendation ITU-T X.667 | ISO/IEC 9834-8, _Information technology – Procedures for the operation of object identifier registration authorities: Generation of universally unique identifiers and their use in object identifiers_. International Telecommunication Union, 14 oktober 2012. ITU-T X-Series Recommendations: Data networks, open system communications and security. Tilgængelig på: http://handle.itu.int/11.1002/1000/11746[http://handle.itu.int/11.1002/1000/11746,title=Information technology – Procedures for the operation of object identifier registration authorities: Generation of universally unique identifiers and their use in object identifiers]
 
-Denne ISO standard standardiserer oprettelse af “universally unique identifiers” (UUID’er).
+[.cite]#http://handle.itu.int/11.1002/1000/11746[ITU-T X.667]# standardiserer oprettelse af “universally unique identifiers” (UUID’er).
 
 [NOTE]
-Dokumentet er mest relevant for software der skal oprette UUID’er. Det er dog også relevant i
+[.cite]#ITU-T X.667# er mest relevant for software der skal oprette UUID’er. Det er dog også relevant i
 konteksten af dette dokument, da det er vigtigt, at have en konsistent præsentation af
-identifikatorer, se <<linked-identifiers-schemes>>. Rec. ITU-T X.667 har anbefalinger ang. menneskevenlige
+identifikatorer, se <<linked-identifiers-schemes>>. [.cite]#ITU-T X.667# har anbefalinger ang. menneskevenlige
 præsentationer.

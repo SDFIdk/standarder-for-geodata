@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="./assets/logos/logo-simple-micro.svg" />
+<link rel="shortcut icon" href="./assets/logo-small.svg" />
 <!-- Dublin Core metadata,
 see https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 and https://www.dublincore.org/specifications/dublin-core/dc-html/. -->
@@ -16,8 +16,11 @@ use profile link relation, not the deprecated profile attribute on head -->
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="DCTERMS.license" href="https://creativecommons.org/licenses/by/4.0/"/>
 <style>
-@import "./assets/css/logo-big.css";
 @import "./assets/designsystem.css";
+/* https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation */
+p {
+  line-height: 1.5;
+}
 /* copied and adjusted from asciidoctor-default.css */
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
@@ -26,41 +29,31 @@ use profile link relation, not the deprecated profile attribute on head -->
 .admonitionblock>table th,td{border:0}
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
-.admonitionblock>table td.icon .title{color:rgba(0,0,0,.6);font-weight:bold;text-transform:uppercase;letter-spacing:.04em}
+.admonitionblock>table td.icon .title{color:var(--grey8);font-weight:bold;text-transform:uppercase;letter-spacing:.04em}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 /* Change color for both types of admonitions: blocks and single paragraphs. */
-.admonitionblock>table td.content{color:rgba(0,0,0,.65)}
-.admonitionblock>table td.content :not(a,a>span){color:rgba(0,0,0,.65)}
+.admonitionblock>table td.content{color:color:var(--grey8)}
+.admonitionblock>table td.content :not(a,a>span){color:color:var(--grey8)}
 /* Change paddings */
 .paragraph{padding: var(--space-sm) 0}
 .sect1,.sect2,.sect3{padding:var(--space-sm) 0 var(--space-sm)}
 /* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
 #toc ul.sectlevel2{padding-left:var(--space-sm)}
 #toc ul.sectlevel3{padding-left:var(--space-md)}
-/* Sticky table of contents */
-@media (min-width: 992px) {
-  #toc {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: visible;
-  }
-  .sectlevel1 {
-    width: 100%;
-  }
-}
+#toc ul li{list-style-type: none; font-size: 110%}
+#toc{background-color: var(--bg1)}
+#link_to_toc{position: fixed; bottom: var(--space); right: var(--space); width: auto; z-index: 10}
 /* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
-.bibliographicaldetails{border:.25rem solid var(--medium-steel);padding: var(--space-sm);margin-bottom:var(--space-sm);background-color: var(--hvid);border-radius:1rem}
-.bibliographicaldetails p{margin-bottom:0em}
-.bibliographicaldetails>:first-child{margin-top:0}
-.bibliographicaldetails>:last-child{margin-bottom:0}
+aside.bibliographicaldetails{border:.2rem solid var(--c7);padding: var(--space-sm);margin-bottom:var(--space-sm);background-color: var(--hvid);border-radius:1rem}
+aside.bibliographicaldetails p{margin-bottom:0em}
+aside.bibliographicaldetails>:first-child{margin-top:0}
+aside.bibliographicaldetails>:last-child{margin-bottom:0}
 /* Extra */
-#eksempel_opbygning{border:1px solid var(--mork-tyrkis);margin-bottom:var(--space-md);padding:var(--padding)}
-#eksempel_opbygning>div.content>div.title>p{color:var(--h4-color);text-transform: uppercase;letter-spacing:.04em}
+#eksempel_opbygning{border:1px solid var(--c7);margin-bottom:var(--space-md);padding:var(--padding)}
+#eksempel_opbygning>div.content>div.title>p{color:var(--h4-color);letter-spacing:.04em}
 #eksempel_opbygning>div.content>div>p,ol,ul,table{font-size:90%}
-#eksempel_opbygning>div.content>div.admonitionblock>table td.content{color:rgba(0,0,0,.6);font-size:90%}
+#eksempel_opbygning>div.content>div.admonitionblock>table td.content{color:var(--grey8));font-size:90%}
 /* Icon described on https://pictogrammers.com/library/mdi/icon/open-in-new/, CSS below generated with https://api.iconify.design/mdi.css?icons=open-in-new */
 .icon--mdi {
   display: inline-block;
@@ -79,6 +72,15 @@ use profile link relation, not the deprecated profile attribute on head -->
 /* Extra, custom styling for icon */
 .icon--mdi--open-in-new-custom{margin-left:var(--space-xxs);vertical-align:text-bottom}
 </style>
+<!-- Modulen vil give en fejl når man tester lokalt ved at åbne filen i en browser (file:/// skemaet).
+Se https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+Sat en lokal server op for at teste det uden af få denne fejl, se også
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server -->
+<script type="module">
+import { DSLogoTitle, DSLogo } from './assets/designsystem.js'
+customElements.define('ds-logo', DSLogo)
+customElements.define('ds-logo-title', DSLogoTitle)
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

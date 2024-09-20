@@ -1,11 +1,11 @@
 = Anbefalede standarder for geodata
-:author: Styrelsen for Dataforsyning og Infrastruktur
+:author: Klimadatastyrelsen
 :data-uri:
-:description: Detaljeret gennemgang af relevante standarder og best practices, som det anbefales myndigheder at anvende ved indsamling, behandling og distribution af geodata, der skal indgå i digitale løsninger til brug for offentlig forvaltning. 
+:description: {doctitle} indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs. 
 :docinfo: shared
 :doctype: article
 // from the documentation: The email attribute represents an email address or URL associated with the first author
-:email: https://sdfi.dk/
+:email: https://www.klimadatastyrelsen.dk/
 :encoding: utf-8
 :idprefix:
 :idseparator: -
@@ -22,7 +22,7 @@ include::locale/attributes-da.adoc[]
 :toc:
 :toclevels: 3
 // user-defined attributes
-:author-url: https://sdfi.dk/
+:author-url: https://www.klimadatastyrelsen.dk/
 
 include::Forord.adoc[]
 
