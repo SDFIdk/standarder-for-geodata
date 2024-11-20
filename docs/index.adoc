@@ -23,6 +23,7 @@ include::locale/attributes-da.adoc[]
 :toclevels: 3
 // user-defined attributes
 :author-url: https://www.klimadatastyrelsen.dk/
+:logo-url: https://www.klimadatastyrelsen.dk/Media/638604476203153432/Klimadatastyrelsen.svg
 
 include::Forord.adoc[]
 
