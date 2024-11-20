@@ -8,7 +8,222 @@
 <meta name="keywords" content="geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE"/>
 <meta name="author" content="Klimadatastyrelsen"/>
 <title>Anbefalede standarder for geodata</title>
-<link rel="shortcut icon" href="./assets/logo-small.svg"/>
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge .cm {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cp {
+  color: #999999;
+  font-weight: bold;
+}
+pre.rouge .c1 {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kd {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kn {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kp {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kr {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kt {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .k, pre.rouge .kv {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .mf {
+  color: #009999;
+}
+pre.rouge .mh {
+  color: #009999;
+}
+pre.rouge .il {
+  color: #009999;
+}
+pre.rouge .mi {
+  color: #009999;
+}
+pre.rouge .mo {
+  color: #009999;
+}
+pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
+  color: #009999;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #0086B3;
+}
+pre.rouge .nc {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv, pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .o {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: #f8f8f8;
+}
+</style>
+<link rel="shortcut icon" href="https://cdn.dataforsyningen.dk/assets/designsystem/v8/logo.svg#small"/>
 <!-- Dublin Core metadata,
 see https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 and https://www.dublincore.org/specifications/dublin-core/dc-html/. -->
@@ -17,7 +232,7 @@ use profile link relation, not the deprecated profile attribute on head -->
 <link rel="profile" href="http://dublincore.org/documents/2008/08/04/dc-html/"/>
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
 <meta name="DC.creator" lang="da" content="Klimadatastyrelsen"/>
-<meta name="DC.date" content="2024-09-20"/>
+<meta name="DC.date" content="2024-11-20"/>
 <meta name="DC.description" lang="da" content="Anbefalede standarder for geodata indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs."/>
 <meta name="DC.language" content="da"/>
 <meta name="DC.subject" lang="da" content="geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE"/>
@@ -25,12 +240,8 @@ use profile link relation, not the deprecated profile attribute on head -->
 <meta name="DC.title" lang="da" content="Anbefalede standarder for geodata"/>
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/"/>
 <link rel="DCTERMS.license" href="https://creativecommons.org/licenses/by/4.0/"/>
+<link rel="stylesheet" href="https://cdn.dataforsyningen.dk/assets/designsystem/v8/designsystem.css"/>
 <style>
-@import "./assets/designsystem.css";
-/* https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation */
-p {
-  line-height: 1.5;
-}
 /* copied and adjusted from asciidoctor-default.css */
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
@@ -82,12 +293,8 @@ aside.bibliographicaldetails>:last-child{margin-bottom:0}
 /* Extra, custom styling for icon */
 .icon--mdi--open-in-new-custom{margin-left:var(--space-xxs);vertical-align:text-bottom}
 </style>
-<!-- Modulen vil give en fejl når man tester lokalt ved at åbne filen i en browser (file:/// skemaet).
-Se https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
-Sat en lokal server op for at teste det uden af få denne fejl, se også
-https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server -->
 <script type="module">
-import { DSLogoTitle, DSLogo } from './assets/designsystem.js'
+import { DSLogoTitle, DSLogo } from 'https://cdn.dataforsyningen.dk/assets/designsystem/v8/designsystem.js'
 customElements.define('ds-logo', DSLogo)
 customElements.define('ds-logo-title', DSLogoTitle)
 </script>
@@ -100,21 +307,21 @@ customElements.define('ds-logo-title', DSLogoTitle)
     "name": "Klimadatastyrelsen",
     "logo": {
         "@type": "ImageObject",
-        "url": "https://sdfi.dk/Media/637983120376287699/SDFI_DK_RGB-logo.png"
+        "url": "https://www.klimadatastyrelsen.dk/Media/638604476203153432/Klimadatastyrelsen.svg"
         },
       "url": "https://www.klimadatastyrelsen.dk/"
     }],
-  "dateModified": "2024-09-20",
+  "dateModified": "2024-11-20",
   "headline": "Anbefalede standarder for geodata",
   "name": "Anbefalede standarder for geodata",
   "keywords": "geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "abstract": "Anbefalede standarder for geodata indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs.",
   "license": "https://creativecommons.org/licenses/by/4.0/"
 }
 </script>
 </head>
-<body class="article"><header id="header" class="ds-header"><div class="ds-container"><ds-logo-title title="Anbefalede standarder for geodata" byline="Klimadatastyrelsen"></ds-logo-title><h1>Anbefalede standarder for geodata</h1><p class="manchet">Anbefalede standarder for geodata indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs.</p><span id="revnumber">version 1.1.1,</span> <span id="revdate">2024-09-20</span></div></header><div class="ds-container"><div id="toc" class="toc ds-padding"><nav class="ds-nav-vertical"><h2>Indholdsfortegnelse</h2><ul class="sectlevel1">
+<body class="article"><header id="header" class="ds-header"><div class="ds-container"><ds-logo-title title="Anbefalede standarder for geodata" byline="Klimadatastyrelsen"></ds-logo-title><h1>Anbefalede standarder for geodata</h1><p class="manchet">Anbefalede standarder for geodata indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs.</p><span id="revnumber">version 1.1.2,</span> <span id="revdate">2024-11-20</span></div></header><div class="ds-container"><div id="toc" class="toc ds-padding"><nav class="ds-nav-vertical"><h2>Indholdsfortegnelse</h2><ul class="sectlevel1">
 <li><a href="#forord">Forord</a>
 <ul class="sectlevel2">
 <li><a href="#maalgruppe">Målgruppe</a></li>
@@ -245,7 +452,7 @@ og hvor og hvordan disse standarder og best practices kan tilgås.</p>
 <p>Dette dokument er også målrettet dem der har det overordnede ansvar
 for en forretning, som bygger på stedbestemmelse. Denne målgruppe har
 brug for at have et overblik over standarder til brug i f.eks.
-kravspecikationer mv.</p>
+kravspecifikationer mv.</p>
 </div>
 </div>
 <div class="sect2">
@@ -281,7 +488,7 @@ kravspecikationer mv.</p>
 <p>Titel på standard eller best practice</p>
 </div>
 <aside class="bibliographicaldetails">
-<p>Dokumentets bibliografiske detajler.</p>
+<p>Dokumentets bibliografiske detaljer.</p>
 </aside>
 <div class="paragraph">
 <p>Beskrivelse af standard/best practice.</p>
@@ -877,7 +1084,7 @@ specificeret yderlige i <cite class="cite"><a href="#ogc-01-009">OpenGIS® Imple
 </div>
 <div class="listingblock">
 <div class="content">
-<pre><code>Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
+<pre class="rouge highlight"><code>Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
 24.61,722137.52 6178901.05 24.7,722135.5 6178901.91 25.01,722126.66
 6178905.66 24.61,722120.48 6178891.19 24.61,722126.3 6178888.7
 24.28,722178.52 6178866.39 24.61))</code></pre>
@@ -1412,7 +1619,7 @@ også <cite class="cite">INSPIRE-loven</cite>. Det samme gør sig gældende for 
 <a target="_blank" href="https://inspire-geoportal.ec.europa.eu/">metadataportal<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a>.</p>
 </div>
 <div class="paragraph">
-<p>Der findes XML-schemaer til denne standard, se <cite class="cite"><a href="#19139">DS/ISO/TS 19139</a></cite>.</p>
+<p>Der findes XML-skemaer til denne standard, se <cite class="cite"><a href="#19139">DS/ISO/TS 19139</a></cite>.</p>
 </div>
 <div class="paragraph">
 <p><cite class="cite">DS/EN ISO 19115:2005</cite> er formelt trukket tilbage af Dansk Standard og de to
@@ -1423,10 +1630,10 @@ standardiseringsorganer CEN og ISO. Standarden er erstattet af
 <div class="sect3">
 <h4 id="19115-1">2.6.2. DS/EN ISO 19115-1 Metadata - Part 1: Fundamentals</h4>
 <aside class="bibliographicaldetails">
-<p>DS/EN ISO 19115-1:2014, <em>Geografisk information - Metadata - Part 1: Fundamentals</em></p>
+<p>DS/EN ISO 19115-1:2014, <em>Geografisk information - Metadata - Del 1: Grundprincipper</em></p>
 </aside>
 <div class="paragraph">
-<p><cite class="cite">DS/EN ISO 19115-1</cite> beskriver geografiske metadatadata på en struktureret
+<p><cite class="cite">DS/EN ISO 19115-1</cite> beskriver geografiske metadata på en struktureret
 måde. Standarden definerer de elementer som en beskrivelse består af,
 den indeholder en model, der beskriver elementernes indbyrdes
 relationer, og endelig indeholder standarden en beskrivelse af, hvordan
@@ -1498,10 +1705,10 @@ af en eller flere underliggende distribuerede computerplatforme.</p>
 </div>
 <div class="paragraph">
 <p><cite class="cite">DS/EN ISO 19119</cite> definerer ligeledes, hvordan geografiske
-tjenester skal kategoriseres i henhold til en servicetaxonomi baseret på
+tjenester skal kategoriseres i henhold til en servicetaksonomi baseret på
 IT-arkitekturen og tillader også, at tjenester kan kategoriseres i
 henhold til et brugslivscyklusperspektiv, samt i henhold til
-domænespecifikke og brugerdefinerede servicetaxonomier, for at lette
+domænespecifikke og brugerdefinerede servicetaksonomier, for at lette
 supporten ved offentliggørelse og opdagelse af tjenester.</p>
 </div>
 <div class="admonitionblock note">
@@ -1648,7 +1855,7 @@ eksempler til anvendelser.</p>
 <td class="content">
 <div class="paragraph">
 <p><cite class="cite">DCAT-AP-DK</cite>, en delmængde af <cite class="cite">DCAT-AP</cite>, som igen er en delmængde af <cite class="cite">DCAT</cite>,
-benyttes til det <a target="_blank" href="https://datasets.catalogue.data.gov.dk/">fælles offentlige datasætkatalog<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a>
+benyttes til det <a target="_blank" href="https://datavejviser.dk/">fælles offentlige datasætkatalog<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a>
 , der giver overblik
 over hvilke offentlige datasæt, der findes, hvor de findes, og om de er
 tilgængelige.</p>
@@ -1865,10 +2072,6 @@ understøtter den direkte brug, fx til analyseformål.</p>
 <p>Arbejdsgruppen om GeoPackage er aktiv og der er mange ønsker til
 videreudvikling af den. Derfor kan der forventes at komme flere
 versioner.</p>
-</div>
-<div class="paragraph">
-<p>Læs mere om GeoPackage på OGC’s blog:
-<cite class="cite"><a target="_blank" href="https://www.ogc.org/blog/3148">GeoPackageDay 2020 - what is GeoPackage?<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></cite></p>
 </div>
 <div class="paragraph">
 <p>I Nederlandene er GeoPackage-standarden optaget på
@@ -2250,7 +2453,7 @@ denne standard.
 <p>KULTURMINISTERIET. <em>Bekendtgørelse om arkiveringsversioner</em>. 12 februar 2020. BEK nr 128. Tilgængelig på: <a target="_blank" href="https://www.retsinformation.dk/eli/lta/2020/128" title="Bekendtgørelse om arkiveringsversioner">https://www.retsinformation.dk/eli/lta/2020/128<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </aside>
 <div class="paragraph">
-<p>Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tages i brug. Rigsarkivet vurderer ud fra anmeldelsen, om der skal afleveres en kopi af data til arkivet, og hvornår der i givet fald skal arkiveres første gang. Af de it-systemer som Rigsarkivet har bestemt til bevaring, skal den statslige myndighed producere arkiveringsversioner. En arkiveringsversion er en kopi af data fra myndighedens it-system, suppleret med dokumentation om systemet samt filer, der beskriver hvordan data hænger sammen. Arkiveringsversionen skal udarbejdes i bestemte formater, for at den kan bevares over tid <a href="#rigs19">[Rigs19]</a>. Rigsarkivet fastsætter formaterne i <cite class="cite">Bekendtgørelse om arkiveringsversioner</cite>. Bekendtgørelsen uddybes og eksemplificeres i <cite class="cite">Vejledning til bekendtgørelse om arkiveringsversioner</cite> <a href="#rigs22">[Rigs22]</a>.</p>
+<p>Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tages i brug. Rigsarkivet vurderer ud fra anmeldelsen, om der skal afleveres en kopi af data til arkivet, og hvornår der i givet fald skal arkiveres første gang. Af de it-systemer som Rigsarkivet har bestemt til bevaring, skal den statslige myndighed producere arkiveringsversioner. En arkiveringsversion er en kopi af data fra myndighedens it-system, suppleret med dokumentation om systemet samt filer, der beskriver hvordan data hænger sammen. Arkiveringsversionen skal udarbejdes i bestemte formater, for at den kan bevares over tid <a href="#rigs24">[Rigs24]</a>. Rigsarkivet fastsætter formaterne i <cite class="cite">Bekendtgørelse om arkiveringsversioner</cite>. Bekendtgørelsen uddybes og eksemplificeres i <cite class="cite">Vejledning til bekendtgørelse om arkiveringsversioner</cite> <a href="#rigs22">[Rigs22]</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2279,7 +2482,7 @@ denne standard.
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="capu10"></a>[Capu10] CAPUTO, Raymond G. The GeoPDF Project: Creating Maps for the Non-Mapper. <em>Engineer</em>. 1 januar 2010. Tilgængelig på: <a target="_blank" href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf" title="The GeoPDF Project: Creating Maps for the Non-Mapper">https://apps.dtic.mil/dtic/tr/fulltext/u2/a560231.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
+<p><a id="capu10"></a>[Capu10] CAPUTO, Raymond G. The GeoPDF Project: Creating Maps for the Non-Mapper. <em>Engineer</em>. 1 januar 2010. Tilgængelig på: <a target="_blank" href="https://apps.dtic.mil/sti/tr/pdf/ADA560231.pdf" title="The GeoPDF Project: Creating Maps for the Non-Mapper">https://apps.dtic.mil/sti/tr/pdf/ADA560231.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </li>
 <li>
 <p><a id="digi1"></a>[Digi1] DIGITALISERINGSSTYRELSEN. Videreanvendelse af offentlige data. [Set 27 oktober 2023]. Tilgængelig på: <a target="_blank" href="https://digst.dk/data/videreanvendelse-af-offentlige-data/" class="bare">https://digst.dk/data/videreanvendelse-af-offentlige-data/<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
@@ -2321,6 +2524,12 @@ denne standard.
 <p><a id="ogc-99-049"></a>[OGC 99-049] <em>OpenGIS® Simple Features Implementation Specification for SQL</em>. Version 1.1. 5 maj 1999. Tilgængelig på: <a target="_blank" href="https://portal.ogc.org/files/?artifact_id=829" title="OpenGIS® Simple Features Implementation Specification for SQL">https://portal.ogc.org/files/?artifact_id=829<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </li>
 <li>
+<p><a id="rigs22"></a>[Rigs22] RIGSARKIVET. <em>Vejledning til bekendtgørelse om arkiveringsversioner</em>. februar 2022. [Set 27 oktober 2023]. Tilgængelig på: <a target="_blank" href="https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf" title="Vejledning til bekendtgørelse om arkiveringsversioner">https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
+</li>
+<li>
+<p><a id="rigs24"></a>[Rigs24] RIGSARKIVET. <em>Kort og godt om aflevering af it-systemer</em>. 2024. [Set 20 november 2024]. Tilgængelig på: <a target="_blank" href="https://www.rigsarkivet.dk/wp-content/uploads/2024/02/Kort-og-godt-om-aflevering-af-it-for-statslige-myndigheder.pdf" title="Kort og godt om aflevering af it-systemer">https://www.rigsarkivet.dk/wp-content/uploads/2024/02/Kort-og-godt-om-aflevering-af-it-for-statslige-myndigheder.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
+</li>
+<li>
 <p><a id="rfc-7946"></a>[RFC 7946] BUTLER, H., DALY, M., DOYLE, A., GILLIES, S., HAGEN, S. og SCHAUB, T. RFC 7946, <em>The GeoJSON Format</em>. IETF Proposed Standard. august 2016. Tilgængelig på: <a target="_blank" href="https://www.rfc-editor.org/info/rfc7946" title="The GeoJSON Format">https://www.rfc-editor.org/info/rfc7946<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </li>
 <li>
@@ -2330,13 +2539,7 @@ denne standard.
 <p><a id="snodgrass"></a>[Snodgrass] SNODGRASS, Richard T. <em>Developing time-oriented database applications in SQL</em>. San Francisco, California : Morgan Kaufmann Publishers, juli 1999. ISBN 1-55860-436-7. Tilgængelig på: <a target="_blank" href="https://www2.cs.arizona.edu/~rts/tdbbook.pdf" title="Developing time-oriented database applications in SQL">https://www2.cs.arizona.edu/~rts/tdbbook.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </li>
 <li>
-<p><a id="rigs19"></a>[Rigs19] RIGSARKIVET. <em>Kort og godt om aflevering af it-systemer</em>. 2019. [Set 27 oktober 2023]. Tilgængelig på: <a target="_blank" href="https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Kort-og-godt-om-aflevering-af-it-STAT.pdf" title="Kort og godt om aflevering af it-systemer">https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Kort-og-godt-om-aflevering-af-it-STAT.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
-</li>
-<li>
-<p><a id="rigs22"></a>[Rigs22] RIGSARKIVET. <em>Vejledning til bekendtgørelse om arkiveringsversioner</em>. februar 2022. [Set 27 oktober 2023]. Tilgængelig på: <a target="_blank" href="https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf" title="Vejledning til bekendtgørelse om arkiveringsversioner">https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
-</li>
-<li>
-<p><a id="stol03"></a>[Stol03] STOLZE, Knut. SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System. I: WEIKUM, Gerhard, SCHÖNING, Harald og RAHM, Erhard, red., <em>BTW 2003, Datenbanksysteme für Business, Technologie und Web, Tagungsband der 10. BTW-Konferenz, 26.-28. Februar 2003, Leipzig</em>. GI, 2003. p. 247–264. LNI. Tilgængelig på: <a target="_blank" href="https://dl.gi.de/20.500.12116/30056" title="SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System">https://dl.gi.de/20.500.12116/30056<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
+<p><a id="stol03"></a>[Stol03] STOLZE, Knut. SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System. I: WEIKUM, Gerhard, SCHÖNING, Harald og RAHM, Erhard, red., <em>BTW 2003, Datenbanksysteme für Business, Technologie und Web, Tagungsband der 10. BTW-Konferenz, 26.-28. Februar 2003, Leipzig</em>. GI, 2003. p. 247–264. LNI. Tilgængelig på: <a target="_blank" href="https://dl.gi.de/handle/20.500.12116/30056" title="SQL/MM Spatial - The Standard to Manage Spatial Data in a Relational Database System">https://dl.gi.de/handle/20.500.12116/30056<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
 </li>
 <li>
 <p><a id="suon01"></a>[Suon01] SUONUUTI, Heidi. <em>Guide to terminology</em>. 2nd udg. Helsinki : Finnish Centre for Technical Terminology, 2001. ISBN 952-9794-14-2. ISSN 1100-9659. Tilgængelig på: <a target="_blank" href="http://www.nordterm.net/filer/publikationer/guider/Guide_to_Terminology.pdf" class="bare">http://www.nordterm.net/filer/publikationer/guider/Guide_to_Terminology.pdf<span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span></a></p>
