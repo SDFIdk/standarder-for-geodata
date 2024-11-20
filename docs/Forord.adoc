@@ -22,7 +22,7 @@ og hvor og hvordan disse standarder og best practices kan tilgås.
 Dette dokument er også målrettet dem der har det overordnede ansvar 
 for en forretning, som bygger på stedbestemmelse. Denne målgruppe har 
 brug for at have et overblik over standarder til brug i f.eks. 
-kravspecikationer mv.
+kravspecifikationer mv.
 
 
 [#baggrund]
@@ -51,7 +51,7 @@ Introducerende tekst til kategorien.
 Titel på standard eller best practice
 
 [.bibliographicaldetails]
-Dokumentets bibliografiske detajler.
+Dokumentets bibliografiske detaljer.
 
 Beskrivelse af standard/best practice.
 

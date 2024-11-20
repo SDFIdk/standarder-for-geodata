@@ -82,6 +82,7 @@ Et eksempel på en WKT-repræsentation af en 2D-geometri i et
 3D-koordinatrum, hvori den tredje dimension er den vertikale dimension
 (z), er:
 
+[source]
 ----
 Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
 24.61,722137.52 6178901.05 24.7,722135.5 6178901.91 25.01,722126.66

@@ -128,9 +128,6 @@ Arbejdsgruppen om GeoPackage er aktiv og der er mange ønsker til
 videreudvikling af den. Derfor kan der forventes at komme flere
 versioner.
 
-Læs mere om GeoPackage på OGC’s blog:
-[.cite]#https://www.ogc.org/blog/3148[GeoPackageDay 2020 - what is GeoPackage?]#
-
 I Nederlandene er GeoPackage-standarden optaget på
 https://www.forumstandaardisatie.nl/open-standaarden/verplicht[følg-eller-forklar
 listen] af “Dutch Standardisation Forum”. Anvendelsesområdet for

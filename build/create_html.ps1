@@ -19,9 +19,6 @@ if (Test-Path $folder) {
 New-Item $folder -ItemType Directory
 Write-Host "Folder" $folder "created successfully"
 
-$assetsFolder = $folder + "\assets"
-Copy-Item -Path "docs\assets" -Destination $assetsFolder -Recurse
-
 # retrieve today's date, for setting the revision date
 $today = Get-Date -Format "yyyy-MM-dd"
 

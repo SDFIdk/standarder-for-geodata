@@ -46,7 +46,7 @@ udstiller metadata i henhold til [.cite]#DS/EN ISO 19115:2005# og understøtter 
 også [.cite]#INSPIRE-loven#. Det samme gør sig gældende for INSPIREs egen
 https://inspire-geoportal.ec.europa.eu/[metadataportal].
 
-Der findes XML-schemaer til denne standard, se [.cite]#<<19139,DS/ISO/TS 19139>>#.
+Der findes XML-skemaer til denne standard, se [.cite]#<<19139,DS/ISO/TS 19139>>#.
 
 [.cite]#DS/EN ISO 19115:2005# er formelt trukket tilbage af Dansk Standard og de to
 standardiseringsorganer CEN og ISO. Standarden er erstattet af 
@@ -56,9 +56,9 @@ standardiseringsorganer CEN og ISO. Standarden er erstattet af
 ==== DS/EN ISO 19115-1 Metadata - Part 1: Fundamentals
 
 [.bibliographicaldetails] 
-DS/EN ISO 19115-1:2014, _Geografisk information - Metadata - Part 1: Fundamentals_
+DS/EN ISO 19115-1:2014, _Geografisk information - Metadata - Del 1: Grundprincipper_
 
-[.cite]#DS/EN ISO 19115-1# beskriver geografiske metadatadata på en struktureret
+[.cite]#DS/EN ISO 19115-1# beskriver geografiske metadata på en struktureret
 måde. Standarden definerer de elementer som en beskrivelse består af,
 den indeholder en model, der beskriver elementernes indbyrdes
 relationer, og endelig indeholder standarden en beskrivelse af, hvordan
@@ -108,10 +108,10 @@ oprettes, for at muliggøre, at en tjeneste kan specificeres uafhængigt
 af en eller flere underliggende distribuerede computerplatforme.
 
 [.cite]#DS/EN ISO 19119# definerer ligeledes, hvordan geografiske
-tjenester skal kategoriseres i henhold til en servicetaxonomi baseret på
+tjenester skal kategoriseres i henhold til en servicetaksonomi baseret på
 IT-arkitekturen og tillader også, at tjenester kan kategoriseres i
 henhold til et brugslivscyklusperspektiv, samt i henhold til
-domænespecifikke og brugerdefinerede servicetaxonomier, for at lette
+domænespecifikke og brugerdefinerede servicetaksonomier, for at lette
 supporten ved offentliggørelse og opdagelse af tjenester. 
 
 [NOTE] 
@@ -206,7 +206,7 @@ eksempler til anvendelser.
 [NOTE] 
 ==== 
 [.cite]#DCAT-AP-DK#, en delmængde af [.cite]#DCAT-AP#, som igen er en delmængde af [.cite]#DCAT#,
-benyttes til det https://datasets.catalogue.data.gov.dk/[fælles offentlige datasætkatalog]
+benyttes til det https://datavejviser.dk/[fælles offentlige datasætkatalog]
 , der giver overblik
 over hvilke offentlige datasæt, der findes, hvor de findes, og om de er
 tilgængelige.

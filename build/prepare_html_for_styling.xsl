@@ -9,11 +9,7 @@
     -->
     <xsl:output method="xhtml" html-version="5.0" include-content-type="no" omit-xml-declaration="yes" indent="no" />
     <!-- Kopiér (medmindre et andet template er "matched") -->
-    <xsl:template match="/|@*|node()">
-        <xsl:copy>
-            <xsl:apply-templates select="@*|node()" />
-        </xsl:copy>
-    </xsl:template>
+    <xsl:mode on-no-match="shallow-copy" />
     <!-- Tilføj data-theme -->
     <xsl:template match="x:html">
         <html xmlns="http://www.w3.org/1999/xhtml" lang="da" data-theme="light">
@@ -46,7 +42,7 @@
     <xsl:template match="x:div[@id='header']">
         <header id="header" class="ds-header">
             <div class="ds-container">
-                <ds-logo-title title="Anbefalede standarder for geodata">
+                <ds-logo-title>
                     <xsl:attribute name="title" select="x:h1/text()" />
                     <xsl:attribute name="byline" select="x:div[@class='details']/x:span[@id='author']/text()" />
                 </ds-logo-title>
@@ -106,13 +102,5 @@
                 <span class="icon--mdi icon--mdi--open-in-new icon--mdi--open-in-new-custom"></span>
             </xsl:if>
         </xsl:element>
-    </xsl:template>
-    <!-- Se https://alfa.siteimprove.com/rules/sia-r79 -->
-    <xsl:template match="x:pre">
-        <pre>
-            <code>
-                <xsl:apply-templates select="@*|node()"/>
-            </code>
-        </pre>
     </xsl:template>
 </xsl:stylesheet>
