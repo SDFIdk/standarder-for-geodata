@@ -36,7 +36,7 @@ tilsammen den formelle beskrivelse af det geodætiske grundlag for al
 geodataregistrering.
 
 De nævnte standarder implementeres i det frie og åbne værktøj 
-https://proj.org/[PROJ],
+https://proj.org/en/stable/[PROJ],
 “geodæsiens schweizerkniv”, udviklet i et åbent internationalt
 samarbejde.
 

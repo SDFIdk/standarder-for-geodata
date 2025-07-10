@@ -47,7 +47,7 @@ Håndtering af tid i relationelle databaser beskrives udførligt i <<snodgrass>>
 
 [.bibliographicaldetails]
 JENSEN, Christian S. og DYRESON, Curtis E. The Consensus Glossary of 
-Temporal Database Concepts—February 1998 Version. I: _Temporal 
+Temporal Database Concepts — February 1998 Version. I: _Temporal 
 Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
 367–405. Lecture Notes in Computer Science. 
 doi:link:https://doi.org/10.1007/BFb0053710[10.1007/BFb0053710,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)]. 
