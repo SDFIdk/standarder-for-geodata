@@ -1,7 +1,7 @@
 = Anbefalede standarder for geodata
 :author: Klimadatastyrelsen
 :data-uri:
-:description: {doctitle} indeholder en detaljeret gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata, herunder i forbindelse med opbygning af digitale forvaltningsløsninger. Dette understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs. 
+:description: Gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata. 
 :docinfo: shared
 :doctype: article
 // from the documentation: The email attribute represents an email address or URL associated with the first author

@@ -6,8 +6,7 @@
 [.cite]#{doctitle}# indeholder en detaljeret gennemgang af relevante 
 standarder og best practices til brug for indsamling, behandling og 
 distribution af geodata, herunder i forbindelse med opbygning af 
-digitale forvaltningsløsninger. Dette understøtter interoperabilitet 
-mellem data og systemer, så data kan anvendes og genbruges på tværs.
+digitale forvaltningsløsninger. Disse standarder og best practices understøtter interoperabilitet mellem data og systemer, så data kan anvendes og genbruges på tværs.
 
 
 [#maalgruppe]
