@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="https://cdn.dataforsyningen.dk/assets/designsystem/v8/logo.svg#small" />
+<link rel="icon" href="https://cdn.dataforsyningen.dk/assets/designsystem/v8/logo-small.svg" />
 <!-- Dublin Core metadata,
 see https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 and https://www.dublincore.org/specifications/dublin-core/dc-html/. -->
@@ -15,12 +15,48 @@ use profile link relation, not the deprecated profile attribute on head -->
 <meta name="DC.title" lang="{lang}" content="{doctitle}" />
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="DCTERMS.license" href="https://creativecommons.org/licenses/by/4.0/"/>
+<!-- CSS styling -->
 <link rel="stylesheet" href="https://cdn.dataforsyningen.dk/assets/designsystem/v8/designsystem.css" />
 <style>
+/* overall layout */
+.grid-container{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+    height: auto;
+    
+    @media (min-width: 55rem) {
+        grid-template-columns: 1fr 4fr;
+        height: 100vh;
+    }
+}
+#toc {
+    grid-row: 1;
+    grid-column: 1;
+}
+#text {
+    grid-row: 2;
+    grid-column: 1;
+    @media (min-width: 55rem) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+.grid-container>div{
+    overflow-y: auto;
+    @media (min-width: 55rem) {
+        overflow-y: scroll;
+    }
+}
+
+@media screen {#buttons{position:fixed;top:var(--space);right:var(--space);width:auto;z-index:10}}
+@media screen and (min-width: 55rem) {#link_to_toc {display: none}}
+@media print {#buttons {display: none}}
+
 /* copied and adjusted from asciidoctor-default.css */
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
-.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;text-transform:uppercase;letter-spacing:.04em;margin-bottom:var(--typography-spacing-vertical-bottom)}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{font-weight:400;font-size:smaller;text-rendering:optimizeLegibility;text-align:left}
 .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
 .admonitionblock>table th,td{border:0}
 .admonitionblock>table td.icon{text-align:center;width:80px}
@@ -31,17 +67,20 @@ use profile link relation, not the deprecated profile attribute on head -->
 /* Change color for both types of admonitions: blocks and single paragraphs. */
 .admonitionblock>table td.content{color:color:var(--grey8)}
 .admonitionblock>table td.content :not(a,a>span){color:color:var(--grey8)}
+/* Change margin section */
+section{margin-top: var(--space-md)}
 /* Change paddings */
 .paragraph{padding: var(--space-sm) 0}
-.sect1,.sect2,.sect3{padding:var(--space-sm) 0 var(--space-sm)}
+#toc>nav.ds-nav-vertical{text-wrap: wrap}
+#toc>nav.ds-nav-vertical > *{border: none}
+#toc>nav.ds-nav-vertical a{padding: var(--space-sm)}
 /* Hierarchical table of contents (:toclevels: 3). Default padding-left in designsystem.css is 1.5 em. */
 #toc ul.sectlevel2{padding-left:var(--space-sm)}
 #toc ul.sectlevel3{padding-left:var(--space-md)}
 #toc ul li{list-style-type: none; font-size: 110%}
 #toc{background-color: var(--bg1)}
-#link_to_toc{position: fixed; bottom: var(--space); right: var(--space); width: auto; z-index: 10}
 /* Style of bibliographicaldetails inspired by sidebarblock from asciidoctor-default.css */
-aside.bibliographicaldetails{border:.2rem solid var(--c7);padding: var(--space-sm);margin-bottom:var(--space-sm);background-color: var(--hvid);border-radius:1rem}
+aside.bibliographicaldetails{border:.2rem solid var(--c7);padding: var(--space-sm);margin:var(--space-sm) 0;background-color: var(--hvid);border-radius:1rem}
 aside.bibliographicaldetails p{margin-bottom:0em}
 aside.bibliographicaldetails>:first-child{margin-top:0}
 aside.bibliographicaldetails>:last-child{margin-bottom:0}
@@ -50,23 +89,6 @@ aside.bibliographicaldetails>:last-child{margin-bottom:0}
 #eksempel_opbygning>div.content>div.title>p{color:var(--h4-color);letter-spacing:.04em}
 #eksempel_opbygning>div.content>div>p,ol,ul,table{font-size:90%}
 #eksempel_opbygning>div.content>div.admonitionblock>table td.content{color:var(--grey8));font-size:90%}
-/* Icon described on https://pictogrammers.com/library/mdi/icon/open-in-new/, CSS below generated with https://api.iconify.design/mdi.css?icons=open-in-new */
-.icon--mdi {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-color: currentColor;
-  -webkit-mask: no-repeat center / 100%;
-  mask: no-repeat center / 100%;
-  -webkit-mask-image: var(--svg);
-  mask-image: var(--svg);
-}
-
-.icon--mdi--open-in-new {
-  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z'/%3E%3C/svg%3E");
-}
-/* Extra, custom styling for icon */
-.icon--mdi--open-in-new-custom{margin-left:var(--space-xxs);vertical-align:text-bottom}
 </style>
 <script type="module">
 import { DSLogoTitle, DSLogo } from 'https://cdn.dataforsyningen.dk/assets/designsystem/v8/designsystem.js'
