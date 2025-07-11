@@ -49,4 +49,6 @@ include::UdvekslingAfGeodataService.adoc[]
 
 include::ArkiveringAfGeodata.adoc[]
 
+include::Forkortelser.adoc[]
+
 include::Referencer.adoc[]
