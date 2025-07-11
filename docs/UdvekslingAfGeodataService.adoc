@@ -52,7 +52,7 @@ datasæt.
 ==== INSPIRE Download Services
 
 [.bibliographicaldetails]
-_Technical Guidance for the implementation of INSPIRE Download
+MIG. _Technical Guidance for the implementation of INSPIRE Download
 Services_. Version 3.1. 9 august 2013. Tilgængelig på:
 https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services,title=Technical Guidance for the implementation of INSPIRE Download Services] 
 
@@ -126,7 +126,7 @@ Fordi billederne er genereret på forhånd, er performance af WMTS-tjenester bed
 ==== INSPIRE View Services
 
 [.bibliographicaldetails]
-_Technical Guidance for the implementation of INSPIRE View Services_. Version 3.11. 4 april 2013. Tilgængelig på: https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1,title=Technical Guidance for the implementation of INSPIRE View Services] 
+MIG. _Technical Guidance for the implementation of INSPIRE View Services_. Version 3.11. 4 april 2013. Tilgængelig på: https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1,title=Technical Guidance for the implementation of INSPIRE View Services] 
 
 [.cite]#https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[Technical Guidance for the implementation of INSPIRE View Services]# beskriver, hvordan man kan leve op til INSPIREs
 krav om visningstjenester ved hjælp af <<wms,WMS 1.3.0>> (den anbefalede måde
@@ -172,7 +172,7 @@ er i overensstemmelse med denne standard.
 ==== OGC API - Features - Part 1: Core
 
 [.bibliographicaldetails]
-_OGC API - Features - Part 1: Core_. Version 1.0. 7 oktober 2019.
+OGC 17-069r3, _OGC API - Features - Part 1: Core_. Version 1.0. 7 oktober 2019.
 Tilgængelig på:
 http://docs.opengeospatial.org/is/17-069r3/17-069r3.html[http://docs.opengeospatial.org/is/17-069r3/17-069r3.html,title=OGC API - Features - Part 1: Core]
 

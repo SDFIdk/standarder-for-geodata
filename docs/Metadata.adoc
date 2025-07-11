@@ -171,7 +171,7 @@ foreligger en opdateret version af standarden i anden halvdel af 2022.
 ==== Technical Guidance for the implementation of INSPIRE dataset and service metadata
 
 [.bibliographicaldetails]
-_Technical Guidance for the implementation of INSPIRE dataset and
+MIG. _Technical Guidance for the implementation of INSPIRE dataset and
 service metadata based on ISO/TS 19139:2007_. Version 2.0.1. 2 marts
 2017. Tilgængelig på: http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1[http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.0.1,title=Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007] 
 
@@ -183,10 +183,8 @@ for at leve op til
 ==== Data Catalog Vocabulary (DCAT)
 
 [.bibliographicaldetails]
-ALBERTONI, Riccardo, BROWNING, David, COX, Simon, GONZALEZ BELTRAN,
-Alejandra, PEREGO, Andrea og WINSTANLEY, Peter, red. _Data Catalog
-Vocabulary (DCAT) - Version 2_. W3C Recommendation. World Wide Web
-Consortium, 4 februar 2020. [Set 28 februar 2020]. Tilgængelig på:
+W3C. _Data Catalog
+Vocabulary (DCAT) - Version 2_. W3C Recommendation. 4 februar 2020. Tilgængelig på:
 https://www.w3.org/TR/vocab-dcat-2/[https://www.w3.org/TR/vocab-dcat-2/,title=Data Catalog Vocabulary (DCAT) - Version 2] 
 
 [.cite]#https://www.w3.org/TR/vocab-dcat-2/[DCAT]# gør det muligt for en udgiver at beskrive datasæt og datatjenester

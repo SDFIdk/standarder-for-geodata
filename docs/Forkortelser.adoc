@@ -1,0 +1,30 @@
+[glossary]
+== Forkortelser
+
+[glossary]
+API:: application programming interface
+CSW:: Catalogue Service for the Web
+DCAT:: Data Catalog Vocabulary
+DS:: Dansk Standard
+GML:: Geography Markup Language
+IEC:: International Electrotechnical Commission
+IETF:: Internet Engineering Task Force
+INSPIRE:: Infrastructure for Spatial Information in Europe
+ISO:: International Organization for Standardization
+ITRS:: International Terrestrial Reference System
+ITU:: International Telecommunication Union
+MIG:: INSPIRE Maintenance and Implementation Group
+OGC:: Open Geospatial Consortium
+PDF:: Portable Document Format
+RDF:: Resource Description Framework
+SFA:: simple feature access
+SLD:: Styled Layer Descriptor
+SQL:: Structured Query Language
+TC:: Technical Committee
+UML:: Unified Modeling Language
+W3C:: World Wide Web Consortium
+WFS:: Web Feature Service
+WKT:: Well-Known Text
+WMS:: Web Map Service
+WMTS:: Web Map Tile Service
+XML:: Extensible Markup Language
