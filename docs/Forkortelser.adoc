@@ -15,8 +15,10 @@ ITRS:: International Terrestrial Reference System
 ITU:: International Telecommunication Union
 MIG:: INSPIRE Maintenance and Implementation Group
 OGC:: Open Geospatial Consortium
+OMG:: Object Management Group
 PDF:: Portable Document Format
 RDF:: Resource Description Framework
+SEMIC:: Semantic Interoperability Community
 SFA:: simple feature access
 SLD:: Styled Layer Descriptor
 SQL:: Structured Query Language

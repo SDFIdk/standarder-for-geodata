@@ -1,22 +1,23 @@
 [#begrebs-datamodeller]
 === Begrebs- og datamodeller
 
-Det er et arkitekturprincip i Digitaliseringsstyrelsens [.cite]#<<fda-hvidbog>>#, 
-at gode data deles og genbruges. Det
-vil sige, at begreber og data skal beskrives ensartet, så de kan
-genbruges, og der sikres tilstrækkelig kvalitet i data til de væsentlige
-anvendelser af data. Princippet, om at gode data deles og genbruges, er
+Gode data deles og genbruges. Det er et af de otte arkitekturprincipper i Digitaliseringsstyrelsens [.cite]#<<fda-hvidbog>>#. 
+Når begreber og data beskrives ensartet, kan de
+genbruges og sikres der tilstrækkelig kvalitet i data til de væsentlige
+anvendelser af data.
+
+Princippet om at gode data deles og genbruges, er
 gjort mere konkret i form af fire arkitekturregler:
 
-* Del og genbrug data.
-* Anvend fælles regler for dokumentation af data.
-* Giv data den kvalitet som efterspørges (se punkt om metadata).
-* Udstil oplysninger om datakilder, begreber og datamodeller.
+. Del og genbrug data.
+. Anvend fælles regler for dokumentation af data.
+. Giv data den kvalitet som efterspørges (se punkt om metadata).
+. Udstil oplysninger om datakilder, begreber og datamodeller.
 
 Hvis et datasæt er omfattet af [.cite]#<<inspire,INSPIRE-direktivet>>#, skal datasættet gøres
 tilgængeligt for omverden i overensstemmelse med INSPIRE-reglerne, og
 det indebærer, at datasættet (også) skal udstilles på en måde, så det
-følger INSPIREs dataspecifikationer - som bl.a. indeholder datamodeller
+følger https://inspire-mif.github.io/technical-guidelines/[INSPIREs dataspecifikationer], som bl.a. indeholder datamodeller
 for det relevante tema. Uanset om et datasæt er omfattet af
 [.cite]#INSPIRE-direktivet# eller ej, så bør man bruge INSPIREs datamodel for det
 relevante tema som inspiration ved udarbejdelse af nye datamodeller.
@@ -30,7 +31,7 @@ sektor. Hvidbog om fællesoffentlig digital arkitektur_. Version 1.0.
 juni 2017. Tilgængelig på:
 https://arkitektur.digst.dk/node/1175[https://arkitektur.digst.dk/node/1175,title=Den digitalt sammenhængende offentlige sektor. Hvidbog om fællesoffentlig digital arkitektur]
 
-[.cite]#https://arkitektur.digst.dk/node/1175[Den digitalt sammenhængende offentlige sektor. Hvidbog om fællesoffentlig digital arkitektur]# beskriver arkitekturprincipper og –regler, som understøtter
+[.cite]#https://arkitektur.digst.dk/node/1175[Den digitalt sammenhængende offentlige sektor. Hvidbog om fællesoffentlig digital arkitektur]# beskriver arkitekturprincipper og -regler, som understøtter
 en sammenhængende digitalisering af den offentlige sektor.
 
 [#fda-modelregler]
@@ -56,13 +57,21 @@ status ifm. et objekts livscyklus.
 
 Man skal være opmærksom på, hvordan data administreres, især hvad angår:
 
-* historik: egenskaber som beskriver et objekts levetid i forhold til
+* Historik: egenskaber som beskriver et objekts levetid i forhold til
 virkningstid og registreringstid stiller store krav til det it-system,
 der skal holde styr på data. Se også xref:TidOgHistorik.adoc#tid-historik[Tid og historik].
-* sammenhæng: relationer til andre modeller forudsætter, at man i
+* Sammenhæng: relationer til andre modeller forudsætter, at man i
 praksis kan og vil anvende de data, som de andre modeller beskriver, se
 også xref:Identifikatorer.adoc#identifikatorer[Identifikatorer].
 ====
+
+[#grunddata-modelregler]
+==== Modelregler for grunddata
+
+[.bibliographicaldetails]
+GRUNDDATA ARKITEKTURFORUM. _Modelregler for grunddata_. Version 2.2.0. [Set 14 juli 2025]. Tilgængelig på: https://datafordeler.dk/vejledning/grunddata/datamodel/modelregler/
+
+[.cite]#Modelregler for grunddata# sikrer, at modelleringen af dataobjekter i grunddata sker ud fra et fælles sæt retningslinjer, at https://datafordeler.dk/vejledning/grunddata/datamodel/[hele modellen] bygger på fælles grundegenskaber samt, at grunddata hentet i https://datafordeler.dk/[Datafordeleren] er dokumenteret på en ensartet måde.
 
 [#704]
 ==== DS/ISO 704 Begrebsarbejde – Principper og metoder
@@ -81,27 +90,30 @@ DS/ISO 704:2022, _Begrebsarbejde – Principper og metoder_
 ==== DS/ISO 19103 Konceptuelt modelleringssprog
 
 [.bibliographicaldetails]
-DS/ISO 19103:2015, _Geografisk information - Konceptuelt
+DS/ISO 19103:2024, _Geografisk information - Konceptuelt
 modelleringssprog_
 
 [.cite]#DS/ISO 19103# angiver regler og retningslinjer for
-brugen af et konceptuelt modelleringssprog inden for rammerne af
-geografisk information. Det valgte konceptuelle modelleringssprog er UML
-(Unified Modelling Language).
+brugen af et konceptuelt modelleringssprog. Det valgte konceptuelle modelleringssprog er et subsæt af sproget <<uml>>.
 
-Målet med denne standard er UML-skemaer, der beskriver geografisk
-information.
-
-Derudover beskriver denne standard begreber såsom CharacterString,
-DateTime, osv.
+[.cite]#DS/ISO 19103# specificerer en UML-repræsentation for de fleste af datatyperne standardiseret i [.cite]#DS/ISO/IEC 11404:2008, Informationsteknologi – Datatyper til generel anvendelse (GPD)# <<iso-iec-11404>>. UML-repræsentationerne kan ses i ISO/TC 211's [.cite]#https://github.com/ISO-TC211/HMMG[Harmonized Model Repository]# i pakken https://iso.sparxcloud.com/index.php?m=1&o=21FBA585-CFCF-4aa6-B4B4-FCAED4CE3075[Core Data Types].
 
 [NOTE]
 ====
-Standarden anvendes i INSPIRE og som basis alle modeller der indgår i
-standarder fra ISO 19100-serien.
+Standarden anvendes i [.cite]#<<grunddata-modelregler>>#, i INSPIRE-dataspecifikationerne og i alle UML-modeller udviklet af ISO/TC 211.
 
 ISO/TC 211 vedligeholder og opbevarer alle UML-modeller som indgår i de
 forskellige ISO/TC 211 standarder i det [.cite]#https://github.com/ISO-TC211/HMMG[Harmonized Model Repository]#.
-Det gør, at man kan bruge disse typer i sine egne geografiske
-datamodeller.
+Det gør, at man kan bruge modellernes elementer i sine egne geografiske
+datamodeller. For mere info omkring hvordan man tilgår og downloader modellerne, se https://github.com/ISO-TC211/HMMG/wiki.
 ====
+
+[#uml]
+==== Unified Modeling Language (UML)
+
+[.bibliographicaldetails]
+OMG. _Unified Modeling Language_. Version 2.5.1. december 2017. Tilgængelig på: https://www.omg.org/spec/UML/2.5.1
+
+Standarden [.cite]#Unified Modeling Language# specificerer et modelleringssprog som er defineret af en metamodel og som har en grafisk notation. Med UML kan både de statiske og dynamiske aspekter af en forretning eller et it-system beskrives på en formel måde.
+
+[.cite]#Unified Modeling Language# er en omfattende standard, men i begrebs- og datamodellering anvendes kun et subsæt af standarden, se fx [.cite]#<<19103>>#, [.cite]#<<grunddata-modelregler>>#, [.cite]#<<fda-modelregler>># og [.cite]#The SEMIC Style Guide for Semantic Engineers# <<semic-style-guide>>.
