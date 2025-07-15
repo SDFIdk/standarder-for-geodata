@@ -40,42 +40,77 @@ Hvis der i et informationssystem registreres hvornår et forretningsobjekt har �
 . Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på et tidligere tidspunkt?
 . Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet ville være på et senere tidspunkt?
 
-Håndtering af tid i relationelle databaser beskrives udførligt i <<snodgrass>>. Designmønstre for håndtering af tid i software beskrives i <<fowl05>>. <<fowl05>> henviser også til forskelligt anden relevant litteratur.
-
-[#temporal-databases]
-==== The Consensus Glossary of Temporal Database Concepts
-
-[.bibliographicaldetails]
-JENSEN, Christian S. og DYRESON, Curtis E. The Consensus Glossary of 
-Temporal Database Concepts — February 1998 Version. I: _Temporal 
-Databases: Research and Practice_. Springer Berlin Heidelberg, 1998. p. 
-367–405. Lecture Notes in Computer Science. 
-doi:link:https://doi.org/10.1007/BFb0053710[10.1007/BFb0053710,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version (DOI)]. 
-Tilgængelig på: https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf,title=The Consensus Glossary of Temporal Database Concepts—February 1998 Version]
-
-Artiklen [.cite]#https://infolab.usc.edu/csci599/Fall2001/paper/glossary.pdf[The Consensus Glossary of Temporal Database Concepts]# indeholder termer og definitioner for begreber som
-anvendes i temporale databaser, såsom “temporal”, “lifespan”, “valid
-time”, osv. En forklaring for hvorfor en bestemt term, og ikke en anden
-term, er valgt, er også til stede. Som titlen indikerer, er der tale om
-resultatet af en proces for at opnå en højere grad af enhed ang.
-navngivning og definitioner af begreber inden for dette domæne.
-
-[NOTE]
-“Virkningstid” og “registreringstid” 
-svarer til artiklens begreber “Valid time”, henholdsvis “transaction 
-time”.
-
 [#9075-2]
 ==== ISO/IEC 9075-2, Database languages — SQL — Part 2: Foundation (SQL/Foundation) 
 
 [.bibliographicaldetails]
-ISO/IEC 9075-2, _Information technology — Database languages — SQL —
-Part 2: Foundation (SQL/Foundation)_
+DS/ISO/IEC 9075-2:2023, _Informationsteknologi – SQL-databasesprog – Del 2: Fundament (SQL/Foundation)_
 
 [.cite]#ISO/IEC 9075#, standarden for Structured Query Language (SQL), er delt op i flere
 dele. Del 2 definerer datastrukturer og grundlæggende operationer på
 SQL-data.
 
+[.cite]#DS/ISO/IEC 19075-2# <<iso-iec-19075-2>> vejleder om understøttelsen af tidsrelateret information i SQL.
+
 [NOTE]
-I [.cite]#ISO/IEC 9075-2# anvendes termen “application time” som synonym for
-“valid time”, og “system time” som synonym for “transaction time”.
+====
+Artiklen [.cite]#The Consensus Glossary of Temporal Database Concepts# <<glossary-temporal>> indeholder termer og definitioner for begreber som
+anvendes i temporale databaser.footnote:[Artiklen [.cite]#The Consensus Glossary of Temporal Database Concepts# <<glossary-temporal>> er kilden til nogle af begreber i [.cite]#Encyclopedia of Database Systems# <<encyc-databases>>, såsom https://link.springer.com/rwe/10.1007/978-1-4614-8265-9_1066[valid time (virkningstid)] og https://link.springer.com/rwe/10.1007/978-1-4614-8265-9_1064[transaction time (registreringstid)].] [.cite]#ISO/IEC 9075-2# anvender dog termen "application time" som synonym for
+"link:https://link.springer.com/rwe/10.1007/978-1-4614-8265-9_1066[valid time (virkningstid)]" og "system time" som synonym for “link:https://link.springer.com/rwe/10.1007/978-1-4614-8265-9_1064[transaction time (registreringstid)]”.
+
+Principperne for håndtering af tid i relationelle databaser beskrives udførligt i [.cite]#Developing time-oriented database applications in SQL# <<snodgrass>>. 
+
+Designmønstre for håndtering af tid i software beskrives i [.cite]#Temporal Patterns# <<fowl05>>. [.cite]#Temporal Patterns# henviser også til forskelligt anden relevant litteratur.
+====
+
+[#8601-1]
+==== ISO 8601-1:2019, Date and time — Representations for information interchange — Part 1: Basic rules
+
+[.bibliographicaldetails]
+ISO 8601-1:2019, _Date and time — Representations for information interchange — Part 1: Basic rules_
+
+[.cite]#ISO 8601-1# specificerer hvordan datoer i den gregorianske kalender og klokkeslæt baseret på 24-timersuret skrives med tal, bogstaver og symboler. Standardarden definerer et basisformat uden og et udvidet format med seperatortegn.
+
+[#8601-2]
+==== ISO 8601-2:2019, Date and time — Representations for information interchange — Part 2: Extensions
+
+[.bibliographicaldetails]
+ISO 8601-2:2019, _Date and time — Representations for information interchange — Part 2: Extensions_
+
+[.cite]#ISO 8601-2# specificerer udvidelser for [.cite]#<<#8601-1,ISO 8601-1>>#, såsom repræsentationer for
+
+* omtrentlige, usikre eller uspecificerede (dele af) datoer/klokkeslæt;
+* sæsoner, trimestre, kvartaler og semestre.
+
+[#rfc3339]
+==== RFC 3339, Date and Time on the Internet: Timestamps
+
+[.bibliographicaldetails]
+IETF. RFC 3339, _Date and Time on the Internet: Timestamps_. juli 2002. Tilgængelig på: https://www.rfc-editor.org/info/rfc3339
+
+[.cite]#RFC 3339# specificerer formatet "Internet Date/Time Format", som er en profil af [.cite]#<<#8601-1,ISO 8601-1>>#. [.cite]#RFC 3339# anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt og kræver at tidsstempler angives i UTC eller i forhold til UTC. [.cite]#RFC 3339# er opdateret af [.cite]#<<rfc9557,RFC 9557>># på et enkelt punkt for at sikre overensstemmelse med den seneste version af [.cite]#ISO 8601-1#, se [.cite]#RFC 9557#, afsnit 2.
+
+OGC-standarder henviser typisk til [.cite]#RFC 3339#, ikke til [.cite]#ISO 8601-1#.
+
+[#rfc9557]
+==== RFC 9557, Date and Time on the Internet: Timestamps with Additional Information
+
+[.bibliographicaldetails]
+IETF. RFC 9557, _Date and Time on the Internet: Timestamps with additional information_. 23. oktober 2023. Tilgængelig på: https://www.rfc-editor.org/info/rfc9557
+
+[.cite]#RFC 9557# specificerer formatet "Internet Extended Date/Time Format" (IXDTF). IXDTF udvider formatet "Internet Date/Time Format" ([.cite]#<<rfc3339,RFC 3339>>#) med (valgfrie) oplysninger om bl.a. tidszonenavn som i https://www.iana.org/time-zones[IANA's tidszonedatabase] (fx `Europe/Copenhagen`) og om den kalender som datoen/klokkeslættet helst skal præsenteres i.
+
+Derudover opdaterer [.cite]#RFC 9557# [.cite]#<<rfc3339,RFC 3339>># på et enkelt punkt, se [.cite]#RFC 9557#, afsnit 2.
+
+[#edtf]
+==== Extended Date Time Format (EDTF) Specification
+
+[.bibliographicaldetails]
+Library of Congress. _Extended Date Time Format (EDTF) Specification_. 4. februar 2019. Tilgængelig på: https://www.loc.gov/standards/datetime/
+
+[.cite]#Extended Date Time Format (EDTF) Specification# er en profil af [.cite]#<<#8601-1,ISO 8601-1>># og [.cite]#<<#8601-2,ISO 8601-2>>#. EDTF anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt. EFTF muliggør repræsentationer for bl.a.
+
+* omtrentlige, usikre eller uspecificerede (dele af) datoer/klokkeslæt;
+* sæsoner, trimestre, kvartaler og semestre.
+
+[.cite]#Extended Date Time Format (EDTF) Specification# blev udviklet af Library of Congress og blev senere integreret i [.cite]#ISO 8601-2#.
