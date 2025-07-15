@@ -6,13 +6,16 @@ API:: application programming interface
 CSW:: Catalogue Service for the Web
 DCAT:: Data Catalog Vocabulary
 DS:: Dansk Standard
+EDTF:: Extended Date Time Format
 GML:: Geography Markup Language
+IANA:: Internet Assigned Numbers Authority
 IEC:: International Electrotechnical Commission
 IETF:: Internet Engineering Task Force
 INSPIRE:: Infrastructure for Spatial Information in Europe
 ISO:: International Organization for Standardization
 ITRS:: International Terrestrial Reference System
 ITU:: International Telecommunication Union
+IXDTF:: Internet Extended Date/Time Format
 MIG:: INSPIRE Maintenance and Implementation Group
 OGC:: Open Geospatial Consortium
 OMG:: Object Management Group
@@ -24,6 +27,7 @@ SLD:: Styled Layer Descriptor
 SQL:: Structured Query Language
 TC:: Technical Committee
 UML:: Unified Modeling Language
+UTC:: Coordinated Universal Time
 W3C:: World Wide Web Consortium
 WFS:: Web Feature Service
 WKT:: Well-Known Text
