@@ -56,17 +56,20 @@ use profile link relation, not the deprecated profile attribute on head -->
 /* copied and adjusted from asciidoctor-default.css */
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
+.admonitionblock+.admonitionblock{margin-top:var(--space-sm)}
 .admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{font-weight:400;font-size:smaller;text-rendering:optimizeLegibility;text-align:left}
 .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
 .admonitionblock>table th,td{border:0}
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
-.admonitionblock>table td.icon .title{color:var(--grey8);font-weight:bold;text-transform:uppercase;letter-spacing:.04em}
+.admonitionblock>table td.icon .title{font-weight:bold;text-transform:uppercase;letter-spacing:.04em}
+.admonitionblock.note>table td.icon .title{color:var(--grey8)}
+.admonitionblock.important>table td.icon .title{color:var(--highlight)}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 /* Change color for both types of admonitions: blocks and single paragraphs. */
-.admonitionblock>table td.content{color:color:var(--grey8)}
-.admonitionblock>table td.content :not(a,a>span){color:color:var(--grey8)}
+.admonitionblock>table td.content{color:var(--grey8)}
+.admonitionblock>table td.content :not(a,a>span){color:var(--grey8)}
 /* Change margin section */
 section{margin-top: var(--space-md)}
 /* Change paddings */

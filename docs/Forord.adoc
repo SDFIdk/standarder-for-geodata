@@ -54,7 +54,7 @@ Dokumentets bibliografiske detaljer.
 
 Beskrivelse af standard/best practice.
 
-NOTE: Supplerende bemærkninger, f.eks. hvor man kan finde XML-skemaer til standarden, eller hvordan dokumentet relaterer sig til andre dokumenter.
+NOTE: Supplerende bemærkninger, f.eks. hvor man kan finde XML-skemadokumenterne til standarden, eller hvordan dokumentet relaterer sig til andre dokumenter.
 ====
 
 :sectnums:

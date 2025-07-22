@@ -21,27 +21,28 @@ https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://por
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[OpenGIS® Geography Markup Language (GML) Encoding Standard]# 
 specificerer en indkodning i Extensible Markup Language
 (XML) for bl.a. hovedparten af begreberne defineret i
-[.cite]#<<19103,DS/ISO 19103>>#, [.cite]#<<19107,DS/EN ISO 19107>># og [.cite]#<<19111,DS/EN ISO 19111>>#.
+[.cite]#<<19103,DS/EN ISO 19103>># og [.cite]#<<19107,DS/EN ISO 19107>>#.
 
 GML-data beskrives af et GML-applikationsskema, et XML-skema som
 anvender elementer fra skemaerne defineret af GML-standarden.
 
 Standarden indeholder et sæt regler, der definerer, hvordan man på
 systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til et GML-applikationsskema.
+overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til et GML-applikationsskema.
 
-Standarden er også kendt som [.cite]#DS/EN ISO 19136-1:2020, Geografisk information — GML (Geography Markup Language) — Del 1: Grundprincipper#. 
+Standarden er også kendt som [.cite]#DS/EN ISO 19136-1:2020, Geografisk information — GML (Geography Markup Language) — Del 1: Grundprincipper#.
+
+[IMPORTANT]
+====
+Skemadokumenterne for GML 3.2 findes på
+http://schemas.opengis.net/gml/3.2.1/[http://schemas.opengis.net/gml/3.2.1/,title=skemadokumenterne for GML 3.2]. Den sidste undermappe burde have heddet 3.2 i stedet for 3.2, det er en fejl fra OGC’s side. Den nuværende version, inklusiv patch-nummer, er 3.2.*2*.
+====
 
 [NOTE]
 ====
-Skemaerne for GML 3.2 ligger på
-http://schemas.opengis.net/gml/3.2.1/[http://schemas.opengis.net/gml/3.2.1/,title=skemaerne for GML 3.2]
-(det er en fejl fra OGC’s side, at den sidste undermappe hedder 3.2.1,
-det burde have været 3.2).
-
 Da der er tale om XML-data, kan man anvende alle sprog der hører til
-XML-familien, såsom Extensible Stylesheet Language Transformations
-(XSLT) og Schematron, og alle værktøjer, der kan håndtere disse sprog.
+XML-familien, såsom XML Schema <<xmlschema-0>>, Extensible Stylesheet Language Transformations
+(XSLT) <<xslt-30>> og Schematron <<schematron>>, og alle værktøjer, der kan håndtere disse sprog.
 
 Det vil også sige, at GML bør bruges, når data skal valideres, da både
 XML Schema og Schematron er konstrueret til det formål.
@@ -50,11 +51,13 @@ Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
 
 Der findes software, der har implementeret reglerne der kan omsætte en
-logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># 
+logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># 
 til et GML-applikationsskema.
 
 GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
 udveksling af et udvalg af features fra et datasæt via en webtjeneste.
+
+GML version 3.1.1 <<gml311>> er stadigvæk i brug, fx i [.cite]#<<#bek128>># og i visse implementationer af [.cite]#<<sql-mm,SQL/MM>>#. 
 ====
 
 [#gml-33]
@@ -63,26 +66,32 @@ udveksling af et udvalg af features fra et datasæt via en webtjeneste.
 [.bibliographicaldetails] 
 OGC 10-129r1, _OGC® Geography Markup Language (GML) — Extended schemas
 and encoding rules_. Version 3.3.0. 7 februar 2012. Tilgængelig på:
-https://portal.opengeospatial.org/files/?artifact_id=46568[https://portal.opengeospatial.org/files/?artifact_id=46568,title=OGC® Geography Markup Language (GML) — Extended schemas and encoding rules] 
+https://portal.opengeospatial.org/files/?artifact_id=46568[https://portal.opengeospatial.org/files/?artifact_id=46568,title=OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]
 
-[.cite]#https://portal.opengeospatial.org/files/?artifact_id=46568[OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]#, GML 3.3-standarden, er en udvidelse af <<gml-32,GML 3.2-standarden>>, ikke en
-erstatning for GML 3.2-standarden.
-
-Standarden indeholder bl.a. en indkodning for elementerne defineret i
+[.cite]#https://portal.opengeospatial.org/files/?artifact_id=46568[OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]#, GML 3.3-standarden, er en udvidelse af <<gml-32,GML 3.2-standarden>>. Standarden indeholder bl.a. en indkodning for elementerne defineret i
 DS/EN ISO 19148, _Geografisk information — Lineær reference-system_ og
 kompakte indkodninger af almen anvendte GML-geometrier såsom flader.
 
 Standarden er også kendt som [.cite]#DS/EN ISO 19136-2:2018, Geografisk information — GML (Geography Markup Language) — Del 2: Udvidede skemaer 
 og kodningsregler#.
 
+[IMPORTANT]
+====
+GML 3.3-standarden, er en _udvidelse_ af GML 3.2-standarden, ikke en
+_erstatning_ for GML 3.2-standarden. Det forhold afspejles bedre i ISO-numrene for de tilsvarende ISO-standarder, hvor man har ISO 19136-serien, som består af to dele:
+
+* DS/EN ISO 19136-1:2020, _Geografisk information — GML (Geography Markup Language) — Del 1: Grundprincipper_
+* DS/EN ISO 19136-2:2018, _Geografisk information — GML (Geography Markup Language) — Del 2: Udvidede skemaer og kodningsregler_
+====
+
 [NOTE] 
 ====
-Skemaerne for GML 3.3 ligger på
-http://schemas.opengis.net/gml/3.3/[http://schemas.opengis.net/gml/3.3/,title=skemaerne for GML 3.3].
+Skemadokumenterne for GML 3.3 findes på
+http://schemas.opengis.net/gml/3.3/[http://schemas.opengis.net/gml/3.3/,title=skemadokumenterne for GML 3.3].
 
 Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
-==== 
+====
 
 [#gml-sf]
 ==== Geography Markup Language (GML) simple features profile
@@ -90,10 +99,10 @@ fejlrettelser.
 [.bibliographicaldetails] 
 OGC 10-100r3, _Geography Markup Language (GML) simple features profile
 (with Corrigendum)_. Version 2.0. 5 april 2012. Tilgængelig på:
-http://portal.opengeospatial.org/files/?artifact_id=42729[http://portal.opengeospatial.org/files/?artifact_id=42729,title=Geography Markup Language (GML) simple features profile (with Corrigendum)] 
+http://portal.opengeospatial.org/files/?artifact_id=42729[http://portal.opengeospatial.org/files/?artifact_id=42729,title=Geography Markup Language (GML) simple features profile (with Corrigendum)]
 
 GML-standarden er en meget omfattende standard, og derfor har OGC
-defineret et begrænset men nyttigt delmængde af den, for at få mere
+defineret en begrænset men nyttigt delmængde af den, for at få mere
 software til at understøtte GML.
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=42729[Geography Markup Language simple features profile (GML-SF)]# begrænser udvalget af geometrier i GML til 0-,
 1-, og 2-dimensionelle geometrier beskrevet i 1-, 2-, eller
@@ -111,11 +120,11 @@ cirkelbuer og cirkler (`+gml:Arc+`, `+gml:Circle+` og `+gml:CircleByCenterPoint+
 ==== GeoPackage Encoding Standard 
 
 [.bibliographicaldetails] 
-OGC 12-128r15, _OGC® GeoPackage Encoding Standard - with Corrigendum_.
-Version 1.2.1. 6 september 2018. Tilgængelig på:
-http://www.geopackage.org/spec121/[http://www.geopackage.org/spec121/,title=OGC® GeoPackage Encoding Standard - with Corrigendum] 
+OGC 12-128r19, _OGC® GeoPackage Encoding Standard - with Corrigendum_.
+Version 1.4.0. 6 februar 2024. Tilgængelig på:
+https://docs.ogc.org/is/12-128r19/12-128r19.html[https://docs.ogc.org/is/12-128r19/12-128r19.html,title=OGC® GeoPackage Encoding Standard] 
 
-[.cite]#http://www.geopackage.org/spec121/[OGC® GeoPackage Encoding Standard]# er baseret på SQLite, et relationelt
+[.cite]#https://docs.ogc.org/is/12-128r19/12-128r19.html[OGC® GeoPackage Encoding Standard]# er baseret på https://sqlite.org/[SQLite], et relationelt
 databasehåndteringssystem. Én GeoPackage-fil kan håndtere vektordata,
 rasterdata, og metadata. Da en GeoPackage er en databasecontainer,
 understøtter den direkte brug, fx til analyseformål.
@@ -124,10 +133,6 @@ understøtter den direkte brug, fx til analyseformål.
 
 [NOTE] 
 ====
-Arbejdsgruppen om GeoPackage er aktiv og der er mange ønsker til
-videreudvikling af den. Derfor kan der forventes at komme flere
-versioner.
-
 I Nederlandene er GeoPackage-standarden optaget på
 https://www.forumstandaardisatie.nl/open-standaarden/verplicht[følg-eller-forklar
 listen] af “Dutch Standardisation Forum”. Anvendelsesområdet for
@@ -142,7 +147,7 @@ GeoPackage ses at være en erstatning for shapefiler.
 
 Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
 man på systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til en GeoPackage template.
+overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til en GeoPackage template.
 
 GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload).
 

@@ -87,16 +87,16 @@ DS/ISO 704:2022, _Begrebsarbejde – Principper og metoder_
 ====
 
 [#19103]
-==== DS/ISO 19103 Konceptuelt modelleringssprog
+==== DS/EN ISO 19103 Konceptuelt modelleringssprog
 
 [.bibliographicaldetails]
-DS/ISO 19103:2024, _Geografisk information - Konceptuelt
+DS/EN ISO 19103:2024, _Geografisk information - Konceptuelt
 modelleringssprog_
 
-[.cite]#DS/ISO 19103# angiver regler og retningslinjer for
+[.cite]#DS/EN ISO 19103# angiver regler og retningslinjer for
 brugen af et konceptuelt modelleringssprog. Det valgte konceptuelle modelleringssprog er et subsæt af sproget <<uml>>.
 
-[.cite]#DS/ISO 19103# specificerer en UML-repræsentation for de fleste af datatyperne standardiseret i [.cite]#DS/ISO/IEC 11404:2008, Informationsteknologi – Datatyper til generel anvendelse (GPD)# <<iso-iec-11404>>. UML-repræsentationerne kan ses i ISO/TC 211's [.cite]#https://github.com/ISO-TC211/HMMG[Harmonized Model Repository]# i pakken https://iso.sparxcloud.com/index.php?m=1&o=21FBA585-CFCF-4aa6-B4B4-FCAED4CE3075[Core Data Types].
+[.cite]#DS/EN ISO 19103# specificerer en UML-repræsentation for de fleste af datatyperne standardiseret i [.cite]#DS/ISO/IEC 11404:2008, Informationsteknologi – Datatyper til generel anvendelse (GPD)# <<iso-iec-11404>>. UML-repræsentationerne kan ses i ISO/TC 211's [.cite]#https://github.com/ISO-TC211/HMMG[Harmonized Model Repository]# i pakken https://iso.sparxcloud.com/index.php?m=1&o=21FBA585-CFCF-4aa6-B4B4-FCAED4CE3075[Core Data Types].
 
 [NOTE]
 ====
