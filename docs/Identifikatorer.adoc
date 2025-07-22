@@ -29,7 +29,7 @@ kilder.
 Der eksisterer p.t. ikke et tilsvarende dansk dokument.
 
 [#rfc9562]
-==== UUID
+==== RFC 9562, Universally Unique IDentifiers (UUIDs)
 
 [.bibliographicaldetails]
 IETF. RFC 9562, _Universally Unique IDentifiers (UUIDs)_. maj 2024. Tilgængelig på: https://www.rfc-editor.org/info/rfc9562[https://www.rfc-editor.org/info/rfc9562,title=Universally Unique IDentifiers (UUIDs)]

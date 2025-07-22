@@ -21,14 +21,14 @@ https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://por
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[OpenGIS® Geography Markup Language (GML) Encoding Standard]# 
 specificerer en indkodning i Extensible Markup Language
 (XML) for bl.a. hovedparten af begreberne defineret i
-[.cite]#<<19103,DS/ISO 19103>># og [.cite]#<<19107,DS/EN ISO 19107>>#.
+[.cite]#<<19103,DS/EN ISO 19103>># og [.cite]#<<19107,DS/EN ISO 19107>>#.
 
 GML-data beskrives af et GML-applikationsskema, et XML-skema som
 anvender elementer fra skemaerne defineret af GML-standarden.
 
 Standarden indeholder et sæt regler, der definerer, hvordan man på
 systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til et GML-applikationsskema.
+overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til et GML-applikationsskema.
 
 Standarden er også kendt som [.cite]#DS/EN ISO 19136-1:2020, Geografisk information — GML (Geography Markup Language) — Del 1: Grundprincipper#.
 
@@ -51,7 +51,7 @@ Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
 
 Der findes software, der har implementeret reglerne der kan omsætte en
-logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># 
+logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># 
 til et GML-applikationsskema.
 
 GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
@@ -147,7 +147,7 @@ GeoPackage ses at være en erstatning for shapefiler.
 
 Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
 man på systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med [.cite]#<<19103,DS/ISO 19103>># til en GeoPackage template.
+overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til en GeoPackage template.
 
 GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload).
 

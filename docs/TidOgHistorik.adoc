@@ -88,7 +88,7 @@ ISO 8601-2:2019, _Date and time — Representations for information interchange 
 [.bibliographicaldetails]
 IETF. RFC 3339, _Date and Time on the Internet: Timestamps_. juli 2002. Tilgængelig på: https://www.rfc-editor.org/info/rfc3339
 
-[.cite]#RFC 3339# specificerer formatet "Internet Date/Time Format", som er en profil af [.cite]#<<#8601-1,ISO 8601-1>>#. [.cite]#RFC 3339# anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt og kræver at tidsstempler angives i UTC eller i forhold til UTC. [.cite]#RFC 3339# er opdateret af [.cite]#<<rfc9557,RFC 9557>># på et enkelt punkt for at sikre overensstemmelse med den seneste version af [.cite]#ISO 8601-1#, se [.cite]#RFC 9557#, afsnit 2.
+[.cite]#https://www.rfc-editor.org/info/rfc3339[RFC 3339]# specificerer formatet "Internet Date/Time Format", som er en profil af [.cite]#<<#8601-1,ISO 8601-1>>#. [.cite]#RFC 3339# anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt og kræver at tidsstempler angives i UTC eller i forhold til UTC. [.cite]#RFC 3339# er opdateret af [.cite]#<<rfc9557,RFC 9557>># på et enkelt punkt for at sikre overensstemmelse med den seneste version af [.cite]#ISO 8601-1#, se [.cite]#RFC 9557#, afsnit 2.
 
 OGC-standarder henviser typisk til [.cite]#RFC 3339#, ikke til [.cite]#ISO 8601-1#.
 
@@ -98,7 +98,7 @@ OGC-standarder henviser typisk til [.cite]#RFC 3339#, ikke til [.cite]#ISO 8601-
 [.bibliographicaldetails]
 IETF. RFC 9557, _Date and Time on the Internet: Timestamps with additional information_. 23. oktober 2023. Tilgængelig på: https://www.rfc-editor.org/info/rfc9557
 
-[.cite]#RFC 9557# specificerer formatet "Internet Extended Date/Time Format" (IXDTF). IXDTF udvider formatet "Internet Date/Time Format" ([.cite]#<<rfc3339,RFC 3339>>#) med (valgfrie) oplysninger om bl.a. tidszonenavn som i https://www.iana.org/time-zones[IANA's tidszonedatabase] (fx `Europe/Copenhagen`) og om den kalender som datoen/klokkeslættet helst skal præsenteres i.
+[.cite]#https://www.rfc-editor.org/info/rfc9557[RFC 9557]# specificerer formatet "Internet Extended Date/Time Format" (IXDTF). IXDTF udvider formatet "Internet Date/Time Format" ([.cite]#<<rfc3339,RFC 3339>>#) med (valgfrie) oplysninger om bl.a. tidszonenavn som i https://www.iana.org/time-zones[IANA's tidszonedatabase] (fx `Europe/Copenhagen`) og om den kalender som datoen/klokkeslættet helst skal præsenteres i.
 
 Derudover opdaterer [.cite]#RFC 9557# [.cite]#<<rfc3339,RFC 3339>># på et enkelt punkt, se [.cite]#RFC 9557#, afsnit 2.
 
@@ -108,7 +108,7 @@ Derudover opdaterer [.cite]#RFC 9557# [.cite]#<<rfc3339,RFC 3339>># på et enkel
 [.bibliographicaldetails]
 Library of Congress. _Extended Date Time Format (EDTF) Specification_. 4. februar 2019. Tilgængelig på: https://www.loc.gov/standards/datetime/
 
-[.cite]#Extended Date Time Format (EDTF) Specification# er en profil af [.cite]#<<#8601-1,ISO 8601-1>># og [.cite]#<<#8601-2,ISO 8601-2>>#. EDTF anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt. EFTF muliggør repræsentationer for bl.a.
+[.cite]#https://www.loc.gov/standards/datetime/[Extended Date Time Format (EDTF) Specification]# er en profil af [.cite]#<<#8601-1,ISO 8601-1>># og [.cite]#<<#8601-2,ISO 8601-2>>#. EDTF anvender udelukkende [.cite]#ISO 8601-1#'s udvidede format for datoer og klokkeslæt. EFTF muliggør repræsentationer for bl.a.
 
 * omtrentlige, usikre eller uspecificerede (dele af) datoer/klokkeslæt;
 * sæsoner, trimestre, kvartaler og semestre.
