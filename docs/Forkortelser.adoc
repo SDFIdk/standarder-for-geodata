@@ -34,3 +34,4 @@ WKT:: Well-Known Text
 WMS:: Web Map Service
 WMTS:: Web Map Tile Service
 XML:: Extensible Markup Language
+XSLT:: Extensible Stylesheet Language Transformations
