@@ -30,6 +30,7 @@ UML:: Unified Modeling Language
 UTC:: Coordinated Universal Time
 W3C:: World Wide Web Consortium
 WFS:: Web Feature Service
+WKB:: Well-Known Binary
 WKT:: Well-Known Text
 WMS:: Web Map Service
 WMTS:: Web Map Tile Service
