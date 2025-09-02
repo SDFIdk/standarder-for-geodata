@@ -63,18 +63,15 @@ Principperne for håndtering af tid i relationelle databaser beskrives udførlig
 Designmønstre for håndtering af tid i software beskrives i [.cite]#Temporal Patterns# <<fowl05>>. [.cite]#Temporal Patterns# henviser også til forskelligt anden relevant litteratur.
 ====
 
-[#8601-1]
-==== ISO 8601-1:2019, Date and time — Representations for information interchange — Part 1: Basic rules
+[#8601]
+==== ISO 8601, Date and time — Representations for information interchange
 
-[.bibliographicaldetails]
+[.bibliographicaldetails#8601-1]
 ISO 8601-1:2019, _Date and time — Representations for information interchange — Part 1: Basic rules_
 
 [.cite]#ISO 8601-1# specificerer hvordan datoer i den gregorianske kalender og klokkeslæt baseret på 24-timersuret skrives med tal, bogstaver og symboler. Standardarden definerer et basisformat uden og et udvidet format med seperatortegn.
 
-[#8601-2]
-==== ISO 8601-2:2019, Date and time — Representations for information interchange — Part 2: Extensions
-
-[.bibliographicaldetails]
+[.bibliographicaldetails#8601-2]
 ISO 8601-2:2019, _Date and time — Representations for information interchange — Part 2: Extensions_
 
 [.cite]#ISO 8601-2# specificerer udvidelser for [.cite]#<<#8601-1,ISO 8601-1>>#, såsom repræsentationer for

@@ -162,21 +162,21 @@ på:
 https://portal.opengeospatial.org/files/?artifact_id=77855[https://portal.opengeospatial.org/files/?artifact_id=77855,title=OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum] 
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=77855[OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile]# definerer hvordan man anvender <<csw>> sammen
-med metadata som specificeret i [.cite]#<<19115,DS/EN ISO 19115>>#.
+med metadata som specificeret i [.cite]#<<19115-2005,DS/EN ISO 19115:2005>>#.
 
 [NOTE]
 https://geodata-info.dk/srv/eng/csw?request=GetCapabilities&service=CSW&version=2.0.2[Geodata-info]
 er i overensstemmelse med denne standard.
 
 [#ogcfeat] 
-==== OGC API - Features - Part 1: Core
+==== OGC API - Features
 
-[.bibliographicaldetails]
+[.bibliographicaldetails#ogcfeat-1]
 OGC 17-069r4, _OGC API - Features - Part 1: Core corrigendum_. Version 1.0.1. 7 april 2022.
 Tilgængelig på:
 https://docs.ogc.org/is/17-069r4/17-069r4.html[https://docs.ogc.org/is/17-069r4/17-069r4.html,title=OGC API - Features - Part 1: Core corrigendum_]
 
-[.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core corrigendum]# er den første af OGCs nye suite af API-standarder der blev publiceret. 
+[.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core]# er den første af OGCs nye suite af API-standarder der blev publiceret. 
 Dette dokument specificerer egenskaberne for web-API'er, der giver adgang til egenskaberne i et datasæt på en måde, der er uafhængig af det underliggende datalagring. Denne standard definerer søge- og forespørgselsoperationer.
 
 Discovery-operationerne gør det muligt for klienter at forspørge API'en, herunder API-definitionen og metadata om de featuresamlinger, som API'en leverer, for at bestemme API'ens funktionalitet og hente oplysninger om distributioner af et givet datasæt.
@@ -186,8 +186,22 @@ Forespørgselsoperationer gør det muligt for klienter at hente funktioner fra d
 [NOTE]
 Denne standard afløser WFS-standarden.
 
+[.bibliographicaldetails#ogcfeat-2]
+OGC 18-058r1, _OGC API - Features - Part 2: Coordinate Reference Systems by Reference corrigendum_. Version 1.0.1. 11 maj 2022.
+Tilgængelig på:
+https://docs.ogc.org/is/18-058r1/18-058r1.html[https://docs.ogc.org/is/18-058r1/18-058r1.html,title=OGC API - Features - Part 2: Coordinate Reference Systems by Reference corrigendum_]
+
+[.cite]#https://docs.ogc.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference]# udvider <<ogcfeat-1,del 1>> med muligheden for at bruge andre koordinatsystemer end http://www.opengis.net/def/crs/OGC/1.3/CRS84[WGS 84 longitude-latitude] og http://www.opengis.net/def/crs/OGC/0/CRS84h[WGS 84 longitude-latitude-height].
+
+[.bibliographicaldetails#ogcfeat-3]
+OGC 19-079r2, _OGC API - Features - Part 3: Filtering_. Version 1.0. 26 juli 2024.
+Tilgængelig på:
+https://docs.ogc.org/is/19-079r2/19-079r2.html[https://docs.ogc.org/is/19-079r2/19-079r2.html,title=OGC API - Features - Part 3: Filtering_]
+
+[.cite]#https://docs.ogc.org/is/19-079r2/19-079r2.html[OGC API - Features - Part 3: Filtering]# udvider <<ogcfeat-1,del 1>> med muligheden for at filtrere geodata.
+
 [#ogcmap] 
-==== OGC API - Maps - Part 1: Core
+==== OGC API - Maps
 
 [.bibliographicaldetails]
 OGC 20-058, _OGC API - Maps - Part 1: Core_. Version 1.0. 15 februar 2024. Tilgængelig på:
@@ -210,7 +224,7 @@ Denne OGC API – Maps Standard understøtter specifikt følgende:
 Denne standard afløser WMS-standarden.
 
 [#ogctile] 
-==== OGC API - Tiles - Part 1:Core
+==== OGC API - Tiles
 
 [.bibliographicaldetails]
 OGC 20-057, _OGC API - Tiles - Part 1: Core_. Version 1.0. 15 juni 2022. Tilgængelig på:
@@ -226,7 +240,7 @@ Denne standard afløser WMTS-standarden, men i modsætning til WMTS-standarden d
 Mere information om OGC API - Common kan findes på https://www.ogc.org/standards/ogcapi-common[https://www.ogc.org/standards/ogcapi-common,title=OGC API Common].
 
 [#ogcrec] 
-==== OGC API - Records - Part 1:Core
+==== OGC API - Records
 
 [.bibliographicaldetails]
 OGC 20-004r1, _OGC API - Records - Part 1: Core_. Version 1.0. 8 januar 2025. Tilgængelig på:

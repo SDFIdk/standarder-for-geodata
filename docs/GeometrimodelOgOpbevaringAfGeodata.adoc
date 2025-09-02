@@ -25,10 +25,10 @@ Standardens typer er modelleret i [.cite]#Harmonized Model Repository# og kan de
 i UML-modeller. Standarder dækker stort set alle mulige geometriske objekter. Man bør på forhånd at tage stilling
 til, om man kan nøjes med simple features (se [.cite]#<<sfa-ca>>#).
 
-[#sfa-ca]
-==== Simple feature access - Part 1: Common architecture
+[#sfa]
+==== Simple feature access
 
-[.bibliographicaldetails]
+[.bibliographicaldetails#sfa-ca]
 OGC 06-103r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture_ Version 1.2.1. 28 maj 2011. Tilgængelig på: http://portal.opengeospatial.org/files/?artifact_id=25355[http://portal.opengeospatial.org/files/?artifact_id=25355,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture]
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=25355[OpenGIS Implementation Standard for Geographic
@@ -57,7 +57,7 @@ ikke er omfattet
 forskellige geometrityper.
 
 [.cite]#SFA-CA# er platformneutral. Implementeringen i relationelle databaser
-vha. SQL er specificeret i [.cite]#<<sfa-sql>>#.
+vha. SQL er specificeret i [.cite]#<<sfa-sql,del 2>>#.
 
 [.cite]#SFA-CA# indeholder et afsnit
 [.cite]#Well-known Text Representation of Spatial Reference Systems#, som
@@ -123,10 +123,7 @@ Version 1.1 af af [.cite]#SFA-CA# er også kendt som [.cite]#DS/EN ISO 19125-1:2
 arkitektur#.
 ====
 
-[#sfa-sql]
-==== Simple feature access - Part 2: SQL option
-
-[.bibliographicaldetails]
+[.bibliographicaldetails#sfa-sql]
 OGC 06-104r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option_. Version 1.2.1. 4 august 2010. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=25354[http://portal.opengeospatial.org/files/?artifact_id=25354,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option]
 
@@ -159,7 +156,7 @@ ISO/IEC 13249-3:2016, _Information technology — Database languages — SQL mul
 [.cite]#ISO/IEC 13249-3# definerer, hvordan man opbevarer og håndterer
 geodata i SQL-databaser. [.cite]#ISO/IEC 13249-3# anvender en geometrimodel baseret på
 den specificeret i _OpenGIS Implementation Standard for Geographic
-Information Simple feature access_ (<<sfa-ca,del 1>>, <<sfa-sql,del 2>>) 
+Information Simple feature access_ (<<sfa>>) 
 og anvender begreber fra 
 [.cite]#<<19107,DS/EN ISO 19107>># og [.cite]#<<19111,DS/EN ISO 19111>>#.
 
