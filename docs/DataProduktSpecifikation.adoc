@@ -1,0 +1,18 @@
+[#dps]
+=== Dataproduktspecifikationer
+
+En dataproduktspecifikation er en specifikation af et datasæt eller en datasæt-serie sammen med yderligere oplysninger, der gør det muligt at for en anden part at oprette, levere og anvende data. I forbindelse med oprettelse, levering og anvendelse af dataprodukter er specifikationen heraf af afgørende betydning for en kontrolleret og standardiseret proces, der sikrer interoperabilitet. Dataproduktspecifikationen er det endelige produkt i en proces, der beskriver den konceptuelle formalisering af semantik og datastruktur i relation til specifikke krav eller use cases. Det er en præcis og fuldstændig beskrivelse af dataproduktet i forhold til de krav, det skal eller kan opfylde. En dataproduktspecifikation er primært et teknisk dokument, der kan indeholde ikke-tekniske elementer, såsom narrative beskrivelser af visse aspekter, f.eks. oversigten eller dataindsamlingserklæringer. Af forskellige årsager kan det dog være nødvendigt at indgå kompromiser i forbindelse med implementeringen.
+
+
+[#19131]
+==== DS/EN ISO 19131 Dataproduktspecifikation
+
+[.bibliographicaldetails]
+DS/EN ISO 19131:2022, _Geografisk information - Dataproduktspecifikationer_ 
+
+[.cite]#DS/EN ISO 19131:2022# beskriver krav til specifikation af geografiske dataprodukter baseret på begreberne i andre internationale standarder i ISO 19100-standardfamilien. Den giver også vejledning i udarbejdelsen af dataproduktspecifikationer, så de er lette at forstå og egner sig til det tilsigtede formål. Dette dokument specificerer XML-kodning af dataproduktspecifikationer. Dette dokument giver en OWL-repræsentation af den underliggende UML-model. Dette dokument er beregnet til brug for dataproducenter, dataleverandører, tjenesteudbydere og potentielle brugere af dataprodukter.
+
+[NOTE] 
+====
+Der findes https://schemas.isotc211.org/schemas/19131/[XML-skemaer til denne standard].
+====

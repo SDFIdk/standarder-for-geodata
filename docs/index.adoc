@@ -31,6 +31,8 @@ include::Rammer.adoc[]
 
 include::Fortegnelse.adoc[]
 
+include::DataProduktSpecifikation.adoc[]
+
 include::BegrebsOgDatamodeller.adoc[]
 
 include::Identifikatorer.adoc[]

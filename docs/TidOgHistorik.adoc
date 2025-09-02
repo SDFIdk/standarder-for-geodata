@@ -31,7 +31,7 @@ Vores viden om virkeligheden er også i stadig forandring. Man kan derfor stille
 
 Hvis der i et informationssystem registreres hvornår man har fået ny viden om et forretningsobjekt, så understøtter informationssystemet _registreringstid_ og kan det svare på ovenstående to spørgsmål.
 
-Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig eller vil ændre sig samt hvornår man har fået ny viden, så understøtter informationssystemet _bitemporalitet_ eller _dobbelthistorik_ og kan det svare på følgende seks spørgsmål:
+Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig, eller vil ændre sig, samt hvornår man har fået ny viden om forretningsobjektet, så understøtter informationssystemet _bitemporalitet_ eller _dobbelthistorik_ og kan det svare på følgende seks spørgsmål:
 
 . Hvad tror man nu om hvordan forretningsobjektet er lige nu?
 . Hvad tror man nu om hvordan forretningsobjektet var på et givet tidspunkt i fortiden?

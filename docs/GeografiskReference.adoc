@@ -2,80 +2,29 @@
 === Geografisk reference
 
 For at beskrive den geografiske placering eller position af et objekt
-kan der enten anvendes koordinater (med tilhørende koordinatreferencesystem),
-eller der kan anvendes geografiske identifikatorer. Sidstnævnte kan
-anvendes, hvis der findes fx et stednavn, postnummer, vejnavn eller en
-adresse, der tilstrækkeligt nøjagtigt angiver objektets placering. Er
-der ikke nogle oplagte geografiske identifikatorer, kan man anvende
-koordinater.
+kan der anvendes koordinater (med tilhørende koordinatsystem). Angivelse af koordinatsystemer kan gøres ved hjælp af en identifikator, såsom en EPSG-kode, der referer til et register indeholdende de nødvendige parametre til at gøre koordinater veldefinerede. 
+De fleste systemer til håndtering af geografiske data kan håndterer EPSG-koder. Som alternativ til anvendelsen af en EPSG-kode direkte i et givet system, kan man anvende Well-Known Text (WKT)-repræsentation (se nedenfor).
 
-[#19111]
-==== DS/EN ISO 19111 Koordinatreferencer
+Beskrivelse af geografisk placering kan også angives med geografiske identifikatorer, disse kan kan fx være et stednavn, postnummer, vejnavn eller en
+adresse, der tilstrækkeligt nøjagtigt angiver objektets placering.
+
+
+[#wkt-crs]
+==== Well-known text representation of coordinate reference systems
 
 [.bibliographicaldetails]
-DS/EN ISO 19111:2020, _Geografisk information - koordinatreferencer_ 
+OGC 18-010r11, _Geographic information - Well-known text representation
+of coordinate reference systems_. Version 2.1.11. 16 august 2023.
+Tilgængelig på:
+https://docs.ogc.org/is/18-010r11/18-010r11.pdf[https://docs.ogc.org/is/18-010r11/18-010r11.pdf,title=Geographic information - Well-known text representation of coordinate reference systems] 
 
-[.cite]#DS/EN ISO 19111# definerer den konceptuelle model til beskrivelse af
-henvisning med koordinater. Den beskriver de minimumsdata, der kræves
-for at definere koordinatreferencesystemer.
-
-[.cite]#DS/EN ISO 19111# beskriver også det konceptuelle skema til definition af
-den information, der kræves for at beskrive transformationer, der ændrer
-koordinatværdier.
-
-Ud over de minimale data, der kræves til definitionen af
-koordinatreferencesystemet eller koordinattransformationen, tillader det
-konceptuelle skema yderligere beskrivende information -
-koordinatreferencesystemmetadata - at blive leveret.
+[.cite]#https://docs.ogc.org/is/18-010r11/18-010r11.pdf[Well-known text representation of coordinate reference systems]# definerer strukturen og indholdet af
+tekstrepræsentationer (Well-Known Text (WKT)) for
+koordinatsystemer og koordinattransformationer mellem
+koordinatsystemer.
 
 [NOTE]
-====
-[.cite]#<<19111,DS/EN ISO 19111>># (koordinater), [.cite]#<<wkt-crs,DS/ISO 19162>># (transformationer) 
-og [.cite]#<<19161-1,DS/ISO 19161>># (referencesystemer) udgør
-tilsammen den formelle beskrivelse af det geodætiske grundlag for al
-geodataregistrering.
-
-De nævnte standarder implementeres i det frie og åbne værktøj 
-https://proj.org/en/stable/[PROJ],
-“geodæsiens schweizerkniv”, udviklet i et åbent internationalt
-samarbejde.
-
-PROJ er
-
-- et generisk værktøj til koordinattransformation
-- en fælles database med parametre og definitioner af “geodætiske
-objekter”
-- et kodebibliotek der kan bruges i tredjepartsapplikationer (og der i
-dag anvendes i de fleste GIS-aplikationer)
-- et “sprog”, der beskriver geodætiske transformationer
-
-{author} er aktiv deltager i udviklingen af PROJ, og besætter to poster,
-herunder formandsposten, i PROJ-styregruppen og kan derfor effektivt
-formidle og levere sparring omkring ønsker om yderligere funktionalitet.
-====
-
-[#19112]
-==== DS/EN ISO 19112 Orientering via geografiske identifikatorer
-
-[.bibliographicaldetails]
-DS/EN ISO 19112:2019, _Geografisk information - Orientering via geografiske identifikatorer_ 
-
-[.cite]#DS/EN ISO 19112# definerer den konceptuelle model for stedbestemte
-referencer baseret på geografiske identifikatorer. Det opretter en
-generel model til rumlig henvisning ved hjælp af geografiske
-identifikatorer og definerer komponenterne i et rumligt referencesystem.
-Det specificerer også en konceptuel model for et stednavneregister.
-
-Geografisk orientering via koordinater behandles i [.cite]#<<19111,DS/EN ISO 19111>>#. 
-Imidlertid er en mekanisme til registrering af komplementære
-koordinatreferencer inkluderet i dette dokument.
-
-[.cite]#DS/EN ISO 19112# gør det muligt for producenter af data at definere
-stedbestemte referencesystemer ved hjælp af geografiske identifikatorer
-og hjælper brugerne med at forstå de stedbestemte referencer, der bruges
-i datasæt. Det giver mulighed for at konstruere et stednavneregister på en
-konsistent måde og understøtter udviklingen af andre standarder inden
-for geografisk information.
+Standarden er også kendt som [.cite]#DS/ISO 19162:2019, Geografisk information - WKT-repræsentation af koordinatreferencesystemer#. 
 
 [#19161-1]
 ==== DS/EN ISO 19161-1 Geodætiske referencer - Del 1: ITRS
@@ -98,22 +47,74 @@ af landegrænser, og er et krav for at være i overensstemmelse med
 INSPIRE-principperne.
 ====
 
-[#wkt-crs]
-==== Well-known text representation of coordinate reference systems
+[#19111]
+==== DS/EN ISO 19111 Koordinatreferencer
 
 [.bibliographicaldetails]
-OGC 18-010r7, _Geographic information - Well-known text representation
-of coordinate reference systems_. Version 2.0.6. 13 august 2019.
-Tilgængelig på:
-http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[http://docs.opengeospatial.org/is/18-010r7/18-010r7.html,title=Geographic information - Well-known text representation of coordinate reference systems] 
+DS/EN ISO 19111:2020, _Geografisk information - koordinatreferencer_ 
 
-[.cite]#http://docs.opengeospatial.org/is/18-010r7/18-010r7.html[Geographic information - Well-known text representation of coordinate reference systems]# definerer strukturen og indholdet af
-tekstrepræsentationer (Well-Known Text (WKT)) for
-koordinatreferencesystemer og koordinattransformationer mellem
-koordinatreferencesystemer.
+[.cite]#DS/EN ISO 19111# definerer den konceptuelle model til beskrivelse af
+henvisning med koordinater. Den beskriver de minimumsdata, der kræves
+for at definere koordinatsystemer.
+
+[.cite]#DS/EN ISO 19111# beskriver også det konceptuelle skema til definition af
+de informationer, der kræves for at beskrive transformationer der ændrer
+koordinatværdier.
+
+Ud over de minimale data, der kræves til definitionen af
+koordinatsystemet eller koordinattransformationen, tillader det
+konceptuelle skema yderligere beskrivende information -
+koordinatsystemmetadata - at blive leveret.
 
 [NOTE]
-Standarden er også kendt som [.cite]#DS/ISO 19162:2019, Geografisk information - Læsbar tekststreng til angivelse af koordinatreferencesystemer#. 
+====
+[.cite]#<<19111,DS/EN ISO 19111>># (koordinater), [.cite]#<<wkt-crs,DS/ISO 19162>># (transformationer) 
+og [.cite]#<<19161-1,DS/ISO 19161>># (referencesystemer) udgør
+tilsammen den formelle beskrivelse af det geodætiske grundlag for al
+geodataregistrering og udgør fundamentet for såvel WKT som EPSG-koderne.
+
+De nævnte standarder implementeres i det frie og åbne værktøj 
+https://proj.org/en/stable/[PROJ],
+“geodæsiens schweizerkniv”, udviklet i et åbent internationalt
+samarbejde.
+
+PROJ er
+
+- et generisk værktøj til koordinattransformation
+- en fælles database med parametre og definitioner af “geodætiske
+objekter”
+- et kodebibliotek der kan bruges i tredjepartsapplikationer (og der i
+dag anvendes i de fleste GIS-aplikationer)
+- et “sprog”, der beskriver geodætiske transformationer
+
+{author} deltager aktivt i udviklingen af PROJ, og besætter to poster,
+herunder formandsposten, i PROJ-styregruppen og kan derfor effektivt
+formidle og levere sparring omkring ønsker om yderligere funktionalitet.
+====
+
+[#19112]
+==== DS/EN ISO 19112 Orientering via geografiske identifikatorer
+
+[.bibliographicaldetails]
+DS/EN ISO 19112:2019, _Geografisk information - Orientering via geografiske identifikatorer_ 
+
+[.cite]#DS/EN ISO 19112# definerer den konceptuelle model for stedbestemte
+referencer baseret på geografiske identifikatorer. Den fastlægger en
+generel model til rumlig henvisning ved hjælp af geografiske
+identifikatorer og definerer komponenterne i et rumligt referencesystem.
+Det specificerer også en konceptuel model for et stednavneregister.
+
+Geografisk orientering via koordinater behandles i [.cite]#<<19111,DS/EN ISO 19111>>#. 
+Imidlertid er en mekanisme til registrering af komplementære
+koordinatreferencer inkluderet i dette dokument.
+
+[.cite]#DS/EN ISO 19112# gør det muligt for producenter af data at definere
+stedbestemte referencesystemer ved hjælp af geografiske identifikatorer
+og hjælper brugerne med at forstå de stedbestemte referencer, der bruges
+i datasæt. Den giver mulighed for at oprette et stednavneregister på en
+konsistent måde og understøtter udviklingen af andre standarder inden
+for geografisk information.
+
 
 [#geonotes]
 ==== GeoNotes

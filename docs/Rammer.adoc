@@ -37,12 +37,11 @@ medlemslande. I Danmark sker det via
 [.cite]#INSPIRE-loven# (lovbekendtgørelse nr. 746 af 15. juni 2017). Læs mere på
 https://inspire-danmark.dk[den danske hjemmeside om INSPIRE], hvor man
 også finder vejledninger, videoer og best practice eksempler, samt
-artiklen [.cite]#<<kron14,INSPIRE – hvorfor er det en god ide?>>#,
-som ovenstående tekst er baseret på.
+artiklen [.cite]#<<kron14,INSPIRE – hvorfor er det en god ide?>>#.
 
 Gennemførelsesbestemmelserne er suppleret af en række
 https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41[tekniske
-retningslinjer], der vejleder detaljeret om implementeringen,
+retningslinjer], der detaljeret vejleder om implementeringen,
 fx ved at anvise gældende standarder på området.
 
 Retningslinjerne er ikke juridisk bindende, men har som formål at
@@ -99,12 +98,12 @@ betragtes som et øjebliksbillede.
 ==== Om ISO-standarder
 
 Man kan finde en oversigt over alle ISO/TC 211-standarder på 
-https://www.iso.org/committee/54904/x/catalogue/p/1/u/0/w/0/d/0[komiteens hjemmeside].
-Nogle standarder er blevet ændret eller fejlrettet efter publikation. Mindre tillæg og rettelser er udgivet som særskilte dokumenter. Hvis der ikke står et årstal efter en standard fra ISO, vil der til enhver tid være tale om den nyeste version
+https://committee.iso.org/sites/tc211/home/projects/projects-per-working-group.html[komiteens hjemmeside].
+Mindre tillæg og rettelser er udgivet som særskilte dokumenter. Hvis der ikke står et årstal efter en standard fra ISO, vil der til enhver tid være tale om den nyeste version
 af den pågældende standard.
 
 I Danmark er det udvalget
-https://www.ds.dk/da/udvalg/kategorier/it/geografisk-information[S-276
+https://www.ds.dk/da/udvalg/kategorier/it/geografisk-information[S-491/U-02
 Geografisk Information] i https://www.ds.dk/da[Dansk Standard (DS)], der
 deltager i ISO/TC 211.
 
@@ -125,11 +124,11 @@ har udviklet sig. På hjemmesiden kan man finde både den gældende version
 samt tidligere (og dermed tilbagetrukne) versioner.
 
 OGC har et
-compliance-program, hvis formål er, at øge systeminteroperabilitet
-samtidigt med, at risikoen ved at vælge en ny teknologi mindskes. Man
-kan på OGC’s hjemmeside se, om et produkt
-implementerer en standard ifølge producenten, eller om det er helt konformt med
-standarden ifølge OGC. Det
+compliance-program, hvis formål er, at øge systeminteroperabilitet,
+samtidigt med at risikoen ved at vælge en ny teknologi mindskes. Man
+kan på OGC’s hjemmeside se, om et 
+https://portal.ogc.org/public_ogc/compliance/implementing.php[produkt implementerer] en standard ifølge producenten, eller om det er helt 
+https://portal.ogc.org/public_ogc/compliance/compliant.php[konformt med standarden ifølge OGC]. Det
 er dog ikke alle produkter, som implementerer en bestemt standard, der
 står på listerne. Det afhænger af, om producenterne har
 https://www.ogc.org/resource/products/stats[registreret,title=Implementation Statistics]

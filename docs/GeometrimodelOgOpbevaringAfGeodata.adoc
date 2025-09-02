@@ -61,8 +61,8 @@ vha. SQL er specificeret i [.cite]#<<sfa-sql>>#.
 
 [.cite]#SFA-CA# indeholder et afsnit
 [.cite]#Well-known Text Representation of Spatial Reference Systems#, som
-definerer tekstrepræsentationer for koordinatreferencesystemer.
-Specifikationen af WKT for koordinatreferencesystemer er senere blevet
+definerer tekstrepræsentationer for koordinatsystemer.
+Specifikationen af WKT for koordinatsystemer er senere blevet
 specificeret yderlige i [.cite]#<<ogc-01-009,OpenGIS® Implementation Specification: Coordinate Transformation Services>>#, også kendt som WKT 1, og senest i
 [.cite]#<<wkt-crs,DS/ISO 19162>>#, også kendt som WKT 2.
 
@@ -96,7 +96,7 @@ Polygon Z ((722178.52 6178866.39 24.61,722184.83 6178880.97
 ----
 
 Extended Well-Known Text (EWKT) er en tekstrepræsentation der inkluderer
-en identifikator på et koordinatreferencesystem og er specificeret af
+en identifikator på et koordinatsystem og er specificeret af
 PostGIS, ikke af OGC.
 
 Et eksempel på en geometri som er ikke er valid, er en linje med
