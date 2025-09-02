@@ -12,10 +12,10 @@ og [.cite]#<<wfs,Web Feature Service (WFS)>>#. Derudover findes der fx
 [.cite]#https://www.ogc.org/standards/wcs[Web Coverage Service (WCS)]# og
 [.cite]#https://www.ogc.org/standards/sos[Sensor Observation Service (SOS)]#, som ikke er beskrevet yderligere her.
 
-OGC er ved at definere en ny, moderniseret, suite af standarder, som
-understøtter de samme brugsscenarier, og som anvender de nuværende best
-practices for at dele data på webbet, se også
-https://ogcapi.ogc.org/.
+OGC har moderniseret en række af deres standarder for services, disse basere sig på API-teknologien. OGC opfordrer til at man anvender de nye API-baserede tjeneste-standarder. Se også https://ogcapi.ogc.org/ for baggrundsinformation om de API-baserede tjeneste-standarder.
+
+Nedenfor bliver såvel de "gamle" som de "nye" tjeneste-standarder omtalt.
+
 
 [#wfs] 
 ==== Web Feature Service (WFS) 
@@ -46,7 +46,7 @@ File Transfer Protocol (FTP)).
 Det kan lade sig gøre, at bruge WFS til at understøtte download af et
 helt datasæt på en gang (i én forespørgsel), men det frarådes for store
 datasæt.
-==== 
+====
 
 [#tg-download] 
 ==== INSPIRE Download Services
@@ -79,7 +79,7 @@ http://portal.opengeospatial.org/files/?artifact_id=14416[http://portal.opengeos
 visningstjeneste, Web Map Service (WMS), som udstiller dynamisk
 genererede georefererede billeder (fx i PNG-formatet).
 
-Denne standard er også kendt som [.cite]#DS/EN ISO 19128:2008, _Geografisk information — Web Map Server-grænseflade#.
+Denne standard er også kendt som [.cite]#DS/EN ISO 19128:2008, Geografisk information — Web Map Server-grænseflade#.
 
 [#sld]
 ==== Styled Layer Descriptor (SLD)
@@ -172,13 +172,68 @@ er i overensstemmelse med denne standard.
 ==== OGC API - Features - Part 1: Core
 
 [.bibliographicaldetails]
-OGC 17-069r3, _OGC API - Features - Part 1: Core_. Version 1.0. 7 oktober 2019.
+OGC 17-069r4, _OGC API - Features - Part 1: Core corrigendum_. Version 1.0.1. 7 april 2022.
 Tilgængelig på:
-http://docs.opengeospatial.org/is/17-069r3/17-069r3.html[http://docs.opengeospatial.org/is/17-069r3/17-069r3.html,title=OGC API - Features - Part 1: Core]
+https://docs.ogc.org/is/17-069r4/17-069r4.html[https://docs.ogc.org/is/17-069r4/17-069r4.html,title=OGC API - Features - Part 1: Core corrigendum_]
 
-[.cite]#http://docs.opengeospatial.org/is/17-069r3/17-069r3.html[OGC API - Features - Part 1: Core]# er den første af OGCs nye suite af API-standarder.
+[.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core corrigendum]# er den første af OGCs nye suite af API-standarder der blev publiceret. 
+Dette dokument specificerer egenskaberne for web-API'er, der giver adgang til egenskaberne i et datasæt på en måde, der er uafhængig af det underliggende datalagring. Denne standard definerer søge- og forespørgselsoperationer.
+
+Discovery-operationerne gør det muligt for klienter at forspørge API'en, herunder API-definitionen og metadata om de featuresamlinger, som API'en leverer, for at bestemme API'ens funktionalitet og hente oplysninger om distributioner af et givet datasæt.
+
+Forespørgselsoperationer gør det muligt for klienter at hente funktioner fra den underliggende datalagring baseret på enkle udvælgelseskriterier, der er defineret af klienten. 
 
 [NOTE]
-I INSPIRE-regi er man i skrivende stund i gang med at kigge på, hvordan
-man kan leve op til INSPIREs krav om downloadtjenester ved hjælp af
-denne standard.
+Denne standard afløser WFS-standarden.
+
+[#ogcmap] 
+==== OGC API - Maps - Part 1: Core
+
+[.bibliographicaldetails]
+OGC 20-058, _OGC API - Maps - Part 1: Core_. Version 1.0. 15 februar 2024. Tilgængelig på:
+https://docs.ogc.org/is/20-058/20-058.html[https://docs.ogc.org/is/20-058/20-058.html,title=OGC 20-058, _OGC API - Maps - Part 1: Core]
+
+[.cite]#https://docs.ogc.org/is/20-058/20-058.html[OGC API - Maps - Part 1: Core]# (herefter benævnt Maps API) specificerer operationer til distribution af kort og kort-tiles på en måde, der er uafhængig af den underliggende datalagring. Maps API kan beskrives og dokumenteres ved hjælp af OpenAPI-specifikationen og specificerer ressourcer til at finde og hente kort fra en web-API.
+
+Denne OGC API – Maps Standard understøtter specifikt følgende:
+
+* Discovery-operationerne, der gør det muligt at forespørge en instans af Maps API Standard med henblik på at bestemme kapaciteter og indhente oplysninger om dennes distribution af kort. Disse oplysninger omfatter API-definitionen (hvis OGC API — Common — Part 1: Core også implementeres) samt metadata om de leverede data og de koordinatsystemer, der understøttes af Web API-implementeringsinstansen.
+* Operationer, der gør det muligt for klientapplikationer at hente et kort ved hjælp af en standard- eller foruddefineret format for en vilkårlig geospatial ressource, et datasæt, der repræsenterer det fulde indhold, der er tilgængeligt via Maps API-endpointet, eller en individuel samling af geospatiale data, der repræsenterer en del af datasættet.
+* Parametre til angivelse af kortets baggrund og gennemsigtighed.
+* Parametre til angivelse af kortets skala.
+* En parameter til angivelse af pixelstørrelsen på den enhed eller det medium, som kortet skal vises på.
+* Parametre til kun at hente en delmængde af kortet.
+* En parameter til angivelse af en bestemt orientering for kortet.  
+* Parametre til angivelse af et koordinatsystem for kortet ved hjælp af en reference eller en projektionsmetode (som defineret i OGC 18-005r4 Abstract Specification Topic 2 Referencing by Coordinates), parametre for denne metode og datums.
+
+[NOTE]
+Denne standard afløser WMS-standarden.
+
+[#ogctile] 
+==== OGC API - Tiles - Part 1:Core
+
+[.bibliographicaldetails]
+OGC 20-057, _OGC API - Tiles - Part 1: Core_. Version 1.0. 15 juni 2022. Tilgængelig på:
+https://docs.ogc.org/is/20-057/20-057.html[https://docs.ogc.org/is/20-057/20-057.html,title=OGC API - Tiles - Part 1: Core]
+
+[.cite]#https://docs.ogc.org/is/20-057/20-057.html[OGC API — Tiles]# specificerer hvordan web-API'er, der giver adgang til tiles fra en eller flere geospatiale dataressourcer (samlinger), som web-API'en tilbyder, skal fungere. Denne standard definerer, hvordan man finder ud af, hvilke ressourcer der tilbydes af web-API'en, som kan hentes som tiles, hvordan man får metadata om de tilgængelige tiles (herunder i henhold til hvilket tilesæt hvert tilesæt er opdelt i, og grænserne for det pågældende tilesæt inden for et fælles, potentielt globalt tilesæt), og hvordan man anmoder om en tile. Denne standard kaldes undertiden Tiles API.
+
+Den grundlæggende overensstemmelsesklasse er defineret på en måde, så den let kan inkluderes i en web-API, selvom denne API ikke overholder OGC API — Common Standard. En web-API kan kombinere nogle kravklasser i denne OGC API-standard med kravklasser i andre OGC API-standarder (herunder OGC API — Common) for at udvide web-API'ens anvendelsesområde ved at tilføje funktionalitet.
+
+[NOTE]
+Denne standard afløser WMTS-standarden, men i modsætning til WMTS-standarden dækker den både raster- og vektortiles, dvs. både billeder og vektordata beregnet til visualisering.
+
+Mere information om OGC API - Common kan findes på https://www.ogc.org/standards/ogcapi-common[https://www.ogc.org/standards/ogcapi-common,title=OGC API Common].
+
+[#ogcrec] 
+==== OGC API - Records - Part 1:Core
+
+[.bibliographicaldetails]
+OGC 20-004r1, _OGC API - Records - Part 1: Core_. Version 1.0. 8 januar 2025. Tilgængelig på:
+https://docs.ogc.org/is/20-004r1/20-004r1.html[https://docs.ogc.org/is/20-004r1/20-004r1.html,title=OGC API - Records - Part 1: Core]
+
+[.cite]#https://docs.ogc.org/is/20-004r1/20-004r1.html[OGC API - Records - Part 1: Core]# specificerer kravene for et sæt af komponenter, der kan sammensættes på forskellige måder med henblik på at implementere en samling af relaterede beskrivende oplysninger (metadata) om ressourcer, kaldet et katalog. Den atomare informationsenhed i et katalog er posten.
+
+Denne standard specificerer informationsindholdet i en post (record). En post indeholder sammenfattende beskrivende oplysninger (metadata) om en ressource, som en udbyder ønsker at gøre synlig. En post repræsenterer ressourceegenskaber, der kan præsenteres til evaluering og videre behandling af både mennesker og software. Eksempler på ressourcer omfatter en datasamling, en tjeneste, en proces,  en maskinlæringsmodel, en kodeliste og så videre.
+
+Poster er organiseret i samlinger kaldet kataloger. Records API-standarden beskriver, hvordan kataloger kan gennemgås eller søges i. Gennemgang af en samling af poster indebærer at følge indlejrede links fra en post i et katalog til den næste. Søgning i en samling af poster indebærer at specificere søgekriterier, der definerer en delmængde af poster.

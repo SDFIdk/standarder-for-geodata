@@ -15,5 +15,5 @@ Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tag
 ====
 Geodata i it-systemer skal lagres som GML-filer i arkiveringsversionen. Bemærk at GML version 3.1.1 <<gml311>> skal anvendes, og ikke xref:UdvekslingAfGeodataEncoding.adoc#gml-32[GML 3.2.2].
 
-Læs mere om aflevering og anmeldelse af data på Rigsarkivets hjemmeside, https://www.rigsarkivet.dk/[https://www.rigsarkivet.dk/,title=Rigsarkivets hjemmeside].
+Læs mere om aflevering og anmeldelse af data på Rigsarkivets hjemmeside, https://www.rigsarkivet.dk/aflever-data[https://www.rigsarkivet.dk/aflever-data,title=Rigsarkivets hjemmeside om aflevering og anmeldelse af data].
 ====

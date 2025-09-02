@@ -35,7 +35,8 @@ Standarden er også kendt som [.cite]#DS/EN ISO 19136-1:2020, Geografisk informa
 [IMPORTANT]
 ====
 Skemadokumenterne for GML 3.2 findes på
-http://schemas.opengis.net/gml/3.2.1/[http://schemas.opengis.net/gml/3.2.1/,title=skemadokumenterne for GML 3.2]. Den sidste undermappe burde have heddet 3.2 i stedet for 3.2, det er en fejl fra OGC’s side. Den nuværende version, inklusiv patch-nummer, er 3.2.*2*.
+http://schemas.opengis.net/gml/3.2.1/[http://schemas.opengis.net/gml/3.2.1/,title=skemadokumenterne for GML 3.2]. Den sidste undermappe burde have heddet 3.2.2 i stedet for 3.2.1, det er en fejl fra OGC’s side. Den nuværende version, inklusiv patch-nummer, er 3.2.*2*. 
+Skemadokumenterne kan ligeledes findes på https://schemas.opengis.net/gml/ som zip-filer til download. Der findes en zip-fil til version 3.2.2.
 ====
 
 [NOTE]
@@ -57,7 +58,7 @@ til et GML-applikationsskema.
 GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
 udveksling af et udvalg af features fra et datasæt via en webtjeneste.
 
-GML version 3.1.1 <<gml311>> er stadigvæk i brug, fx i [.cite]#<<#bek128>># og i visse implementationer af [.cite]#<<sql-mm,SQL/MM>>#. 
+GML version 3.1.1 <<gml311>> er stadigvæk i brug, fx i [.cite]#<<#bek128>># og i visse implementationer af [.cite]#<<sql-mm,SQL/MM>>#. Skemadokumenter til denne version kan findes på https://schemas.opengis.net/gml/3.1.1/.
 ====
 
 [#gml-33]
@@ -87,7 +88,7 @@ _erstatning_ for GML 3.2-standarden. Det forhold afspejles bedre i ISO-numrene f
 [NOTE] 
 ====
 Skemadokumenterne for GML 3.3 findes på
-http://schemas.opengis.net/gml/3.3/[http://schemas.opengis.net/gml/3.3/,title=skemadokumenterne for GML 3.3].
+http://schemas.opengis.net/gml/3.3/[http://schemas.opengis.net/gml/3.3/,title=skemadokumenterne for GML 3.3]. Skemadokumenterne kan ligeledes findes på https://schemas.opengis.net/gml/ som zip-filer til download, der findes en zip-fil til version 3.3.1.
 
 Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
@@ -106,7 +107,7 @@ defineret en begrænset men nyttigt delmængde af den, for at få mere
 software til at understøtte GML.
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=42729[Geography Markup Language simple features profile (GML-SF)]# begrænser udvalget af geometrier i GML til 0-,
 1-, og 2-dimensionelle geometrier beskrevet i 1-, 2-, eller
-3-dimensionale koordinatreferencesystemer og begrænser antallet af måder
+3-dimensionale koordinatsystemer og begrænser antallet af måder
 man kan indkode disse geometrier på.
 
 [.cite]#GML-SF# definerer tre compliance-niveauer, SF-0, SF-1 og SF-2. Niveau
@@ -149,19 +150,41 @@ Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
 man på systematisk vis kan omsætte en logisk datamodel der er i
 overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til en GeoPackage template.
 
-GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload).
+GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload). Formatet kan desuden anvendes til at lagre hele datasæt.
 
 GeoPackage bør bruges når man vil distribuere data i andre formater, ved
 siden af GML.
-==== 
+====
 
+[#citygml]
+==== CityGML
+
+[.bibliographicaldetails] 
+OGC 20-010, _OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard_. Version 3.0. 2 marts 2021. Tilgængelig på:
+https://docs.ogc.org/is/20-010/20-010.html[https://docs.ogc.org/is/20-010/20-010.html,title=OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard] 
+
+[.bibliographicaldetails] 
+OGC 21-006r2, _OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard_. Version 3.0. 20 juni 2023. 
+Tilgængelig på https://docs.ogc.org/is/21-006r2/21-006r2.html[https://docs.ogc.org/is/21-006r2/21-006r2.html,titel=OGC 21-006r2 OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard]
+
+[.cite]#https://docs.ogc.org/is/20-010/20-010.html[OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard]# standard definerer en konceptuel model til repræsentation, lagring og udveksling af virtuelle 3D-bymodeller.
+
+[.cite]#https://docs.ogc.org/is/21-006r2/21-006r2.html[OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard]# dokumenterer OGC GML-implementeringsspecifikationen (IS) for CityGML 3.0-begrebsmodellen. CityGML 3.0-begrebsmodellen er en platformsuafhængig model (PIM). Den definerer begreber på en måde, der er uafhængig af enhver implementeringsteknologi. Som sådan kan CityGML-begrebsmodellen ikke implementeres direkte. Den fungerer snarere som grundlag for platformspecifikke modeller (PSM). En PSM tilføjer til PIM de teknologispecifikke detaljer, der er nødvendige for fuldt ud at definere CityGML-modellen til brug med en bestemt teknologi. PSM kan derefter bruges til at generere skemaet og andre artefakter, der er nødvendige for at opbygge CityGML 3.0-implementeringer.
+
+Standarden definerer PSM'er og skemaer for CityGML 3.0-implementeringsspecifikationen (IS) for implementeringer af Geography Markup Language (GML). GML-skemaerne forklares i en oversigt, og de designbeslutninger, der er truffet, er også dokumenteret.
+
+UML-modellen findes som https://github.com/opengeospatial/CityGML-3.0CM/releases/download/3.0.0-final.2021.02.23/CityGML_3.0_Consolidated_Draft.eap[Enterprise Architect-fil] og som https://github.com/opengeospatial/CityGML-3.0CM/releases/download/3.0.0-final.2021.02.23/XMI.Files.zip[XMI-filer].
+
+XML-skemaer kan findes på http://schemas.opengis.net/citygml.
+
+ 
 [#pdf-georegistration]
 ==== PDF Georegistration Encoding Best Practice 
 
 [.bibliographicaldetails] 
 OGC 08-139r3, _PDF Georegistration Encoding Best Practice_. OGC Best
 Practice. Version 2.2. 17 januar 2011. Tilgængelig på:
-https://portal.opengeospatial.org/files/?artifact_id=40537[https://portal.opengeospatial.org/files/?artifact_id=40537,title=PDF Georegistration Encoding Best Practice] 
+https://portal.opengeospatial.org/files/?artifact_id=40537[https://portal.opengeospatial.org/files/?artifact_id=40537,title=PDF Georegistration Encoding Best Practice]
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=40537[PDF Georegistration Encoding Best Practice]# beskriver hvordan man kan lave PDF-dokumenter
 der er georefererede.
@@ -175,10 +198,14 @@ PDF-dokumenter:
 * [.cite]#Creating Maps for the Non-Mapper# <<capu10>>
 ====
 
+
+[#json]
+==== JSON og GeoJSON encoding
+
 JSON og GeoJSON, anvendes typisk til udveksling af et udvalg af features
 fra et datasæt via en webtjeneste, er ikke med i ovenstående oversigt.
 Det skyldes, at måden, hvorpå geodata kan indkodes i JSON ikke er
-standardiseret endnu.
+standardiseret endnu. 
 
 JSON <<rfc-8259>>, GeoJSON <<rfc-7946>> og https://json-schema.org/[JSON Schema] 
 <<json-schema>> er udviklet
@@ -187,9 +214,8 @@ i regi af Internet Engineering Task Force (IETF):
 Bemærk, at <<rfc-7946>> og <<rfc-8259>> ikke er officielle IETF-standarder
 endnu.
 
-OGC er i gang med at udarbejde en
-[.cite]#https://github.com/opengeospatial/architecture-dwg/tree/master/json-best-practice[JSON Best Practice]#, en OGC Best Practice for hvordan man kan anvende JSON
-som indkodning for OGC-standarden. Indholdet er især baseret på 
-[.cite]#Testbed-12 JSON and GeoJSON User Guide# <<ogc-16-122r1>> og
-[.cite]#Testbed-12 Javascript-JSON-JSON-LD Engineering Report# <<ogc-16-051>>, 
-og er inspireret af en del andre OGC-dokumenter om JSON.
+[.bibliographicaldetails] 
+OGC 24-017r1, _Best Practice for OGC - UML til JSON Encoding Rules_. Version 1.0. 5 maj 2025
+Tilgængelig på https://docs.ogc.org/bp/24-017r1.html[https://docs.ogc.org/bp/24-017r1.html,title=Best Practice for OGC - UML til JSON Encoding Rules]
+
+OGC har udarbejdet en Best Practice for UML til JSON encodingsregler.

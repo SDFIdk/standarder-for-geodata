@@ -3,7 +3,7 @@
 
 Gode data deles og genbruges. Det er et af de otte arkitekturprincipper i Digitaliseringsstyrelsens [.cite]#<<fda-hvidbog>>#. 
 Når begreber og data beskrives ensartet, kan de
-genbruges og sikres der tilstrækkelig kvalitet i data til de væsentlige
+genbruges og der sikres tilstrækkelig kvalitet i data til de væsentlige
 anvendelser af data.
 
 Princippet om at gode data deles og genbruges, er
@@ -114,6 +114,6 @@ datamodeller. For mere info omkring hvordan man tilgår og downloader modellerne
 [.bibliographicaldetails]
 OMG. _Unified Modeling Language_. Version 2.5.1. december 2017. Tilgængelig på: https://www.omg.org/spec/UML/2.5.1
 
-Standarden [.cite]#Unified Modeling Language# specificerer et modelleringssprog som er defineret af en metamodel og som har en grafisk notation. Med UML kan både de statiske og dynamiske aspekter af en forretning eller et it-system beskrives på en formel måde.
+Standarden [.cite]#Unified Modeling Language# (UML) specificerer et modelleringssprog som er defineret af en metamodel og som har en grafisk notation. Med UML kan både de statiske og dynamiske aspekter af en forretning eller et it-system beskrives på en formel måde.
 
 [.cite]#Unified Modeling Language# er en omfattende standard, men i begrebs- og datamodellering anvendes kun et subsæt af standarden, se fx [.cite]#<<19103>>#, [.cite]#<<grunddata-modelregler>>#, [.cite]#<<fda-modelregler>># og [.cite]#The SEMIC Style Guide for Semantic Engineers# <<semic-style-guide>>.

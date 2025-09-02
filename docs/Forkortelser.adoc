@@ -3,10 +3,14 @@
 
 [glossary]
 API:: application programming interface
+CEN:: European Committee for Standardization
 CSW:: Catalogue Service for the Web
 DCAT:: Data Catalog Vocabulary
+DG ENV:: Directorate-General for Environment
+DIGIT:: Directorate-General for Digital Services
 DS:: Dansk Standard
 EDTF:: Extended Date Time Format
+EPSG:: European Petroleum Survey Group
 GML:: Geography Markup Language
 IANA:: Internet Assigned Numbers Authority
 IEC:: International Electrotechnical Commission
@@ -16,6 +20,7 @@ ISO:: International Organization for Standardization
 ITRS:: International Terrestrial Reference System
 ITU:: International Telecommunication Union
 IXDTF:: Internet Extended Date/Time Format
+JRC:: Joint Research Centre
 MIG:: INSPIRE Maintenance and Implementation Group
 OGC:: Open Geospatial Consortium
 OMG:: Object Management Group
@@ -34,5 +39,6 @@ WKB:: Well-Known Binary
 WKT:: Well-Known Text
 WMS:: Web Map Service
 WMTS:: Web Map Tile Service
+XMI:: XML Metadata Interchange
 XML:: Extensible Markup Language
 XSLT:: Extensible Stylesheet Language Transformations
