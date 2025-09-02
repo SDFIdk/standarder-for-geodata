@@ -53,10 +53,10 @@ datasæt.
 
 [.bibliographicaldetails]
 MIG. _Technical Guidance for the implementation of INSPIRE Download
-Services_. Version 3.1. 9 august 2013. Tilgængelig på:
-https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services,title=Technical Guidance for the implementation of INSPIRE Download Services] 
+Services_. Version 3.4.0. 31 januar 2024. Tilgængelig på:
+https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html[https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html,title=Technical Guidance for the implementation of INSPIRE Download Services] 
 
-[.cite]#https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services[Technical Guidance for the implementation of INSPIRE Download Services]# beskriver hvordan man kan leve op til INSPIREs
+[.cite]#https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html[Technical Guidance for the implementation of INSPIRE Download Services]# beskriver hvordan man kan leve op til INSPIREs
 krav om downloadtjenester ved hjælp af bl.a. <<wfs,WFS 2.0>>.
 
 [NOTE]
@@ -126,9 +126,9 @@ Fordi billederne er genereret på forhånd, er performance af WMTS-tjenester bed
 ==== INSPIRE View Services
 
 [.bibliographicaldetails]
-MIG. _Technical Guidance for the implementation of INSPIRE View Services_. Version 3.11. 4 april 2013. Tilgængelig på: https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1,title=Technical Guidance for the implementation of INSPIRE View Services] 
+MIG. _Technical Guidance for the implementation of INSPIRE View Services_. Version 3.3.0. 31 januar 2024. Tilgængelig på: https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html[https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html,title=Technical Guidance for the implementation of INSPIRE View Services] 
 
-[.cite]#https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[Technical Guidance for the implementation of INSPIRE View Services]# beskriver, hvordan man kan leve op til INSPIREs
+[.cite]#https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html[Technical Guidance for the implementation of INSPIRE View Services]# beskriver, hvordan man kan leve op til INSPIREs
 krav om visningstjenester ved hjælp af <<wms,WMS 1.3.0>> (den anbefalede måde
 fra INSPIREs side), <<wmts,WMTS 1.0.0>> og WMS 1.1.1 <<ogc-01-068r3>>.
 
