@@ -53,7 +53,16 @@ use profile link relation, not the deprecated profile attribute on head -->
 @media screen and (min-width: 55rem) {#link_to_toc {display: none}}
 @media print {#buttons {display: none}}
 
+/* copied from asciidoctor-default.css */
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+
 /* copied and adjusted from asciidoctor-default.css */
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{font-weight:600}
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
 .admonitionblock+.admonitionblock{margin-top:var(--space-sm)}

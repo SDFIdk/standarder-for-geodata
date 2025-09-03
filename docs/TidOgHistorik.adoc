@@ -31,14 +31,29 @@ Vores viden om virkeligheden er også i stadig forandring. Man kan derfor stille
 
 Hvis der i et informationssystem registreres hvornår man har fået ny viden om et forretningsobjekt, så understøtter informationssystemet _registreringstid_ og kan det svare på ovenstående to spørgsmål.
 
-Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig, eller vil ændre sig, samt hvornår man har fået ny viden om forretningsobjektet, så understøtter informationssystemet _bitemporalitet_ eller _dobbelthistorik_ og kan det svare på følgende seks spørgsmål:
+Hvis der i et informationssystem registreres hvornår et forretningsobjekt har ændret sig, eller vil ændre sig, samt hvornår man har fået ny viden om forretningsobjektet, så understøtter informationssystemet _bitemporalitet_ eller _dobbelthistorik_ og kan det svare på de seks spørgsmål i nedenstående tabel.
 
-. Hvad tror man nu om hvordan forretningsobjektet er lige nu?
-. Hvad tror man nu om hvordan forretningsobjektet var på et givet tidspunkt i fortiden?
-. Hvad tror man nu om hvordan forretningsobjektet vil være på et givet tidspunkt i fremtiden?
-. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på det tidspunkt?
-. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet var på et tidligere tidspunkt?
-. Hvad troede man på et givet tidspunkt i fortiden om hvordan forretningsobjektet ville være på et senere tidspunkt?
+.Bitemporalitet
+[#bitemporalitet,cols="^1,1,1,1"]
+|===
+| 
+3+^h|Virkeligheden
+
+h|Viden om virkeligheden
+^h|Fortid
+^h|Nutid
+^h|Fremtid
+
+h|Fortid
+|Hvad troede man på et tidspunkt om hvordan forretningsobjektet var på et  tidspunkt i den daværende fortid?
+|Hvad troede man på et tidspunkt om hvordan forretningsobjektet var på det tidspunkt?
+|Hvad troede man på et tidspunkt om hvordan forretningsobjektet ville være på et tidspunkt i den daværende fremtid?
+
+h|Nutid
+|Hvad tror man nu om hvordan forretningsobjektet var på et tidspunkt i fortiden?
+|Hvad tror man nu om hvordan forretningsobjektet er lige nu?
+|Hvad tror man nu om hvordan forretningsobjektet vil være på et tidspunkt i fremtiden?
+|=== 
 
 [#9075-2]
 ==== ISO/IEC 9075-2, Database languages — SQL — Part 2: Foundation (SQL/Foundation) 
