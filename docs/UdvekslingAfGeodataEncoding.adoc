@@ -49,17 +49,15 @@ Skemadokumenterne kan ligeledes findes på https://schemas.opengis.net/gml/ som 
 ====
 Da der er tale om XML-data, kan man anvende alle sprog der hører til
 XML-familien, såsom XML Schema <<xmlschema-0>>, Extensible Stylesheet Language Transformations
-(XSLT) <<xslt-30>> og Schematron <<schematron>>, og alle værktøjer, der kan håndtere disse sprog.
-
-Det vil også sige, at GML bør bruges, når data skal valideres, da både
+(XSLT) <<xslt-30>> og Schematron <<schematron>>, og alle værktøjer, der kan håndtere disse sprog. Det vil også sige, at GML bør bruges, når data skal valideres, da både
 XML Schema og Schematron er konstrueret til det formål.
 
 Standarden er moden, der forventes ikke nye versioner udover eventuelle
 fejlrettelser.
 
-Der findes software, der har implementeret reglerne der kan omsætte en
+Der findes applikationer, der har implementeret reglerne der kan omsætte en
 logisk datamodel der er i overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># 
-til et GML-applikationsskema.
+til et GML-applikationsskema. Et eksempel er https://shapechange.github.io/ShapeChange/[ShapeChange].
 
 GML kan anvendes til udveksling af hele datasæt (fildownload) eller til
 udveksling af et udvalg af features fra et datasæt via en webtjeneste.
@@ -148,10 +146,6 @@ Dutch Standardisation Forum understreger også, at “GeoPackage ikke ses
 som en erstatning, men som et supplement til brugen af GML”.
 
 GeoPackage ses at være en erstatning for shapefiler.
-
-Der eksisterer ikke endnu et komplet sæt regler, der definerer, hvordan
-man på systematisk vis kan omsætte en logisk datamodel der er i
-overensstemmelse med [.cite]#<<19103,DS/EN ISO 19103>># til en GeoPackage template.
 
 GeoPackage anvendes typisk til udveksling af hele datasæt (fildownload). Formatet kan desuden anvendes til at lagre hele datasæt.
 
