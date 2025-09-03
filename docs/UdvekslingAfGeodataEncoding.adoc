@@ -10,6 +10,12 @@ formel beskrivelse af planen for datastrukturen.
 Nedenunder beskrives de vigtigste åbne specifikationer for indkodning af
 vektordata.
 
+[NOTE]
+====
+JSON <<rfc-8259>> og GeoJSON <<rfc-7946>>, udviklet
+i regi af Internet Engineering Task Force (IETF), er ikke med i <<indkodninger>>. Det skyldes, at måden, hvorpå koordinater i koordinatsystemer relevant for Danmark og Grønland kan indkodes i (Geo)JSON ikke er standardiseret endnu.
+====
+
 [#gml]
 ==== Geography Markup Language (GML)
 
@@ -194,25 +200,3 @@ PDF-dokumenter:
 * [.cite]#A PDF Tile Model for Geographic Map Data# <<zamx19>>
 * [.cite]#Creating Maps for the Non-Mapper# <<capu10>>
 ====
-
-
-[#json]
-==== JSON og GeoJSON encoding
-
-JSON og GeoJSON, anvendes typisk til udveksling af et udvalg af features
-fra et datasæt via en webtjeneste, er ikke med i ovenstående oversigt.
-Det skyldes, at måden, hvorpå geodata kan indkodes i JSON ikke er
-standardiseret endnu. 
-
-JSON <<rfc-8259>>, GeoJSON <<rfc-7946>> og https://json-schema.org/[JSON Schema] 
-<<json-schema>> er udviklet
-i regi af Internet Engineering Task Force (IETF):
-
-Bemærk, at <<rfc-7946>> og <<rfc-8259>> ikke er officielle IETF-standarder
-endnu.
-
-[.bibliographicaldetails] 
-OGC 24-017r1, _Best Practice for OGC - UML til JSON Encoding Rules_. Version 1.0. 5 maj 2025
-Tilgængelig på https://docs.ogc.org/bp/24-017r1.html[https://docs.ogc.org/bp/24-017r1.html,title=Best Practice for OGC - UML til JSON Encoding Rules]
-
-OGC har udarbejdet en Best Practice for UML til JSON encodingsregler.
