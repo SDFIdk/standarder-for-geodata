@@ -47,12 +47,13 @@
         </html>
     </xsl:template>
     <!-- Kopiér CSS som det er, uden XML-escaping af f.eks. > tegn -->
-    <xsl:template match="x:style">
-        <style>
+    <xsl:template match="x:style|x:script">
+        <xsl:copy>
+            <xsl:apply-templates select="@*" />
             <xsl:value-of
                 disable-output-escaping="yes"
                 select="text()" />
-        </style>
+        </xsl:copy>
     </xsl:template>
     <!-- Transformér header; tilføj container for layout -->
     <xsl:template match="x:body">
