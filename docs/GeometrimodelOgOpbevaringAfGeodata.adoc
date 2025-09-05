@@ -29,7 +29,7 @@ til, om man kan nøjes med simple features (se [.cite]#<<sfa-ca>>#).
 ==== Simple feature access
 
 [.bibliographicaldetails#sfa-ca]
-OGC 06-103r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture_ Version 1.2.1. 28 maj 2011. Tilgængelig på: http://portal.opengeospatial.org/files/?artifact_id=25355[http://portal.opengeospatial.org/files/?artifact_id=25355,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture]
+OGC 06-103r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture_ Version 1.2.1. 28. maj 2011. Tilgængelig på: http://portal.opengeospatial.org/files/?artifact_id=25355[http://portal.opengeospatial.org/files/?artifact_id=25355,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 1: Common architecture]
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=25355[OpenGIS Implementation Standard for Geographic
 Information Simple feature access - Part 1: Common architecture
@@ -124,7 +124,7 @@ arkitektur#.
 ====
 
 [.bibliographicaldetails#sfa-sql]
-OGC 06-104r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option_. Version 1.2.1. 4 august 2010. Tilgængelig på:
+OGC 06-104r4, _OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option_. Version 1.2.1. 4. august 2010. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=25354[http://portal.opengeospatial.org/files/?artifact_id=25354,title=OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option]
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=25354[OpenGIS Implementation Standard for Geographic Information Simple feature access - Part 2: SQL option (SFA-SQL)]# er en

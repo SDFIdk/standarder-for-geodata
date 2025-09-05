@@ -14,7 +14,7 @@ adresse, der tilstrækkeligt nøjagtigt angiver objektets placering.
 
 [.bibliographicaldetails]
 OGC 18-010r11, _Geographic information - Well-known text representation
-of coordinate reference systems_. Version 2.1.11. 16 august 2023.
+of coordinate reference systems_. Version 2.1.11. 16. august 2023.
 Tilgængelig på:
 https://docs.ogc.org/is/18-010r11/18-010r11.pdf[https://docs.ogc.org/is/18-010r11/18-010r11.pdf,title=Geographic information - Well-known text representation of coordinate reference systems] 
 

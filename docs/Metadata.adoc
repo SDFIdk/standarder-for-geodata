@@ -184,7 +184,7 @@ DS/EN ISO 19157-2:2016, _Geografisk information - Datakvalitet - Del 2: Implemen
 
 [.bibliographicaldetails]
 MIG. _Technical Guidance for the implementation of INSPIRE dataset and
-service metadata based on ISO/TS 19139:2007_. Version 2.2.1. 1 januar
+service metadata based on ISO/TS 19139:2007_. Version 2.2.1. 1. januar
 2025. Tilgængelig på: https://inspire-mif.github.io/technical-guidelines/metadata/metadata-iso19139/metadata-iso19139.html[https://inspire-mif.github.io/technical-guidelines/metadata/metadata-iso19139/metadata-iso19139.html,title=Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007] 
 
 [.cite]#https://inspire-mif.github.io/technical-guidelines/metadata/metadata-iso19139/metadata-iso19139.html[Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007]# indeholder retningslinjer baseret på [.cite]#<<19115-2005,DS/EN ISO 19115:2005>># og [.cite]#<<19119,DS/EN ISO 19119>># 
@@ -196,7 +196,7 @@ for at leve op til
 
 [.bibliographicaldetails]
 W3C. _Data Catalog
-Vocabulary (DCAT) - Version 3_. W3C Recommendation. 22 august 2024. Tilgængelig på:
+Vocabulary (DCAT) - Version 3_. W3C Recommendation. 22. august 2024. Tilgængelig på:
 https://www.w3.org/TR/vocab-dcat-3/[https://www.w3.org/TR/vocab-dcat-3/,title=Data Catalog Vocabulary (DCAT) - Version 3] 
 
 [.cite]#https://www.w3.org/TR/vocab-dcat-3/[DCAT]# gør det muligt for en udgiver at beskrive datasæt og datatjenester

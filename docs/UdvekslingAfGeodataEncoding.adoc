@@ -21,7 +21,7 @@ i regi af Internet Engineering Task Force (IETF), er ikke med i <<indkodninger>>
 
 [.bibliographicaldetails#gml-32]
 OGC 07-036r1, _OpenGIS® Geography Markup Language (GML) Encoding
-Standard_. Version 3.2.2. 5 december 2016. Tilgængelig på:
+Standard_. Version 3.2.2. 5. december 2016. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[https://portal.opengeospatial.org/files/?artifact_id=74183&version=2,title=OpenGIS® Geography Markup Language (GML) Encoding Standard] 
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=74183&version=2[OpenGIS® Geography Markup Language (GML) Encoding Standard]# 
@@ -67,7 +67,7 @@ GML version 3.1.1 <<gml311>> er stadigvæk i brug, fx i [.cite]#<<#bek128>># og 
 
 [.bibliographicaldetails#gml-33] 
 OGC 10-129r1, _OGC® Geography Markup Language (GML) — Extended schemas
-and encoding rules_. Version 3.3.0. 7 februar 2012. Tilgængelig på:
+and encoding rules_. Version 3.3.0. 7. februar 2012. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=46568[https://portal.opengeospatial.org/files/?artifact_id=46568,title=OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=46568[OGC® Geography Markup Language (GML) — Extended schemas and encoding rules]#, GML 3.3-standarden, er en udvidelse af <<gml-32,GML 3.2-standarden>>. Standarden indeholder bl.a. en indkodning for elementerne defineret i
@@ -100,7 +100,7 @@ fejlrettelser.
 
 [.bibliographicaldetails] 
 OGC 10-100r3, _Geography Markup Language (GML) simple features profile
-(with Corrigendum)_. Version 2.0. 5 april 2012. Tilgængelig på:
+(with Corrigendum)_. Version 2.0. 5. april 2012. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=42729[http://portal.opengeospatial.org/files/?artifact_id=42729,title=Geography Markup Language (GML) simple features profile (with Corrigendum)]
 
 GML-standarden er en meget omfattende standard, og derfor har OGC
@@ -123,7 +123,7 @@ cirkelbuer og cirkler (`+gml:Arc+`, `+gml:Circle+` og `+gml:CircleByCenterPoint+
 
 [.bibliographicaldetails] 
 OGC 12-128r19, _OGC® GeoPackage Encoding Standard - with Corrigendum_.
-Version 1.4.0. 6 februar 2024. Tilgængelig på:
+Version 1.4.0. 6. februar 2024. Tilgængelig på:
 https://docs.ogc.org/is/12-128r19/12-128r19.html[https://docs.ogc.org/is/12-128r19/12-128r19.html,title=OGC® GeoPackage Encoding Standard] 
 
 [.cite]#https://docs.ogc.org/is/12-128r19/12-128r19.html[OGC® GeoPackage Encoding Standard]# er baseret på https://sqlite.org/[SQLite], et relationelt
@@ -184,7 +184,7 @@ CityGML 1.0-standarden <<citygml100>> og CityGML 2.0-standarden <<citygml200>> t
 
 [.bibliographicaldetails] 
 OGC 08-139r3, _PDF Georegistration Encoding Best Practice_. OGC Best
-Practice. Version 2.2. 17 januar 2011. Tilgængelig på:
+Practice. Version 2.2. 17. januar 2011. Tilgængelig på:
 https://portal.opengeospatial.org/files/?artifact_id=40537[https://portal.opengeospatial.org/files/?artifact_id=40537,title=PDF Georegistration Encoding Best Practice]
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=40537[PDF Georegistration Encoding Best Practice]# beskriver hvordan man kan lave PDF-dokumenter

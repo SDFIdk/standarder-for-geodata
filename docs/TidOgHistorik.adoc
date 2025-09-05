@@ -45,7 +45,7 @@ h|Viden om virkeligheden
 ^h|Fremtid
 
 h|Fortid
-|Hvad troede man på et tidspunkt om hvordan forretningsobjektet var på et  tidspunkt i den daværende fortid?
+|Hvad troede man på et tidspunkt om hvordan forretningsobjektet var på et tidspunkt i den daværende fortid?
 |Hvad troede man på et tidspunkt om hvordan forretningsobjektet var på det tidspunkt?
 |Hvad troede man på et tidspunkt om hvordan forretningsobjektet ville være på et tidspunkt i den daværende fremtid?
 
