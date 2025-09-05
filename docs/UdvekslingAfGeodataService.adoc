@@ -22,7 +22,7 @@ Nedenfor bliver såvel de "gamle" som de "nye" tjeneste-standarder omtalt.
 
 [.bibliographicaldetails]
 OGC 09-025r2, _OGC® Web Feature Service 2.0 Interface Standard – With
-Corrigendum_. Version 2.0.2. 10 juli 2014. Tilgængelig på:
+Corrigendum_. Version 2.0.2. 10. juli 2014. Tilgængelig på:
 http://docs.opengeospatial.org/is/09-025r2/09-025r2.html[http://docs.opengeospatial.org/is/09-025r2/09-025r2.html,title=OGC® Web Feature Service 2.0 Interface Standard – With Corrigendum]
 
 [.cite]#http://docs.opengeospatial.org/is/09-025r2/09-025r2.html[OGC® Web Feature Service 2.0 Interface Standard – With Corrigendum]# beskriver snitfladen mellem en klient og en
@@ -53,10 +53,10 @@ datasæt.
 
 [.bibliographicaldetails]
 MIG. _Technical Guidance for the implementation of INSPIRE Download
-Services_. Version 3.1. 9 august 2013. Tilgængelig på:
-https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services,title=Technical Guidance for the implementation of INSPIRE Download Services] 
+Services_. Version 3.4.0. 31. januar 2024. Tilgængelig på:
+https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html[https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html,title=Technical Guidance for the implementation of INSPIRE Download Services] 
 
-[.cite]#https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services[Technical Guidance for the implementation of INSPIRE Download Services]# beskriver hvordan man kan leve op til INSPIREs
+[.cite]#https://inspire-mif.github.io/technical-guidelines/services/download-atom-wfs/DownloadServices.html[Technical Guidance for the implementation of INSPIRE Download Services]# beskriver hvordan man kan leve op til INSPIREs
 krav om downloadtjenester ved hjælp af bl.a. <<wfs,WFS 2.0>>.
 
 [NOTE]
@@ -72,7 +72,7 @@ http://inspire.ec.europa.eu/validator/[INSPIRE's validator].
 
 [.bibliographicaldetails]
 OGC 06-042, _OpenGIS® Web Map Server Implementation Specification_.
-Version 1.3.0. 15 marts 2006. Tilgængelig på:
+Version 1.3.0. 15. marts 2006. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=14416[http://portal.opengeospatial.org/files/?artifact_id=14416,title=OpenGIS® Web Map Server Implementation Specification]
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=14416[OpenGIS® Web Map Server Implementation Specification]# beskriver snitfladen mellem en klient og en
@@ -86,7 +86,7 @@ Denne standard er også kendt som [.cite]#DS/EN ISO 19128:2008, Geografisk infor
 
 [.bibliographicaldetails]
 OGC 05-078r4, _Styled Layer Descriptor profile of the Web Map Service
-Implementation Specification_. Version 1.1.0. 29 juni 2007. Tilgængelig
+Implementation Specification_. Version 1.1.0. 29. juni 2007. Tilgængelig
 på:
 http://portal.opengeospatial.org/files/?artifact_id=22364[http://portal.opengeospatial.org/files/?artifact_id=22364,title=Styled Layer Descriptor profile of the Web Map Service Implementation Specification] 
 
@@ -102,7 +102,7 @@ standard efterfølgeren til SLD 1.0.
 
 [.bibliographicaldetails]
 OGC 05-077r4, _Symbology Encoding Implementation Specification_. Version
-1.1.0. 21 juli 2006. Tilgængelig på:
+1.1.0. 21. juli 2006. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=16700[http://portal.opengeospatial.org/files/?artifact_id=16700,title=Symbology Encoding Implementation Specification]
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=16700[Symbology Encoding Implementation Specification]# definerer et sprog for præsentation af geodata (styling).
@@ -112,7 +112,7 @@ http://portal.opengeospatial.org/files/?artifact_id=16700[http://portal.opengeos
 
 [.bibliographicaldetails]
 OGC 07-057r7, _OpenGIS® Web Map Tile Service Implementation Standard_.
-Version 1.0.0. 6 april 2010. Tilgængelig på:
+Version 1.0.0. 6. april 2010. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=35326[http://portal.opengeospatial.org/files/?artifact_id=35326,title=OpenGIS® Web Map Tile Service Implementation Standard] 
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=35326[OpenGIS® Web Map Tile Service Implementation Standard]# beskriver snitfladen mellem en klient og en
@@ -126,9 +126,9 @@ Fordi billederne er genereret på forhånd, er performance af WMTS-tjenester bed
 ==== INSPIRE View Services
 
 [.bibliographicaldetails]
-MIG. _Technical Guidance for the implementation of INSPIRE View Services_. Version 3.11. 4 april 2013. Tilgængelig på: https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1,title=Technical Guidance for the implementation of INSPIRE View Services] 
+MIG. _Technical Guidance for the implementation of INSPIRE View Services_. Version 3.3.0. 31. januar 2024. Tilgængelig på: https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html[https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html,title=Technical Guidance for the implementation of INSPIRE View Services] 
 
-[.cite]#https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1[Technical Guidance for the implementation of INSPIRE View Services]# beskriver, hvordan man kan leve op til INSPIREs
+[.cite]#https://inspire-mif.github.io/technical-guidelines/services/view-wms/ViewServices.html[Technical Guidance for the implementation of INSPIRE View Services]# beskriver, hvordan man kan leve op til INSPIREs
 krav om visningstjenester ved hjælp af <<wms,WMS 1.3.0>> (den anbefalede måde
 fra INSPIREs side), <<wmts,WMTS 1.0.0>> og WMS 1.1.1 <<ogc-01-068r3>>.
 
@@ -141,7 +141,7 @@ http://inspire.ec.europa.eu/validator/[INSPIRE's validator].
 
 [.bibliographicaldetails]
 OGC 07-006r1, _OpenGIS® Catalogue Services Specification_. Version
-2.0.2. 23 februar 2007. Tilgængelig på:
+2.0.2. 23. februar 2007. Tilgængelig på:
 http://portal.opengeospatial.org/files/?artifact_id=20555[http://portal.opengeospatial.org/files/?artifact_id=20555,title=OpenGIS® Catalogue Services Specification] 
 
 [.cite]#http://portal.opengeospatial.org/files/?artifact_id=20555[OpenGIS® Catalogue Services Specification]# definerer snitfladen mellem en klient og en
@@ -157,40 +157,53 @@ er i overensstemmelse med denne standard.
 
 [.bibliographicaldetails]
 OGC 07-045r1, _OpenGIS® Catalogue Services Specification 2.0.2 - ISO
-Metadata Application Profile: Corrigendum_. 9 marts 2018. Tilgængelig
+Metadata Application Profile: Corrigendum_. 9. marts 2018. Tilgængelig
 på:
 https://portal.opengeospatial.org/files/?artifact_id=77855[https://portal.opengeospatial.org/files/?artifact_id=77855,title=OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum] 
 
 [.cite]#https://portal.opengeospatial.org/files/?artifact_id=77855[OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile]# definerer hvordan man anvender <<csw>> sammen
-med metadata som specificeret i [.cite]#<<19115,DS/EN ISO 19115>>#.
+med metadata som specificeret i [.cite]#<<19115-2005,DS/EN ISO 19115:2005>>#.
 
 [NOTE]
 https://geodata-info.dk/srv/eng/csw?request=GetCapabilities&service=CSW&version=2.0.2[Geodata-info]
 er i overensstemmelse med denne standard.
 
 [#ogcfeat] 
-==== OGC API - Features - Part 1: Core
+==== OGC API - Features
 
-[.bibliographicaldetails]
-OGC 17-069r4, _OGC API - Features - Part 1: Core corrigendum_. Version 1.0.1. 7 april 2022.
+[.bibliographicaldetails#ogcfeat-1]
+OGC 17-069r4, _OGC API - Features - Part 1: Core corrigendum_. Version 1.0.1. 7. april 2022.
 Tilgængelig på:
 https://docs.ogc.org/is/17-069r4/17-069r4.html[https://docs.ogc.org/is/17-069r4/17-069r4.html,title=OGC API - Features - Part 1: Core corrigendum_]
 
-[.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core corrigendum]# er den første af OGCs nye suite af API-standarder der blev publiceret. 
-Dette dokument specificerer egenskaberne for web-API'er, der giver adgang til egenskaberne i et datasæt på en måde, der er uafhængig af det underliggende datalagring. Denne standard definerer søge- og forespørgselsoperationer.
+[.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core]# er den første af OGCs nye suite af API-standarder der blev publiceret. Standarden specificerer hvordan web-API'er giver adgang til objekterne i et datasæt på en måde, der er uafhængig af det underliggende datalager. Standarden definerer søge- og forespørgselsoperationer.
 
-Discovery-operationerne gør det muligt for klienter at forspørge API'en, herunder API-definitionen og metadata om de featuresamlinger, som API'en leverer, for at bestemme API'ens funktionalitet og hente oplysninger om distributioner af et givet datasæt.
+Sægeoperationerne gør det muligt for klienter at forespørge API'en for at bestemme API'ens kapaciteter og hente oplysninger om distributioner af datasættet.
 
-Forespørgselsoperationer gør det muligt for klienter at hente funktioner fra den underliggende datalagring baseret på enkle udvælgelseskriterier, der er defineret af klienten. 
+Forespørgselsoperationer gør det muligt for klienter at hente objekter fra det underliggende datalager baseret på simple udvælgelseskriterier defineret af klienten.
 
 [NOTE]
 Denne standard afløser WFS-standarden.
 
+[.bibliographicaldetails#ogcfeat-2]
+OGC 18-058r1, _OGC API - Features - Part 2: Coordinate Reference Systems by Reference corrigendum_. Version 1.0.1. 11. maj 2022.
+Tilgængelig på:
+https://docs.ogc.org/is/18-058r1/18-058r1.html[https://docs.ogc.org/is/18-058r1/18-058r1.html,title=OGC API - Features - Part 2: Coordinate Reference Systems by Reference corrigendum_]
+
+[.cite]#https://docs.ogc.org/is/18-058r1/18-058r1.html[OGC API - Features - Part 2: Coordinate Reference Systems by Reference]# udvider <<ogcfeat-1,del 1>> med muligheden for at bruge andre koordinatsystemer end http://www.opengis.net/def/crs/OGC/1.3/CRS84[WGS 84 longitude-latitude] og http://www.opengis.net/def/crs/OGC/0/CRS84h[WGS 84 longitude-latitude-height].
+
+[.bibliographicaldetails#ogcfeat-3]
+OGC 19-079r2, _OGC API - Features - Part 3: Filtering_. Version 1.0. 26. juli 2024.
+Tilgængelig på:
+https://docs.ogc.org/is/19-079r2/19-079r2.html[https://docs.ogc.org/is/19-079r2/19-079r2.html,title=OGC API - Features - Part 3: Filtering_]
+
+[.cite]#https://docs.ogc.org/is/19-079r2/19-079r2.html[OGC API - Features - Part 3: Filtering]# udvider <<ogcfeat-1,del 1>> med muligheden for at filtrere geodata.
+
 [#ogcmap] 
-==== OGC API - Maps - Part 1: Core
+==== OGC API - Maps
 
 [.bibliographicaldetails]
-OGC 20-058, _OGC API - Maps - Part 1: Core_. Version 1.0. 15 februar 2024. Tilgængelig på:
+OGC 20-058, _OGC API - Maps - Part 1: Core_. Version 1.0. 15. februar 2024. Tilgængelig på:
 https://docs.ogc.org/is/20-058/20-058.html[https://docs.ogc.org/is/20-058/20-058.html,title=OGC 20-058, _OGC API - Maps - Part 1: Core]
 
 [.cite]#https://docs.ogc.org/is/20-058/20-058.html[OGC API - Maps - Part 1: Core]# (herefter benævnt Maps API) specificerer operationer til distribution af kort og kort-tiles på en måde, der er uafhængig af den underliggende datalagring. Maps API kan beskrives og dokumenteres ved hjælp af OpenAPI-specifikationen og specificerer ressourcer til at finde og hente kort fra en web-API.
@@ -203,17 +216,17 @@ Denne OGC API – Maps Standard understøtter specifikt følgende:
 * Parametre til angivelse af kortets skala.
 * En parameter til angivelse af pixelstørrelsen på den enhed eller det medium, som kortet skal vises på.
 * Parametre til kun at hente en delmængde af kortet.
-* En parameter til angivelse af en bestemt orientering for kortet.  
+* En parameter til angivelse af en bestemt orientering for kortet.
 * Parametre til angivelse af et koordinatsystem for kortet ved hjælp af en reference eller en projektionsmetode (som defineret i OGC 18-005r4 Abstract Specification Topic 2 Referencing by Coordinates), parametre for denne metode og datums.
 
 [NOTE]
 Denne standard afløser WMS-standarden.
 
 [#ogctile] 
-==== OGC API - Tiles - Part 1:Core
+==== OGC API - Tiles
 
 [.bibliographicaldetails]
-OGC 20-057, _OGC API - Tiles - Part 1: Core_. Version 1.0. 15 juni 2022. Tilgængelig på:
+OGC 20-057, _OGC API - Tiles - Part 1: Core_. Version 1.0. 15. juni 2022. Tilgængelig på:
 https://docs.ogc.org/is/20-057/20-057.html[https://docs.ogc.org/is/20-057/20-057.html,title=OGC API - Tiles - Part 1: Core]
 
 [.cite]#https://docs.ogc.org/is/20-057/20-057.html[OGC API — Tiles]# specificerer hvordan web-API'er, der giver adgang til tiles fra en eller flere geospatiale dataressourcer (samlinger), som web-API'en tilbyder, skal fungere. Denne standard definerer, hvordan man finder ud af, hvilke ressourcer der tilbydes af web-API'en, som kan hentes som tiles, hvordan man får metadata om de tilgængelige tiles (herunder i henhold til hvilket tilesæt hvert tilesæt er opdelt i, og grænserne for det pågældende tilesæt inden for et fælles, potentielt globalt tilesæt), og hvordan man anmoder om en tile. Denne standard kaldes undertiden Tiles API.
@@ -226,14 +239,14 @@ Denne standard afløser WMTS-standarden, men i modsætning til WMTS-standarden d
 Mere information om OGC API - Common kan findes på https://www.ogc.org/standards/ogcapi-common[https://www.ogc.org/standards/ogcapi-common,title=OGC API Common].
 
 [#ogcrec] 
-==== OGC API - Records - Part 1:Core
+==== OGC API - Records
 
 [.bibliographicaldetails]
-OGC 20-004r1, _OGC API - Records - Part 1: Core_. Version 1.0. 8 januar 2025. Tilgængelig på:
+OGC 20-004r1, _OGC API - Records - Part 1: Core_. Version 1.0. 8. januar 2025. Tilgængelig på:
 https://docs.ogc.org/is/20-004r1/20-004r1.html[https://docs.ogc.org/is/20-004r1/20-004r1.html,title=OGC API - Records - Part 1: Core]
 
 [.cite]#https://docs.ogc.org/is/20-004r1/20-004r1.html[OGC API - Records - Part 1: Core]# specificerer kravene for et sæt af komponenter, der kan sammensættes på forskellige måder med henblik på at implementere en samling af relaterede beskrivende oplysninger (metadata) om ressourcer, kaldet et katalog. Den atomare informationsenhed i et katalog er posten.
 
-Denne standard specificerer informationsindholdet i en post (record). En post indeholder sammenfattende beskrivende oplysninger (metadata) om en ressource, som en udbyder ønsker at gøre synlig. En post repræsenterer ressourceegenskaber, der kan præsenteres til evaluering og videre behandling af både mennesker og software. Eksempler på ressourcer omfatter en datasamling, en tjeneste, en proces,  en maskinlæringsmodel, en kodeliste og så videre.
+Denne standard specificerer informationsindholdet i en post (record). En post indeholder sammenfattende beskrivende oplysninger (metadata) om en ressource, som en udbyder ønsker at gøre synlig. En post repræsenterer ressourceegenskaber, der kan præsenteres til evaluering og videre behandling af både mennesker og software. Eksempler på ressourcer omfatter en datasamling, en tjeneste, en proces, en maskinlæringsmodel, en kodeliste og så videre.
 
 Poster er organiseret i samlinger kaldet kataloger. Records API-standarden beskriver, hvordan kataloger kan gennemgås eller søges i. Gennemgang af en samling af poster indebærer at følge indlejrede links fra en post i et katalog til den næste. Søgning i en samling af poster indebærer at specificere søgekriterier, der definerer en delmængde af poster.

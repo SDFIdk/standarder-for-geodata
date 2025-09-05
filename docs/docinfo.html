@@ -53,7 +53,16 @@ use profile link relation, not the deprecated profile attribute on head -->
 @media screen and (min-width: 55rem) {#link_to_toc {display: none}}
 @media print {#buttons {display: none}}
 
+/* copied from asciidoctor-default.css */
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+
 /* copied and adjusted from asciidoctor-default.css */
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{font-weight:600}
 #toctitle{font-size:1.5em}
 .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:120%;line-height:1.6}
 .admonitionblock+.admonitionblock{margin-top:var(--space-sm)}
@@ -99,6 +108,38 @@ aside.bibliographicaldetails>:last-child{margin-bottom:0}
 import { DSLogoTitle, DSLogo } from 'https://cdn.dataforsyningen.dk/assets/designsystem/v8/designsystem.js'
 customElements.define('ds-logo', DSLogo)
 customElements.define('ds-logo-title', DSLogoTitle)
+</script>
+<script type="module">
+  // Make back/forward internal navigation with browser buttons work properly
+  const toc = document.getElementById("toc");
+  const text = document.getElementById("text");
+
+  // Ensure history.state exists
+  if (!history.state) {
+    history.replaceState({ toc: 0, text: 0 }, "");
+  }
+
+  function saveState() {
+    const state = {
+      ...history.state,
+      toc: toc.scrollTop,
+      text: text.scrollTop
+    };
+    history.replaceState(state, "");
+  }
+
+  // Save scroll positions when user scrolls either column
+  toc.addEventListener("scroll", saveState);
+  text.addEventListener("scroll", saveState);
+
+  // Restore positions on back/forward navigation
+  window.addEventListener("popstate", (event) => {
+    const state = event.state;
+    if (state) {
+      toc.scrollTop = state.toc || 0;
+      text.scrollTop = state.text || 0;
+    }
+  });
 </script>
 <script type="application/ld+json">
 {

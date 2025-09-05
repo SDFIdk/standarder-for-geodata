@@ -7,7 +7,7 @@ Bestemte datasæt indeholdende geodata bør bevares for eftertiden.
 ==== Bekendtgørelse om arkiveringsversioner
 
 [.bibliographicaldetails]
-KULTURMINISTERIET. _Bekendtgørelse om arkiveringsversioner_. 12 februar 2020. BEK nr 128. Tilgængelig på: https://www.retsinformation.dk/eli/lta/2020/128[https://www.retsinformation.dk/eli/lta/2020/128,title=Bekendtgørelse om arkiveringsversioner]
+KULTURMINISTERIET. _Bekendtgørelse om arkiveringsversioner_. 12. februar 2020. BEK nr 128. Tilgængelig på: https://www.retsinformation.dk/eli/lta/2020/128[https://www.retsinformation.dk/eli/lta/2020/128,title=Bekendtgørelse om arkiveringsversioner]
 
 Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tages i brug. Rigsarkivet vurderer ud fra anmeldelsen, om der skal afleveres en kopi af data til arkivet, og hvornår der i givet fald skal arkiveres første gang. Af de it-systemer som Rigsarkivet har bestemt til bevaring, skal den statslige myndighed producere arkiveringsversioner. En arkiveringsversion er en kopi af data fra myndighedens it-system, suppleret med dokumentation om systemet samt filer, der beskriver hvordan data hænger sammen. Arkiveringsversionen skal udarbejdes i bestemte formater, for at den kan bevares over tid <<rigs24>>. Rigsarkivet fastsætter formaterne i [.cite]#Bekendtgørelse om arkiveringsversioner#. Bekendtgørelsen uddybes og eksemplificeres i [.cite]#Vejledning til bekendtgørelse om arkiveringsversioner# <<rigs22>>.
 
