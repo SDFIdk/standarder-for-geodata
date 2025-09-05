@@ -157,13 +157,13 @@ siden af GML.
 ==== CityGML
 
 [.bibliographicaldetails] 
-OGC 20-010, _OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard_. Version 3.0. 2 marts 2021. Tilgængelig på:
+OGC 20-010, _OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard_. Version 3.0.0. 2. marts 2021. Tilgængelig på:
 https://docs.ogc.org/is/20-010/20-010.html[https://docs.ogc.org/is/20-010/20-010.html,title=OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard] 
 
 [.cite]#https://docs.ogc.org/is/20-010/20-010.html[OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard]# standard definerer en konceptuel model til repræsentation, lagring og udveksling af virtuelle 3D-bymodeller.
 
 [.bibliographicaldetails] 
-OGC 21-006r2, _OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard_. Version 3.0. 20 juni 2023. 
+OGC 21-006r2, _OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard_. Version 3.0. 20. juni 2023. 
 Tilgængelig på https://docs.ogc.org/is/21-006r2/21-006r2.html[https://docs.ogc.org/is/21-006r2/21-006r2.html,titel=OGC 21-006r2 OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard]
 
 [.cite]#https://docs.ogc.org/is/21-006r2/21-006r2.html[OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard]# dokumenterer OGC GML-implementeringsspecifikationen (IS) for CityGML 3.0-begrebsmodellen. CityGML 3.0-begrebsmodellen er en platformsuafhængig model (PIM). Den definerer begreber på en måde, der er uafhængig af enhver implementeringsteknologi. Som sådan kan CityGML-begrebsmodellen ikke implementeres direkte. Den fungerer snarere som grundlag for platformspecifikke modeller (PSM). En PSM tilføjer til PIM de teknologispecifikke detaljer, der er nødvendige for fuldt ud at definere CityGML-modellen til brug med en bestemt teknologi. PSM kan derefter bruges til at generere skemaet og andre artefakter, der er nødvendige for at opbygge CityGML 3.0-implementeringer.
@@ -174,6 +174,10 @@ UML-modellen findes som https://github.com/opengeospatial/CityGML-3.0CM/releases
 
 XML-skemaer kan findes på http://schemas.opengis.net/citygml.
 
+[NOTE]
+====
+CityGML 1.0-standarden <<citygml100>> og CityGML 2.0-standarden <<citygml200>> trækkes ikke tilbage for nuværende. Dette skyldes, at der findes mange aktive datasæt, der er i overensstemmelse med disse specifikationer.
+====
  
 [#pdf-georegistration]
 ==== PDF Georegistration Encoding Best Practice 

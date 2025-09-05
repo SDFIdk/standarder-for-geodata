@@ -1,6 +1,8 @@
 [bibliography]
 == Referencer
 * [[[capu10,Capu10]]] CAPUTO, Raymond G. The GeoPDF Project: Creating Maps for the Non-Mapper. _Engineer_. 1 januar 2010. Tilgængelig på: https://apps.dtic.mil/sti/tr/pdf/ADA560231.pdf[https://apps.dtic.mil/sti/tr/pdf/ADA560231.pdf,title=The GeoPDF Project: Creating Maps for the Non-Mapper]
+* [[[citygml100,CityGML 1.0]]] OGC. OGC 08-007r1, _OpenGIS® City Geography Markup Language (CityGML) Encoding Standard_. Version 1.0.0. 20. august 2008. Tilgængelig på: https://portal.ogc.org/files/?artifact_id=28802[https://portal.ogc.org/files/?artifact_id=28802,title=OpenGIS® City Geography Markup Language (CityGML) Encoding Standard]
+* [[[citygml200,CityGML 2.0]]] OGC. OGC 12-019, _OGC City Geography Markup Language (CityGML) Encoding Standard_. Version 2.0.0. 4. april 2012. Tilgængelig på: https://portal.ogc.org/files/?artifact_id=47842[https://portal.ogc.org/files/?artifact_id=47842,title=OGC City Geography Markup Language (CityGML) Encoding Standard]
 * [[[dce-11-rpc,DCE 1.1 RPC]]] THE OPEN GROUP. C706, _DCE 1.1: Remote Procedure Call_. oktober 1997. Tilgængelig på: https://publications.opengroup.org/c706[https://publications.opengroup.org/c706,title=DCE 1.1: Remote Procedure Call]
 * [[[digi1,Digi1]]] DIGITALISERINGSSTYRELSEN. Videreanvendelse af offentlige data. [Set 27 oktober 2023]. Tilgængelig på: https://digst.dk/data/videreanvendelse-af-offentlige-data/
 * [[[digi2,Digi2]]] DIGITALISERINGSSTYRELSEN. Vilkår for brug af åbne offentlige data. [Set 27 oktober 2023]. Tilgængelig på: https://digst.dk/data/vilkaar-for-brug-af-aabne-offentlige-data/
