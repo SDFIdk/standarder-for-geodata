@@ -178,7 +178,7 @@ https://docs.ogc.org/is/17-069r4/17-069r4.html[https://docs.ogc.org/is/17-069r4/
 
 [.cite]#https://docs.ogc.org/is/17-069r4/17-069r4.html[OGC API - Features - Part 1: Core]# er den første af OGCs nye suite af API-standarder der blev publiceret. Standarden specificerer hvordan web-API'er giver adgang til objekterne i et datasæt på en måde, der er uafhængig af det underliggende datalager. Standarden definerer søge- og forespørgselsoperationer.
 
-Sægeoperationerne gør det muligt for klienter at forespørge API'en for at bestemme API'ens kapaciteter og hente oplysninger om distributioner af datasættet.
+Søgeoperationerne gør det muligt for klienter at forespørge API'en for at bestemme API'ens kapaciteter og hente oplysninger om distributioner af datasættet.
 
 Forespørgselsoperationer gør det muligt for klienter at hente objekter fra det underliggende datalager baseret på simple udvælgelseskriterier defineret af klienten.
 
