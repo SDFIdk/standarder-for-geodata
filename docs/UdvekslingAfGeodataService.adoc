@@ -152,16 +152,16 @@ metadata og har operationer så man kan søge på de forskellige felter.
 https://geodata-info.dk/srv/eng/csw?request=GetCapabilities&service=CSW&version=2.0.2[Geodata-info]
 er i overensstemmelse med denne standard.
 
-[#csw-iso-ap]
+[#cat2.0.2-isometadata]
 ==== CSW - ISO Metadata Application Profile
 
 [.bibliographicaldetails]
-OGC 07-045r1, _OpenGIS® Catalogue Services Specification 2.0.2 - ISO
-Metadata Application Profile: Corrigendum_. 9. marts 2018. Tilgængelig
+OGC 07-045r2, _OpenGIS® Catalogue Services Specification 2.0.2 - ISO
+Metadata Application Profile: Corrigendum_. 19. november 2020. Tilgængelig
 på:
-https://portal.opengeospatial.org/files/?artifact_id=77855[https://portal.opengeospatial.org/files/?artifact_id=77855,title=OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum] 
+https://portal.ogc.org/files/80534[https://portal.ogc.org/files/80534,title=OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum] 
 
-[.cite]#https://portal.opengeospatial.org/files/?artifact_id=77855[OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile]# definerer hvordan man anvender <<csw>> sammen
+[.cite]#https://portal.ogc.org/files/80534[OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile]# definerer hvordan man anvender <<csw>> sammen
 med metadata som specificeret i [.cite]#<<19115-2005,DS/EN ISO 19115:2005>>#.
 
 [NOTE]
