@@ -232,7 +232,7 @@ use profile link relation, not the deprecated profile attribute on head -->
 <link rel="profile" href="http://dublincore.org/documents/2008/08/04/dc-html/"/>
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
 <meta name="DC.creator" lang="da" content="Klimadatastyrelsen"/>
-<meta name="DC.date" content="2025-09-05"/>
+<meta name="DC.date" content="2025-09-08"/>
 <meta name="DC.description" lang="da" content="Gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata."/>
 <meta name="DC.language" content="da"/>
 <meta name="DC.subject" lang="da" content="geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE"/>
@@ -379,11 +379,11 @@ customElements.define('ds-logo-title', DSLogoTitle)
         },
       "url": "https://www.klimadatastyrelsen.dk/"
     }],
-  "dateModified": "2025-09-05",
+  "dateModified": "2025-09-08",
   "headline": "Anbefalede standarder for geodata",
   "name": "Anbefalede standarder for geodata",
   "keywords": "geodata, standard, standarder, best practice, best practices, ISO, OGC, INSPIRE",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "abstract": "Gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata.",
   "license": "https://creativecommons.org/licenses/by/4.0/"
 }
@@ -393,7 +393,7 @@ customElements.define('ds-logo-title', DSLogoTitle)
   <g stroke="var(--ds-icon-color, black)" stroke-linejoin="round" stroke-linecap="round" stroke-width="var(--ds-icon-stroke, 1)">
     <path d="M27 22.5H12.5M27 14.5H12.5M27 6.5H12.5M8.5 22.5H2M8.5 14.5H2M8.5 6.5H2"></path>
   </g>
-</svg></a></nav><ds-theme-toggle></ds-theme-toggle></div><header id="header" class="ds-header"><div class="ds-container"><ds-logo-title title="Anbefalede standarder for geodata" byline="Klimadatastyrelsen"></ds-logo-title><h1>Anbefalede standarder for geodata</h1><p class="manchet">Gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata.</p><span id="revnumber">version 1.2.0,</span> <span id="revdate">2025-09-05</span></div></header><div class="grid-container"><div id="toc" class="toc ds-padding"><nav class="ds-nav-vertical"><h2>Indholdsfortegnelse</h2><ul class="sectlevel1">
+</svg></a></nav><ds-theme-toggle></ds-theme-toggle></div><header id="header" class="ds-header"><div class="ds-container"><ds-logo-title title="Anbefalede standarder for geodata" byline="Klimadatastyrelsen"></ds-logo-title><h1>Anbefalede standarder for geodata</h1><p class="manchet">Gennemgang af relevante standarder og best practices til brug for indsamling, behandling og distribution af geodata.</p><span id="revnumber">version 1.2.1,</span> <span id="revdate">2025-09-08</span></div></header><div class="grid-container"><div id="toc" class="toc ds-padding"><nav class="ds-nav-vertical"><h2>Indholdsfortegnelse</h2><ul class="sectlevel1">
 <li><a href="#forord">Forord</a>
 <ul class="sectlevel2">
 <li><a href="#maalgruppe">Målgruppe</a></li>
@@ -496,7 +496,7 @@ customElements.define('ds-logo-title', DSLogoTitle)
 <li><a href="#wmts">2.9.6. Web Map Tile Service (WMTS)</a></li>
 <li><a href="#tg-view">2.9.7. INSPIRE View Services</a></li>
 <li><a href="#csw">2.9.8. Catalogue Services (CSW)</a></li>
-<li><a href="#csw-iso-ap">2.9.9. CSW - ISO Metadata Application Profile</a></li>
+<li><a href="#cat2">2.9.9. CSW - ISO Metadata Application Profile</a></li>
 <li><a href="#ogcfeat">2.9.10. OGC API - Features</a></li>
 <li><a href="#ogcmap">2.9.11. OGC API - Maps</a></li>
 <li><a href="#ogctile">2.9.12. OGC API - Tiles</a></li>
@@ -3164,19 +3164,19 @@ er i overensstemmelse med denne standard.
 </div>
 </section>
 <section>
-<h4 id="csw-iso-ap">2.9.9. CSW - ISO Metadata Application Profile</h4>
+<h4 id="cat2">2.9.9. CSW - ISO Metadata Application Profile</h4>
 <aside class="bibliographicaldetails">
-<p>OGC 07-045r1, <em>OpenGIS® Catalogue Services Specification 2.0.2 - ISO
-Metadata Application Profile: Corrigendum</em>. 9. marts 2018. Tilgængelig
+<p>OGC 07-045r2, <em>OpenGIS® Catalogue Services Specification 2.0.2 - ISO
+Metadata Application Profile: Corrigendum</em>. 19. november 2020. Tilgængelig
 på:
-<a target="_blank" rel="noreferrer noopener" href="https://portal.opengeospatial.org/files/?artifact_id=77855" title="OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum">https://portal.opengeospatial.org/files/?artifact_id=77855<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
+<a target="_blank" rel="noreferrer noopener" href="https://portal.ogc.org/files/80534" title="OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum">https://portal.ogc.org/files/80534<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
   <g stroke="var(--ds-icon-color, black)" stroke-linejoin="round" stroke-linecap="round" stroke-width="var(--ds-icon-stroke, 1)">
     <path d="M24.5 19.5V23.87C24.5 24.57 24.22 25.24 23.73 25.73C23.24 26.22 22.57 26.5 21.87 26.5H5.13C4.43 26.5 3.76 26.22 3.27 25.73C2.78 25.24 2.5 24.57 2.5 23.87V7.13C2.5 6.43 2.78 5.76 3.27 5.27C3.76 4.78 4.43 4.5 5.13 4.5H8.31H9.5M17.5 2.5H26.5M26.5 2.5V11.5M26.5 2.5L14 15"></path>
   </g>
 </svg></a></p>
 </aside>
 <div class="paragraph">
-<p><cite class="cite"><a target="_blank" rel="noreferrer noopener" href="https://portal.opengeospatial.org/files/?artifact_id=77855">OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
+<p><cite class="cite"><a target="_blank" rel="noreferrer noopener" href="https://portal.ogc.org/files/80534">OpenGIS® Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
   <g stroke="var(--ds-icon-color, black)" stroke-linejoin="round" stroke-linecap="round" stroke-width="var(--ds-icon-stroke, 1)">
     <path d="M24.5 19.5V23.87C24.5 24.57 24.22 25.24 23.73 25.73C23.24 26.22 22.57 26.5 21.87 26.5H5.13C4.43 26.5 3.76 26.22 3.27 25.73C2.78 25.24 2.5 24.57 2.5 23.87V7.13C2.5 6.43 2.78 5.76 3.27 5.27C3.76 4.78 4.43 4.5 5.13 4.5H8.31H9.5M17.5 2.5H26.5M26.5 2.5V11.5M26.5 2.5L14 15"></path>
   </g>
@@ -3220,7 +3220,7 @@ Tilgængelig på:
 </svg></a></cite> er den første af OGCs nye suite af API-standarder der blev publiceret. Standarden specificerer hvordan web-API’er giver adgang til objekterne i et datasæt på en måde, der er uafhængig af det underliggende datalager. Standarden definerer søge- og forespørgselsoperationer.</p>
 </div>
 <div class="paragraph">
-<p>Sægeoperationerne gør det muligt for klienter at forespørge API’en for at bestemme API’ens kapaciteter og hente oplysninger om distributioner af datasættet.</p>
+<p>Søgeoperationerne gør det muligt for klienter at forespørge API’en for at bestemme API’ens kapaciteter og hente oplysninger om distributioner af datasættet.</p>
 </div>
 <div class="paragraph">
 <p>Forespørgselsoperationer gør det muligt for klienter at hente objekter fra det underliggende datalager baseret på simple udvælgelseskriterier defineret af klienten.</p>
@@ -3419,7 +3419,7 @@ Denne standard afløser WMTS-standarden, men i modsætning til WMTS-standarden d
 </svg></a></p>
 </aside>
 <div class="paragraph">
-<p>Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tages i brug. Rigsarkivet vurderer ud fra anmeldelsen, om der skal afleveres en kopi af data til arkivet, og hvornår der i givet fald skal arkiveres første gang. Af de it-systemer som Rigsarkivet har bestemt til bevaring, skal den statslige myndighed producere arkiveringsversioner. En arkiveringsversion er en kopi af data fra myndighedens it-system, suppleret med dokumentation om systemet samt filer, der beskriver hvordan data hænger sammen. Arkiveringsversionen skal udarbejdes i bestemte formater, for at den kan bevares over tid <a href="#rigs24">[Rigs24]</a>. Rigsarkivet fastsætter formaterne i <cite class="cite">Bekendtgørelse om arkiveringsversioner</cite>. Bekendtgørelsen uddybes og eksemplificeres i <cite class="cite">Vejledning til bekendtgørelse om arkiveringsversioner</cite> <a href="#rigs22">[Rigs22]</a>.</p>
+<p>Statslige myndigheder skal anmelde nye it-systemer til Rigsarkivet, inden de tages i brug. Rigsarkivet vurderer ud fra anmeldelsen, om der skal afleveres en kopi af data til arkivet, og hvornår der i givet fald skal arkiveres første gang. Af de it-systemer som Rigsarkivet har bestemt til bevaring, skal den statslige myndighed producere arkiveringsversioner. En arkiveringsversion er en kopi af data fra myndighedens it-system, suppleret med dokumentation om systemet samt filer, der beskriver hvordan data hænger sammen. Arkiveringsversionen skal udarbejdes i bestemte formater, for at den kan bevares over tid <a href="#rigs24">[Rigs24]</a>. Rigsarkivet fastsætter formaterne i <cite class="cite">Bekendtgørelse om arkiveringsversioner</cite>. Bekendtgørelsen uddybes og eksemplificeres i <cite class="cite">Vejledning til bekendtgørelse om arkiveringsversioner</cite> <a href="#rigs25">[Rigs25]</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3782,7 +3782,7 @@ doi:<a target="_blank" rel="noreferrer noopener" href="https://doi.org/10.1007/B
 </svg></a></p>
 </li>
 <li>
-<p><a id="rigs22"></a>[Rigs22] RIGSARKIVET. <em>Vejledning til bekendtgørelse om arkiveringsversioner</em>. februar 2022. [Set 27 oktober 2023]. Tilgængelig på: <a target="_blank" rel="noreferrer noopener" href="https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf" title="Vejledning til bekendtgørelse om arkiveringsversioner">https://www.rigsarkivet.dk/wp-content/uploads/2022/02/Vejledning-til-bekendtgoerelse-nr.-128-af-12.-februar-2020.pdf<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
+<p><a id="rigs25"></a>[Rigs25] RIGSARKIVET. <em>Vejledning til bekendtgørelse om arkiveringsversioner</em>. Version 1.1. august 2025. [Set 8 september 2025]. Tilgængelig på: <a target="_blank" rel="noreferrer noopener" href="https://www.rigsarkivet.dk/wp-content/uploads/2025/08/Vejledning-til-bekendtgoerelse-128.pdf" title="Vejledning til bekendtgørelse om arkiveringsversioner">https://www.rigsarkivet.dk/wp-content/uploads/2025/08/Vejledning-til-bekendtgoerelse-128.pdf<svg xmlns="http://www.w3.org/2000/svg" class="ds-icon" width="29" height="29" viewBox="0 0 29 29" fill="none">
   <g stroke="var(--ds-icon-color, black)" stroke-linejoin="round" stroke-linecap="round" stroke-width="var(--ds-icon-stroke, 1)">
     <path d="M24.5 19.5V23.87C24.5 24.57 24.22 25.24 23.73 25.73C23.24 26.22 22.57 26.5 21.87 26.5H5.13C4.43 26.5 3.76 26.22 3.27 25.73C2.78 25.24 2.5 24.57 2.5 23.87V7.13C2.5 6.43 2.78 5.76 3.27 5.27C3.76 4.78 4.43 4.5 5.13 4.5H8.31H9.5M17.5 2.5H26.5M26.5 2.5V11.5M26.5 2.5L14 15"></path>
   </g>
